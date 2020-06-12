@@ -32,8 +32,7 @@ class Mobile_app extends CI_Controller
 
 		$result = $this->Mobile_model->createDataFromXlsx();
 
-
-
+		print_r($result);
 
 
 
