@@ -32,7 +32,11 @@ class Mobile_app extends CI_Controller
 
 		$result = $this->Mobile_model->createDataFromXlsx();
 
-		print_r($result);
+		//print_r($result);
+
+		foreach ($result as $Value) {
+			echo $Value["ROOM"]."|".$Value["CUST"]."|".$Value["HOMENO"]."|".$Value["NAME"]."|".$Value["BILLNO"]."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
+		}
 
 
 
