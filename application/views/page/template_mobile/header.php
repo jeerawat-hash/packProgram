@@ -380,7 +380,7 @@
                     <li class="<?php echo $menu[0]; ?>" >
                         <a href="javascript:void(0);">
                             <i class="material-icons">home</i>
-                            <span>สมาชิกสาคร</span>
+                            <span>ลูกบ้านอาคารชุด</span>
                         </a>
                     </li>
 
