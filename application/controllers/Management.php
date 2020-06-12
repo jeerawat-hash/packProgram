@@ -21,7 +21,7 @@ class Management extends CI_Controller
 			$header['page_focus'] = 'home';
 			 
 
-			$this->load->view("page/template_mobile/header",$header);
+			$this->load->view("page/template_mobile/header_admin",$header);
 			$this->load->view("page/mobile/management");
 			$this->load->view("page/template_mobile/footer");
 			
