@@ -9,7 +9,7 @@ class Mobile_model extends CI_Model
       $this->load->library("SimpleXLSX");
       $this->SimpleXLSX = new SimpleXLSX(); 
 
-      if ( $xlsx = $this->SimpleXLSX->parse('../../upload/temp/ServiceCost.xlsx')) {
+      if ( $xlsx = $this->SimpleXLSX->parse('./upload/temp/ServiceCost.xlsx')) {
  
         $header_values = $rows = [];
 
@@ -44,7 +44,7 @@ class Mobile_model extends CI_Model
 
 
 
- 
+
 
 
 }
