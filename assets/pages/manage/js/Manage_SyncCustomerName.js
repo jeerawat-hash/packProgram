@@ -19,7 +19,7 @@ $(function(){
             var data = new FormData();      
             ////// เพิ่มข้อมูลเข้า          
             data.append('CustomerName', Slip_file); 
-            //data.append('Telephone', Telephone );
+            data.append('Telephone', '1' );
             ////// เพิ่มข้อมูลเข้า array           
  
  
