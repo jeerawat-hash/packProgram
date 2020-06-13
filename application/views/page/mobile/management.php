@@ -9,9 +9,10 @@
   
 </style>
 <!----- Overflow Modal ------->
-  
-
+   
+  <div id="player"></div>
  
+
 
 
     <section class="content">
@@ -395,5 +396,10 @@
         <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncCustomerName.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncCarInfo.js"></script>
        
+<script type="text/javascript">
         
+        var player = new Clappr.Player({source: "http://gcorigin.wisdomcloud.net/live/master/playlist.m3u8_1000.m3u8", parentId: "#player"});
+    
+
+</script>
  

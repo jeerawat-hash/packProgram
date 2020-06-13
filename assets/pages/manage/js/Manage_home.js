@@ -1,6 +1,6 @@
 $(function(){
- 
- 
+ 	
+    
 
 		$("#DataSecrectkeyModal").modal("show");
 		$("#DataSecrectkeyModal").find("#PreloadGetData").hide();
