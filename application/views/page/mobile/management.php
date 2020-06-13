@@ -682,7 +682,7 @@
 
 
      
-        <script src="https://pack1.sakorncable.com/assets/new/pages/manage/js/Manage_home.js"></script>
+        <script src="https://pack1.sakorncable.com/assets/new/pages/manage/js/manage_home.js"></script>
        
         
 
