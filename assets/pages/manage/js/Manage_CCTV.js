@@ -1,5 +1,11 @@
 $(function(){
 
+    $(".cctv-close").on("click",function(){
+
+        $("#CCTVplayer").html("");
+         
+    });
+
     $("#CCTV1").on("click",function(){
 
         $("#CCTVplayer").html("");

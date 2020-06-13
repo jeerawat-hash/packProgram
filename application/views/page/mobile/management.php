@@ -146,7 +146,7 @@
                                     <div class="embed-responsive embed-responsive-16by9">
 
                                         <div id="CCTVplayer"></div>
-                                        
+
                                     </div>
                                         
                                     </div>
@@ -165,7 +165,7 @@
                         </div>
                         <div class="modal-footer">
                              
-                            <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
+                            <button type="button"  data-dismiss="modal" class="btn btn-lg btn-danger waves-effect cctv-close">ปิด</button>
 
                         </div>
                     </div>
