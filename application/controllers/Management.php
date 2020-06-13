@@ -88,7 +88,7 @@ class Management extends CI_Controller
 	{
 
 
-		print_r($_FILES["ReceiveCost"]);
+		//print_r($_FILES["ReceiveCost"]);
 
 
 		if ($_FILES["ReceiveCost"]["type"] == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
@@ -97,7 +97,17 @@ class Management extends CI_Controller
 			
 			move_uploaded_file($_FILES["ReceiveCost"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_FILES["ReceiveCost"]["name"]);
 
- 
+ 			$result = $this->Mobile_model->createDataFromXlsx($_FILES["ReceiveCost"]["name"]);
+
+			$this->Mobile_model->clearDataReceiveCost();
+
+			foreach ($result as $Value) {
+
+				$this->Mobile_model->insertDataReceiveCost($Value["CUSTOMER"],$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"]);
+
+				//print_r($Value);
+
+			}
 
 			echo "1";
 
@@ -110,19 +120,9 @@ class Management extends CI_Controller
 
 
 
-		/*
-		$result = $this->Mobile_model->createDataFromXlsx("ReceiveCost.xlsx");
-
-		$this->Mobile_model->clearDataReceiveCost();
-
-		foreach ($result as $Value) {
-
-			$this->Mobile_model->insertDataReceiveCost($Value["CUSTOMER"],$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"]);
-
-			//print_r($Value);
-
-		}
-		*/
+		
+		
+		
 
  
 
