@@ -643,11 +643,11 @@
  
 
             <!-- Default Size -->
-            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="DataTelephoneModal" tabindex="-1" role="dialog">
+            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="DataSecrectkeyModal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="defaultModalLabel">ระบุเบอร์โทรที่ลงทะเบียนไว้กับบริษัท</h4>
+                            <h4 class="modal-title" id="defaultModalLabel">เข้าสู่ระบบ</h4>
                         </div>
                         <div class="modal-body">
 
@@ -655,14 +655,14 @@
                             <div class="form-group form-float">
                                     <div class="form-line">
                                         <input type="text" value="" class="form-control" id="TelephoneID" name="TelephoneID" required>
-                                        <label class="form-label">เบอร์โทร(ตัวอย่าง 0800000000)</label>
+                                        <label class="form-label">SecrectKEY</label>
                                     </div>
                             </div>
  
                             
                         </div>
                         <div class="modal-footer">
-                            <button type="button" id="GetData" class="btn btn-lg btn-danger waves-effect">ตรวจสอบ</button>
+                            <button type="button" id="GetData" class="btn btn-lg btn-danger waves-effect">เข้าสู่ระบบ</button>
 
                             <div class="preloader" id="PreloadGetData">
                                     <div class="spinner-layer pl-red">
@@ -682,12 +682,8 @@
 
 
      
-        <script src="https://pro.sakorncable.com/assets/new/pages/mobile/js/mobile_home.js"></script>
-        <script src="https://pro.sakorncable.com/assets/new/pages/mobile/js/mobile_home_checkblanace.js"></script>
-        <script src="https://pro.sakorncable.com/assets/new/pages/mobile/js/mobile_home_resync.js"></script>
-        <script src="https://pro.sakorncable.com/assets/new/pages/mobile/js/mobile_home_resyncnet.js"></script>
-        <script src="https://pro.sakorncable.com/assets/new/pages/mobile/js/mobile_home_sendIssue.js"></script>
-        <script src="https://pro.sakorncable.com/assets/new/pages/mobile/js/mobile_home_sendslip.js"></script>
+        <script src="https://pack1.sakorncable.com/assets/new/pages/manage/js/Manage_home.js"></script>
+       
         
 
 
@@ -719,301 +715,8 @@
 
         <script type="text/javascript">
 
-
-
-        function encodeImageFileAsURL(element,temp) {  
-
-            var uploadFile = document.getElementById(element).files[0];
-
-            var fileReader = new FileReader();
-            fileReader.onload = function (event) {
-              var image = new Image();
-              
-              image.onload=function(){ 
-                  var canvas=document.createElement("canvas");
-                  var context=canvas.getContext("2d");
-                  canvas.width=image.width/4;
-                  canvas.height=image.height/4;
-                  context.drawImage(image,
-                      0,
-                      0,
-                      image.width,
-                      image.height,
-                      0,
-                      0,
-                      canvas.width,
-                      canvas.height
-                  );
-                  
-                 //console.log(canvas.toDataURL());
-                 $("#"+temp).val(canvas.toDataURL()); 
-
-              }
-              image.src=event.target.result;
-            };
-
-            fileReader.readAsDataURL(uploadFile);
-
-
-        }
-        ////// เข้ารหัสภาพเพื่อเก็บใน array ///////
-
-
-
-
-
-
-
-
-    $(function(){
-
-
-    ////// inital image url a 
-    $("#DataSendSlipModal").find("#imagefile").on("change",function(){
-
-    /// เรียกใช้งานการแปลงไฟล์เป็น binary
-        encodeImageFileAsURL( "imagefile" , "imagefileTemp" ); 
-    /// เรียกใช้งานการแปลงไฟล์เป็น binary
  
-
-    });
-
-    $("#DataSendIssueModal").find("#imagefile_issue").on("change",function(){
-
-    /// เรียกใช้งานการแปลงไฟล์เป็น binary
-        encodeImageFileAsURL( "imagefile_issue" , "imagefileTemp_issue" ); 
-    /// เรียกใช้งานการแปลงไฟล์เป็น binary
-
-    });
-
  
-
-/*
-    $("#DataSendSlipModal").find("#imagefile").change(function(){
-            var file_data = $('#imagefile').prop('files')[0];   
-            var form_data = new FormData();                  
-            form_data.append('file', file_data);
-            form_data.append('test', "aaaa" );
-
-            $.ajax({
-                url: "https://pro.sakorncable.com/index.php/Mobile_app/fileupload",
-                type: "POST",
-                data: form_data,
-                contentType: false,
-                cache: false,
-                processData:false,
-                success: function(data){
-                    console.log(data);
-                }
-                });
-            });
-*/
-/*
-            ////// ไฟล์
-            var file_data1 = $('#imagefile1').prop('files')[0];
-            var file_data2 = $('#imagefile2').prop('files')[0];
-            var file_data3 = $('#imagefile3').prop('files')[0];
-            ////// ไฟล์
-            var form_data = new FormData();      
-            ////// เพิ่มข้อมูลเข้า array เดิมใช้ { Username : 'aaaa',Password : 'bbbbb' }            
-            form_data.append('imagefile1', file_data1);
-            form_data.append('imagefile2', file_data2);
-            form_data.append('imagefile3', file_data3);
-            form_data.append('Username', "aaaa" );
-            form_data.append('Password', "bbbb" );
-            ////// เพิ่มข้อมูลเข้า array เดิมใช้ { Username : 'aaaa',Password : 'bbbbb' }            
-
-            $.ajax({
-                url: "https://pro.sakorncable.com/index.php/Mobile_app/fileupload",
-                type: "POST",
-                data: form_data,
-                contentType: false,
-                cache: false,
-                processData:false,
-                success: function(data){
-                    console.log(data);
-                }
-                });
-*/
-
-
-
-
- 
-    
-    $("#DataSendSlipModal").find("#PreloadSendData").hide();
-
-    $("#SendSlip").on("click",function(){
-
-
-        $("#DataSendSlipModal").find("#imagefile").val("");
-        $("#DataSendSlipModal").find("#imagefileTemp").val("");
-                    
-        var Telephone = $("#TelephoneAuthen").val();
-
-
-
-        $("#DataSendSlipModal").modal("show");
-
-        //$("#ContainerPreOpenCard").hide();
-            $("#DataSendSlipModal").find("#ContainerPreOpenCard").hide();
-            $("#DataSendSlipModal").find("#StatusPreOpenCard").hide();
-            $("#DataSendSlipModal").find("#StatusOpen").hide();
-            $("#DataSendSlipModal").find("#SendData").show();
-            $("#DataSendSlipModal").find("#fileupload").show();
-
-              var tablehtml = "";  
-
-
-            $.post("https://pro.sakorncable.com/index.php/liff_sendslip/getMemberNew",
-              {Telephone: Telephone },function(data,status,response){
-
-                var object = JSON.parse(data);
-
-                console.log(object);
-    
-                $("#TelephoneSlip").val(object.telephone);
-
-                //////// seq 
- 
-
-                var telephone_post = object.telephone;
-                $.post("https://pro.sakorncable.com/index.php/liff_sendslip/getDataPreOpenCard"
-                ,
-                {
-                  Telephone : telephone_post
-                }
-                ,function(data,status,response){
-
-                  
-                  var object = JSON.parse(data);
-
-                  console.log(object);
-
-                  var myDateTime = new Date(object.Time);
-
-                  var minutes = myDateTime.getMinutes();
-                  var hours = myDateTime.getHours();
-
-
-                  //console.log(hours);
-
-                  if (object.Cycle == "0") {
-   
-
-              <?php 
-
-                    if (date("H:i:s") > "18:50:00" or date("H:i:s") < "08:30:00") {
-              ?>
-
-                     $("#DataSendSlipModal").find("#ContainerPreOpenCard").show();
-
-   
-              <?php
-                    }else{
-
-
-                          if (date("H:i:s") > "10:00:00") {
-                    ?>
-
-
-                          $("#DataSendSlipModal").find("#StatusOpen").show();
-
-
-                  <?php
-                          }
-          
-                    }
-
-                     ?>
-                     
-                      //$("#ContainerPreOpenCard").attr("visibility", "hidden");
-                    //$("#ContainerPreOpenCard").attr("hidden", "false");
-    
-                        //console.log($("#ContainerPreOpenCard").is(":hidden"));
-
-                  }else{
-
-
-                    $("#DataSendSlipModal").find("#StatusPreOpenCard").show();
- 
-
-                  }
- 
-
-                });
-                //////// seq
- 
-
-                for (var i = 0; i < object.data.length; i++) {
-
-                    var checkbox = "";
-
-                if (object.data[i].Suspend != 1) {
-
-                    checkbox += "<input type='checkbox' id='md_checkbox_"+i+"'  class='filled-in chk-col-black PayCodeValue' value='"+object.data[i].PayCode+'|'+object.data[i].DB+"'><label for='md_checkbox_"+i+"'></label>";
-                }else{
-                    
-                    
-                    checkbox += "<input type='checkbox' id='md_checkbox_"+i+"'  class='filled-in chk-col-black PayCodeValue' value='"+object.data[i].PayCode+'|'+object.data[i].DB+"'><label for='md_checkbox_"+i+"'></label>";
-                    
-                    //checkbox += "<font color='red'>ยกเลิกแล้ว</font>";
-
-                }
-
-
-
-                  tablehtml += " <tr>"+
-                           "<td>"+checkbox+"</td>"+
-                           "<td>"+object.data[i].CustomerName+"<br>"+object.data[i].PayCode+"<br></td>"+
-                            "</tr>";
-
-
-                }
-
-
-                tablehtml += "<tr>"+
-                          "<td colspan='2' > <font color='red'>**หมายเหตุ**<br>การชำระผ่านการโอนธนาคารจำเป็นต้องส่งข้อมูลการชำระค่าบริการผ่านเมนู ส่งใบเสร็จ และพนักงานจะยิงรับชำระในเวลาปฏิบัติงานคือ 10:00 - 19:00น. หลังจากเวลาดังกล่าวท่านสามารถเลือกปุ่ม '<font color='green'>ต้องการเปิดสัญญาณชั่วคราว</font>' ด้านล่างเมื่อส่งใบเสร็จเข้ามาในระบบแล้วจะมีการเปิดสัญญาณให้สมาชิกชั่วคราวโดยหากเป็นเน็ตจะต้องถอดปลั๊กเร้าเตอร์ใหม่1ครั้งหลังดำเนินการ 5นาทีและสามารถกลับมาใช้งานได้ปกติภายใน 15 นาที(<font color='green'>การต่อสัญญาณชั่วคราว นอกช่วงเวลาให้บริการนั้นจะสามารถดำเนินการได้เพียง 1 ครั้งต่อเดือนโดยระบบจะตัดสัญญาณเพื่อตรวจสอบข้อมูล 1 ชม ของวันถัดมาในเวลา 14:00น.-15:00 น.จากนั้นจะสามารถรับชมภาพได้ปกติ</font>)</font> </td>"+
-                          "</tr>";
-
-
-
-                 $("#DataSendSlipModal").find("#table_member_detail").html(tablehtml);
-
-                 if (tablehtml == "") {
-                    $("#DataSendSlipModal").find("#SendData").hide();
-                    $("#DataSendSlipModal").find("#fileupload").hide();
-                 }
-             
-              });
- 
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
- 
-
-});
 
 
 
