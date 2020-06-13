@@ -39,8 +39,8 @@ $(function(){
                 processData:false,
                 success: function(data){
 
-                    console.log(data);
-                /*
+                //    console.log(data);
+                
                     if (data == 1) {
 
                     alert("บันทึกข้อมูลสำเร็จ....");
@@ -58,7 +58,7 @@ $(function(){
                         $("#DataSyncCustomerNameModal").find("#PreloadSendData").hide();
 
                     } 
-                */
+                
                 
                       
                 },
