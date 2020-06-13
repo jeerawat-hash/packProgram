@@ -36,7 +36,12 @@ class Management extends CI_Controller
 		print_r($_FILES);
 
 		if ($_FILES["ServicesCost"]["type"] == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
+
+			shell_exec("rm /home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_FILES["ServicesCost"]["name"]);
 			
+			move_uploaded_file($_FILES["ServicesCost"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_FILES["ServicesCost"]["name"]);
+
+
 			echo "1";
 
 
