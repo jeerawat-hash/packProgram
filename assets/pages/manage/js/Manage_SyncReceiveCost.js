@@ -1,6 +1,6 @@
 $(function(){
 
-    $("#SendSyncServicesCost").on("click",function(){
+    $("#SendSyncReceiveCost").on("click",function(){
 
         $("#DataSyncReceiveCostModal").modal("show");
         $("#DataSyncReceiveCostModal").find("#PreloadSendData").hide();
