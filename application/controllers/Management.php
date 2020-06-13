@@ -131,7 +131,7 @@ class Management extends CI_Controller
 	{
 
 
-		print_r($_FILES["CustomerNamefile"]);
+		print_r($_FILES);
 
 
 		/*
