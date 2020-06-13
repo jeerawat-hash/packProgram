@@ -148,27 +148,47 @@ class Management extends CI_Controller
 	{
 
 
-		print_r($_FILES["CarInfofile"]);
+		//print_r($_FILES["CarInfofile"]);
 
 
-		/*
-		$result = $this->Mobile_model->createDataFromXlsx("CarInfomation.xlsx");
+		if ($_FILES["CarInfofile"]["type"] == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
+
+			shell_exec("rm /home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_FILES["CarInfofile"]["name"]);
+			
+			move_uploaded_file($_FILES["CarInfofile"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_FILES["CarInfofile"]["name"]);
+
+ 			 
+			$result = $this->Mobile_model->createDataFromXlsx($_FILES["CarInfofile"]["name"]);
 
 
-		$this->Mobile_model->clearDataCarInfo();
+			$this->Mobile_model->clearDataCarInfo();
 
 
-		foreach ($result as $Value) {
+			foreach ($result as $Value) {
 
-			//print_r($Value);
+				//print_r($Value);
 
-			$this->Mobile_model->insertDataCarInfo($Value["CA_CUST"],$Value["CA_CODE"],$Value["CA_COUNTRY"],$Value["CA_TYPE"],$Value["CA_BRAND"],$Value["CA_COLOR"],$Value["CA_REMARK"]);
+				$this->Mobile_model->insertDataCarInfo($Value["CA_CUST"],$Value["CA_CODE"],$Value["CA_COUNTRY"],$Value["CA_TYPE"],$Value["CA_BRAND"],$Value["CA_COLOR"],$Value["CA_REMARK"]);
 
 
+
+			}
+
+
+
+
+
+			echo "1";
+
+
+		}else{
+
+			echo "2";
 
 		}
-		*/
 
+
+ 
  
 
 	}

@@ -38,34 +38,34 @@ $(function(){
                 processData:false,
                 success: function(data){
 
-                    console.log(data);
-                /*
+                //    console.log(data);
+                
                     if (data == 1) {
 
                     alert("บันทึกข้อมูลสำเร็จ....");
 
-                    $("#DataSyncReceiveCostModal").modal("hide");
+                    $("#DataSyncCarInfoModal").modal("hide");
 
-                    $("#DataSyncReceiveCostModal").find("#SendData").show();
-                    $("#DataSyncReceiveCostModal").find("#PreloadSendData").hide();
+                    $("#DataSyncCarInfoModal").find("#SendData").show();
+                    $("#DataSyncCarInfoModal").find("#PreloadSendData").hide();
 
                     }else
                     if (data == 2){
 
                         alert("ผิดพลาดกรุณาลองใหม่ภายหลัง...");
-                        $("#DataSyncReceiveCostModal").find("#SendData").show();
-                        $("#DataSyncReceiveCostModal").find("#PreloadSendData").hide();
+                        $("#DataSyncCarInfoModal").find("#SendData").show();
+                        $("#DataSyncCarInfoModal").find("#PreloadSendData").hide();
 
                     } 
-                    */
+                    
                 
                       
                 },
                 error : function(){
 
                         alert("404 Not Found");
-                        $("#DataSyncReceiveCostModal").find("#SendData").show();
-                        $("#DataSyncReceiveCostModal").find("#PreloadSendData").hide();
+                        $("#DataSyncCarInfoModal").find("#SendData").show();
+                        $("#DataSyncCarInfoModal").find("#PreloadSendData").hide();
 
                 }
                 });
