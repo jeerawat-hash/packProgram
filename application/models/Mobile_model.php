@@ -4,6 +4,42 @@ class Mobile_model extends CI_Model
 {	
 
 
+
+  public function insertDataCarInfo($CUST,$CARCODE,$COUNTRY,$CARTYPE,$CARBRAND,$CARCOLOR,$CONTACT)
+  {
+
+     $this->mssql = $this->load->database("mssql",true);
+
+     $this->mssql->query(" INSERT INTO [Sakorn_Manage].[dbo].[CustomerCarInfo]
+           ([CUST]
+           ,[CARCODE]
+           ,[COUNTRY]
+           ,[CARTYPE]
+           ,[CARBRAND]
+           ,[CARCOLOR]
+           ,[CONTACT])
+     VALUES
+           ('".$CUST."'
+           ,'".$CARCODE."'
+           ,'".$COUNTRY."'
+           ,'".$CARTYPE."'
+           ,'".$CARBRAND."'
+           ,'".$CARCOLOR."'
+           ,'".$CONTACT."') ");
+
+
+  }
+
+  public function clearDataCarInfo()
+  {
+
+     $this->mssql = $this->load->database("mssql",true);
+
+     $this->mssql->query(" delete from [Sakorn_Manage].[dbo].[CustomerCarInfo] ");
+ 
+  }
+
+ 
   public function insertDataServicesCost($CUST,$DATE,$CODE,$AMOUNT)
   {
 
