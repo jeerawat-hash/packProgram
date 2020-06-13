@@ -3,6 +3,35 @@
 class Mobile_model extends CI_Model
 {	
 
+
+  public function insertDataServicesCost($CUST,$DATE,$CODE,$AMOUNT)
+  {
+
+     $this->mssql = $this->load->database("mssql",true);
+
+     $this->mssql->query("INSERT INTO [Sakorn_Manage].[dbo].[CustomerAmount_LOG]
+           ([CUST]
+           ,[DATE]
+           ,[CODE]
+           ,[AMOUNT])
+     VALUES
+           ('".$CUST."'
+           ,'".$DATE."'
+           ,'".$CODE."'
+           ,'".$AMOUNT."') ");
+ 
+
+  }
+
+
+
+
+
+
+
+
+
+
   public function createDataFromXlsx($file)
   {
 
@@ -36,7 +65,7 @@ class Mobile_model extends CI_Model
 
 
 
-      
+
  
 
   }

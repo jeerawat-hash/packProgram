@@ -50,12 +50,13 @@ class Management extends CI_Controller
 				$NAME = $Value["NAME"]; 
 				$BILLNO = $Value["BILLNO"]; 
 			} 
-
  
 
-
-
 			echo $ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
+
+ 
+			$this->Mobile_model->insertDataServicesCost($CUST,$Value["DATE"],$Value["CODE"],$Value["AMOUNT"]);
+
 
 
 
