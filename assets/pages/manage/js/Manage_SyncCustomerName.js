@@ -2,15 +2,15 @@ $(function(){
 
     $("#SendSyncCustomerName").on("click",function(){
 
-        $("#DataSyncReceiveCostModal").modal("show");
-        $("#DataSyncReceiveCostModal").find("#PreloadSendData").hide();
-        $("#DataSyncReceiveCostModal").find("#SendData").show();
+        $("#DataSyncCustomerNameModal").modal("show");
+        $("#DataSyncCustomerNameModal").find("#PreloadSendData").hide();
+        $("#DataSyncCustomerNameModal").find("#SendData").show();
         
 
     });
 
 
-    $("#DataSyncReceiveCostModal").find("#SendData").on("click",function(){
+    $("#DataSyncCustomerNameModal").find("#SendData").on("click",function(){
  
 
             ////// ไฟล์ 
@@ -23,8 +23,8 @@ $(function(){
             ////// เพิ่มข้อมูลเข้า array           
  
  
-        $("#DataSyncReceiveCostModal").find("#SendData").hide();
-        $("#DataSyncReceiveCostModal").find("#PreloadSendData").show();
+        $("#DataSyncCustomerNameModal").find("#SendData").hide();
+        $("#DataSyncCustomerNameModal").find("#PreloadSendData").show();
 
 
 		setTimeout(function(){ 
@@ -45,17 +45,17 @@ $(function(){
 
                     alert("บันทึกข้อมูลสำเร็จ....");
 
-                    $("#DataSyncReceiveCostModal").modal("hide");
+                    $("#DataSyncCustomerNameModal").modal("hide");
 
-                    $("#DataSyncReceiveCostModal").find("#SendData").show();
-                    $("#DataSyncReceiveCostModal").find("#PreloadSendData").hide();
+                    $("#DataSyncCustomerNameModal").find("#SendData").show();
+                    $("#DataSyncCustomerNameModal").find("#PreloadSendData").hide();
 
                     }else
                     if (data == 2){
 
                         alert("ผิดพลาดกรุณาลองใหม่ภายหลัง...");
-                        $("#DataSyncReceiveCostModal").find("#SendData").show();
-                        $("#DataSyncReceiveCostModal").find("#PreloadSendData").hide();
+                        $("#DataSyncCustomerNameModal").find("#SendData").show();
+                        $("#DataSyncCustomerNameModal").find("#PreloadSendData").hide();
 
                     } 
                 */
@@ -65,8 +65,8 @@ $(function(){
                 error : function(){
 
                         alert("404 Not Found");
-                        $("#DataSyncReceiveCostModal").find("#SendData").show();
-                        $("#DataSyncReceiveCostModal").find("#PreloadSendData").hide();
+                        $("#DataSyncCustomerNameModal").find("#SendData").show();
+                        $("#DataSyncCustomerNameModal").find("#PreloadSendData").hide();
 
                 }
                 });
