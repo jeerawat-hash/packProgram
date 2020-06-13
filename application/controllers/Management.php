@@ -35,27 +35,30 @@ class Management extends CI_Controller
 		//print_r($result);
 
 		$ROOM = ""; 
+		$CUST = ""; 
+		$HOMENO = ""; 
+		$NAME = ""; 
+		$BILLNO = ""; 
 
 		foreach ($result as $Value) {
 
 
 			if (trim($Value["ROOM"]) != "") {
 				$ROOM = $Value["ROOM"];
+				$CUST = $Value["CUST"]; 
+				$HOMENO = $Value["HOMENO"]; 
+				$NAME = $Value["NAME"]; 
+				$BILLNO = $Value["BILLNO"]; 
 			} 
 
+ 
+
+
+ 
+			echo $ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
 
 
 
-
-
-
-
-
-
-			echo $ROOM."|".$Value["CUST"]."|".$Value["HOMENO"]."|".$Value["NAME"]."|".$Value["BILLNO"]."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
-
-
-			
 		}
 
 
