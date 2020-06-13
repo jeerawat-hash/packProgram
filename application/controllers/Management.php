@@ -30,6 +30,12 @@ class Management extends CI_Controller
 	{
 
 
+
+
+		print_r($_POST);
+		print_r($_FILES);
+
+		/*
 		$result = $this->Mobile_model->createDataFromXlsx("ServiceCost.xlsx");
 
 		//print_r($result);
@@ -61,6 +67,7 @@ class Management extends CI_Controller
  
 
 		}
+		*/
 
  
 
@@ -71,7 +78,6 @@ class Management extends CI_Controller
 		$result = $this->Mobile_model->createDataFromXlsx("ReceiveCost.xlsx");
 
 		$this->Mobile_model->clearDataReceiveCost();
-
 
 		foreach ($result as $Value) {
 

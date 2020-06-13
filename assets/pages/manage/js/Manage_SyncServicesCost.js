@@ -18,7 +18,7 @@ $(function(){
             ////// ไฟล์
             var data = new FormData();      
             ////// เพิ่มข้อมูลเข้า          
-            //data.append('SlipImage', Slip_file); 
+            data.append('ServicesCost', Slip_file); 
             //data.append('Telephone', Telephone );
             ////// เพิ่มข้อมูลเข้า array           
  
@@ -29,9 +29,9 @@ $(function(){
 
 		setTimeout(function(){ 
 
-/*
+
             $.ajax({
-                url: "https://pro.sakorncable.com/index.php/liff_sendslip/UploadSlip",
+                url: "https://pack1.sakorncable.com/index.php/management/createDataServicesCostFromXlsx",
                 type: "POST",
                 data: data,
                 contentType: false,
@@ -40,7 +40,7 @@ $(function(){
                 success: function(data){
 
                     console.log(data);
-
+                /*
                     if (data != 0) {
 
                     alert("ส่งใบเสร็จสำเร็จ....");
@@ -57,7 +57,8 @@ $(function(){
                         $("#DataSyncServicesCostModal").find("#PreloadSendData").hide();
 
                     } 
- 
+                    */
+
                     
                 },
                 error : function(){
@@ -68,7 +69,7 @@ $(function(){
 
                 }
                 });
-*/
+
   
     
 
