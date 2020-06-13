@@ -474,6 +474,7 @@
         <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncReceiveCost.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncCustomerName.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncCarInfo.js"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_CCTV.js"></script>
        
 <script type="text/javascript">
         
