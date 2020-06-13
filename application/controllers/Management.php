@@ -32,8 +32,20 @@ class Management extends CI_Controller
 
 
 
-		print_r($_POST);
+		//print_r($_POST);
 		print_r($_FILES);
+
+		if ($_FILES["ServicesCost"]["type"] == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
+			
+			echo "1";
+
+
+		}else{
+
+			echo "2";
+
+		}
+
 
 		/*
 		$result = $this->Mobile_model->createDataFromXlsx("ServiceCost.xlsx");
