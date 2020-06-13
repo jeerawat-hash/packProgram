@@ -26,7 +26,7 @@ class Management extends CI_Controller
 			$this->load->view("page/template_mobile/footer");
 			
 	}
-	public function createDataFromXlsx()
+	public function createDataServicesCostFromXlsx()
 	{
 
 
@@ -54,7 +54,7 @@ class Management extends CI_Controller
  
 
 
- 
+
 			echo $ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
 
 
