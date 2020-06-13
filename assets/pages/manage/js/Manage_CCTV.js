@@ -2,7 +2,7 @@ $(function(){
 
     $("#CCTV1").on("click",function(){
 
-        $("##CCTVplayer").html("");
+        $("#CCTVplayer").html("");
 
         $("#CCTVModal").modal("show");
         ////////////
