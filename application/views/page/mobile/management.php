@@ -104,7 +104,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           
-                                        <label>เลือกไฟล์ ชื่อ < > </label>
+                                        <label>เลือกไฟล์ ยอดค้างของลูกบ้านเท่านั้น  </label>
                                         
                                     </div>
                                 </div>
@@ -169,7 +169,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           
-                                        <label>เลือกไฟล์ ชื่อ < > </label>
+                                        <label>เลือกไฟล์ ยอดสรุปการรับเงินจากลูกบ้านเท่านั้น </label>
                                         
                                     </div>
                                 </div>
@@ -234,7 +234,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           
-                                        <label>เลือกไฟล์ ชื่อ < > </label>
+                                        <label>เลือกไฟล์ ชื่อ CMM_CUST เท่านั้น </label>
                                         
                                     </div>
                                 </div>
@@ -298,7 +298,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           
-                                        <label>เลือกไฟล์ ชื่อ < > </label>
+                                        <label>เลือกไฟล์ ชื่อ CMT_TCAR เท่านั้น </label>
                                         
                                     </div>
                                 </div>
@@ -361,7 +361,7 @@
 
                             <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" value="" class="form-control" id="TelephoneID" name="TelephoneID" required>
+                                        <input type="text" value="" class="form-control" id="SecrectKEY" name="SecrectKEY" required>
                                         <label class="form-label">SecrectKEY</label>
                                     </div>
                             </div>

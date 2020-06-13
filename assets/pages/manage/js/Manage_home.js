@@ -2,35 +2,31 @@ $(function(){
  
  
 
-		//$("#DataSecrectkeyModal").modal("show");
-		//$("#DataSecrectkeyModal").find("#PreloadGetData").hide();
-	 
-
-	/*NameAuthen
-	StatusAuthen
-	TelephoneAuthen*/
+		$("#DataSecrectkeyModal").modal("show");
+		$("#DataSecrectkeyModal").find("#PreloadGetData").hide();
+	  
 
 
 	$("#DataSecrectkeyModal").find("#GetData").on("click",function(){
 
 
-		var telephone = $("#TelephoneID").val();
+		var telephone = $("#SecrectKEY").val();
 
 		if (telephone == "") {
 
-			alert("กรุณากรอกเบอร์ให้ถูกต้อง");
+			alert("กรุณากรอกรหัสความปลอดภัยให้ถูกต้อง");
 			return false;
 
 		}
 		if (telephone == "0") {
 
-			alert("กรุณากรอกเบอร์ให้ถูกต้อง");
+			alert("กรุณากรอกรหัสความปลอดภัยให้ถูกต้อง");
 			return false;
 
 		}
 		if (telephone.trim() == "") {
 
-			alert("กรุณากรอกเบอร์ให้ถูกต้อง");
+			alert("กรุณากรอกรหัสความปลอดภัยให้ถูกต้อง");
 			return false;
 
 		}
@@ -41,38 +37,23 @@ $(function(){
 		setTimeout(function(){
 
 
-			$.post("https://pro.sakorncable.com/index.php/mobile_app/login",{Telephone : telephone}
+			$.post("https://pack1.sakorncable.com/index.php/management/authen",{SecrectKEY : telephone}
 			,function(data,status){
 
-				var object =  JSON.parse(data);
 
-				console.log(object);
+				//var object =  JSON.parse(data);
 
+				console.log(data);
+
+				/*
 				if (object.StatusAuthen == "true") {
-
-
-				$.post("https://pro.sakorncable.com/index.php/Mobile_app/getDataCustomerCableRent",
-					{Telephone : telephone}
-					,function(dataa,status){
- 
-						var object2 = JSON.parse(dataa); 
-						//console.log(object2);
-						$("#CableNumber").text(object2.CableNumber+" จุด");
-						$("#NetNumber").text(object2.NetNumber+" จุด");
-
-					});
-
- 
-
-
-
-
-
+  
 					$("#NameAuthen").text(object.CustomerName);
 					$("#StatusAuthen").text("Authentication Success");
 					$("#TelephoneAuthen").val(object.Telephone);
 					$("#DataSecrectkeyModal").modal("hide");
 					$("#DataSecrectkeyModal").find("#GetData").show();
+
 
 				}else{
 					alert("เบอร์โทรศัพท์ผิดพลาด..");
@@ -81,6 +62,7 @@ $(function(){
 
 					return false;
 				}
+				*/
 
 
 

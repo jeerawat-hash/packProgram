@@ -26,6 +26,12 @@ class Management extends CI_Controller
 			$this->load->view("page/template_mobile/footer");
 			
 	}
+	public function authen()
+	{		
+ 	
+ 		print_r($_POST);
+			
+	}
 	public function createDataServicesCostFromXlsx()
 	{
 
