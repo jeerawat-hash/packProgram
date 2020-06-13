@@ -39,9 +39,9 @@ $(function(){
                 processData:false,
                 success: function(data){
 
-                    console.log(data);
-                /*
-                    if (data != 0) {
+                    //console.log(data);
+                
+                    if (data == 1) {
 
                     alert("ส่งใบเสร็จสำเร็จ....");
 
@@ -50,16 +50,15 @@ $(function(){
                     $("#DataSyncServicesCostModal").find("#SendData").show();
                     $("#DataSyncServicesCostModal").find("#PreloadSendData").hide();
 
-                    }else{
+                    }else
+                    if (data == 2){
 
-                        alert("ผิดพลาด....");
+                        alert("ผิดพลาดกรุณาลองใหม่ภายหลัง...");
                         $("#DataSyncServicesCostModal").find("#SendData").show();
                         $("#DataSyncServicesCostModal").find("#PreloadSendData").hide();
 
                     } 
-                    */
-
-                    
+                      
                 },
                 error : function(){
 

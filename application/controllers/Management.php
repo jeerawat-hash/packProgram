@@ -29,11 +29,9 @@ class Management extends CI_Controller
 	public function createDataServicesCostFromXlsx()
 	{
 
-
-
-
+ 
 		//print_r($_POST);
-		print_r($_FILES);
+		//print_r($_FILES);
 
 		if ($_FILES["ServicesCost"]["type"] == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
 
@@ -41,6 +39,39 @@ class Management extends CI_Controller
 			
 			move_uploaded_file($_FILES["ServicesCost"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_FILES["ServicesCost"]["name"]);
 
+
+
+			$result = $this->Mobile_model->createDataFromXlsx($_FILES["ServicesCost"]["name"]);
+
+			//print_r($result);
+
+			$this->Mobile_model->clearDataServicesCost();
+
+
+			$ROOM = ""; 
+			$CUST = ""; 
+			$HOMENO = ""; 
+			$NAME = ""; 
+			$BILLNO = ""; 
+
+			foreach ($result as $Value) {
+
+
+				if (trim($Value["ROOM"]) != "") {
+					$ROOM = $Value["ROOM"];
+					$CUST = $Value["CUST"]; 
+					$HOMENO = $Value["HOMENO"]; 
+					$NAME = $Value["NAME"]; 
+					$BILLNO = $Value["BILLNO"]; 
+				} 
+
+				//echo $ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
+
+	 
+				$this->Mobile_model->insertDataServicesCost($CUST,$Value["DATE"],$Value["CODE"],$Value["AMOUNT"]);
+	 
+
+			}
 
 			echo "1";
 
@@ -50,42 +81,6 @@ class Management extends CI_Controller
 			echo "2";
 
 		}
-
-
-		/*
-		$result = $this->Mobile_model->createDataFromXlsx("ServiceCost.xlsx");
-
-		//print_r($result);
-
-		$this->Mobile_model->clearDataServicesCost();
-
-
-		$ROOM = ""; 
-		$CUST = ""; 
-		$HOMENO = ""; 
-		$NAME = ""; 
-		$BILLNO = ""; 
-
-		foreach ($result as $Value) {
-
-
-			if (trim($Value["ROOM"]) != "") {
-				$ROOM = $Value["ROOM"];
-				$CUST = $Value["CUST"]; 
-				$HOMENO = $Value["HOMENO"]; 
-				$NAME = $Value["NAME"]; 
-				$BILLNO = $Value["BILLNO"]; 
-			} 
-
-			//echo $ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
-
- 
-			$this->Mobile_model->insertDataServicesCost($CUST,$Value["DATE"],$Value["CODE"],$Value["AMOUNT"]);
- 
-
-		}
-		*/
-
  
 
 	}
