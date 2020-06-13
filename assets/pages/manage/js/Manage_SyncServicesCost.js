@@ -3,7 +3,8 @@ $(function(){
     $("#SendSyncServicesCost").on("click",function(){
 
         $("#DataSyncServicesCostModal").modal("show");
-        
+        $("#DataSyncServicesCostModal").find("#PreloadSendData").hide();
+
     });
 
 
