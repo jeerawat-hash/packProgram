@@ -30,7 +30,7 @@ class Management extends CI_Controller
 	{
 
 
-		$result = $this->Mobile_model->createDataFromXlsx();
+		$result = $this->Mobile_model->createDataFromXlsx("ServiceCost.xlsx");
 
 		//print_r($result);
 
@@ -44,8 +44,27 @@ class Management extends CI_Controller
 			} 
 
 
+
+
+
+
+
+
+
+
 			echo $ROOM."|".$Value["CUST"]."|".$Value["HOMENO"]."|".$Value["NAME"]."|".$Value["BILLNO"]."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
+
+
+			
 		}
+
+
+
+
+
+
+
+
 
 
 

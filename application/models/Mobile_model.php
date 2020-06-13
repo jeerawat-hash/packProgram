@@ -3,13 +3,13 @@
 class Mobile_model extends CI_Model
 {	
 
-  public function createDataFromXlsx()
+  public function createDataFromXlsx($file)
   {
 
       $this->load->library("SimpleXLSX");
       $this->SimpleXLSX = new SimpleXLSX(); 
 
-      if ( $xlsx = $this->SimpleXLSX->parse('./upload/temp/ServiceCost.xlsx')) {
+      if ( $xlsx = $this->SimpleXLSX->parse('./upload/temp/'.$file)) {
  
         $header_values = $rows = [];
 
@@ -26,6 +26,17 @@ class Mobile_model extends CI_Model
       
 
       }
+
+
+
+
+
+
+
+
+
+
+      
  
 
   }
