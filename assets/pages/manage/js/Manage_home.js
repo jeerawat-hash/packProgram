@@ -45,24 +45,23 @@ $(function(){
 
 				console.log(data);
 
-				/*
-				if (object.StatusAuthen == "true") {
+				
+				if (data == 1) {
   
-					$("#NameAuthen").text(object.CustomerName);
+					$("#NameAuthen").text("System");
 					$("#StatusAuthen").text("Authentication Success");
-					$("#TelephoneAuthen").val(object.Telephone);
+					$("#TelephoneAuthen").val("NULL");
 					$("#DataSecrectkeyModal").modal("hide");
 					$("#DataSecrectkeyModal").find("#GetData").show();
 
-
 				}else{
-					alert("เบอร์โทรศัพท์ผิดพลาด..");
+					alert("รหัสผิดพลาด..");
 					$("#DataSecrectkeyModal").find("#GetData").show();
 					$("#DataSecrectkeyModal").find("#PreloadGetData").hide();
 
 					return false;
 				}
-				*/
+				
 
 
 

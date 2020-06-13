@@ -5,6 +5,23 @@ class Mobile_model extends CI_Model
 
 
 
+
+
+  public function Authentication($Secrect)
+  {
+     $this->mssql = $this->load->database("mssql",true);
+     
+     $checkKey = $this->mssql->query(" SELECT * FROM [Sakorn_Manage].[dbo].[Staff] where authen = '".$Secrect."'  ")->num_rows();
+
+     if ($checkKey != 0) {
+        return 1;
+     }else{
+        return 0;
+     }
+
+
+  }
+
   public function SyncDataCustomerName($CUST,$TitleName,$CustomerName)
   {
 

@@ -28,8 +28,8 @@ class Management extends CI_Controller
 	}
 	public function authen()
 	{		
- 	
- 		print_r($_POST);
+ 	 
+ 		echo $this->Mobile_model->Authentication($_POST["SecrectKEY"]);
 			
 	}
 	public function createDataServicesCostFromXlsx()
