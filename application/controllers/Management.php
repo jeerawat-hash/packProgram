@@ -87,6 +87,30 @@ class Management extends CI_Controller
 	public function createDataReceiveFromXlsx()
 	{
 
+
+		print_r($_FILES["ReceiveCost"]);
+
+
+		if ($_FILES["ReceiveCost"]["type"] == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
+
+			shell_exec("rm /home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_FILES["ReceiveCost"]["name"]);
+			
+			move_uploaded_file($_FILES["ReceiveCost"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_FILES["ReceiveCost"]["name"]);
+
+ 
+
+			echo "1";
+
+
+		}else{
+
+			echo "2";
+
+		}
+
+
+
+		/*
 		$result = $this->Mobile_model->createDataFromXlsx("ReceiveCost.xlsx");
 
 		$this->Mobile_model->clearDataReceiveCost();
@@ -98,6 +122,7 @@ class Management extends CI_Controller
 			//print_r($Value);
 
 		}
+		*/
 
  
 

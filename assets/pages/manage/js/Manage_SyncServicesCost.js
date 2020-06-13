@@ -43,7 +43,7 @@ $(function(){
                 
                     if (data == 1) {
 
-                    alert("ส่งใบเสร็จสำเร็จ....");
+                    alert("บันทึกข้อมูลสำเร็จ....");
 
                     $("#DataSyncServicesCostModal").modal("hide");
 
