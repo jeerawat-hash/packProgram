@@ -61,17 +61,69 @@ class Management extends CI_Controller
 
 		}
 
-
-
-
-
-
-
-
-
-
+ 
 
 	}
+	public function createDataReceiveFromXlsx()
+	{
+
+		$result = $this->Mobile_model->createDataFromXlsx("ReceiveCost.xlsx");
+
+		foreach ($result as $Value) {
+
+
+			print_r($Value);
+
+
+
+		}
+
+ 
+
+	}
+	public function createDataCustomerNameFromXlsx()
+	{
+
+		$result = $this->Mobile_model->createDataFromXlsx("CustomerName.xlsx");
+
+		foreach ($result as $Value) {
+
+
+			print_r($Value);
+
+
+
+		}
+
+ 
+
+	}
+	public function createDataCarInfomationFromXlsx()
+	{
+
+		$result = $this->Mobile_model->createDataFromXlsx("CarInfomation.xlsx");
+
+		foreach ($result as $Value) {
+
+
+			print_r($Value);
+
+
+
+		}
+
+ 
+
+	}
+
+
+
+
+
+
+
+
+
 
 
 
