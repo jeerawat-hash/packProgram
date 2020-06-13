@@ -108,15 +108,14 @@ class Management extends CI_Controller
 		$result = $this->Mobile_model->createDataFromXlsx("CarInfomation.xlsx");
 
 
-		//$this->Mobile_model->clearDataCarInfo();
+		$this->Mobile_model->clearDataCarInfo();
 
 
 		foreach ($result as $Value) {
 
+			//print_r($Value);
 
-			print_r($Value);
-
-			//$this->Mobile_model->insertDataCarInfo($CUST,$CARCODE,$COUNTRY,$CARTYPE,$CARBRAND,$CARCOLOR,$CONTACT);
+			$this->Mobile_model->insertDataCarInfo($Value["CA_CUST"],$Value["CA_CODE"],$Value["CA_COUNTRY"],$Value["CA_TYPE"],$Value["CA_BRAND"],$Value["CA_COLOR"],$Value["CA_REMARK"]);
 
 
 
