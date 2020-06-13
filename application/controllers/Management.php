@@ -71,12 +71,14 @@ class Management extends CI_Controller
 
 		$result = $this->Mobile_model->createDataFromXlsx("ReceiveCost.xlsx");
 
+		$this->Mobile_model->clearDataReceiveCost();
+
+
 		foreach ($result as $Value) {
 
+			$this->Mobile_model->insertDataReceiveCost($Value["CUSTOMER"],$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"]);
 
-			print_r($Value);
-
-
+			//print_r($Value);
 
 		}
 
