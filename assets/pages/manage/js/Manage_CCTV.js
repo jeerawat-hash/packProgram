@@ -2,6 +2,8 @@ $(function(){
 
     $("#CCTV1").on("click",function(){
 
+        $("##CCTVplayer").html("");
+
         $("#CCTVModal").modal("show");
         ////////////
 
