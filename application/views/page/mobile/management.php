@@ -64,14 +64,22 @@
 
 
                         <div class="row clearfix">
-                               
-                                <div class="col-md-12">
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          
+                                        <label>เลือกไฟล์ ชื่อ < > </label>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
                                     <div class="form-group">
                                           
 
                                       <div id="fileupload" style="position:relative;">
                                         <a class='btn btn-primary' href='javascript:;'>
-                                        เลือกภาพ..
+                                        เลือกไฟล์..
                                         <input type="file" id="ServicesCostfile" name="ServicesCostfile" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
                                         </a><span class='label label-info' id="upload-file-info"></span>
                                     </div>
@@ -90,7 +98,7 @@
                         </div>
                         <div class="modal-footer">
                             
-                            <button type="button" id="SendData" class="btn btn-lg btn-success waves-effect">ส่งภาพ</button>
+                            <button type="button" id="SendData" class="btn btn-lg btn-success waves-effect">ส่งข้อมูล</button>
                             <div class="preloader" id="PreloadSendData">
                                     <div class="spinner-layer pl-red">
                                         <div class="circle-clipper left">
