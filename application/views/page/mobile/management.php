@@ -10,7 +10,6 @@
 </style>
 <!----- Overflow Modal ------->
    
-  <div id="player"></div>
  
 
 
@@ -84,10 +83,90 @@
  
 
         </div>
+
+        <div class="block-header">
+                <h2>กล้องวงจรปิด</h2>
+            </div>
+
+
+
+            
+            <div class="row clearfix">
+              <!-- Menu -->    
+ 
+                <div id="CCTV1" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-red">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้อง 1</div>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div id="CCTV2" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้อง 2</div>
+                        </div>
+                    </div>
+
+                </div>  
+ 
+            <!-- Menu -->
+ 
+
+ 
+
+        </div>
     </section>
 
  
  
+        <!-- CCTVModal -->
+            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="CCTVModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="largeModalLabel">กล้องวงจรปิด</h4>
+                        </div>
+                        <div class="modal-body">
+
+
+                        <div class="row clearfix">
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                           
+                                        <div id="player"></div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                           
+                                        <label>ทดสอบระบบ</label>
+ 
+                                    </div>
+                                </div>
+                        </div> 
+
+ 
+                        </div>
+                        <div class="modal-footer">
+                             
+                            <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
         <!-- DataSyncServicesCostModal -->
