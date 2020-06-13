@@ -16,8 +16,8 @@ $(function(){
     var player = new Clappr.Player({
         source: "https://gcorigin.wisdomcloud.net/live/master/playlist.m3u8_1000.m3u8",
         preload: "none",
-        width: '640px',
-        height: '360px',
+        width: '20%',
+        height: '20%',
         parentId: "#CCTVplayer"
     });
 
