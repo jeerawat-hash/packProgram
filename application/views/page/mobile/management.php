@@ -140,17 +140,17 @@
 
                         <div class="row clearfix">
                                 
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                    
+                                <div class="col-md-6"> 
+                                    <div class="container-fluid">
+
                                     <div class="embed-responsive embed-responsive-4by3">
 
                                         <div id="CCTVplayer"></div>
 
                                     </div>
-                                        
                                     </div>
-                                </div>
+                                            
+                                </div> 
 
                                 <div class="col-md-6">
                                     <div class="form-group">
