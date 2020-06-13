@@ -143,7 +143,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                     
-                                    <div class="embed-responsive embed-responsive-2by3">
+                                    <div class="embed-responsive embed-responsive-2by2">
 
                                         <div id="CCTVplayer"></div>
 
