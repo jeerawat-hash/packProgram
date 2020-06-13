@@ -4,6 +4,8 @@ $(function(){
 
         $("#DataSyncServicesCostModal").modal("show");
         $("#DataSyncServicesCostModal").find("#PreloadSendData").hide();
+        $("#DataSyncServicesCostModal").find("#SendData").show();
+
 
     });
 
