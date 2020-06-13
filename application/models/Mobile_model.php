@@ -5,6 +5,26 @@ class Mobile_model extends CI_Model
 
 
 
+  public function SyncDataCarInfo($CUST,$TitleName,$CustomerName)
+  {
+
+     $this->mssql = $this->load->database("mssql",true);
+
+     $checkCustomer = $this->mssql->query(" SELECT CustomerID,TitleName,CustomerName FROM [Theparak3].[dbo].[Customer] where CustomerID = ''  ")->num_rows();
+
+     if ($checkCustomer != 0) {
+       
+
+        $this->mssql->query(" update [Theparak3].[dbo].[Customer] set TitleName = '".$TitleName."',CustomerName = '".$CustomerName."' where CustomerID = '".$CUST."'  ");
+
+
+     }
+
+
+
+  }
+
+
   public function insertDataCarInfo($CUST,$CARCODE,$COUNTRY,$CARTYPE,$CARBRAND,$CARCOLOR,$CONTACT)
   {
 

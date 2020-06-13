@@ -53,9 +53,8 @@ class Management extends CI_Controller
 				$NAME = $Value["NAME"]; 
 				$BILLNO = $Value["BILLNO"]; 
 			} 
- 
 
-			echo $ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
+			//echo $ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
 
  
 			$this->Mobile_model->insertDataServicesCost($CUST,$Value["DATE"],$Value["CODE"],$Value["AMOUNT"]);
@@ -92,9 +91,9 @@ class Management extends CI_Controller
 
 		foreach ($result as $Value) {
 
+			//print_r($Value);
 
-			print_r($Value);
-
+			$this->Mobile_model->SyncDataCarInfo($Value["PE_CODE"],$Value["PE_TITLE"],$Value["PE_NAME"]);
 
 
 		}
