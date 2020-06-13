@@ -217,6 +217,135 @@
                 </div>
             </div>
 
+
+
+        <!-- DataSyncCustomerNameModal -->
+            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="DataSyncCustomerNameModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="largeModalLabel">อัพเดทรายชื่อลูกบ้่าน</h4>
+                        </div>
+                        <div class="modal-body">
+
+
+                        <div class="row clearfix">
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          
+                                        <label>เลือกไฟล์ ชื่อ < > </label>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          
+
+                                      <div id="fileupload" style="position:relative;">
+                                        <a class='btn btn-primary' href='javascript:;'>
+                                        เลือกไฟล์..
+                                        <input type="file" id="CustomerNamefile" name="CustomerNamefile" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info3").html($(this).val());'>
+                                        </a><span class='label label-info' id="upload-file-info3"></span>
+                                    </div>
+
+
+                                        
+                                    </div>
+                                </div>
+                        </div> 
+
+
+
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <button type="button" id="SendData" class="btn btn-lg btn-success waves-effect">ส่งข้อมูล</button>
+                            <div class="preloader" id="PreloadSendData">
+                                    <div class="spinner-layer pl-red">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                            </div> 
+                            <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- DataSyncCarInfoModal -->
+            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="DataSyncCarInfoModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="largeModalLabel">อัพเดทข้อมูลทะเบียนรถ</h4>
+                        </div>
+                        <div class="modal-body">
+
+
+                        <div class="row clearfix">
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          
+                                        <label>เลือกไฟล์ ชื่อ < > </label>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          
+
+                                      <div id="fileupload" style="position:relative;">
+                                        <a class='btn btn-primary' href='javascript:;'>
+                                        เลือกไฟล์..
+                                        <input type="file" id="CarInfofile" name="CarInfofile" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info4").html($(this).val());'>
+                                        </a><span class='label label-info' id="upload-file-info4"></span>
+                                    </div>
+
+
+                                        
+                                    </div>
+                                </div>
+                        </div> 
+
+
+
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <button type="button" id="SendData" class="btn btn-lg btn-success waves-effect">ส่งข้อมูล</button>
+                            <div class="preloader" id="PreloadSendData">
+                                    <div class="spinner-layer pl-red">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                            </div> 
+                            <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
  
 
 
@@ -263,6 +392,8 @@
         <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_home.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncServicesCost.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncReceiveCost.js"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncCustomerName.js"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncCarInfo.js"></script>
        
         
  
