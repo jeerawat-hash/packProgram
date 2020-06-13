@@ -5,6 +5,12 @@
 .modal {
   overflow-y:auto;
 }
+ 
+.player {
+        width: 640px;
+        height: 360px;
+        overflow: hidden;
+} 
 
   
 </style>
@@ -140,17 +146,17 @@
 
                         <div class="row clearfix">
                                 
-                                <div class="col-md-6"> 
-                                    <div class="container-fluid">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                    
+                                    <div class="embed-responsive embed-responsive-16by9">
 
-                                    <div class="embed-responsive embed-responsive-4by3">
-
-                                        <div id="CCTVplayer"></div>
+                                        <div class="player" id="CCTVplayer"></div>
 
                                     </div>
+                                        
                                     </div>
-                                            
-                                </div> 
+                                </div>
 
                                 <div class="col-md-6">
                                     <div class="form-group">
