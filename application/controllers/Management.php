@@ -147,6 +147,11 @@ class Management extends CI_Controller
 	public function createDataCarInfomationFromXlsx()
 	{
 
+
+		print_r($_FILES["CarInfofile"]);
+
+
+		/*
 		$result = $this->Mobile_model->createDataFromXlsx("CarInfomation.xlsx");
 
 
@@ -162,6 +167,7 @@ class Management extends CI_Controller
 
 
 		}
+		*/
 
  
 

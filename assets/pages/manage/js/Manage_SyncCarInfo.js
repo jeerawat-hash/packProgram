@@ -5,7 +5,7 @@ $(function(){
         $("#DataSyncCarInfoModal").modal("show");
         $("#DataSyncCarInfoModal").find("#PreloadSendData").hide();
         $("#DataSyncCarInfoModal").find("#SendData").show();
-        
+
 
     });
 
@@ -18,7 +18,7 @@ $(function(){
             ////// ไฟล์
             var data = new FormData();      
             ////// เพิ่มข้อมูลเข้า          
-            //data.append('SlipImage', Slip_file); 
+            data.append('CarInfofile', Slip_file); 
             //data.append('Telephone', Telephone );
             ////// เพิ่มข้อมูลเข้า array           
  
@@ -29,9 +29,8 @@ $(function(){
 
 		setTimeout(function(){ 
 
-/*
-            $.ajax({
-                url: "https://pro.sakorncable.com/index.php/liff_sendslip/UploadSlip",
+        $.ajax({
+                url: "https://pack1.sakorncable.com/index.php/management/createDataCarInfomationFromXlsx",
                 type: "POST",
                 data: data,
                 contentType: false,
@@ -40,39 +39,41 @@ $(function(){
                 success: function(data){
 
                     console.log(data);
+                /*
+                    if (data == 1) {
 
-                    if (data != 0) {
+                    alert("บันทึกข้อมูลสำเร็จ....");
 
-                    alert("ส่งใบเสร็จสำเร็จ....");
+                    $("#DataSyncReceiveCostModal").modal("hide");
 
-                    $("#DataSyncCarInfoModal").modal("hide");
+                    $("#DataSyncReceiveCostModal").find("#SendData").show();
+                    $("#DataSyncReceiveCostModal").find("#PreloadSendData").hide();
 
-                    $("#DataSyncCarInfoModal").find("#SendData").show();
-                    $("#DataSyncCarInfoModal").find("#PreloadSendData").hide();
+                    }else
+                    if (data == 2){
 
-                    }else{
-
-                        alert("ผิดพลาด....");
-                        $("#DataSyncCarInfoModal").find("#SendData").show();
-                        $("#DataSyncCarInfoModal").find("#PreloadSendData").hide();
+                        alert("ผิดพลาดกรุณาลองใหม่ภายหลัง...");
+                        $("#DataSyncReceiveCostModal").find("#SendData").show();
+                        $("#DataSyncReceiveCostModal").find("#PreloadSendData").hide();
 
                     } 
- 
-                    
+                    */
+                
+                      
                 },
                 error : function(){
 
                         alert("404 Not Found");
-                        $("#DataSyncCarInfoModal").find("#SendData").show();
-                        $("#DataSyncCarInfoModal").find("#PreloadSendData").hide();
+                        $("#DataSyncReceiveCostModal").find("#SendData").show();
+                        $("#DataSyncReceiveCostModal").find("#PreloadSendData").hide();
 
                 }
                 });
-*/
-  
+
+
     
 
-		}, 2000);
+        }, 2000);
 
 
  
