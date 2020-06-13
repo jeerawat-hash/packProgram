@@ -130,6 +130,11 @@ class Management extends CI_Controller
 	public function createDataCustomerNameFromXlsx()
 	{
 
+
+		print_r($_FILES["CustomerNamefile"]);
+
+
+		/*
 		$result = $this->Mobile_model->createDataFromXlsx("CustomerName.xlsx");
 
 		foreach ($result as $Value) {
@@ -140,7 +145,7 @@ class Management extends CI_Controller
 
 
 		}
-
+*/
  
 
 	}
