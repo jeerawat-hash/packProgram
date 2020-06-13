@@ -7,8 +7,8 @@
 }
  
 .player {
-        width: 640px;
-        height: 360px;
+        width: 1280px;
+        height: 720px;
         overflow: hidden;
 } 
 
