@@ -3,7 +3,7 @@ $(function(){
     $(".cctv-close").on("click",function(){
 
         $("#CCTVplayer").html("");
-         
+
     });
 
     $("#CCTV1").on("click",function(){
@@ -16,7 +16,7 @@ $(function(){
     var player = new Clappr.Player({
         source: "https://gcorigin.wisdomcloud.net/live/master/playlist.m3u8_1000.m3u8",
         preload: "none",
-        width: "100%",
+        width: "50%",
         parentId: "#CCTVplayer"
     });
 
