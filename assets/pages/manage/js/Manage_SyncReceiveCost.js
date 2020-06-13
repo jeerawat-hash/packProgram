@@ -5,6 +5,7 @@ $(function(){
         $("#DataSyncReceiveCostModal").modal("show");
         $("#DataSyncReceiveCostModal").find("#PreloadSendData").hide();
         $("#DataSyncReceiveCostModal").find("#SendData").show();
+        $('#ReceiveCostfile').val('');
         
 
     });

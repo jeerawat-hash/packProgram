@@ -5,7 +5,8 @@ $(function(){
         $("#DataSyncCarInfoModal").modal("show");
         $("#DataSyncCarInfoModal").find("#PreloadSendData").hide();
         $("#DataSyncCarInfoModal").find("#SendData").show();
-
+        $('#CarInfofile').val('');
+        
 
     });
 

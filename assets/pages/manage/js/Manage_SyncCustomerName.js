@@ -5,6 +5,7 @@ $(function(){
         $("#DataSyncCustomerNameModal").modal("show");
         $("#DataSyncCustomerNameModal").find("#PreloadSendData").hide();
         $("#DataSyncCustomerNameModal").find("#SendData").show();
+        $('#CustomerNamefile').val('');
         
 
     });
