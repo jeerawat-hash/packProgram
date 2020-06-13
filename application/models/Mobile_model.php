@@ -5,7 +5,7 @@ class Mobile_model extends CI_Model
 
 
 
-  public function SyncDataCarInfo($CUST,$TitleName,$CustomerName)
+  public function SyncDataCustomerName($CUST,$TitleName,$CustomerName)
   {
 
      $this->mssql = $this->load->database("mssql",true);

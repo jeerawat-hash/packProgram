@@ -93,7 +93,7 @@ class Management extends CI_Controller
 
 			//print_r($Value);
 
-			$this->Mobile_model->SyncDataCarInfo($Value["PE_CODE"],$Value["PE_TITLE"],$Value["PE_NAME"]);
+			$this->Mobile_model->SyncDataCustomerName($Value["PE_CODE"],$Value["PE_TITLE"],$Value["PE_NAME"]);
 
 
 		}
