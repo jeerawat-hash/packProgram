@@ -11,7 +11,6 @@ $(function(){
         source: "https://gcorigin.wisdomcloud.net/live/master/playlist.m3u8_1000.m3u8",
         preload: "none",
         width: "100%",
-        hideMediaControl: false,
         parentId: "#CCTVplayer"
     });
 
