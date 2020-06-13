@@ -238,6 +238,7 @@
      
         <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_home.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncServicesCost.js"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncReceiveCost.js"></script>
        
         
  
