@@ -34,6 +34,9 @@ class Management extends CI_Controller
 
 		//print_r($result);
 
+		$this->Mobile_model->clearDataServicesCost();
+
+
 		$ROOM = ""; 
 		$CUST = ""; 
 		$HOMENO = ""; 
@@ -56,9 +59,7 @@ class Management extends CI_Controller
 
  
 			$this->Mobile_model->insertDataServicesCost($CUST,$Value["DATE"],$Value["CODE"],$Value["AMOUNT"]);
-
-
-
+ 
 
 		}
 

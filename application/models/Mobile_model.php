@@ -19,17 +19,50 @@ class Mobile_model extends CI_Model
            ,'".$DATE."'
            ,'".$CODE."'
            ,'".$AMOUNT."') ");
- 
+
 
   }
 
+  public function clearDataServicesCost()
+  {
+
+     $this->mssql = $this->load->database("mssql",true);
+
+     $this->mssql->query(" delete from [Sakorn_Manage].[dbo].[CustomerAmount_LOG] ");
+ 
+  }
+
+    public function insertDataReceiveCost($CUST,$RECEIPT,$CODE,$AMOUNT)
+  {
+
+     $this->mssql = $this->load->database("mssql",true);
+
+     $this->mssql->query(" INSERT INTO [Sakorn_Manage].[dbo].[CustomerPay_LOG]
+           ([CUST]
+           ,[RECEIPT]
+           ,[PAYTYPE_ID]
+           ,[DATE]
+           ,[CODE]
+           ,[AMOUNT])
+     VALUES
+           ('".$CUST."'
+           ,'".$RECEIPT."'
+           ,'2'
+           ,'".date("Y-m-d")."'
+           ,'".$CODE."'
+           ,'".$AMOUNT."') ");
 
 
+  }
 
+  public function clearDataReceiveCost()
+  {
 
+     $this->mssql = $this->load->database("mssql",true);
 
-
-
+     $this->mssql->query(" delete from [Sakorn_Manage].[dbo].[CustomerPay_LOG] ");
+ 
+  }
 
 
   public function createDataFromXlsx($file)
