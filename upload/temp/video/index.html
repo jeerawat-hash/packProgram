@@ -1,27 +1,10 @@
-<html>
-    <head>
-      <script type="text/javascript" src="node_modules/clappr/dist/clappr.js"></script>
-      <script type="text/javascript" src="dist/rtmp.js"></script>
-    </head>
+<head>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+</head>
 
-    <body>
-      <div id="player"></div>
-      <script>
-        var player = new Clappr.Player({
-            source: "http://gcorigin.wisdomcloud.net/live/master/playlist.m3u8_1000.m3u8",
-            parentId: "#player",
-            autoPlay: true,
-            rtmpConfig: {
-                swfPath: 'dist/assets/RTMP.swf',
-                scaling:'stretch',
-                playbackType: 'vod',
-                bufferTime: 1,
-                startLevel: 0
-            },
-            plugins: {
-                playback: [RTMP]
-            },
-        });
-      </script>
-    </body>
-</html>
+<body>
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({source: "http://gcorigin.wisdomcloud.net/live/master/playlist.m3u8_1000.m3u8", parentId: "#player"});
+  </script>
+</body>
