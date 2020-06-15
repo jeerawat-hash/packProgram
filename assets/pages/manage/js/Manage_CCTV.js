@@ -14,7 +14,7 @@ $(function(){
         ////////////
      
     var player = new Clappr.Player({
-        source: "rtsp://admin:@192.168.1.25",
+        source: "https://app.sakorncable.com/hls/cctv25.m3u8",
         preload: "none",
         width: '50%',
         height: '50%',
