@@ -14,7 +14,7 @@ $(function(){
         ////////////
      
     var player = new Clappr.Player({
-        source: "https://gcorigin.wisdomcloud.net/live/master/playlist.m3u8_1000.m3u8",
+        source: "rtsp://admin:@192.168.1.25",
         preload: "none",
         width: '50%',
         height: '50%',
