@@ -11,6 +11,10 @@ $(function(){
         $("#CCTVplayer").html("");
 
         $("#CCTVModal").modal("show");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งหน้าโครงการ");
+        $("#CCTVModal").find("#midModalLabel").text("รายละเอียดกล้องวงจรปิดตำแหน่งหน้าโครงการ");
+
+
         ////////////
      
     var player = new Clappr.Player({
@@ -31,6 +35,9 @@ $(function(){
         $("#CCTVplayer").html("");
 
         $("#CCTVModal").modal("show");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งมุมกล้องหลังหน้าโครงการ");
+        $("#CCTVModal").find("#midModalLabel").text("รายละเอียดกล้องวงจรปิดตำแหน่งมุมกล้องหลังหน้าโครงการ");
+
         ////////////
      
     var player = new Clappr.Player({

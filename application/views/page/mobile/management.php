@@ -161,7 +161,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                            
-                                        <label>ทดสอบระบบ</label>
+                                        <label id="midModalLabel">ทดสอบระบบ</label>
  
                                     </div>
                                 </div>
