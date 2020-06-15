@@ -14,7 +14,7 @@ $(function(){
         ////////////
      
     var player = new Clappr.Player({
-        source: "https://app.sakorncable.com/hls/cctv19.m3u8",
+        source: "https://app.sakorncable.com/hls/cctv23.m3u8",
         preload: "none",
         width: '50%',
         height: '50%',
@@ -34,7 +34,7 @@ $(function(){
         ////////////
      
     var player = new Clappr.Player({
-        source: "https://app.sakorncable.com/hls/cctv18.m3u8",
+        source: "https://app.sakorncable.com/hls/cctv24.m3u8",
         preload: "none",
         width: '50%',
         height: '50%',
