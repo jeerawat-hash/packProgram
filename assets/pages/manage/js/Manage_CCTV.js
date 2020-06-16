@@ -144,30 +144,7 @@ $(function(){
 
         ////////////
 
-    });
-
-    $("#CCTV6").on("click",function(){
-
-        $("#CCTVplayer").html("");
-
-        $("#CCTVModal").modal("show");
-        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งอาคาร66");
-        $("#CCTVModal").find("#midModalLabel").text("กล้องวงจรปิดตำแหน่งอาคาร66");
-
-        ////////////
-     
-    var player = new Clappr.Player({
-        source: "https://app.sakorncable.com/hls/cctv26.m3u8",
-        preload: "none",
-        width: '50%',
-        height: '50%',
-        parentId: "#CCTVplayer"
-    });
-
-
-        ////////////
-
-    });
+    }); 
 
 
     $("#CCTV7").on("click",function(){
