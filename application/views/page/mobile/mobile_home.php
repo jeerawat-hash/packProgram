@@ -384,7 +384,7 @@
               <div class="modal-content">              
                 <div class="modal-body">
 
-                    <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
+                    <button style="float: right;" type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
 
                     <table id="table_info_blanace" class="table table-striped table-bordered table-hover">
                                               <thead>
