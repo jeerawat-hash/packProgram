@@ -26,12 +26,18 @@ $(function(){
         		var object = JSON.parse(data);
         		console.log(object);
 
+        		$(".CustomerNameLabel").text(object[0].CustomerName);
 
 
+        		var html = "<tr><td>"+object[0].CustomerID+"</td><td>"+object[0].AmountTotal+" บาท</td></tr>"+
+        						"<tr>"+
+        						"<td colspan='3' > <button class='btn btn-success btn-lg btn-block waves-effect InfoBlanaceBar' data-id='"+object[0].CustomerID+"' >แสดงรายละเอียด</button> </td>"+
+                                "</tr>";
 
 
-
-
+                $("#table_blanace_detail").html(html);
+ 
+ 
 
         	},
         	error : function(){

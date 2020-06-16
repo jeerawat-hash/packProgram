@@ -248,7 +248,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           
-                                        <label>ชื่อ</label>
+                                        <label class="CustomerNameLabel">ชื่อ</label>
                                         
                                     </div>
                                 </div>
@@ -271,13 +271,7 @@
                                               <tbody id="table_blanace_detail" class="scrollit">   
                                                     
                              
-                                                <tr> 
-                                                    <td>000-001</td>
-                                                    <td>10000 บาท</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan='3' > <button class='btn btn-success btn-lg btn-block waves-effect InfoBlanaceBar' data-id='testDataID' >แสดงรายละเอียด</button> </td>
-                                                </tr>
+                                                
                                                     
 
                                               </tbody>
