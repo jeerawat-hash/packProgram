@@ -8,6 +8,19 @@ $(function(){
 	});
 
 
+	$("#table_blanace").on("click",".InfoBlanaceBar",function(){
+
+		var data = $(this).attr("data-id");
+
+		alert(data);
+
+
+	});
+
+
+	
+
+
 
 
 
