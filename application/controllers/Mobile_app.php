@@ -54,8 +54,29 @@ class Mobile_app extends CI_Controller
 	public function SendDataSlipToNotify()
 	{
 
-		print_r($_POST);
-		print_r($_FILES);
+		//print_r($_POST);
+		//print_r($_FILES);
+
+		move_uploaded_file($_FILES["Slipfile"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_POST["CustomerID"].".jpg");
+
+
+		$Member = $this->Mobile_model->getDataBlanace($_POST["CustomerID"]);
+			
+
+        $UserMessage = $Member[0]->CustomerName." ทำการส่งภาพ";
+
+        $hash = shell_exec("curl -X POST -H 'Authorization: Bearer TXeMDn7GHBb19THq8l2YoMRLmCplqJaxc94s8UaX1HH' -F 'message=[ ".$UserMessage." ".$_POST["CustomerID"]." ]' -F 'imageFile=@/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_POST["CustomerID"].".jpg' https://notify-api.line.me/api/notify ");
+
+
+        if ($hash) {
+        		
+        	//shell_exec(" rm  /home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_POST["CustomerID"].".jpg");
+
+        }
+
+
+	  	
+
 
 	}
 
