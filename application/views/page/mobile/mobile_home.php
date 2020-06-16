@@ -286,9 +286,10 @@
                                     <div class="form-group">
                                           
                                         <label>ธนาคารไทยพาณิชย์ (SCB)</label> <br>
-                                        <label>เลขที่ : 399-404-888-3</label> <br>
+                                        <label><font color="red">เลขที่ </font>: 399-404-888-3</label> <br>
                                         <label>ชื่อบัญชี : นิติบุคคลอาคารชุดเคหะชุมชนและบริการชุมชนเทพารักษ์ 3/1</label>
- 
+                                        <br>
+                                        <button id="CopyBankCode" class="btn btn-lg btn-info waves-effect" >กดเพื่อคัดลอกหมายเลขบัญชี</button>
                                     </div>
                                 </div>
 
@@ -479,8 +480,25 @@
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerSendSlip.js"></script>
        
 <script type="text/javascript">
-        
-    
+
+
+
+    $("#CopyBankCode").on("click",function(){
+
+
+        copyFunction();
+
+
+    });
+
+         
+function copyFunction() {
+  var copyText = '3994048883';
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  alert("คัดลอกหมายเลขบัญชีแล้ว...");
+} 
 
 </script>
  
