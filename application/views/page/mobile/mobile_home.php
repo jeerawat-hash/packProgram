@@ -268,7 +268,7 @@
                              
                                                 <tr> 
                                                     <td>000-001</td>
-                                                    <td>10000</td>
+                                                    <td>10000 บาท</td>
                                                 </tr>
                                                 <tr>
                                                     <td colspan='3' > <button class='btn btn-success btn-lg btn-block waves-effect viewBar' >แสดงรายละเอียด</button> </td>
@@ -300,6 +300,74 @@
                                         </div>
                                     </div>
                             </div>  -->
+                            <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        <!-- CustomerSendSlipModal -->
+            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="CustomerSendSlipModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="largeModalLabel">ส่งใบเสร็จยืนยันการชำระค่าส่วนกลาง</h4>
+                        </div>
+                        <div class="modal-body">
+
+
+                        <div class="row clearfix">
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          
+                                        <label>ชื่อ</label>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          
+
+                                      <div id="fileupload" style="position:relative;">
+                                        <a class='btn btn-primary' href='javascript:;'>
+                                        เลือกไฟล์..
+                                        <input type="file" id="Slipfile" name="Slipfile" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+                                        </a><span class='label label-info' id="upload-file-info"></span>
+                                    </div>
+
+
+                                        
+                                    </div>
+                                </div>
+                        </div> 
+
+
+
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <button type="button" id="SendData" class="btn btn-lg btn-success waves-effect">ส่งข้อมูล</button>
+                            <div class="preloader" id="PreloadSendData">
+                                    <div class="spinner-layer pl-red">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                            </div> 
                             <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
 
                         </div>
