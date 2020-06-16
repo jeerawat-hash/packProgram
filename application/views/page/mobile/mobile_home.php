@@ -383,12 +383,14 @@
 
 
 
-            
+
             <!-- InfoBalanceModal -->
             <div class="modal fade" id="InfoBalanceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">              
                 <div class="modal-body">
+
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">ปิด</span></button>
 
                     <table id="table_info_blanace" class="table table-striped table-bordered table-hover">
                                               <thead>
@@ -415,7 +417,7 @@
                     </table> 
 
 
-                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">ปิด</span></button>
+                  
                    
                 </div>
               </div>
