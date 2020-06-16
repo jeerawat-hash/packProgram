@@ -51,6 +51,13 @@ class Mobile_app extends CI_Controller
 		//print_r($_POST);
 		
 	}
+	public function SendDataSlipToNotify()
+	{
+
+		print_r($_POST);
+		print_r($_FILES);
+
+	}
 
 
 	

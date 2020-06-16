@@ -326,7 +326,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           
-                                        <label>ชื่อ</label>
+                                        <label class="CustomerNameLabel">ชื่อ</label>
                                         
                                     </div>
                                 </div>
