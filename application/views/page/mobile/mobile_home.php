@@ -384,7 +384,7 @@
               <div class="modal-content">              
                 <div class="modal-body">
 
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">ปิด</span></button>
+                    <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
 
                     <table id="table_info_blanace" class="table table-striped table-bordered table-hover">
                                               <thead>
