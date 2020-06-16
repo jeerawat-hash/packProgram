@@ -1,9 +1,9 @@
 $(function(){
  	
     
-	$("#CustomerCheckBlanace").on("click",function(){
+	$("#CustomerSendSlip").on("click",function(){
 
-		$("#CustomerSendSlip").modal("show");
+		$("#CustomerSendSlipModal").modal("show");
 
 	});
 
