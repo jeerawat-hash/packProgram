@@ -48,7 +48,7 @@
 
                 <div id="CustomerSendSlip" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-red">
+                        <div class="icon bg-light-green">
                             <i class="material-icons">email</i>
                         </div>
                         <div class="content">
@@ -228,12 +228,12 @@
 
 
 
-        <!-- DataSyncReceiveCostModal -->
-            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="DataSyncReceiveCostModal" tabindex="-1" role="dialog">
+        <!-- CustomerCheckBlanaceModal -->
+            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="CustomerCheckBlanaceModal" tabindex="-1" role="dialog">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="largeModalLabel">อัพเดทรายการยอดที่ชำระวันนี้</h4>
+                            <h4 class="modal-title" id="largeModalLabel">เช็คยอดค่าส่วนกลางบ้านเอื้ออาทร</h4>
                         </div>
                         <div class="modal-body">
 
@@ -250,17 +250,38 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                          
+                                           
 
-                                      <div id="fileupload" style="position:relative;">
-                                        <a class='btn btn-primary' href='javascript:;'>
-                                        เลือกไฟล์..
-                                        <input type="file" id="ReceiveCostfile" name="ReceiveCostfile" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info2").html($(this).val());'>
-                                        </a><span class='label label-info' id="upload-file-info2"></span>
-                                    </div>
+                                          <table id="table_blanace" class="table table-striped table-bordered table-hover">
+                                              <thead>
+                                                <tr>
+                                                   
+                                                    <th>หมายเลขห้อง</th>
+                                                    <th>ชื่อ</th>
+                                                    <th>ยอด</th>
+                                                
+                                                </tr>
+
+                                              </thead>
+
+                                              <tbody id="table_blanace_detail" class="scrollit">   
+                                                    
+                             
+                                                <tr> 
+                                                    <td>000-001</td>
+                                                    <td>Name</td>
+                                                    <td>10000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan='3' > <button class='btn btn-success btn-lg btn-block waves-effect viewBar' >แสดงรายละเอียด</button> </td>
+                                                </tr>
+                                                    
+
+                                              </tbody>
+                                            </table> 
 
 
-                                        
+ 
                                     </div>
                                 </div>
                         </div> 
@@ -273,7 +294,7 @@
                         </div>
                         <div class="modal-footer">
                             
-                            <button type="button" id="SendData" class="btn btn-lg btn-success waves-effect">ส่งข้อมูล</button>
+                           <!-- <button type="button" id="SendData" class="btn btn-lg btn-success waves-effect">ส่งข้อมูล</button>
                             <div class="preloader" id="PreloadSendData">
                                     <div class="spinner-layer pl-red">
                                         <div class="circle-clipper left">
@@ -283,7 +304,7 @@
                                             <div class="circle"></div>
                                         </div>
                                     </div>
-                            </div> 
+                            </div>  -->
                             <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
 
                         </div>
