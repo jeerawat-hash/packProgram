@@ -44,32 +44,31 @@ $(function(){
 				//console.log(data);
 				console.log(object);
 
-				/*
-				if (data == 1) {
+				
+				if (object.length == 1) {
   
-					$("#NameAuthen").text("System");
+					$("#NameAuthen").text(object[0].CustomerINFO);
 					$("#StatusAuthen").text("Authentication Success");
-					$("#CustomerIDAuthen").val("NULL");
+					$("#CustomerIDAuthen").val(object[0].CustomerID);
 					$("#DataAuthenModal").modal("hide");
 					$("#DataAuthenModal").find("#GetData").show();
 
+
 				}else{
-					alert("รหัสผิดพลาด..");
+					alert("ข้อมูลผิดพลาด..");
 					$("#DataAuthenModal").find("#GetData").show();
 					$("#DataAuthenModal").find("#PreloadGetData").hide();
 
 					return false;
 				}
-				*/
+				
 				
 
 
 
 			});
 
-
-
-
+ 
 
 
 
