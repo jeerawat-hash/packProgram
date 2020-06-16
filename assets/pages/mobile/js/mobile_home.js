@@ -8,9 +8,9 @@ $(function(){
 	$("#DataAuthenModal").find("#GetData").on("click",function(){
 
 
-		var telephone = $("#SecrectKEY").val();
+		var CustomerID = $("#CustomerID").val();
 
-		if (telephone == "") {
+		if (CustomerID == "") {
 
 			alert("กรุณากรอกหมายเลขห้องให้ถูกต้อง");
 			return false;
@@ -35,7 +35,7 @@ $(function(){
 		setTimeout(function(){
 
 /*
-			$.post("https://pack1.sakorncable.com/index.php/management/authen",{SecrectKEY : telephone}
+			$.post("https://pack1.sakorncable.com/index.php/management/authen",{CustomerID : CustomerID}
 			,function(data,status){
 
 
