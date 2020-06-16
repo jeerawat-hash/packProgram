@@ -4,7 +4,16 @@ class Mobile_model extends CI_Model
 {	
 
 
+  public function CustomerAuth($CustomerID)
+  {
 
+     $this->mssql = $this->load->database("mssql",true);
+
+     return $this->mssql->query("select CustomerID,TitleName+' '+CustomerName+' '+NoHome as CustomerINFO from Theparak3.dbo.Customer where CustomerID = '".$CustomerID."'")->result();
+
+
+
+  }
 
 
   public function Authentication($Secrect)
