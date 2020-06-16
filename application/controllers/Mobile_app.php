@@ -36,6 +36,15 @@ class Mobile_app extends CI_Controller
 
 
 	}
+	public function getDataBlanace()
+	{
+
+
+		print_r($_POST);
+
+
+
+	}
 
 	
 

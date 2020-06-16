@@ -5,6 +5,38 @@ $(function(){
 
 		$("#CustomerCheckBlanaceModal").modal("show");
 
+		var CustomerID = $("#CustomerIDAuthen").val();
+
+
+            
+        var data = new FormData();          
+        data.append('CustomerID', CustomerID); 
+
+        $.ajax({
+        	url:"https://pack1.sakorncable.com/index.php/mobile_app/getDataBlanace",
+        	type:"POST",
+        	data:data,
+        	contentType : false,
+        	cache : false,
+        	processData : false,
+        	success : function(data){
+
+        		console.log(data);
+
+        	},
+        	error : function(){
+
+
+        	}
+        });
+
+
+
+        
+
+
+
+
 	});
 
 
