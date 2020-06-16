@@ -60,7 +60,6 @@ class Mobile_app extends CI_Controller
 
 		if ($_FILES["Slipfile"]["type"] == "image/png") {
 			echo 1;
-			exit();
 		}
 
  
