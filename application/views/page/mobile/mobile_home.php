@@ -285,8 +285,8 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                           
-                                        <label>ธนาคารไทยพาณิชย์ (SCB)</label>
-                                        <label>เลขที่ : 399-404-888-3</label>
+                                        <label>ธนาคารไทยพาณิชย์ (SCB)</label> <br>
+                                        <label>เลขที่ : 399-404-888-3</label> <br>
                                         <label>ชื่อบัญชี : นิติบุคคลอาคารชุดเคหะชุมชนและบริการชุมชนเทพารักษ์ 3/1</label>
  
                                     </div>
