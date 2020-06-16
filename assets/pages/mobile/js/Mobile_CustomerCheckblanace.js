@@ -74,8 +74,21 @@ $(function(){
 			success : function(data){
 
 
-				console.log(data);
-			
+				//console.log(data);
+				var object = JSON.parse(data);
+				console.log(object);
+
+
+
+
+
+
+
+
+
+
+
+				
 
 			},
 			error : function(){
