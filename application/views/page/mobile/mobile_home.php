@@ -245,7 +245,7 @@
 
                         <div class="row clearfix">
                                 
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                           
                                         <label class="CustomerNameLabel">ชื่อ</label>
@@ -253,7 +253,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                            
 
@@ -281,6 +281,18 @@
  
                                     </div>
                                 </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                          
+                                        <label>ธนาคารไทยพาณิชย์ (SCB)</label>
+                                        <label>เลขที่ : 399-404-888-3</label>
+                                        <label>ชื่อบัญชี : นิติบุคคลอาคารชุดเคหะชุมชนและบริการชุมชนเทพารักษ์ 3/1</label>
+ 
+                                    </div>
+                                </div>
+
+
                         </div> 
 
  
