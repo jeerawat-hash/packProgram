@@ -1,7 +1,7 @@
 $(function(){
  	
     
-	$("#CustomerSendSlip").on("click",function(){
+	$("#CustomerCheckBlanace").on("click",function(){
 
 		$("#CustomerCheckBlanaceModal").modal("show");
 
