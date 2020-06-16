@@ -65,14 +65,14 @@ class Mobile_app extends CI_Controller
 
 	        $UserMessage = $Member[0]->CustomerName." ทำการส่งภาพ";
 
-	        $hash = shell_exec("curl -X POST -H 'Authorization: Bearer TXeMDn7GHBb19THq8l2YoMRLmCplqJaxc94s8UaX1HH' -F 'message=[ ".$UserMessage." รหัส ".$_POST["CustomerID"]." ]' -F 'imageFile=@/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_POST["CustomerID"].".jpg' https://notify-api.line.me/api/notify ");
+	        //$hash = shell_exec("curl -X POST -H 'Authorization: Bearer TXeMDn7GHBb19THq8l2YoMRLmCplqJaxc94s8UaX1HH' -F 'message=[ ".$UserMessage." รหัส ".$_POST["CustomerID"]." ]' -F 'imageFile=@/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_POST["CustomerID"].".jpg' https://notify-api.line.me/api/notify ");
 
-	        if ($hash) {
+	        //if ($hash) {
 	        		
-	        	shell_exec(" rm  /home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_POST["CustomerID"].".jpg");
+	        //	shell_exec(" rm  /home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_POST["CustomerID"].".jpg");
 
 	        	
-	        } 
+	        //} 
 
 	        echo "1";
 
