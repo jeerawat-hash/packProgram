@@ -30,7 +30,7 @@ class Mobile_app extends CI_Controller
 	{
 
 
-		print_r($_POST["CustomerID"]);
+		//print_r($_POST["CustomerID"]);
 		echo $this->Mobile_model->CustomerAuth($_POST["CustomerID"]);
 
 
