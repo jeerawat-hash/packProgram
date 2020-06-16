@@ -286,7 +286,15 @@
                                     <div class="form-group">
                                           
                                         <label>ธนาคารไทยพาณิชย์ (SCB)</label> <br>
-                                        <label><font color="red">เลขที่ </font>: <input type="text" readonly class="form-control" value="3994048883" name="BankCode" id="BankCode"></label> <br>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label><font color="red">เลขที่ </font>: </label>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input type="text" readonly class="form-control" value="3994048883" name="BankCode" id="BankCode">
+                                            </div>
+                                        </div>
+                                         <br>
                                         <label>ชื่อบัญชี : นิติบุคคลอาคารชุดเคหะชุมชนและบริการชุมชนเทพารักษ์ 3/1</label>
                                         <br>
                                         <button id="CopyBankCode" onclick="CopyFunction()" class="btn btn-lg btn-info waves-effect" >กดเพื่อคัดลอกหมายเลขบัญชี</button>
