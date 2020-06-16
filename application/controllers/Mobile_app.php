@@ -26,6 +26,15 @@ class Mobile_app extends CI_Controller
 			$this->load->view("page/template_mobile/footer");
 			
 	}
+	public function login()
+	{
+
+
+		print_r($_POST);
+
+
+	}
+
 	
 
 

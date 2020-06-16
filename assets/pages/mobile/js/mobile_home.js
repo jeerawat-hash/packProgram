@@ -34,8 +34,8 @@ $(function(){
 
 		setTimeout(function(){
 
-/*
-			$.post("https://pack1.sakorncable.com/index.php/management/authen",{CustomerID : Customer}
+
+			$.post("https://pack1.sakorncable.com/index.php/mobile_app/login",{CustomerID : Customer}
 			,function(data,status){
 
 
@@ -43,12 +43,12 @@ $(function(){
 
 				console.log(data);
 
-				
+				/*
 				if (data == 1) {
   
 					$("#NameAuthen").text("System");
 					$("#StatusAuthen").text("Authentication Success");
-					$("#TelephoneAuthen").val("NULL");
+					$("#CustomerIDAuthen").val("NULL");
 					$("#DataAuthenModal").modal("hide");
 					$("#DataAuthenModal").find("#GetData").show();
 
@@ -59,6 +59,7 @@ $(function(){
 
 					return false;
 				}
+				*/
 				
 
 
@@ -67,7 +68,7 @@ $(function(){
 
 
 
-*/
+
 
 
 
