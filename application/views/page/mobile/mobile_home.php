@@ -228,44 +228,6 @@
 
 
 
-            <!-- InfoBalanceModal -->
-            <div class="modal fade" id="InfoBalanceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">              
-                <div class="modal-body">
-
-                    <table id="table_info_blanace" class="table table-striped table-bordered table-hover">
-                                              <thead>
-                                                <tr>
-                                                   
-                                                    <th>รอบบิลวันที่</th>
-                                                    <th>รายการ</th>
-                                                    <th>ยอด</th>
-                                                
-                                                </tr>
-
-                                              </thead>
-
-                                              <tbody id="table_info_blanace_detail" class="scrollit">   
-                                                    
-                             
-                                                <tr> 
-                                                    <td>2020-01-01</td>
-                                                    <td>ค่าน้ำ</td>
-                                                    <td>10000 บาท</td>
-                                                </tr>
-                                                  
-                                              </tbody>
-                    </table> 
-
-
-                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">ปิด</span></button>
-                   
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- InfoBalanceModal -->
 
  
 
@@ -417,6 +379,49 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+            
+            <!-- InfoBalanceModal -->
+            <div class="modal fade" id="InfoBalanceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">              
+                <div class="modal-body">
+
+                    <table id="table_info_blanace" class="table table-striped table-bordered table-hover">
+                                              <thead>
+                                                <tr>
+                                                   
+                                                    <th>รอบบิลวันที่</th>
+                                                    <th>รายการ</th>
+                                                    <th>ยอด</th>
+                                                
+                                                </tr>
+
+                                              </thead>
+
+                                              <tbody id="table_info_blanace_detail" class="scrollit">   
+                                                    
+                             
+                                                <tr> 
+                                                    <td>2020-01-01</td>
+                                                    <td>ค่าน้ำ</td>
+                                                    <td>10000 บาท</td>
+                                                </tr>
+                                                  
+                                              </tbody>
+                    </table> 
+
+
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">ปิด</span></button>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- InfoBalanceModal -->
 
 
  

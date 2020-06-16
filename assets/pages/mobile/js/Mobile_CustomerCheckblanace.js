@@ -15,6 +15,7 @@ $(function(){
 		$("#InfoBalanceModal").modal("show");
 
 
+
 	});
 
 
