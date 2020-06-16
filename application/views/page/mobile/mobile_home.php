@@ -424,6 +424,7 @@
 
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CCTV.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerCheckblanace.js"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerSendSlip.js"></script>
        
 <script type="text/javascript">
         
