@@ -289,9 +289,8 @@
                                         <label><font color="red">เลขที่ </font>: 399-404-888-3</label> <br>
                                         <label>ชื่อบัญชี : นิติบุคคลอาคารชุดเคหะชุมชนและบริการชุมชนเทพารักษ์ 3/1</label>
                                         <br>
-                                        <p hidden id="BankCode">3994048883</p>
-                                        <button id="CopyBankCode" onclick="copyToClipboard('#BankCode')" class="btn btn-lg btn-info waves-effect" >กดเพื่อคัดลอกหมายเลขบัญชี</button>
-                                       
+                                        <button id="CopyBankCode" onclick="CopyFunction()" class="btn btn-lg btn-info waves-effect" >กดเพื่อคัดลอกหมายเลขบัญชี</button>
+                                        <input type="text" readonly hidden value="3994048883" name="BankCode" id="BankCode">
                                     </div>
                                 </div>
 
@@ -482,17 +481,14 @@
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerCheckblanace.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerSendSlip.js"></script>
        
-<script type="text/javascript">
- 
 
-         
-function copyToClipboard(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
+
+<script>
+function CopyFunction() {
+  var copyText = document.getElementById("BankCode");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
-  $temp.remove();
+  alert("Copied the text: " + copyText.value);
 }
-
 </script>
- 
