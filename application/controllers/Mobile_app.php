@@ -17,7 +17,7 @@ class Mobile_app extends CI_Controller
 	public function index()
 	{		
 
-			$header['page_name'] = 'เลือกรายการ';
+			$header['page_name'] = 'ลูกบ้านอาคารชุดPack1';
 			$header['page_focus'] = 'home';
 			 
 
@@ -26,21 +26,12 @@ class Mobile_app extends CI_Controller
 			$this->load->view("page/template_mobile/footer");
 			
 	}
-	public function createDataFromXlsx()
-	{
-
-
-		$result = $this->Mobile_model->createDataFromXlsx();
-
-		//print_r($result);
-
-		foreach ($result as $Value) {
-			echo $Value["ROOM"]."|".$Value["CUST"]."|".$Value["HOMENO"]."|".$Value["NAME"]."|".$Value["BILLNO"]."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
-		}
+	
 
 
 
-	}
+
+
 
 
 

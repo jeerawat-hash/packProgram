@@ -385,7 +385,7 @@
                     </li>
 
                     <li class="<?php echo $menu[1]; ?>" >
-                        <a href="https://pack1.sakorncable.com/index.php/mobile_app/logout">
+                        <a href="https://pack1.sakorncable.com/index.php/mobile_app">
                             <i class="material-icons">home</i>
                             <span>ออกจากระบบ</span>
                         </a>
