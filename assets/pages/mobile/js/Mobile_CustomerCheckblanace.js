@@ -61,7 +61,7 @@ $(function(){
 		var dataid = $(this).attr("data-id");
 		//alert(data);
 
-		var data = FormData();
+		var data = new FormData();
 		data.append("CustomerID",dataid);
 
 		$.ajax({
