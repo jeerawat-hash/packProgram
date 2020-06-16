@@ -243,7 +243,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           
-                                        <label>เลือกไฟล์ ยอดสรุปการรับเงินจากลูกบ้านเท่านั้น </label>
+                                        <label>ชื่อ</label>
                                         
                                     </div>
                                 </div>
@@ -257,7 +257,6 @@
                                                 <tr>
                                                    
                                                     <th>หมายเลขห้อง</th>
-                                                    <th>ชื่อ</th>
                                                     <th>ยอด</th>
                                                 
                                                 </tr>
@@ -269,7 +268,6 @@
                              
                                                 <tr> 
                                                     <td>000-001</td>
-                                                    <td>Name</td>
                                                     <td>10000</td>
                                                 </tr>
                                                 <tr>
@@ -286,10 +284,7 @@
                                 </div>
                         </div> 
 
-
-
-
-
+ 
 
                         </div>
                         <div class="modal-footer">
@@ -360,6 +355,7 @@
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/mobile_home.js"></script>
 
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CCTV.js"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerCheckblanace.js"></script>
        
 <script type="text/javascript">
         
