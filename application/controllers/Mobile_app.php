@@ -68,10 +68,10 @@ class Mobile_app extends CI_Controller
 
 	        send_notify_message(" [ ".$UserMessage." รหัส ".$_POST["CustomerID"]." ]","https://pack1.sakorncable.com/upload/temp/".$file.".jpg");
 
-	       	//shell_exec(" rm  /home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$file.".jpg");
- 
-
+	       	 
 	        echo "1";
+
+	        shell_exec(" rm  /home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$file.".jpg");
 
 		}else{
 
