@@ -336,7 +336,7 @@
 
 
      
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_home.js"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/mobile_home.js"></script>
 
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CCTV.js"></script>
        
