@@ -54,8 +54,8 @@ class Mobile_app extends CI_Controller
 	public function SendDataSlipToNotify()
 	{
 
-		//print_r($_POST);
-		//print_r($_FILES);
+		print_r($_POST);
+		print_r($_FILES);
  		
  
 			move_uploaded_file($_FILES["Slipfile"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_POST["CustomerID"].".jpg");
