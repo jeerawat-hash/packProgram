@@ -39,10 +39,9 @@ class Mobile_app extends CI_Controller
 	public function getDataBlanace()
 	{
 
-
-		print_r($_POST);
-
-
+		//print_r($_POST);
+		echo json_encode( $this->Mobile_model->getDataBlanace($_POST["CustomerID"]) );
+		
 
 	}
 

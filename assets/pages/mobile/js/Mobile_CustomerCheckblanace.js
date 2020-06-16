@@ -21,7 +21,17 @@ $(function(){
         	processData : false,
         	success : function(data){
 
-        		console.log(data);
+
+
+        		var object = JSON.parse(data);
+        		console.log(object);
+
+
+
+
+
+
+
 
         	},
         	error : function(){
@@ -32,7 +42,7 @@ $(function(){
 
 
 
-        
+
 
 
 
