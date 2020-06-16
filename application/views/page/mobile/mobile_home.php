@@ -290,8 +290,10 @@
                                         <label>ชื่อบัญชี : นิติบุคคลอาคารชุดเคหะชุมชนและบริการชุมชนเทพารักษ์ 3/1</label>
                                         <br>
                                         <button id="CopyBankCode" class="btn btn-lg btn-info waves-effect" >กดเพื่อคัดลอกหมายเลขบัญชี</button>
+                                        <input type="text" readonly hidden value="3994048883" name="BankCode" id="BankCode">
                                     </div>
                                 </div>
+
 
 
                         </div> 
@@ -492,8 +494,8 @@
     });
 
          
-function copyFunction() {
-  var copyText = '3994048883';
+function copyFunction() { 
+  var copyText = document.getElementById("BankCode");
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
