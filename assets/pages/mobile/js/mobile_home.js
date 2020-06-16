@@ -8,21 +8,21 @@ $(function(){
 	$("#DataAuthenModal").find("#GetData").on("click",function(){
 
 
-		var CustomerID = $("#CustomerID").val();
+		var Customer = $("#CustomerID").val();
 
-		if (CustomerID == "") {
-
-			alert("กรุณากรอกหมายเลขห้องให้ถูกต้อง");
-			return false;
-
-		}
-		if (telephone == "0") {
+		if (Customer == "") {
 
 			alert("กรุณากรอกหมายเลขห้องให้ถูกต้อง");
 			return false;
 
 		}
-		if (telephone.trim() == "") {
+		if (Customer == "0") {
+
+			alert("กรุณากรอกหมายเลขห้องให้ถูกต้อง");
+			return false;
+
+		}
+		if (Customer.trim() == "") {
 
 			alert("กรุณากรอกหมายเลขห้องให้ถูกต้อง");
 			return false;
@@ -35,7 +35,7 @@ $(function(){
 		setTimeout(function(){
 
 /*
-			$.post("https://pack1.sakorncable.com/index.php/management/authen",{CustomerID : CustomerID}
+			$.post("https://pack1.sakorncable.com/index.php/management/authen",{CustomerID : Customer}
 			,function(data,status){
 
 
@@ -72,7 +72,7 @@ $(function(){
 
 
 		}, 1000);
-		
+
  
  
 
