@@ -54,8 +54,8 @@ class Mobile_app extends CI_Controller
 	public function SendDataSlipToNotify()
 	{
 
-		print_r($_POST);
-		print_r($_FILES);
+		//print_r($_POST);
+		//print_r($_FILES);
  		
 
 		if ($_FILES["Slipfile"]["type"] == "image/png") {
