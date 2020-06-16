@@ -30,7 +30,7 @@ class Mobile_app extends CI_Controller
 	{
 
 
-		//print_r($_POST);
+		print_r($_POST);
 		json_encode($this->Mobile_model->CustomerAuth($_POST["CustomerID"]));
 
 
