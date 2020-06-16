@@ -68,6 +68,18 @@ $(function(){
 
 
         		console.log(data);
+
+        		if (data == "1") {
+        			alert("ส่งใบเสร็จเข้าสู่ระบบสำเร็จ เจ้าหน้าที่นิติบุคคลจะดำเนินการยิงรับชำระในช่วงเวลา 09:00-16:00น.");
+					$("#CustomerSendSlipModal").modal("hide");
+
+        		}else{
+
+        			alert("ผิดพลาด กรุณาตรวจสอบชนิกของไฟล์แนบ");
+	        		$("#CustomerSendSlipModal").find("#SendData").show();
+					$("#CustomerSendSlipModal").find("#PreloadSendData").hide();
+
+        		}
  
 
         	},
