@@ -11,8 +11,8 @@ $(function(){
 	$("#table_blanace").on("click",".InfoBlanaceBar",function(){
 
 		var data = $(this).attr("data-id");
-
-		alert(data);
+		//alert(data);
+		$("#InfoBalanceModal").modal("show");
 
 
 	});
