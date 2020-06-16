@@ -57,6 +57,12 @@ class Mobile_app extends CI_Controller
 		print_r($_POST);
 		print_r($_FILES);
  		
+
+		if ($_FILES["Slipfile"]["type"] == "image/png") {
+			echo 1;
+			exit();
+		}
+
  
 			move_uploaded_file($_FILES["Slipfile"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_POST["CustomerID"].".jpg");
  
