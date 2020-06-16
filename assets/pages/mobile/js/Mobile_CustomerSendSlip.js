@@ -44,8 +44,17 @@ $(function(){
 
 	$("#CustomerSendSlipModal").find("#SendData").on("click",function(){
 
-	
+		
 		var CustomerID = $("#CustomerIDAuthen").val();
+
+		if( document.getElementById("Slipfile").files.length == 0 ){
+    		
+    		alert("กรุณาแนบไฟล์หลักฐานการชำระค่าส่วนกลาง");
+    		return false;
+    		
+		}
+
+
 
 		var data = new FormData();          
         var Slip_file = $('#Slipfile').prop('files')[0]; 
