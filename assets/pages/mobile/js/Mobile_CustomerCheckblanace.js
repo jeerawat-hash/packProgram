@@ -79,16 +79,33 @@ $(function(){
 				console.log(object);
 
 
+				if (object.length != 0) {
+
+					var html = "";
+
+					for (var i = 0; i < object.length; i++) {
+						
+						html += " <tr> "+
+                                     "<td>"+object[i].DATE+"</td>"+
+                                     "<td>"+object[i].Description+"</td>"+
+                                     "<td>"+object[i].AmountTotal+" บาท</td>"+
+                                 "</tr> ";
 
 
+					}
 
 
+					$("#table_info_blanace_detail").html(html);
+					
+
+				}else{
 
 
+					alert("ไม่พบข้อมูลยอดค้าง");
 
 
-
-				
+				}
+ 
 
 			},
 			error : function(){
