@@ -286,14 +286,10 @@
                                     <div class="form-group">
                                           
                                         <label>ธนาคารไทยพาณิชย์ (SCB)</label> <br>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label><font color="red">เลขที่ </font>: </label>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <input type="text" readonly class="form-control" value="3994048883" name="BankCode" id="BankCode">
-                                            </div>
-                                        </div>
+                                       
+
+                                <label><font color="red">เลขที่ </font>: </label><input type="text" readonly style="border: none;" value="3994048883" name="BankCode" id="BankCode">
+                                             
                                          <br>
                                         <label>ชื่อบัญชี : นิติบุคคลอาคารชุดเคหะชุมชนและบริการชุมชนเทพารักษ์ 3/1</label>
                                         <br>
