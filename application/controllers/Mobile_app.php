@@ -57,16 +57,20 @@ class Mobile_app extends CI_Controller
 		//print_r($_POST);
 		//print_r($_FILES);
  		
- 		if ( isset($_FILES["Slipfile"]["type"]) ) {
- 			echo "2";
- 			exit();
- 		}
- 		if ($_FILES["Slipfile"]["type"] != "image/png") {
- 			echo "2";
- 			exit();
- 		}
+ 		
 
 			move_uploaded_file($_FILES["Slipfile"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_POST["CustomerID"].".jpg");
+
+
+			if ( !isset($_FILES["Slipfile"]["type"]) ) {
+ 				echo "2";
+ 				exit();
+	 		}
+	 		if ($_FILES["Slipfile"]["type"] != "image/png") {
+	 			echo "2";
+	 			exit();
+	 		}
+
 
 			$Member = $this->Mobile_model->getDataBlanace($_POST["CustomerID"]);				
 
