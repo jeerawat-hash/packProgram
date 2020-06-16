@@ -41,8 +41,8 @@ $(function(){
 
 				var object =  JSON.parse(data);
 
-				//console.log(data);
-				console.log(object);
+				console.log(data);
+				//console.log(object);
 
 				/*
 				if (data == 1) {
