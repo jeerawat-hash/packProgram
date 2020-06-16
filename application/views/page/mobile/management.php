@@ -102,11 +102,11 @@
  
                 <div id="CCTV1" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-red">
+                        <div class="icon bg-blue">
                             <i class="material-icons">devices</i>
                         </div>
                         <div class="content">
-                            <div class="text">กล้อง 1</div>
+                            <div class="text">กล้อง อาคาร45</div>
                         </div>
                     </div>
 
@@ -118,7 +118,80 @@
                             <i class="material-icons">devices</i>
                         </div>
                         <div class="content">
-                            <div class="text">กล้อง 2</div>
+                            <div class="text">กล้อง อาคาร37</div>
+                        </div>
+                    </div>
+
+                </div>  
+
+                <div id="CCTV3" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้อง อาคาร38</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="CCTV4" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้อง อาคาร39</div>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div id="CCTV5" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้อง อาคาร65</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="CCTV6" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้อง อาคาร66</div>
+                        </div>
+                    </div>
+
+                </div> 
+
+
+                <div id="CCTV7" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้อง อาคาร43</div>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div id="CCTV8" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้อง อาคาร44</div>
                         </div>
                     </div>
 
