@@ -487,20 +487,18 @@
 
     $("#CopyBankCode").on("click",function(){
 
-
-        copyFunction();
-
+        copyToClipboard('#BankCode');
 
     });
 
          
-function copyFunction() { 
-  var copyText = document.getElementById("BankCode");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
   document.execCommand("copy");
-  alert("คัดลอกหมายเลขบัญชีแล้ว...");
-} 
+  $temp.remove();
+}
 
 </script>
  
