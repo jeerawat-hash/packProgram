@@ -401,11 +401,7 @@
                                               <tbody id="table_info_blanace_detail" class="scrollit">   
                                                     
                              
-                                                <tr> 
-                                                    <td>2020-01-01</td>
-                                                    <td>ค่าน้ำ</td>
-                                                    <td>10000 บาท</td>
-                                                </tr>
+                                                
                                                   
                                               </tbody>
                     </table> 

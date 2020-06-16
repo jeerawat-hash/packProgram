@@ -28,6 +28,20 @@ class Mobile_model extends CI_Model
 
   }
 
+  public function getDataBlanaceDetail($CUST)
+  {
+
+        $this->mssql = $this->load->database("mssql",true);
+
+        return $this->mssql->query("select CustomerID,CustomerName,a.AMOUNT as AmountTotal,c.Description,a.DATE from [Sakorn_Manage].[dbo].[CustomerAmount_LOG] a
+ right outer join Theparak3.dbo.Customer b on a.CUST = b.CustomerID  
+ join [Sakorn_Manage].[dbo].[CustomerAmount_CodeType] c on a.CODE = c.CODE
+ where b.CustomerID = '".$CUST."' order by DATE asc ")->result();
+
+
+  }
+ 
+
   public function Authentication($Secrect)
   {
      $this->mssql = $this->load->database("mssql",true);

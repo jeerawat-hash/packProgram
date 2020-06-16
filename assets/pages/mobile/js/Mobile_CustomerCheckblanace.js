@@ -37,7 +37,7 @@ $(function(){
 
                 $("#table_blanace_detail").html(html);
  
- 
+
 
         	},
         	error : function(){
@@ -58,8 +58,32 @@ $(function(){
 
 	$("#table_blanace").on("click",".InfoBlanaceBar",function(){
 
-		var data = $(this).attr("data-id");
+		var dataid = $(this).attr("data-id");
 		//alert(data);
+
+		var data = FormData();
+		data.append("CustomerID",dataid);
+
+		$.ajax({
+			url : "https://pack1.sakorncable.com/index.php/mobile_app/getDataBlanaceDetail",
+			type : "POST",
+			data : data,
+			contentType : false,
+			cache : false,
+			processData : false,
+			success : function(data){
+
+
+				console.log(data);
+			
+
+			},
+			error : function(){
+
+			}
+		});
+
+
 		$("#InfoBalanceModal").modal("show");
 
 
