@@ -290,7 +290,7 @@
                                         <label>ชื่อบัญชี : นิติบุคคลอาคารชุดเคหะชุมชนและบริการชุมชนเทพารักษ์ 3/1</label>
                                         <br>
                                         <button id="CopyBankCode" onclick="CopyFunction()" class="btn btn-lg btn-info waves-effect" >กดเพื่อคัดลอกหมายเลขบัญชี</button>
-                                        <input type="text" value="3994048883" name="BankCode" id="BankCode">
+                                        <input type="text" style="display: none;" value="3994048883" name="BankCode" id="BankCode">
                                     </div>
                                 </div>
 
