@@ -73,11 +73,20 @@ $(function(){
 
 
 		}, 1000);
-
- 
  
 
 	});
+
+
+	$("CustomerGetPolicyA").on("click",function(){
+
+
+		$("#CustomerGetPolicyAModal").modal("show");
+
+
+	});
+
+
 
 
 
