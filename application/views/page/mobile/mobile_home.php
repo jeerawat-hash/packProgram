@@ -19,13 +19,66 @@
 <!----- PDFView ------->
 <style type="text/css">
 
-.embed-responsive {
-    position: relative;
-    display: block;
-    height: 0;
-    padding: 0;
-    overflow: hidden;
+
+/* CSS for responsive iframe */
+/* ========================= */
+
+/* outer wrapper: set max-width & max-height; max-height greater than padding-bottom % will be ineffective and height will = padding-bottom % of max-width */
+#Iframe-Master-CC-and-Rs {
+  max-width: 512px;
+  max-height: 100%; 
+  overflow: hidden;
 }
+
+/* inner wrapper: make responsive */
+.responsive-wrapper {
+  position: relative;
+  height: 0;    /* gets height from padding-bottom */
+  
+  /* put following styles (necessary for overflow and scrolling handling on mobile devices) inline in .responsive-wrapper around iframe because not stable in CSS:
+    -webkit-overflow-scrolling: touch; overflow: auto; */
+  
+}
+ 
+.responsive-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* padding-bottom = h/w as % -- sets aspect ratio */
+/* YouTube video aspect ratio */
+.responsive-wrapper-wxh-572x612 {
+  padding-bottom: 107%;
+}
+
+/* general styles */
+/* ============== */
+.set-border {
+  border: 5px inset #4f4f4f;
+}
+.set-box-shadow { 
+  -webkit-box-shadow: 4px 4px 14px #4f4f4f;
+  -moz-box-shadow: 4px 4px 14px #4f4f4f;
+  box-shadow: 4px 4px 14px #4f4f4f;
+}
+.set-padding {
+  padding: 40px;
+}
+.set-margin {
+  margin: 30px;
+}
+.center-block-horiz {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 
 
 </style>
@@ -454,9 +507,22 @@
                         <div class="col-md-12">
                            
 
-                            <div class='embed-responsive' style='padding-bottom:150%'>
-                                <object data='https://pack1.sakorncable.com/upload/pack1file/%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9A%E0%B8%B5%E0%B8%A2%E0%B8%9A%20%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%AB%E0%B8%B0%E0%B8%8A%E0%B8%A1%E0%B8%8A%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%B2%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B9%8C%203%20Pack%201.pdf' type='application/pdf' width='100%' height='100%'></object>
-                            </div>
+                                <!-- embed responsive iframe --> 
+                                <!-- ======================= -->
+
+                                <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
+                                  <div class="responsive-wrapper 
+                                     responsive-wrapper-wxh-572x612"
+                                     style="-webkit-overflow-scrolling: touch; overflow: auto;">
+
+                                    <iframe src="https://pack1.sakorncable.com/upload/pack1file/%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9A%E0%B8%B5%E0%B8%A2%E0%B8%9A%20%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%AB%E0%B8%B0%E0%B8%8A%E0%B8%A1%E0%B8%8A%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%B2%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B9%8C%203%20Pack%201.pdf"> 
+                                      <p style="font-size: 110%;"><em><strong>ERROR: </strong>  
+                                An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p>
+                                    </iframe>
+                                    
+                                  </div>
+                                </div>
+
 
      
 
