@@ -69,10 +69,10 @@
   box-shadow: 4px 4px 14px #4f4f4f;
 }
 .set-padding {
-  padding: 40px;
+  padding: 0px;
 }
 .set-margin {
-  margin: 30px;
+  margin: 0px;
 }
 .center-block-horiz {
   margin-left: auto !important;
