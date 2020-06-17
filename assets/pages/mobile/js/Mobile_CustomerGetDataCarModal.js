@@ -50,6 +50,10 @@ $(function(){
 				if (object.length != 0) {
 
 
+					$("#GetDataCarDetailModal").modal("show");
+					$("#GetDataCarDetailModal").find("#CustomerName").text("test");
+					$("#GetDataCarDetailModal").find("#ContactInfo").text("test");
+					$("#GetDataCarDetailModal").find("#CarInfo").text("test");
 
 
 				}else{

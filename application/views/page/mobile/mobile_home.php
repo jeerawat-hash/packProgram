@@ -666,6 +666,48 @@
           <!-- CustomerGetPolicyAModal -->
 
 
+          <!-- InfoBalanceModal -->
+            <div class="modal fade" id="GetDataCarDetailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">              
+                <div class="modal-body">
+
+                    <button style="float: right;" type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
+
+                    <div class="row clearfix">
+                        <div class="col-md-6">
+                            <label>ชื่อ</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label id="CustomerName"></label>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-md-6">
+                            <label>ติดต่อ</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label id="ContactInfo"></label>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-md-6">
+                            <label>ข้อมูลรถ</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label id="CarInfo"></label>
+                        </div>
+                    </div>
+
+                  
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- InfoBalanceModal -->
+
+
 
             <!-- InfoBalanceModal -->
             <div class="modal fade" id="InfoBalanceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
