@@ -57,6 +57,42 @@
                     </div>
 
                 </div> 
+
+                <div id="CustomerGetDataCar" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-orange">
+                            <i class="material-icons">email</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">ตรวจสอบเลขทะเบียนรถ</div>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div id="CustomerGetPolicyA" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-teal">
+                            <i class="material-icons">equalizer</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">ข้อบังคับ  นิติเคหะชมชนเทพารักษ์ 3 Pack 1</div>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div id="CustomerGetPolicyB" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-teal">
+                            <i class="material-icons">equalizer</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">ระเบียบ นิติเคหะชมชนเทพารักษ์ 3 Pack 1</div>
+                        </div>
+                    </div>
+
+                </div> 
  
 
  
