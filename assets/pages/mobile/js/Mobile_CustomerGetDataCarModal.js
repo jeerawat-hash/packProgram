@@ -51,9 +51,9 @@ $(function(){
 
 
 					$("#GetDataCarDetailModal").modal("show");
-					$("#GetDataCarDetailModal").find("#CustomerName").text("test");
-					$("#GetDataCarDetailModal").find("#ContactInfo").text("test");
-					$("#GetDataCarDetailModal").find("#CarInfo").text("test");
+					$("#GetDataCarDetailModal").find("#CustomerName").text(object[0].CustomerName);
+					$("#GetDataCarDetailModal").find("#ContactInfo").text(object[0].AddressLocal+" "+object[0].CONTACT);
+					$("#GetDataCarDetailModal").find("#CarInfo").text(object[0].CARCODE+" "+object[0].COUNTRY+" ค่าย "+object[0].CARBRAND+" สี "+object[0].CARCOLOR+" ชนิด "+object[0].CARTYPE);
 
 
 				}else{
