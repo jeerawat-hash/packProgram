@@ -516,7 +516,9 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6"> 
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          
  
                                     <div class="form-line">
                                         <input type="text" class="form-control" id="CarCode" name="CarCode" >
@@ -524,6 +526,8 @@
                                     </div>
 
 
+                                        
+                                    </div>
                                 </div>
                         </div> 
 
