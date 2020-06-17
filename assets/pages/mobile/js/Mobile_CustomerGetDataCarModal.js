@@ -13,8 +13,7 @@ $(function(){
 
  	 $("#CustomerGetDataCarModal").find("#SendData").on("click",function(){
 	
-		$("#CustomerGetDataCarModal").find("#PreloadSendData").show();
-		$("#CustomerGetDataCarModal").find("#SendData").hide(); 
+		
 
 		var Cardata = $("#CustomerGetDataCarModal").find("#CarCode").val();
 
@@ -23,10 +22,15 @@ $(function(){
 			return false;
 		}
 
+
+
 		var data = new FormData();
 
 		data.append("CarCode",Cardata);
 
+		$("#CustomerGetDataCarModal").find("#PreloadSendData").show();
+		$("#CustomerGetDataCarModal").find("#SendData").hide(); 
+		
 		setTimeout(function(){ 
 
 		$.ajax({
