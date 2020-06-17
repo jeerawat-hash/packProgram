@@ -682,9 +682,8 @@
                                               <thead>
                                                 <tr>
                                                    
-                                                    <th>รอบบิลวันที่</th>
-                                                    <th>รายการ</th>
-                                                    <th>ยอด</th>
+                                                    <th></th>
+                                                    <th></th>
                                                 
                                                 </tr>
 
@@ -692,8 +691,14 @@
 
                                               <tbody  class="scrollit">   
                                                     
-                             
-                                                
+                                                    <tr>
+                                                        <td>ชื่อ</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ติดต่อ</td>
+                                                        <td></td>
+                                                    </tr>
                                                   
                                               </tbody>
                         </table> 
