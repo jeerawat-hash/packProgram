@@ -19,17 +19,13 @@
 
 <script type="text/javascript">
 
-setInterval(function(){
-  var startTime = performance.now(), check, diff;
-  for (check = 0; check < 1000; check++){
-    console.log(check);
-    console.clear();
-  }
-  diff = performance.now() - startTime;
-  if (diff > 200){
-    alert("Debugger detected!");
-  }
-}, 500);
+
+    var startTime = performance.now();
+    debugger;
+    var stopTime = performance.now();
+    if ((stopTime - startTime) > 1000) {
+        alert("Debugger detected!")
+    }
 
 
 </script>
