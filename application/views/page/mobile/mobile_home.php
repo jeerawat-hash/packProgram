@@ -681,57 +681,22 @@
                         <table  class="table table-striped table-bordered table-hover">
                                                 
                                                 <tr>
-                                                    <td id="CustomerName"></th> 
+                                                    <td>ชื่อ</th> 
+                                                    <font color="red"><td id="CustomerName"></th> </font>
                                                 </tr>
                                                 <tr>
-                                                    <td id="ContactInfo"></th> 
+                                                    <td>ติดต่อ</th> 
+                                                    <font color="red"><td id="ContactInfo"></th> </font>
                                                 </tr>
                                                 <tr>
-                                                    <td id="CarInfo"></th> 
+                                                    <td>ข้อมูลรถ</th> 
+                                                    <font color="red"><td id="CarInfo"></th> </font>
                                                 </tr>
                                                 
                                                    
                         </table> 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        <div class="col-md-6">
-                            <label>ชื่อ</label>
-                        </div>
-                        <div class="col-md-6">
-                            <label id="CustomerName"></label>
-                        </div>
-                    </div>
-                    <div class="row clearfix">
-                        <div class="col-md-6">
-                            <label>ติดต่อ</label>
-                        </div>
-                        <div class="col-md-6">
-                            <label id="ContactInfo"></label>
-                        </div>
-                    </div>
-                    <div class="row clearfix">
-                        <div class="col-md-6">
-                            <label>ข้อมูลรถ</label>
-                        </div>
-                        <div class="col-md-6">
-                            <label id="CarInfo"></label>
-                        </div>
-                    </div>
+ 
 
                   
                    
