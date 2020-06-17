@@ -516,18 +516,14 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                          
+                                <div class="col-md-6"> 
  
                                     <div class="form-line">
-                                        <input type="text" value="" class="form-control" id="CarCode" name="CarCode" required>
+                                        <input type="text" class="form-control" id="CarCode" name="CarCode" >
                                         <label class="form-label">หมายเลขทะเบียนรถ</label>
                                     </div>
 
 
-                                        
-                                    </div>
                                 </div>
                         </div> 
 
