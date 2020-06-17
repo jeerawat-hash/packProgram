@@ -684,6 +684,7 @@
                                                    
                                                     <th></th>
                                                     <th></th>
+                                                    <th></th>
                                                 
                                                 </tr>
 
@@ -693,11 +694,15 @@
                                                     
                                                     <tr>
                                                         <td>ชื่อ</td>
-                                                        <td></td>
+                                                        <td><label id="CustomerName"></label></td>
                                                     </tr>
                                                     <tr>
                                                         <td>ติดต่อ</td>
-                                                        <td></td>
+                                                        <td><label id="ContactInfo"></label></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ข้อมูลรถ</td>
+                                                        <td><label id="CarInfo"></label></td>
                                                     </tr>
                                                   
                                               </tbody>
