@@ -19,6 +19,8 @@
 
 <script type="text/javascript">
 
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 setInterval(function(){
   var startTime = performance.now(), check, diff;
   for (check = 0; check < 1000; check++){
@@ -28,7 +30,7 @@ setInterval(function(){
   diff = performance.now() - startTime;
   if (diff > 200){
 
-    alert("Debugger detected!");
+    //alert("Debugger detected!");
     window.location="https://pack1.sakorncable.com/index.php/management/1";
     debugger;
 
