@@ -95,7 +95,7 @@ setInterval(function(){
 
 </head>
 
-<body class="theme-blue">
+<body class="theme-blue" oncontextmenu="return false;">
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
