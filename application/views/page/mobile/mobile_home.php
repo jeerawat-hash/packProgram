@@ -515,7 +515,7 @@
                                      responsive-wrapper-wxh-572x612"
                                      style="-webkit-overflow-scrolling: touch; overflow: auto;">
 
-                                    <iframe width="50%" src="https://pack1.sakorncable.com/upload/pack1file/File1.pdf"> 
+                                    <iframe  src="https://pack1.sakorncable.com/upload/pack1file/File1.pdf"> 
                                       <p style="font-size: 110%;"><em><strong>ERROR: </strong>  
                                 An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p>
                                     </iframe>
