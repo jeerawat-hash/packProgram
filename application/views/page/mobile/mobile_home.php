@@ -679,24 +679,64 @@
 
 
                         <table  class="table table-striped table-bordered table-hover">
-                                                
+                                              <thead>
                                                 <tr>
-                                                    <td>ชื่อ</th> 
-                                                    <td id="CustomerName"></th> 
-                                                </tr>
-                                                <tr>
-                                                    <td>ติดต่อ</th> 
-                                                    <td id="ContactInfo"></th> 
-                                                </tr>
-                                                <tr>
-                                                    <td>ข้อมูลรถ</th> 
-                                                    <td id="CarInfo"></th> 
-                                                </tr>
-                                                
                                                    
+                                                    <th>รอบบิลวันที่</th>
+                                                    <th>รายการ</th>
+                                                    <th>ยอด</th>
+                                                
+                                                </tr>
+
+                                              </thead>
+
+                                              <tbody  class="scrollit">   
+                                                    
+                             
+                                                
+                                                  
+                                              </tbody>
                         </table> 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="col-md-6">
+                            <label>ชื่อ</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label id="CustomerName"></label>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-md-6">
+                            <label>ติดต่อ</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label id="ContactInfo"></label>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-md-6">
+                            <label>ข้อมูลรถ</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label id="CarInfo"></label>
+                        </div>
+                    </div>
 
                   
                    
