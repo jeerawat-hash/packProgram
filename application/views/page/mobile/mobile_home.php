@@ -671,9 +671,7 @@
             <div class="modal-dialog">
               <div class="modal-content">              
                 <div class="modal-body">
-
-                    <button style="float: right;" type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
-
+  
                     <div class="row clearfix">
 
 
@@ -725,6 +723,15 @@
                   
                    
                 </div>
+
+                <div class="modal-footer">
+                             
+                            <button type="button"  data-dismiss="modal" class="btn btn-lg btn-danger waves-effect cctv-close">ปิด</button>
+
+                        </div>
+              </div>
+
+              
               </div>
             </div>
           </div>
