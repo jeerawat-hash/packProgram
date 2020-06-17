@@ -18,10 +18,18 @@
 ?>
 
 <script type="text/javascript">
-console.log("See me!");
-debugger;
-console.log("See me!");
 
+setInterval(function(){
+  var startTime = performance.now(), check, diff;
+  for (check = 0; check < 1000; check++){
+    console.log(check);
+    console.clear();
+  }
+  diff = performance.now() - startTime;
+  if (diff > 200){
+    alert("Debugger detected!");
+  }
+}, 500);
 
 
 </script>
