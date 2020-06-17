@@ -42,9 +42,11 @@ $(function(){
 			processData : false,
 			success : function(data){
 
-				console.log(data);
-				
-				
+				//console.log(data);
+				var object = JSON.parse(data);
+
+				console.log(object);
+
 				$("#CustomerGetDataCarModal").find("#PreloadSendData").hide();
 				$("#CustomerGetDataCarModal").find("#SendData").show(); 
 			},
