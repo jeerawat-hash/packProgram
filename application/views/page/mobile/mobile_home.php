@@ -682,15 +682,15 @@
                                                 
                                                 <tr>
                                                     <td>ชื่อ</th> 
-                                                    <font color="red"><td id="CustomerName"></th> </font>
+                                                    <td id="CustomerName"></th> 
                                                 </tr>
                                                 <tr>
                                                     <td>ติดต่อ</th> 
-                                                    <font color="red"><td id="ContactInfo"></th> </font>
+                                                    <td id="ContactInfo"></th> 
                                                 </tr>
                                                 <tr>
                                                     <td>ข้อมูลรถ</th> 
-                                                    <font color="red"><td id="CarInfo"></th> </font>
+                                                    <td id="CarInfo"></th> 
                                                 </tr>
                                                 
                                                    
