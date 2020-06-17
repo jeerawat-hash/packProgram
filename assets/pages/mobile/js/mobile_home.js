@@ -78,7 +78,7 @@ $(function(){
 	});
 
 
-	$("CustomerGetPolicyA").on("click",function(){
+	$("#CustomerGetPolicyA").on("click",function(){
 
 
 		$("#CustomerGetPolicyAModal").modal("show");
