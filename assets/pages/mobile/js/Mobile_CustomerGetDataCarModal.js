@@ -47,6 +47,18 @@ $(function(){
 
 				console.log(object);
 
+				if (object.length != 0) {
+
+
+
+
+				}else{
+
+
+					alert("ไม่พบข้อมูลหมายเลขทะเบียนรถ "+Cardata);
+
+				}
+
 				$("#CustomerGetDataCarModal").find("#PreloadSendData").hide();
 				$("#CustomerGetDataCarModal").find("#SendData").show(); 
 			},
