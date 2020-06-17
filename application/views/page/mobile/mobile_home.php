@@ -679,33 +679,18 @@
 
 
                         <table  class="table table-striped table-bordered table-hover">
-                                              <thead>
+                                                
                                                 <tr>
-                                                    <th>ชื่อ</th> 
+                                                    <td id="CustomerName"></th> 
                                                 </tr>
                                                 <tr>
-                                                    <th>ติดต่อ</th> 
+                                                    <td id="ContactInfo"></th> 
                                                 </tr>
                                                 <tr>
-                                                    <th>ข้อมูลรถ</th> 
-                                                </tr>
-
-                                              </thead>
-
-                                              <tbody  class="scrollit">   
-                                                    
-                                                <tr>
-                                                    <td id="CustomerName">ชื่อ</th> 
-                                                </tr>
-                                                <tr>
-                                                    <td id="ContactInfo">ติดต่อ</th> 
-                                                </tr>
-                                                <tr>
-                                                    <td id="CarInfo">ข้อมูลรถ</th> 
+                                                    <td id="CarInfo"></th> 
                                                 </tr>
                                                 
-                                                  
-                                              </tbody>
+                                                   
                         </table> 
 
 
