@@ -27,7 +27,7 @@
 // @description  Stops most anti debugging implementations by JavaScript obfuscaters
 // @author       ww
 // @match        *
-// @grant        unsafeWindow
+ @grant        unsafeWindow
 // @run-at       document-start
 // ==/UserScript==
 
