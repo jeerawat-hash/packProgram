@@ -18,64 +18,15 @@
    
 <!----- PDFView ------->
 <style type="text/css">
-    /* CSS for responsive iframe */
-/* ========================= */
 
-/* outer wrapper: set max-width & max-height; max-height greater than padding-bottom % will be ineffective and height will = padding-bottom % of max-width */
-#Iframe-Master-CC-and-Rs {
-  max-width: 512px;
-  max-height: 100%; 
-  overflow: hidden;
-}
-
-/* inner wrapper: make responsive */
-.responsive-wrapper {
-  position: relative;
-  height: 0;    /* gets height from padding-bottom */
-  
-  /* put following styles (necessary for overflow and scrolling handling on mobile devices) inline in .responsive-wrapper around iframe because not stable in CSS:
-    -webkit-overflow-scrolling: touch; overflow: auto; */
-  
-}
- 
-.responsive-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  
-  margin: 0;
-  padding: 0;
-  border: none;
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-/* padding-bottom = h/w as % -- sets aspect ratio */
-/* YouTube video aspect ratio */
-.responsive-wrapper-wxh-572x612 {
-  padding-bottom: 107%;
-}
-
-/* general styles */
-/* ============== */
-.set-border {
-  border: 5px inset #4f4f4f;
-}
-.set-box-shadow { 
-  -webkit-box-shadow: 4px 4px 14px #4f4f4f;
-  -moz-box-shadow: 4px 4px 14px #4f4f4f;
-  box-shadow: 4px 4px 14px #4f4f4f;
-}
-.set-padding {
-  padding: 40px;
-}
-.set-margin {
-  margin: 30px;
-}
-.center-block-horiz {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
 
 </style>
 <!----- PDFView ------->
@@ -503,21 +454,12 @@
 
 
                         <div class="col-md-12">
-                                    
-                            <!-- embed responsive iframe --> 
-                            <!-- ======================= -->
-                            <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
-                              <div class="responsive-wrapper 
-                                 responsive-wrapper-wxh-572x612"
-                                 style="-webkit-overflow-scrolling: touch; overflow: auto;">
+                           
 
-                                <iframe src="https://www.slideshare.net/slideshow/embed_code/key/78NW2yxg5UZMM3"> 
-                                  <p style="font-size: 110%;"><em><strong>ผิดพลาด: </strong>  
-                                อุปกรณ์ของท่านไม่รองรับการแสดงผล</p>
-                                </iframe>
-                                
-                              </div>
+                            <div class='embed-responsive' style='padding-bottom:150%'>
+                                <object data='https://www.slideshare.net/slideshow/embed_code/key/78NW2yxg5UZMM3' type='application/pdf' width='100%' height='100%'></object>
                             </div>
+
      
 
                         </div>
