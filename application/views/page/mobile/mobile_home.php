@@ -517,17 +517,15 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                          
- 
+                                    
+                                    <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" id="CarCode" name="CarCode" >
+                                        <input type="text" value="" class="form-control" id="CarCode" name="CarCode" required>
                                         <label class="form-label">หมายเลขทะเบียนรถ</label>
                                     </div>
-
-
-                                        
                                     </div>
+
+
                                 </div>
                         </div> 
 
