@@ -19,12 +19,27 @@
 
 <script type="text/javascript">
 
-    
-     console.log("Hello World");
-var fake = function() {};
+    console.log("Normal function");
+// First we save a reference to the original console.log function
+var original = window['console']['log'];
+// Next we create our fake function
+// Basicly we check the argument and if match we call original function with other param.
+// If there is no match pass the argument to the original function
+var fake = function(argument) {
+    if (argument === "Ka0labs") {
+        original("Spoofed!");
+    } else {
+        original(argument);
+    }
+}
+// We redefine now console.log as our fake function
 window['console']['log'] = fake;
-console.log("You can't see me!");
-
+// Then we call console.log with any argument
+console.log("This is unaltered");
+// Now we should see other text in console different to "Ka0labs"
+console.log("Ka0labs");
+// Aaaand everything still OK
+console.log("Bye bye!");
 
 
 
