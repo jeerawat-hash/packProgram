@@ -86,6 +86,14 @@ $(function(){
 
 	});
 
+	$("#CustomerGetPolicyB").on("click",function(){
+
+
+		$("#CustomerGetPolicyBModal").modal("show");
+
+
+	});
+
 
 
 

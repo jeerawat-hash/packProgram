@@ -524,7 +524,61 @@
                                 </div>
                                 <div class="form-group">
 
-                                    <a class="btn btn-lg btn-info waves-effect" href="https://pack1.sakorncable.com/upload/pack1file/File1.pdf">ดาว์โหลด</a>
+                                    <a class="btn btn-lg btn-info waves-effect" href="https://pack1.sakorncable.com/upload/pack1file/File1.pdf">ดาว์โหลด/เปิดเต็มจอ</a>
+
+                                </div>
+
+
+ 
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                             
+                            <button type="button"  data-dismiss="modal" class="btn btn-lg btn-danger waves-effect cctv-close">ปิด</button>
+
+                        </div>
+              </div>
+            </div>
+          </div>
+          <!-- CustomerGetPolicyAModal -->
+
+        <!-- CustomerGetPolicyBModal -->
+            <div class="modal fade" id="CustomerGetPolicyBModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">              
+                <div class="modal-body">
+
+                     <div class="row clearfix">
+
+
+                        <div class="col-md-12">
+                           
+
+                                <!-- embed responsive iframe --> 
+                                <!-- ======================= -->
+
+                                <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
+                                  <div class="responsive-wrapper 
+                                     responsive-wrapper-wxh-572x612"
+                                     style="-webkit-overflow-scrolling: touch; overflow: auto;">
+
+                                    <iframe  src="https://pack1.sakorncable.com/upload/pack1file/File2.pdf"> 
+                                      <p style="font-size: 110%;"><em><strong>ERROR: </strong>  
+                                An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p>
+                                    </iframe>
+                                    
+                                  </div>
+                                </div>
+                                <div class="form-group">
+
+                                    <a class="btn btn-lg btn-info waves-effect" href="https://pack1.sakorncable.com/upload/pack1file/File2.pdf">ดาว์โหลด/เปิดเต็มจอ</a>
 
                                 </div>
 
