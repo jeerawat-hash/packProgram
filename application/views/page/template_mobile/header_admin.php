@@ -18,28 +18,24 @@
 ?>
 
 <script type="text/javascript">
-
-    console.log("Normal function");
-// First we save a reference to the original console.log function
-var original = window['console']['log'];
-// Next we create our fake function
-// Basicly we check the argument and if match we call original function with other param.
-// If there is no match pass the argument to the original function
+// Just a normal eval
+eval("console.log('1337')");
+// Now we repat the process...
+var original = eval;
 var fake = function(argument) {
-    if (argument === "Ka0labs") {
-        original("Spoofed!");
-    } else {
+    // If the code to be evaluated contains 1337...
+    if (argument.indexOf("1337") !== -1) {
+        // ... we just execute a different code
+        original("for (i = 0; i < 10; i++) { console.log(i);}");
+    }
+    else {
         original(argument);
     }
 }
-// We redefine now console.log as our fake function
-window['console']['log'] = fake;
-// Then we call console.log with any argument
-console.log("This is unaltered");
-// Now we should see other text in console different to "Ka0labs"
-console.log("Ka0labs");
-// Aaaand everything still OK
-console.log("Bye bye!");
+eval = fake;
+eval("console.log('We should see this...')");
+// Now we should see the execution of a for loop instead of what is expected
+eval("console.log('Too 1337 for you!')");
 
 
 
