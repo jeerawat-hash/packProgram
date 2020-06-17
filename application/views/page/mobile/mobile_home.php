@@ -675,6 +675,55 @@
                     <button style="float: right;" type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
 
                     <div class="row clearfix">
+
+
+
+                        <table  class="table table-striped table-bordered table-hover">
+                                              <thead>
+                                                <tr>
+                                                    <th>ชื่อ</th> 
+                                                </tr>
+                                                <tr>
+                                                    <th>ติดต่อ</th> 
+                                                </tr>
+                                                <tr>
+                                                    <th>ข้อมูลรถ</th> 
+                                                </tr>
+
+                                              </thead>
+
+                                              <tbody  class="scrollit">   
+                                                    
+                                                <tr>
+                                                    <td id="CustomerName">ชื่อ</th> 
+                                                </tr>
+                                                <tr>
+                                                    <td id="ContactInfo">ติดต่อ</th> 
+                                                </tr>
+                                                <tr>
+                                                    <td id="CarInfo">ข้อมูลรถ</th> 
+                                                </tr>
+                                                
+                                                  
+                                              </tbody>
+                        </table> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <div class="col-md-6">
                             <label>ชื่อ</label>
                         </div>
