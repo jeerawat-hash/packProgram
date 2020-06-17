@@ -521,8 +521,8 @@
                                           
  
                                     <div class="form-line">
-                                        <label class="form-label">หมายเลขทะเบียนรถ</label>
                                         <input type="text" class="form-control" id="CarCode" name="CarCode" >
+                                        <label class="form-label">หมายเลขทะเบียนรถ</label>
                                     </div>
 
 
