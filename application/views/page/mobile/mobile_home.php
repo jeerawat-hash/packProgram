@@ -512,7 +512,7 @@
 
                                 <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
                                   <div class="responsive-wrapper 
-                                     responsive-wrapper-wxh-572x612"
+                                     responsive-wrapper-wxh-772x612"
                                      style="-webkit-overflow-scrolling: touch; overflow: auto;">
 
                                     <iframe src="https://pack1.sakorncable.com/upload/pack1file/File1.pdf"> 
