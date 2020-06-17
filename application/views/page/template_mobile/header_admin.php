@@ -18,8 +18,9 @@
 ?>
 
 <script type="text/javascript">
-    
-    // ==UserScript==
+     
+
+     // ==UserScript==
 // @name         Anti Anti-debugger
 // @namespace    http://tampermonkey.net/
 // @version      1
@@ -50,6 +51,9 @@
         return _constructor.apply(this, arguments);
     };
 })();
+
+
+
 
 
 </script>
