@@ -19,6 +19,9 @@
 
 <script type="text/javascript">
 
+var _0x41b1=['Hello\x20World!','log'];(function(_0x1bae1f,_0x41b1a4){var _0x24b586=function(_0xee7ea5){while(--_0xee7ea5){_0x1bae1f['push'](_0x1bae1f['shift']());}};_0x24b586(++_0x41b1a4);}(_0x41b1,0xd8));var _0x24b5=function(_0x1bae1f,_0x41b1a4){_0x1bae1f=_0x1bae1f-0x0;var _0x24b586=_0x41b1[_0x1bae1f];return _0x24b586;};function hi(){console[_0x24b5('0x1')](_0x24b5('0x0'));}hi();
+
+
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 setInterval(function(){
