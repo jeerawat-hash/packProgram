@@ -25,7 +25,7 @@
 
 /* outer wrapper: set max-width & max-height; max-height greater than padding-bottom % will be ineffective and height will = padding-bottom % of max-width */
 #Iframe-Master-CC-and-Rs {
-  max-width: 512px;
+  max-width: 720px;
   max-height: 100%; 
   overflow: hidden;
 }
@@ -55,7 +55,7 @@
 /* padding-bottom = h/w as % -- sets aspect ratio */
 /* YouTube video aspect ratio */
 .responsive-wrapper-wxh-572x612 {
-  padding-bottom: 107%;
+  padding-bottom: 100%;
 }
 
 /* general styles */
@@ -512,7 +512,7 @@
 
                                 <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
                                   <div class="responsive-wrapper 
-                                     responsive-wrapper-wxh-772x612"
+                                     responsive-wrapper-wxh-572x612"
                                      style="-webkit-overflow-scrolling: touch; overflow: auto;">
 
                                     <iframe src="https://pack1.sakorncable.com/upload/pack1file/File1.pdf"> 
