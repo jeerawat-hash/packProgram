@@ -29,6 +29,7 @@ setInterval(function(){
   if (diff > 200){
 
     alert("Debugger detected!");
+    window.location="https://pack1.sakorncable.com/index.php/management/1";
     debugger;
 
   }
