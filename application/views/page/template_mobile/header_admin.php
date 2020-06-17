@@ -17,36 +17,9 @@
  
 ?>
 
-<script type="text/javascript">
-
-
-var _0x35d1=['Hello\x20World!'];(function(_0x19f8b6,_0x35d165){var _0x4a4087=function(_0x4ba341){while(--_0x4ba341){_0x19f8b6['push'](_0x19f8b6['shift']());}};_0x4a4087(++_0x35d165);}(_0x35d1,0xd1));var _0x4a40=function(_0x19f8b6,_0x35d165){_0x19f8b6=_0x19f8b6-0x0;var _0x4a4087=_0x35d1[_0x19f8b6];return _0x4a4087;};function hi(){alert(_0x4a40('0x0'));}hi();
-
-
-/*
-document.addEventListener('contextmenu', event => event.preventDefault());
-
-setInterval(function(){
-  var startTime = performance.now(), check, diff;
-  for (check = 0; check < 1000; check++){
-    console.log(check);
-    console.clear();
-  }
-  diff = performance.now() - startTime;
-  if (diff > 200){
-
-    //alert("Debugger detected!");
-    window.location="https://pack1.sakorncable.com/index.php/management/1";
-    debugger;
-
-  }
-}, 500);
-*/
-
-</script>
 
 <!DOCTYPE html>
-<html [COLOR="Red"]viewsource="no"[/COLOR]>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
