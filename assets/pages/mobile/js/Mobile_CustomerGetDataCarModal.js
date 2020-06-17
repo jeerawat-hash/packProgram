@@ -30,13 +30,14 @@ $(function(){
 
 		$("#CustomerGetDataCarModal").find("#PreloadSendData").show();
 		$("#CustomerGetDataCarModal").find("#SendData").hide(); 
-		
+
 		setTimeout(function(){ 
 
 		$.ajax({
 			url : "https://pack1.sakorncable.com/index.php/mobile_app/getDataCustomerByCar",
+			type : "POST",
 			data : data,
-			contentType : "POST",
+			contentType : false,
 			cache : false,
 			processData : false,
 			success : function(data){
