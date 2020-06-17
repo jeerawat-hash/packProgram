@@ -693,15 +693,15 @@
                                                     
                                                     <tr>
                                                         <td>ชื่อ</td>
-                                                        <td><label id="CustomerName"></label></td>
+                                                        <td><font color="red"><label id="CustomerName"></label></font></td>
                                                     </tr>
                                                     <tr>
                                                         <td>ติดต่อ</td>
-                                                        <td><label id="ContactInfo"></label></td>
+                                                        <td><font color="red"><label id="ContactInfo"></label></font></td>
                                                     </tr>
                                                     <tr>
                                                         <td>ข้อมูลรถ</td>
-                                                        <td><label id="CarInfo"></label></td>
+                                                        <td><font color="red"><label id="CarInfo"></label></font></td>
                                                     </tr>
                                                   
                                               </tbody>
