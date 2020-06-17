@@ -17,7 +17,6 @@
  
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,7 +72,7 @@
 
 </head>
 
-<body class="theme-blue" oncontextmenu="return false;">
+<body class="theme-blue">
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
