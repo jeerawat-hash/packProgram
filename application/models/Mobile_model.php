@@ -4,6 +4,19 @@ class Mobile_model extends CI_Model
 {	
 
 
+  public function getDataCustomerByCar($CarCode)
+  {
+
+     $this->mssql = $this->load->database("mssql",true);
+
+      return $this->mssql->query("SELECT b.CustomerName,'ตึก '+SUBSTRING(b.Room,2,2) + ' ' +'ห้อง '+SUBSTRING(b.Room,5,2) as AddressLocal,a.CARCODE,a.CARBRAND,a.CARCOLOR,a.CARTYPE,a.COUNTRY,a.CONTACT 
+  FROM [Sakorn_Manage].[dbo].[CustomerCarInfo] a 
+  join Theparak3.dbo.Customer b on a.CUST = b.CustomerID
+  where a.CARCODE like '".$CarCode."%' ")->result();
+
+
+  }
+
   public function CustomerAuth($CustomerID)
   {
 

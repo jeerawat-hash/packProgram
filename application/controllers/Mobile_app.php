@@ -53,8 +53,8 @@ class Mobile_app extends CI_Controller
 	}
 	public function getDataCustomerByCar()
 	{
-
-		print_r($_POST);
+ 
+		echo json_encode($this->Mobile_model->getDataCustomerByCar($_POST["CarCode"]));
 		
 	}
 	public function SendDataSlipToNotify()

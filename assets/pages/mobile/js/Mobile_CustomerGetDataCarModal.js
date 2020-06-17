@@ -43,6 +43,8 @@ $(function(){
 			success : function(data){
 
 				console.log(data);
+				
+				
 				$("#CustomerGetDataCarModal").find("#PreloadSendData").hide();
 				$("#CustomerGetDataCarModal").find("#SendData").show(); 
 			},
