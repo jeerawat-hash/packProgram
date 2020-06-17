@@ -709,44 +709,7 @@
                         </table> 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        <div class="col-md-6">
-                            <label>ชื่อ</label>
-                        </div>
-                        <div class="col-md-6">
-                            <label id="CustomerName"></label>
-                        </div>
-                    </div>
-                    <div class="row clearfix">
-                        <div class="col-md-6">
-                            <label>ติดต่อ</label>
-                        </div>
-                        <div class="col-md-6">
-                            <label id="ContactInfo"></label>
-                        </div>
-                    </div>
-                    <div class="row clearfix">
-                        <div class="col-md-6">
-                            <label>ข้อมูลรถ</label>
-                        </div>
-                        <div class="col-md-6">
-                            <label id="CarInfo"></label>
-                        </div>
-                    </div>
+ 
 
                   
                    
