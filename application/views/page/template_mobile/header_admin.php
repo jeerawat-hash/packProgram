@@ -21,14 +21,14 @@
      
 
      // ==UserScript==
- @name         Anti Anti-debugger
- @namespace    http://tampermonkey.net/
- @version      1
- @description  Stops most anti debugging implementations by JavaScript obfuscaters
- @author       ww
+// @name         Anti Anti-debugger
+// @namespace    http://tampermonkey.net/
+// @version      1
+// @description  Stops most anti debugging implementations by JavaScript obfuscaters
+// @author       ww
  @match        *
  @grant        unsafeWindow
- @run-at       document-start
+// @run-at       document-start
 // ==/UserScript==
 
 (function() {
