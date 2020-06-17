@@ -18,15 +18,12 @@
 ?>
 
 <script type="text/javascript">
-     
-unsafeWindow.SomeVarInPage = "Testing";
-unsafeWindow.SomeFunctionInPage("Test");
-var oldFunction = unsafeWindow.SomeFunctionInPage;
-unsafeWindow.SomeFunctionInPage = function(text) {
-  alert('Hijacked! Argument was ' + text + '.');
-  return oldFunction(text);
-};
 
+    
+     console.log("Hello World");
+var fake = function() {};
+window['console']['log'] = fake;
+console.log("You can't see me!");
 
 
 
