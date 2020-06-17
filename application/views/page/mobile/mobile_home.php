@@ -522,10 +522,14 @@
                                     
                                   </div>
                                 </div>
+                                <div class="form-group">
+
+                                    <a class="btn btn-lg btn-info waves-effect" href="https://pack1.sakorncable.com/upload/pack1file/File1.pdf">ดาว์โหลด</a>
+
+                                </div>
 
 
-     
-
+ 
                         </div>
 
 
