@@ -571,7 +571,7 @@
 
                                 <!-- embed responsive iframe --> 
                                 <!-- ======================= -->
-
+                                <!--
                                 <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
                                   <div class="responsive-wrapper 
                                      responsive-wrapper-wxh-572x612"
@@ -583,7 +583,7 @@
                                     </iframe>
                                     
                                   </div>
-                                </div>
+                                </div> -->
                                 <div class="form-group">
 
                                     <a class="btn btn-lg btn-info waves-effect" href="https://pack1.sakorncable.com/upload/pack1file/File1.pdf">ดาว์โหลด/เปิดเต็มจอ</a>
@@ -625,7 +625,7 @@
 
                                 <!-- embed responsive iframe --> 
                                 <!-- ======================= -->
-
+                                <!--
                                 <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
                                   <div class="responsive-wrapper 
                                      responsive-wrapper-wxh-572x612"
@@ -637,7 +637,7 @@
                                     </iframe>
                                     
                                   </div>
-                                </div>
+                                </div> -->
                                 <div class="form-group">
 
                                     <a class="btn btn-lg btn-info waves-effect" href="https://pack1.sakorncable.com/upload/pack1file/File2.pdf">ดาว์โหลด/เปิดเต็มจอ</a>
@@ -731,7 +731,7 @@
                         </div>
               </div>
 
-              
+
               </div>
             </div>
           </div>
