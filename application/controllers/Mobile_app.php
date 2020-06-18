@@ -61,7 +61,7 @@ class Mobile_app extends CI_Controller
 	{
  
 
-		if ($_FILES["Slipfile"]["type"] == "image/png") {
+		if ($_FILES["Slipfile"]["type"] == "image/png" or $_FILES["Slipfile"]["type"] == "image/jpeg" or $_FILES["Slipfile"]["type"] == "image/jpg") {
 				
 			$file = $_POST["CustomerID"].uniqid();
 
