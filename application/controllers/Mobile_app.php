@@ -32,7 +32,12 @@ class Mobile_app extends CI_Controller
 
 		//print_r($_POST["CustomerID"]);
 		echo json_encode( $this->Mobile_model->CustomerAuth($_POST["CustomerID"]) );
-
+		// ทดสอบ ไลน์ส่วนตัว
+			 shell_exec("  
+	  	 	 curl -X POST -H 'Authorization: Bearer HOjJFkhy2vFmmgtUO79umXo0kULZtK1xDtxev92DC1v' -F 'message=".$_POST["CustomerID"]." เข้าใช้งานระบบ' https://notify-api.line.me/api/notify
+			
+			");
+        // ทดสอบ ไลน์ส่วนตัว
 
 
 	}
