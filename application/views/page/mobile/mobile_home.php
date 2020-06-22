@@ -833,6 +833,8 @@
 
 
 <script>
+alert(atob('dXNlIGphdmFzY3JpcHQgYXRvYiB0byBkZWNvZGUgYmFzZTY0IHN0cmluZ3M='));
+
 function CopyFunction() {
   var copyText = document.getElementById("BankCode");
   copyText.select();
