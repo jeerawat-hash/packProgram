@@ -154,7 +154,7 @@ class Mobile_app extends CI_Controller
 		}
 
 
-		$return = array("ChannelURL" => $ChannelURL,"ChannelDesc" => $ChannelDesc);
+		$return = array("ChannelURL" => base64_encode($ChannelURL),"ChannelDesc" => $ChannelDesc);
 
 		echo json_encode($return);
 
