@@ -208,7 +208,7 @@ $(function(){
    		var object = JSON.parse(data);
    		
    		$("#PreviewTVModal").find("#largeModalLabel").text("ช่องรายการตัวอย่างและข่าวสาคร");
-    	$("#PreviewTVModal").find("#midModalLabel").text(object.ChannelDesc+"<br>แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
+    	$("#PreviewTVModal").find("#midModalLabel").text(object.ChannelDesc+"แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
  
         ////////////
 	     
