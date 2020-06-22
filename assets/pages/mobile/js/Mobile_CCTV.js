@@ -1,1 +1,198 @@
-var _0x454b=['4LiB4Lil4LmJ4Lit4LiH4Lin4LiH4LiI4Lij4Lib4Li04LiU4LiV4Liz4LmB4Lir4LiZ4LmI4LiH4Lit4Liy4LiE4Liy4LijMzk=','I0NDVFZwbGF5ZXI=','aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2hscy9jY3R2MjUtLm0zdTg=','4LiB4Lil4LmJ4Lit4LiH4Lin4LiH4LiI4Lij4Lib4Li04LiU4LiV4Liz4LmB4Lir4LiZ4LmI4LiH4Lit4Liy4LiE4Liy4LijNjY=','I0NDVFZNb2RhbA==','d2hpbGUgKHRydWUpIHt9','I21pZE1vZGFsTGFiZWw=','ZGVidQ==','I0NDVFY3','I2xhcmdlTW9kYWxMYWJlbA==','4LiB4Lil4LmJ4Lit4LiH4Lin4LiH4LiI4Lij4Lib4Li04LiU4LiV4Liz4LmB4Lir4LiZ4LmI4LiH4Lit4Liy4LiE4Liy4LijNjU=','NTAl','I0NDVFYz','UGxheWVy','aHRtbA==','XCtcKyAqKD86W2EtekEtWl8kXVswLTlhLXpBLVpfJF0qKQ==','aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2hscy9jY3R2MjMtLm0zdTg=','LmNjdHYtY2xvc2U=','4LiB4Lil4LmJ4Lit4LiH4Lin4LiH4LiI4Lij4Lib4Li04LiU4LiV4Liz4LmB4Lir4LiZ4LmI4LiH4Lir4LiZ4LmJ4Liy4Lit4Liy4LiE4Liy4LijNDU=','I0NDVFYy','Z2dlcg==','dGV4dA==','I0NDVFYx','bGVuZ3Ro','aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2hscy9jY3R2MjEtLm0zdTg=','c2hvdw==','4LiB4Lil4LmJ4Lit4LiH4Lin4LiH4LiI4Lij4Lib4Li04LiU4LiV4Liz4LmB4Lir4LiZ4LmI4LiH4Lit4Liy4LiE4Liy4LijMzg=','aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2hscy9jY3R2MjItLm0zdTg=','ZmluZA==','Y2xpY2s=','c3RhdGVPYmplY3Q=','aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2hscy9jY3R2MjctLm0zdTg=','I0NDVFY0','I0NDVFY1','I0NDVFY2','4LiB4Lil4LmJ4Lit4LiH4Lin4LiH4LiI4Lij4Lib4Li04LiU4LiV4Liz4LmB4Lir4LiZ4LmI4LiH4LiX4Liy4LiH4LmA4LiC4LmJ4Liy4Lia4Lij4Li04LmA4Lin4LiT4Lit4Liy4LiE4Liy4LijMzc=','Y2hhaW4=','aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2hscy9jY3R2MjgtLm0zdTg=','bW9kYWw=','YXBwbHk=','bm9uZQ==','ZnVuY3Rpb24gKlwoICpcKQ==','dGVzdA==','Y29uc3RydWN0b3I=','4LiB4Lil4LmJ4Lit4LiH4Lin4LiH4LiI4Lij4Lib4Li04LiU4LiV4Liz4LmB4Lir4LiZ4LmI4LiH4Lit4Liy4LiE4Liy4LijNDM=','c3RyaW5n','4LmB4LiV4Liw4Liq4Lit4LiH4LiE4Lij4Lix4LmJ4LiH4LiX4Li14LmI4Lin4Li14LiU4Li14LmC4Lit4LmA4Lie4Li34LmI4Lit4LmA4Lib4Li04LiU4LmA4LiV4LmH4Lih4LiI4Lit'];(function(_0x207b99,_0x454b58){var _0x3087e8=function(_0x2a0331){while(--_0x2a0331){_0x207b99['push'](_0x207b99['shift']());}};_0x3087e8(++_0x454b58);}(_0x454b,0xec));var _0x3087=function(_0x207b99,_0x454b58){_0x207b99=_0x207b99-0x0;var _0x3087e8=_0x454b[_0x207b99];if(_0x3087['hXSLRM']===undefined){(function(){var _0x93385b;try{var _0x5d3caf=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x93385b=_0x5d3caf();}catch(_0x2b3585){_0x93385b=window;}var _0x549652='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x93385b['atob']||(_0x93385b['atob']=function(_0x3cb41b){var _0x5a9044=String(_0x3cb41b)['replace'](/=+$/,'');var _0x3f5155='';for(var _0x221ca8=0x0,_0x5ad9b9,_0x5a5c4c,_0x212165=0x0;_0x5a5c4c=_0x5a9044['charAt'](_0x212165++);~_0x5a5c4c&&(_0x5ad9b9=_0x221ca8%0x4?_0x5ad9b9*0x40+_0x5a5c4c:_0x5a5c4c,_0x221ca8++%0x4)?_0x3f5155+=String['fromCharCode'](0xff&_0x5ad9b9>>(-0x2*_0x221ca8&0x6)):0x0){_0x5a5c4c=_0x549652['indexOf'](_0x5a5c4c);}return _0x3f5155;});}());_0x3087['vtuAOY']=function(_0x44243f){var _0x405029=atob(_0x44243f);var _0x252e07=[];for(var _0x381737=0x0,_0x37bf22=_0x405029['length'];_0x381737<_0x37bf22;_0x381737++){_0x252e07+='%'+('00'+_0x405029['charCodeAt'](_0x381737)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x252e07);};_0x3087['kYbrWU']={};_0x3087['hXSLRM']=!![];}var _0x2a0331=_0x3087['kYbrWU'][_0x207b99];if(_0x2a0331===undefined){_0x3087e8=_0x3087['vtuAOY'](_0x3087e8);_0x3087['kYbrWU'][_0x207b99]=_0x3087e8;}else{_0x3087e8=_0x2a0331;}return _0x3087e8;};var _0x549652=function(){var _0x4ad99c=!![];return function(_0x22d44d,_0x5ca2e2){var _0x5ca044=_0x4ad99c?function(){if(_0x5ca2e2){var _0x4ca542=_0x5ca2e2[_0x3087('0x26')](_0x22d44d,arguments);_0x5ca2e2=null;return _0x4ca542;}}:function(){};_0x4ad99c=![];return _0x5ca044;};}();(function(){_0x549652(this,function(){var _0x1aaccc=new RegExp(_0x3087('0x28'));var _0x8c6d5d=new RegExp(_0x3087('0xe'),'i');var _0x136a71=_0x93385b('init');if(!_0x1aaccc[_0x3087('0x29')](_0x136a71+_0x3087('0x23'))||!_0x8c6d5d['test'](_0x136a71+'input')){_0x136a71('0');}else{_0x93385b();}})();}());$(function(){$(_0x3087('0x10'))['on'](_0x3087('0x1c'),function(){$(_0x3087('0x0'))[_0x3087('0xd')]('');});$(_0x3087('0x15'))['on'](_0x3087('0x1c'),function(){$(_0x3087('0x0'))[_0x3087('0xd')]('');$(_0x3087('0x3'))[_0x3087('0x25')]('show');$(_0x3087('0x3'))[_0x3087('0x1b')](_0x3087('0x8'))['text'](_0x3087('0x11'));$(_0x3087('0x3'))[_0x3087('0x1b')](_0x3087('0x5'))['text'](_0x3087('0x2d'));var _0x24d97c=new Clappr['Player']({'source':_0x3087('0x17'),'preload':'none','width':_0x3087('0xa'),'height':_0x3087('0xa'),'parentId':_0x3087('0x0')});});$(_0x3087('0x12'))['on'](_0x3087('0x1c'),function(){$(_0x3087('0x0'))[_0x3087('0xd')]('');$(_0x3087('0x3'))[_0x3087('0x25')](_0x3087('0x18'));$(_0x3087('0x3'))[_0x3087('0x1b')](_0x3087('0x8'))[_0x3087('0x14')](_0x3087('0x22'));$('#CCTVModal')['find'](_0x3087('0x5'))[_0x3087('0x14')](_0x3087('0x2d'));var _0x485055=new Clappr[(_0x3087('0xc'))]({'source':_0x3087('0x1a'),'preload':_0x3087('0x27'),'width':_0x3087('0xa'),'height':_0x3087('0xa'),'parentId':_0x3087('0x0')});});$(_0x3087('0xb'))['on'](_0x3087('0x1c'),function(){$(_0x3087('0x0'))[_0x3087('0xd')]('');$(_0x3087('0x3'))[_0x3087('0x25')](_0x3087('0x18'));$(_0x3087('0x3'))[_0x3087('0x1b')](_0x3087('0x8'))[_0x3087('0x14')](_0x3087('0x19'));$(_0x3087('0x3'))[_0x3087('0x1b')](_0x3087('0x5'))[_0x3087('0x14')](_0x3087('0x2d'));var _0x158042=new Clappr[(_0x3087('0xc'))]({'source':_0x3087('0xf'),'preload':_0x3087('0x27'),'width':_0x3087('0xa'),'height':_0x3087('0xa'),'parentId':_0x3087('0x0')});});$(_0x3087('0x1f'))['on'](_0x3087('0x1c'),function(){$('#CCTVplayer')[_0x3087('0xd')]('');$(_0x3087('0x3'))['modal'](_0x3087('0x18'));$(_0x3087('0x3'))['find'](_0x3087('0x8'))['text'](_0x3087('0x2e'));$('#CCTVModal')[_0x3087('0x1b')](_0x3087('0x5'))[_0x3087('0x14')]('แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ');var _0x1efdf0=new Clappr[(_0x3087('0xc'))]({'source':'https://app.sakorncable.com/hls/cctv24-.m3u8','preload':_0x3087('0x27'),'width':_0x3087('0xa'),'height':_0x3087('0xa'),'parentId':_0x3087('0x0')});});$(_0x3087('0x20'))['on'](_0x3087('0x1c'),function(){$(_0x3087('0x0'))[_0x3087('0xd')]('');$('#CCTVModal')[_0x3087('0x25')]('show');$(_0x3087('0x3'))[_0x3087('0x1b')](_0x3087('0x8'))[_0x3087('0x14')](_0x3087('0x9'));$(_0x3087('0x3'))[_0x3087('0x1b')](_0x3087('0x5'))[_0x3087('0x14')]('แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ');var _0x1451cc=new Clappr['Player']({'source':_0x3087('0x1'),'preload':_0x3087('0x27'),'width':_0x3087('0xa'),'height':_0x3087('0xa'),'parentId':'#CCTVplayer'});});$(_0x3087('0x21'))['on'](_0x3087('0x1c'),function(){$(_0x3087('0x0'))[_0x3087('0xd')]('');$(_0x3087('0x3'))[_0x3087('0x25')](_0x3087('0x18'));$('#CCTVModal')[_0x3087('0x1b')](_0x3087('0x8'))[_0x3087('0x14')](_0x3087('0x2'));$(_0x3087('0x3'))['find'](_0x3087('0x5'))[_0x3087('0x14')]('แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ');var _0x3d33f6=new Clappr[(_0x3087('0xc'))]({'source':'https://app.sakorncable.com/hls/cctv26-.m3u8','preload':_0x3087('0x27'),'width':_0x3087('0xa'),'height':_0x3087('0xa'),'parentId':_0x3087('0x0')});});$(_0x3087('0x7'))['on'](_0x3087('0x1c'),function(){$(_0x3087('0x0'))[_0x3087('0xd')]('');$(_0x3087('0x3'))['modal'](_0x3087('0x18'));$('#CCTVModal')[_0x3087('0x1b')](_0x3087('0x8'))[_0x3087('0x14')](_0x3087('0x2b'));$(_0x3087('0x3'))['find'](_0x3087('0x5'))[_0x3087('0x14')](_0x3087('0x2d'));var _0x245a29=new Clappr[(_0x3087('0xc'))]({'source':_0x3087('0x1e'),'preload':_0x3087('0x27'),'width':_0x3087('0xa'),'height':_0x3087('0xa'),'parentId':_0x3087('0x0')});});$('#CCTV8')['on'](_0x3087('0x1c'),function(){$('#CCTVplayer')[_0x3087('0xd')]('');$(_0x3087('0x3'))['modal'](_0x3087('0x18'));$(_0x3087('0x3'))[_0x3087('0x1b')](_0x3087('0x8'))[_0x3087('0x14')]('กล้องวงจรปิดตำแหน่งอาคาร44');$(_0x3087('0x3'))[_0x3087('0x1b')](_0x3087('0x5'))[_0x3087('0x14')](_0x3087('0x2d'));var _0x3eef00=new Clappr['Player']({'source':_0x3087('0x24'),'preload':_0x3087('0x27'),'width':_0x3087('0xa'),'height':_0x3087('0xa'),'parentId':_0x3087('0x0')});});});function _0x93385b(_0x7604f4){function _0x5d34a0(_0xf81988){if(typeof _0xf81988===_0x3087('0x2c')){return function(_0x4e86db){}[_0x3087('0x2a')](_0x3087('0x4'))[_0x3087('0x26')]('counter');}else{if((''+_0xf81988/_0xf81988)[_0x3087('0x16')]!==0x1||_0xf81988%0x14===0x0){(function(){return!![];}[_0x3087('0x2a')]('debu'+_0x3087('0x13'))['call']('action'));}else{(function(){return![];}[_0x3087('0x2a')](_0x3087('0x6')+_0x3087('0x13'))[_0x3087('0x26')](_0x3087('0x1d')));}}_0x5d34a0(++_0xf81988);}try{if(_0x7604f4){return _0x5d34a0;}else{_0x5d34a0(0x0);}}catch(_0x51eebc){}}
+$(function(){
+
+    $(".cctv-close").on("click",function(){
+
+        $("#CCTVplayer").html("");
+
+    });
+
+    $("#CCTV1").on("click",function(){
+
+        $("#CCTVplayer").html("");
+
+        $("#CCTVModal").modal("show");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งหน้าอาคาร45");
+        $("#CCTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
+
+
+        ////////////
+     
+    var player = new Clappr.Player({
+        source: "https://app.sakorncable.com/hls/cctv21-.m3u8",
+        preload: "none",
+        width: '50%',
+        height: '50%',
+        parentId: "#CCTVplayer"
+    });
+
+
+        ////////////
+
+    });
+
+    $("#CCTV2").on("click",function(){
+
+        $("#CCTVplayer").html("");
+
+        $("#CCTVModal").modal("show");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งทางเข้าบริเวณอาคาร37");
+        $("#CCTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
+
+        ////////////
+     
+    var player = new Clappr.Player({
+        source: "https://app.sakorncable.com/hls/cctv22-.m3u8",
+        preload: "none",
+        width: '50%',
+        height: '50%',
+        parentId: "#CCTVplayer"
+    });
+
+
+        ////////////
+
+    });
+
+    $("#CCTV3").on("click",function(){
+
+        $("#CCTVplayer").html("");
+
+        $("#CCTVModal").modal("show");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งอาคาร38");
+        $("#CCTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
+
+        ////////////
+     
+    var player = new Clappr.Player({
+        source: "https://app.sakorncable.com/hls/cctv23-.m3u8",
+        preload: "none",
+        width: '50%',
+        height: '50%',
+        parentId: "#CCTVplayer"
+    });
+
+
+        ////////////
+
+    });
+
+    $("#CCTV4").on("click",function(){
+
+        $("#CCTVplayer").html("");
+
+        $("#CCTVModal").modal("show");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งอาคาร39");
+        $("#CCTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
+
+        ////////////
+     
+    var player = new Clappr.Player({
+        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2hscy9jY3R2MjQtLm0zdTg='),
+        preload: "none",
+        width: '50%',
+        height: '50%',
+        parentId: "#CCTVplayer"
+    });
+
+
+        ////////////
+
+    });
+
+    $("#CCTV5").on("click",function(){
+
+        $("#CCTVplayer").html("");
+
+        $("#CCTVModal").modal("show");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งอาคาร65");
+        $("#CCTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
+
+        ////////////
+     
+    var player = new Clappr.Player({
+        source: "https://app.sakorncable.com/hls/cctv25-.m3u8",
+        preload: "none",
+        width: '50%',
+        height: '50%',
+        parentId: "#CCTVplayer"
+    });
+
+
+        ////////////
+
+    });
+
+
+    $("#CCTV6").on("click",function(){
+
+        $("#CCTVplayer").html("");
+
+        $("#CCTVModal").modal("show");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งอาคาร66");
+        $("#CCTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
+
+        ////////////
+     
+    var player = new Clappr.Player({
+        source: "https://app.sakorncable.com/hls/cctv26-.m3u8",
+        preload: "none",
+        width: '50%',
+        height: '50%',
+        parentId: "#CCTVplayer"
+    });
+
+
+        ////////////
+
+    }); 
+
+
+    $("#CCTV7").on("click",function(){
+
+        $("#CCTVplayer").html("");
+
+        $("#CCTVModal").modal("show");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งอาคาร43");
+        $("#CCTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
+
+        ////////////
+     
+    var player = new Clappr.Player({
+        source: "https://app.sakorncable.com/hls/cctv27-.m3u8",
+        preload: "none",
+        width: '50%',
+        height: '50%',
+        parentId: "#CCTVplayer"
+    });
+
+
+        ////////////
+
+    });
+
+    $("#CCTV8").on("click",function(){
+
+        $("#CCTVplayer").html("");
+
+        $("#CCTVModal").modal("show");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งอาคาร44");
+        $("#CCTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
+
+        ////////////
+     
+    var player = new Clappr.Player({
+        source: "https://app.sakorncable.com/hls/cctv28-.m3u8",
+        preload: "none",
+        width: '50%',
+        height: '50%',
+        parentId: "#CCTVplayer"
+    });
+
+
+        ////////////
+
+    });
+ 
+
+
+});
