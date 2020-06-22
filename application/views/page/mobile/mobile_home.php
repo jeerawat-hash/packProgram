@@ -89,7 +89,7 @@
 
   
             <div class="block-header">
-                <h2>เมนูหลัก</h2>
+                <h2>เมนูหลัก TimeOutIn(<label id="IdleTimeID"></label>)</h2>
             </div>
 
 
@@ -906,8 +906,20 @@
 
 <script>
 
-        var timeOutMin = 60;
-        var timeOut = (timeOutMin==null)?60:timeOutMin;
+function CopyFunction() {
+  var copyText = document.getElementById("BankCode");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("คัดลอกหมายเลขบัญชีสำเร็จ....");
+}
+</script>
+ 
+
+<script type="text/javascript">
+        //new logic check timeout
+        var timeOutMin = 30;
+        var timeOut = (timeOutMin==null)?30:timeOutMin;
         var idleTime = 0;
         var idleInterval = setInterval(timerIncrement, 3000); // 3 secs
 
@@ -923,19 +935,10 @@
 
         function timerIncrement() {
             idleTime = idleTime + 1;
+            $("#IdleTimeID").text(idleTime);
             if (idleTime > timeOut) {
-                alert("ตรวจพบการเข้าใช้งานระบบนานเกินควร");
                 top.location.href = 'https://pack1.sakorncable.com/';
             }
         }
-
-
-function CopyFunction() {
-  var copyText = document.getElementById("BankCode");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  alert("คัดลอกหมายเลขบัญชีสำเร็จ....");
-}
 </script>
- 
+
