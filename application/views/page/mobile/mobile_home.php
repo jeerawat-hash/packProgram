@@ -164,6 +164,32 @@
         </div>
 
         <div class="block-header">
+                <h2>สาครเคเบิล</h2>
+            </div>
+ 
+            
+            <div class="row clearfix">
+              <!-- Menu -->    
+ 
+                <div id="PreviewTV" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-teal">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">รายการตัวอย่างและข่าว</div>
+                        </div>
+                    </div>
+
+                </div> 
+ 
+            <!-- Menu -->
+
+        </div>
+
+
+
+        <div class="block-header">
                 <h2>กล้องวงจรปิด</h2>
             </div>
 
@@ -298,6 +324,52 @@
                                     <div class="embed-responsive embed-responsive-16by9">
 
                                         <div class="player" id="CCTVplayer"></div>
+
+                                    </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                           
+                                       <font color="red"><label id="midModalLabel">ทดสอบระบบ</label></font> 
+ 
+                                    </div>
+                                </div>
+                        </div> 
+
+ 
+                        </div>
+                        <div class="modal-footer">
+                             
+                            <button type="button"  data-dismiss="modal" class="btn btn-lg btn-danger waves-effect cctv-close">ปิด</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        <!-- PreviewTVModal -->
+            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="PreviewTVModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="largeModalLabel">กล้องวงจรปิด</h4>
+                        </div>
+                        <div class="modal-body">
+
+
+                        <div class="row clearfix">
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                    
+                                    <div class="embed-responsive embed-responsive-16by9">
+
+                                        <div class="player" id="PreviewTVplayer"></div>
 
                                     </div>
                                         
@@ -822,7 +894,6 @@
 
      
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/mobile_home.js"></script>
-
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CCTV.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerCheckblanace.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerSendSlip.js"></script>
