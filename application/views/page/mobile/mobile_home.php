@@ -936,6 +936,7 @@ function CopyFunction() {
         function timerIncrement() {
             idleTime = idleTime + 1;
             $("#IdleTimeID").text(idleTime);
+            $("#PreviewTVplayer").html("");
             if (idleTime > timeOut) {
                 alert("หมดเวลาการเชื่อมต่อกำลังรีโหลดโปรแกรม....");
                 top.location.href = 'https://pack1.sakorncable.com/';
