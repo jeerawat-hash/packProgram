@@ -177,7 +177,7 @@
                             <i class="material-icons">devices</i>
                         </div>
                         <div class="content">
-                            <div class="text">รายการตัวอย่างและข่าว</div>
+                            <div class="text">รายการตัวอย่างและข่าวสาคร</div>
                         </div>
                     </div>
 
