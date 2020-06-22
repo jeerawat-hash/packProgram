@@ -906,6 +906,29 @@
 
 <script>
 
+        var timeOutMin = 60;
+        var timeOut = (timeOutMin==null)?60:timeOutMin;
+        var idleTime = 0;
+        var idleInterval = setInterval(timerIncrement, 3000); // 3 secs
+
+        document.onmousedown = function()
+        {
+            idleTime = 0;
+        };
+
+         document.onkeydown=function(e)
+        {
+            idleTime = 0;
+        }
+
+        function timerIncrement() {
+            idleTime = idleTime + 1;
+            if (idleTime > timeOut) {
+                alert("ตรวจพบการเข้าใช้งานระบบนานเกินควร");
+                top.location.href = 'https://pack1.sakorncable.com/';
+            }
+        }
+
 
 function CopyFunction() {
   var copyText = document.getElementById("BankCode");
@@ -915,3 +938,4 @@ function CopyFunction() {
   alert("คัดลอกหมายเลขบัญชีสำเร็จ....");
 }
 </script>
+ 
