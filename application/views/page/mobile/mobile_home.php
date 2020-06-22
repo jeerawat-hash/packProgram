@@ -89,7 +89,7 @@
 
   
             <div class="block-header">
-                <h2>เมนูหลัก TimeOutIn(<label id="IdleTimeID"></label>)</h2>
+                <h2>เมนูหลัก</h2>
             </div>
 
 
@@ -918,10 +918,10 @@ function CopyFunction() {
 
 <script type="text/javascript">
         //new logic check timeout
-        var timeOutMin = 30;
-        var timeOut = (timeOutMin==null)?30:timeOutMin;
+        var timeOutMin = 60;
+        var timeOut = (timeOutMin==null)?60:timeOutMin;
         var idleTime = 0;
-        var idleInterval = setInterval(timerIncrement, 3000); // 3 secs
+        var idleInterval = setInterval(timerIncrement, 2000); // 3 secs
 
         document.onmousedown = function()
         {
@@ -937,6 +937,7 @@ function CopyFunction() {
             idleTime = idleTime + 1;
             $("#IdleTimeID").text(idleTime);
             if (idleTime > timeOut) {
+                alert("หมดเวลาการเชื่อมต่อกำลังรีโหลดโปรแกรม....");
                 top.location.href = 'https://pack1.sakorncable.com/';
             }
         }

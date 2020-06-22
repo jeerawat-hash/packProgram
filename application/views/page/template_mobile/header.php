@@ -118,7 +118,7 @@
                 -->
                 <a href="javascript:void(0);" class="bars"></a>
                 
-                <a class="navbar-brand" href="javascript:void(0);">นิติบุคคล Pack1 สาครเคเบิล</a>
+                <a class="navbar-brand" href="javascript:void(0);">นิติบุคคล Pack1 สาครเคเบิล TimeOutIn(<label id="IdleTimeID"></label>)</a>
             </div>
             
             <!--
