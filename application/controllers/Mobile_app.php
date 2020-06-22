@@ -75,7 +75,7 @@ class Mobile_app extends CI_Controller
 			
 
 			$ChannelURL = "https://app.sakorncable.com/live/sakornNews-.m3u8";
-			$ChannelDesc = "ช่องข่าวสาคร เขตสมุทรปราการ เวลา 21:00น. และ เขตฉะเชิงเทรา 22:00น. สามารถรับชบได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
+			$ChannelDesc = "ช่องข่าวสาคร เขตสมุทรปราการ เวลา 21:00น. และ เขตฉะเชิงเทรา 22:00น. สามารถรับชมได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
 
 		//https://app.sakorncable.com/live/sakorndoc-.m3u8
 
@@ -85,68 +85,68 @@ class Mobile_app extends CI_Controller
 			case 0:
 					
 				$ChannelURL = "https://app.sakorncable.com/live/sunhd-.m3u8";
-				$ChannelDesc = "ช่องSUN HD สามารถรับชบได้ที่กล่องสาครTV ช่อง 708 หรือ Nex By สาคร ช่อง 228 ติดต่อ 0632929995 และ 0632929996";
+				$ChannelDesc = "ช่องSUN HD สามารถรับชมได้ที่กล่องสาครTV ช่อง 708 หรือ Nex By สาคร ช่อง 228 ติดต่อ 0632929995 และ 0632929996";
 
 				break;
 			case 1:
 					
 				$ChannelURL = "https://app.sakorncable.com/live/rmoviehd-.m3u8";
-				$ChannelDesc = "ช่องRMovie HD สามารถรับชบได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
+				$ChannelDesc = "ช่องRMovie HD สามารถรับชมได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
 
 				break;
 			case 2:
 					
 				$ChannelURL = "https://app.sakorncable.com/live/truefilm2-.m3u8";
-				$ChannelDesc = "ช่องTrueFilm2 สามารถรับชบได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
+				$ChannelDesc = "ช่องTrueFilm2 สามารถรับชมได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
 
 				break;
 			case 3:
 					
 				$ChannelURL = "https://app.sakorncable.com/live/trueseries-.m3u8";
-				$ChannelDesc = "ช่องTrueSeries สามารถรับชบได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
+				$ChannelDesc = "ช่องTrueSeries สามารถรับชมได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
 
 				break;
 			case 4:
 					
 				$ChannelURL = "https://app.sakorncable.com/live/sky-.m3u8";
-				$ChannelDesc = "ช่องSKY1 สามารถรับชบได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
+				$ChannelDesc = "ช่องSKY1 สามารถรับชมได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
 
 				break;
 			case 5:
 					
 				$ChannelURL = "https://app.sakorncable.com/live/busmusic-.m3u8";
-				$ChannelDesc = "ช่องBUSMusic สามารถรับชบได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
+				$ChannelDesc = "ช่องBUSMusic สามารถรับชมได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
 
 				break;
 			case 6:
 					
 				$ChannelURL = "https://app.sakorncable.com/live/sakorndoc-.m3u8";
-				$ChannelDesc = "ช่องSakornDocumentary สามารถรับชบได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
+				$ChannelDesc = "ช่องSakornDocumentary สามารถรับชมได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
 
 				break;
 			case 7:
 				 
 				$ChannelURL = "https://app.sakorncable.com/live/sky1-.m3u8";
-				$ChannelDesc = "ช่องSky สามารถรับชบได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
+				$ChannelDesc = "ช่องSky สามารถรับชมได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
 
 				break;
 			case 8:
 					
 				$ChannelURL = "https://app.sakorncable.com/live/trueww-.m3u8";
-				$ChannelDesc = "ช่องTrue World Wile สามารถรับชบได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
+				$ChannelDesc = "ช่องTrue World Wile สามารถรับชมได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
 
 				break;
 			case 9:
 					 
 				$ChannelURL = "https://app.sakorncable.com/live/truesport6-.m3u8";
-				$ChannelDesc = "ช่องTrue SPORT 6 สามารถรับชบได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
+				$ChannelDesc = "ช่องTrue SPORT 6 สามารถรับชมได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
 
 				break;
 			
 			default:
 
 				$ChannelURL = "https://app.sakorncable.com/live/sakornNews-.m3u8";
-				$ChannelDesc = "ช่องข่าวสาคร เขตสมุทรปราการ เวลา 21:00น. และ เขตฉะเชิงเทรา 22:00น. สามารถรับชบได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
+				$ChannelDesc = "ช่องข่าวสาคร เขตสมุทรปราการ เวลา 21:00น. และ เขตฉะเชิงเทรา 22:00น. สามารถรับชมได้ที่กล่องสาครTV หรือ Nex By สาคร ติดต่อ 0632929995 และ 0632929996";
 				
 				break;
 			}
