@@ -939,7 +939,7 @@ function CopyFunction() {
             
             if (idleTime > timeOut) {
                 $("#PreviewTVplayer").html("");
-                alert("หมดเวลาการเชื่อมต่อกำลังรีโหลดโปรแกรม....");
+                //alert("หมดเวลาการเชื่อมต่อกำลังรีโหลดโปรแกรม....");
                 top.location.href = 'https://pack1.sakorncable.com/';
             }
         }
