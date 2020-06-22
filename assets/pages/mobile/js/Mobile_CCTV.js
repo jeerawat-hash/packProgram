@@ -208,12 +208,12 @@ $(function(){
    		var object = JSON.parse(data);
    		
    		$("#PreviewTVModal").find("#largeModalLabel").text("ช่องรายการตัวอย่างและข่าวสาคร");
-    	$("#PreviewTVModal").find("#midModalLabel").text(object[0].ChannelDesc+"<br>แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
+    	$("#PreviewTVModal").find("#midModalLabel").text(object.ChannelDesc+"แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
  
         ////////////
 	     
 	    var player = new Clappr.Player({
-	        source: atob( object[0].ChannelURL ),
+	        source: atob( object.ChannelURL ),
 	        preload: "none",
 	        width: '50%',
 	        height: '50%',
