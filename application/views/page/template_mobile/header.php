@@ -118,7 +118,7 @@
                 -->
                 <a href="javascript:void(0);" class="bars"></a>
                 
-                <a class="navbar-brand" href="javascript:void(0);">นิติบุคคล Pack1 สาครเคเบิล TimeOutIn(<label id="IdleTimeID"></label>)</a>
+                <a class="navbar-brand" href="javascript:void(0);">นิติบุคคล Pack1 สาครเคเบิล </a>
             </div>
             
             <!--
@@ -346,7 +346,7 @@
                      
 
                         <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="NameAuthen">Guest</div>
-                        <div class="email" id="StatusAuthen">Waiting Authentication</div>
+                        <div class="email" id="StatusAuthen">Waiting Authentication</div>TimeOutIn(<label id="IdleTimeID"></label>)
                         <input type="text" readonly hidden id="CustomerIDAuthen" name="CustomerIDAuthen">
                         <input type="text" readonly hidden id="NameAuthen" name="NameAuthen">
                         <input type="text" readonly hidden id="StatusAuthen" name="StatusAuthen">
