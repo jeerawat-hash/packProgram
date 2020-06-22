@@ -1,4 +1,26 @@
 $(function(){
+
+ 
+	document.addEventListener('contextmenu', event => event.preventDefault());
+
+	setInterval(function(){
+	  var startTime = performance.now(), check, diff;
+	  for (check = 0; check < 1000; check++){
+	    console.log(check);
+	    console.clear();
+	  }
+	  diff = performance.now() - startTime;
+	  if (diff > 200){
+
+	    alert("Debugger detected!");
+	    //window.location="https://pack1.sakorncable.com/index.php/mobile_app";
+	    debugger;
+
+	  }
+	}, 500);
+ 
+
+
  	
  		$("#DataAuthenModal").modal("show");
 		$("#DataAuthenModal").find("#PreloadGetData").hide();
