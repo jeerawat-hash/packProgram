@@ -389,7 +389,7 @@
                         </div>
                         <div class="modal-footer">
                              
-                            <button type="button"  data-dismiss="modal" class="btn btn-lg btn-danger waves-effect cctv-close">ปิด</button>
+                            <button type="button" id="ClearPreview"  data-dismiss="modal" class="btn btn-lg btn-danger waves-effect cctv-close">ปิด</button>
 
                         </div>
                     </div>

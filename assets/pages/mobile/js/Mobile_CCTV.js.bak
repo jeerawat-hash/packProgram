@@ -203,28 +203,35 @@ $(function(){
     $("#PreviewTVModal").find("#largeModalLabel").text("ช่องรายการตัวอย่างและข่าวสาคร");
     $("#PreviewTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
  
-   	$.post("https://pack1.sakorncable.com/index.php/mobile_app/getDataPreviewChannel",{},function(data,status){
+    $.post("https://pack1.sakorncable.com/index.php/mobile_app/getDataPreviewChannel",{},function(data,status){
 
-   		var object = JSON.parse(data);
-   		
-   		$("#PreviewTVModal").find("#largeModalLabel").text("ช่องรายการตัวอย่างและข่าวสาคร");
-    	$("#PreviewTVModal").find("#midModalLabel").text(object.ChannelDesc+"แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
+        var object = JSON.parse(data);
+        
+        $("#PreviewTVModal").find("#largeModalLabel").text("ช่องรายการตัวอย่างและข่าวสาคร");
+        $("#PreviewTVModal").find("#midModalLabel").text(object.ChannelDesc+"แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
  
         ////////////
-	     
-	    var player = new Clappr.Player({
-	        source: atob( object.ChannelURL ),
-	        preload: "none",
-	        width: '50%',
-	        height: '50%',
-	        parentId: "#PreviewTVplayer"
-	    });
+         
+        var player = new Clappr.Player({
+            source: atob( object.ChannelURL ),
+            preload: "none",
+            width: '50%',
+            height: '50%',
+            parentId: "#PreviewTVplayer"
+        });
 
 
         ////////////
 
-   	});
+    });
 
+
+    });
+
+
+    $("#PreviewTVModal").find("#ClearPreview").on("click",function(){
+
+        $("#PreviewTVplayer").html("");
 
     });
  
