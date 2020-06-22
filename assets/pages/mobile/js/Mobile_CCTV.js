@@ -211,39 +211,14 @@ $(function(){
     	$("#PreviewTVModal").find("#midModalLabel").text(object.ChannelDesc+"แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
  
         ////////////
-	       
+	     
 	    var player = new Clappr.Player({
-		    source: atob( object.ChannelURL ),
-		    parentId: "#PreviewTVplayer",
-		    preload: "none",
+	        source: atob( object.ChannelURL ),
+	        preload: "none",
 	        width: '50%',
 	        height: '50%',
-		    plugins: {'playback': [RTMP]},
-		    rtmpConfig: {
-		        swfPath: 'https://pack1.sakorncable.com/assets/clappr-rtmp/dist/assets/RTMP.swf',
-		        scaling:'stretch',
-		        playbackType: 'live',
-		        bufferTime: 1,
-		        startLevel: 0,
-		        switchRules: {
-		            "SufficientBandwidthRule": {
-		                "bandwidthSafetyMultiple": 1.15,
-		                "minDroppedFps": 2
-		            },
-		            "InsufficientBufferRule": {
-		                "minBufferLength": 2
-		            },
-		            "DroppedFramesRule": {
-		                "downSwitchByOne": 10,
-		                "downSwitchByTwo": 20,
-		                "downSwitchToZero": 24
-		            },
-		            "InsufficientBandwidthRule": {
-		                "bitrateMultiplier": 1.15
-		            }
-		        }
-		    },
-		});
+	        parentId: "#PreviewTVplayer"
+	    });
 
 
         ////////////
