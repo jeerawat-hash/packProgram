@@ -207,7 +207,7 @@ $(function(){
         ////////////
      
     var player = new Clappr.Player({
-        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2hscy9jY3R2MjEtLm0zdTg='),
+        source: atob('cnRtcDovLzEwMy43NS4yMDEuMzoxOTM1L3RyYW5zL3NuZXc='),
         preload: "none",
         width: '50%',
         height: '50%',
