@@ -918,29 +918,36 @@ function CopyFunction() {
 
 <script type="text/javascript">
         //new logic check timeout
-        var timeOutMin = 60;
-        var timeOut = (timeOutMin==null)?60:timeOutMin;
-        var idleTime = 0;
-        var idleInterval = setInterval(timerIncrement, 2000); // 3 secs
 
-        document.onmousedown = function()
-        {
-            idleTime = 0;
-        };
+        if ($("#CustomerIDAuthen").val() != "") {
 
-         document.onkeydown=function(e)
-        {
-            idleTime = 0;
-        }
+            var timeOutMin = 60;
+            var timeOut = (timeOutMin==null)?60:timeOutMin;
+            var idleTime = 0;
+            var idleInterval = setInterval(timerIncrement, 2000); // 3 secs
 
-        function timerIncrement() {
-            idleTime = idleTime + 1;
-            $("#IdleTimeID").text(idleTime);
-            $("#PreviewTVplayer").html("");
-            if (idleTime > timeOut) {
-                alert("หมดเวลาการเชื่อมต่อกำลังรีโหลดโปรแกรม....");
-                top.location.href = 'https://pack1.sakorncable.com/';
+            document.onmousedown = function()
+            {
+                idleTime = 0;
+            };
+
+             document.onkeydown=function(e)
+            {
+                idleTime = 0;
             }
+
+            function timerIncrement() {
+                idleTime = idleTime + 1;
+                $("#IdleTimeID").text(idleTime);
+                $("#PreviewTVplayer").html("");
+                if (idleTime > timeOut) {
+                    alert("หมดเวลาการเชื่อมต่อกำลังรีโหลดโปรแกรม....");
+                    top.location.href = 'https://pack1.sakorncable.com/';
+                }
+            }
+
         }
+
+        
 </script>
 
