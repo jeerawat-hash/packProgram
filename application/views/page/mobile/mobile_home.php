@@ -173,7 +173,7 @@
  
                 <div id="PreviewTV" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-teal">
+                        <div class="icon bg-light-green">
                             <i class="material-icons">devices</i>
                         </div>
                         <div class="content">
