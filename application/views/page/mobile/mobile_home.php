@@ -833,8 +833,6 @@
 
 
 <script>
-//alert(atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2hscy9jY3R2MjQtLm0zdTg='));
-//alert(btoa('use javascript btoa to encode data in base64 format'));
 
 
 function CopyFunction() {
