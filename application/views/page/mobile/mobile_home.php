@@ -379,7 +379,8 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                            
-                                       <font color="red"><label id="midModalLabel">ทดสอบระบบ</label></font> 
+                                       <font color="green"><label id="midModalLabel">ทดสอบระบบ</label></font> <br>
+                                       <font color="red"><label id="midModalLabel2">ทดสอบระบบ</label></font> 
  
                                     </div>
                                 </div>

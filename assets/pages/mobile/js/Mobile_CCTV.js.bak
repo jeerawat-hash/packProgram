@@ -202,13 +202,15 @@ $(function(){
     $("#PreviewTVModal").modal("show");
     $("#PreviewTVModal").find("#largeModalLabel").text("ช่องรายการตัวอย่างและข่าวสาคร");
     $("#PreviewTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
+    $("#PreviewTVModal").find("#midModalLabel2").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
  
     $.post("https://pack1.sakorncable.com/index.php/mobile_app/getDataPreviewChannel",{},function(data,status){
 
         var object = JSON.parse(data);
         
         $("#PreviewTVModal").find("#largeModalLabel").text("ช่องรายการตัวอย่างและข่าวสาคร");
-        $("#PreviewTVModal").find("#midModalLabel").text(object.ChannelDesc+"แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
+        $("#PreviewTVModal").find("#midModalLabel").text(object.ChannelDesc);
+        $("#PreviewTVModal").find("#midModalLabel2").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
  
         ////////////
          
