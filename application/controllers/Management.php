@@ -152,7 +152,11 @@ class Management extends CI_Controller
 			foreach ($result as $Value) {
 
 				//print_r($Value);
-				echo $Value["PE_CODE"]." ".$Value["PE_NAME"];
+				if ($Value["PE_CODE"] == "042-38") {
+					
+					echo $Value["PE_CODE"]." ".$Value["PE_NAME"];
+					
+				}
 				//$this->Mobile_model->SyncDataCustomerName($Value["PE_CODE"],$Value["PE_TITLE"],$Value["PE_NAME"]);
 
 
