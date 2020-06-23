@@ -193,6 +193,52 @@ $(function(){
 
     });
 
+    $("#CCTV9").on("click",function(){
+
+        $("#CCTVplayer").html("");
+
+        $("#CCTVModal").modal("show");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งลานจอดรถ 2-1");
+        $("#CCTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
+
+        ////////////
+     
+    var player = new Clappr.Player({
+        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2xpdmUvY2N0djM3LS5tM3U4'),
+        preload: "none",
+        width: '50%',
+        height: '50%',
+        parentId: "#CCTVplayer"
+    });
+
+
+        ////////////
+
+    });
+
+    $("#CCTV10").on("click",function(){
+
+        $("#CCTVplayer").html("");
+
+        $("#CCTVModal").modal("show");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งลานจอดรถ 2-2");
+        $("#CCTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
+
+        ////////////
+     
+    var player = new Clappr.Player({
+        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2xpdmUvY2N0djM4LS5tM3U4'),
+        preload: "none",
+        width: '50%',
+        height: '50%',
+        parentId: "#CCTVplayer"
+    });
+
+
+        ////////////
+
+    });
+
 
 
     $("#PreviewTV").on("click",function(){

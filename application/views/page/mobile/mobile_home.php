@@ -294,6 +294,29 @@
                         </div>
                     </div>
 
+                </div> 
+
+                <div id="CCTV9" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้อง ลานจอดรถ2-1</div>
+                        </div>
+                    </div>
+
+                </div> 
+                <div id="CCTV10" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้อง ลานจอดรถ2-2</div>
+                        </div>
+                    </div>
+
                 </div>  
  
             <!-- Menu -->
