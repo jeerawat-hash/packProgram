@@ -137,9 +137,9 @@ class Management extends CI_Controller
 	{
 
 
-		print_r($_FILES);
+		//print_r($_FILES);
 
-/*
+
 		if ($_FILES["CustomerName"]["type"] == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
 
 			shell_exec("rm /home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_FILES["CustomerName"]["name"]);
@@ -148,7 +148,7 @@ class Management extends CI_Controller
  
 
 			$result = $this->Mobile_model->createDataFromXlsx($_FILES["CustomerName"]["name"]);
-
+			/*
 			foreach ($result as $Value) {
 
 				//print_r($Value);
@@ -156,7 +156,7 @@ class Management extends CI_Controller
 				//$this->Mobile_model->SyncDataCustomerName($Value["PE_CODE"],$Value["PE_TITLE"],$Value["PE_NAME"]);
 
 
-			}
+			}*/
 
 			print_r($result);
 
@@ -168,7 +168,7 @@ class Management extends CI_Controller
 			echo "2";
 
 		}
- */
+ 
  
 
 	}
