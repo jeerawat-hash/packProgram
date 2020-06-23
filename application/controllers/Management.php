@@ -82,7 +82,7 @@ class Management extends CI_Controller
 			$ReportTotal = $this->Mobile_model->ReportCustomerTotal();
 			$ReportTotalDetail = $this->Mobile_model->ReportCustomerTotalDetail();
 
-			$message1 = "\nสรุปยอดคงค้างในระบบ\n".number_format($ReportTotal[0]->AMOUNT,0)." บาท\n"."รายละเอียด";
+			$message1 = "\nสรุปยอดคงค้างในระบบ\n".number_format($ReportTotal[0]->AMOUNT,3)." บาท\n"."รายละเอียด";
 
 			notify($message1,"BTicIrWmZYHGXeLVDSVg27NuC1Xv4Q4l2TlBcRzG4vI");
 
@@ -90,7 +90,7 @@ class Management extends CI_Controller
 
 			foreach ($ReportTotalDetail as $Detail) {
 				
-				$message2 .= "\n".$Detail->Description." ".number_format($Detail->List,0)." บาท";
+				$message2 .= "\n".$Detail->Description." ".number_format($Detail->List,3)." บาท";
 
 			}
 
@@ -142,7 +142,7 @@ class Management extends CI_Controller
 
 			foreach ($ReportReceiveTotalDetail as $Detail) {
 				
-				$message1 .= "\n".$Detail->Description." ".$Detail->Receipt." ใบเสร็จ ".$Detail->List." รายการ ".number_format($Detail->Amount,0)." บาท";
+				$message1 .= "\n".$Detail->Description." ".$Detail->Receipt." ใบเสร็จ ".$Detail->List." รายการ ".number_format($Detail->Amount,3)." บาท";
 
 			}
 			notify($message1,"vSDecnkXPqwRMSeLPVhHBxSTYkc36SyYwZBwMzgpeKv");
@@ -151,7 +151,7 @@ class Management extends CI_Controller
 
 			foreach ($ReportReceiveTotal as $DetailALL) {
 				
-				$message2 .= "\n".$DetailALL->Description." ".number_format($DetailALL->List,0)." บาท";
+				$message2 .= "\n".$DetailALL->Description." ".number_format($DetailALL->List,3)." บาท";
 				
 			}
 			notify($message2,"vSDecnkXPqwRMSeLPVhHBxSTYkc36SyYwZBwMzgpeKv");
