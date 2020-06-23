@@ -79,8 +79,25 @@ class Management extends CI_Controller
 
 			}
 
-			echo "1";
+			$ReportTotal = $this->Mobile_model->ReportCustomerTotal();
+			$ReportTotalDetail = $this->Mobile_model->ReportCustomerTotalDetail();
 
+			$message1 = "\nสรุปยอดคงค้างในระบบ\n".number_format($ReportTotal[0]->AMOUNT,0)." บาท\n"."รายละเอียด";
+
+			notify($message1,"BTicIrWmZYHGXeLVDSVg27NuC1Xv4Q4l2TlBcRzG4vI");
+
+			$message2 = "\nรายละเอียดคงค้างในระบบ";
+
+			foreach ($ReportTotalDetail as $Detail) {
+				
+				$message2 .= "\n".$Detail->Description." ".number_format($Detail->List,0)." บาท";
+
+			}
+
+			notify($message2,"BTicIrWmZYHGXeLVDSVg27NuC1Xv4Q4l2TlBcRzG4vI");
+
+
+			echo "1";
 
 		}else{
 
@@ -116,6 +133,29 @@ class Management extends CI_Controller
 			}
 
 			echo "1";
+
+
+			$ReportReceiveTotal = $this->Mobile_model->ReportCustomerReceive();
+			$ReportReceiveTotalDetail = $this->Mobile_model->ReportCustomerReceiveDetail();
+
+			$message1 = "\nสรุปยอดรับเข้าระบบ";
+
+			foreach ($ReportReceiveTotalDetail as $Detail) {
+				
+				$message1 .= "\n".$Detail->Description." ".$Detail->Receipt." ใบเสร็จ ".$Detail->List." รายการ ".number_format($Detail->Amount,0)." บาท";
+
+			}
+			notify($message1,"vSDecnkXPqwRMSeLPVhHBxSTYkc36SyYwZBwMzgpeKv");
+
+			$message2 = "\nรายละเอียดยอดรับเข้าระบบ";
+
+			foreach ($ReportReceiveTotal as $DetailALL) {
+				
+				$message2 .= "\n".$DetailALL->Description." ".number_format($DetailALL->List,0)." บาท";
+				
+			}
+			notify($message2,"vSDecnkXPqwRMSeLPVhHBxSTYkc36SyYwZBwMzgpeKv");
+
 
 
 		}else{
@@ -231,6 +271,27 @@ class Management extends CI_Controller
 
 
 
+
+}
+
+
+function notify($message,$token){
+
+			    $lineapi = $token; 
+				$mms =  trim($message); 
+				date_default_timezone_set("Asia/Bangkok");
+				$con = curl_init();
+				curl_setopt( $con, CURLOPT_URL, "https://notify-api.line.me/api/notify"); 
+				// SSL USE 
+				curl_setopt( $con, CURLOPT_SSL_VERIFYHOST, 0); 
+				curl_setopt( $con, CURLOPT_SSL_VERIFYPEER, 0); 
+				//POST 
+				curl_setopt( $con, CURLOPT_POST, 1); 
+				curl_setopt( $con, CURLOPT_POSTFIELDS, "message=$mms"); 
+				$headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer '.$lineapi.'', );
+			    curl_setopt($con, CURLOPT_HTTPHEADER, $headers); 
+				curl_setopt( $con, CURLOPT_RETURNTRANSFER, 1); 
+				$result = curl_exec( $con ); 
 
 }
 

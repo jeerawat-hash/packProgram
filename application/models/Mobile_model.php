@@ -186,6 +186,48 @@ class Mobile_model extends CI_Model
  
   }
 
+  public function ReportCustomerTotal()
+  {
+
+     $this->mssql = $this->load->database("mssql",true);
+
+     return $this->mssql->query(" select sum(list) as AMOUNT from (
+    select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Manage.dbo.CustomerAmount_LOG a
+    right outer join Sakorn_Manage.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE group by b.Description
+    )a ")->result();
+ 
+  }
+  public function ReportCustomerTotalDetail()
+  {
+
+     $this->mssql = $this->load->database("mssql",true);
+
+     return $this->mssql->query(" select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Manage.dbo.CustomerAmount_LOG a
+right outer join Sakorn_Manage.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE group by b.Description ")->result();
+ 
+  }
+  public function ReportCustomerReceive()
+  {
+
+     $this->mssql = $this->load->database("mssql",true);
+
+     return $this->mssql->query(" select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Manage.dbo.CustomerPay_LOG a
+right outer join Sakorn_Manage.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE group by b.Description ")->result();
+ 
+  }
+
+  public function ReportCustomerReceiveDetail()
+  {
+
+     $this->mssql = $this->load->database("mssql",true);
+
+     return $this->mssql->query("  select Description,Count(RECEIPT) as Receipt,Sum(RECEIPTList) as List,sum(Amount) as Amount from (
+ select RECEIPT,b.Description,count(RECEIPT) as RECEIPTList,sum(a.Amount) as Amount from Sakorn_Manage.dbo.CustomerPay_LOG a 
+ join Sakorn_Manage.dbo.CustomerPay_Type b on a.PAYTYPE_ID = b.ID group by RECEIPT,b.Description
+ )a group by Description ")->result();
+ 
+  }
+
 
   public function createDataFromXlsx($file)
   {
