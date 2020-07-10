@@ -23,7 +23,7 @@ class Devices extends CI_Controller
 	public function tempupload()
 	{
 
-		print_r($_FILES);
+		print_r($_FILES["/home/pi/Desktop/output_jpg"]);
 		print_r($_POST);
 
 
