@@ -23,8 +23,12 @@ class Devices extends CI_Controller
 	public function tempupload()
 	{
 
-		print_r($_FILES);
+		print_r($_FILES[0]);
 		print_r($_POST);
+
+
+		//move_uploaded_file($_FILES["Slipfile"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/tempimg/".$file.".jpg");
+
 
 
 
