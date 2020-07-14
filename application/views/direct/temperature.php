@@ -43,20 +43,24 @@
           <div class="row">
               <div class="col-lg-6">
                 
+                <label>จัดเก็บข้อมูลภาพ</label>
                 <img width="100%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg">
-
+                
               </div>
+
+              <br>
  
               <div class="col-lg-6">
                 
+                <label>สแกนเพื่อบันทึกข้อมูลและเช็คอินไทยชนะ</label>
                 <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg&size=220x220&margin=0">
                 <br>
-
+                <br>
                     <div class="row">
                       <div class="col-12">
-                        <h4>
+                        <h3 >
                         <label>อุณหภูมิ :</label><label>36.7 °C</label> 
-                        </h4>
+                        </h3>
                       </div>
                     </div>
  
