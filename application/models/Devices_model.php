@@ -9,9 +9,8 @@ class Devices_model extends CI_Model
        
        $this->mssql = $this->load->database("mssql",true);
 
-       $this->mssql->query(" SELECT top 1 [ID] ,[URLIMG] ,[Temp],[Telephone] ,[DateStamp] ,[TimeStamp] FROM [WebSakorn].[dbo].[TempProject] where Telephone is null order by ID  desc ")->result();
+       return $this->mssql->query(" SELECT top 1 [ID] ,[URLIMG] ,[Temp],[Telephone] ,[DateStamp] ,[TimeStamp] FROM [WebSakorn].[dbo].[TempProject] where Telephone is null order by ID  desc ")->result();
       
-
 
     }
 
