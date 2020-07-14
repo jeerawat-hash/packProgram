@@ -18,7 +18,14 @@ class Devices extends CI_Controller
 	{		
  		
 			
-	} 
+	}
+
+	public function temperature()
+	{
+
+		$this->load->view("direct/temperature");
+
+	}
 
 	public function tempupload()
 	{
