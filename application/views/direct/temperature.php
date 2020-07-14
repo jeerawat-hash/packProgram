@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Cover Template for Bootstrap</title>
+    <title>รายงานผลการตรวจคัดกรอง</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
 
@@ -24,11 +24,9 @@
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand">Cover</h3>
+          <h3 class="masthead-brand">รายงานผลการตรวจคัดกรอง</h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
+           <!-- <a class="nav-link active" href="#">ตรวจสอบ</a>  -->
           </nav>
         </div>
       </header>
@@ -41,9 +39,12 @@
         </p>
       </main>
 
+
+      
+
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+          <p>Temperature Report TCT ComEdu,<a href="https://twitter.com/mdo">Cover template by @mdo</a>.</p>
         </div>
       </footer>
     </div>
