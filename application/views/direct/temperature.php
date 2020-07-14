@@ -33,9 +33,7 @@
           </nav>
         </div>
       </header>
-
-      <main role="main" class="inner cover">
-
+ 
 
 
 
@@ -74,12 +72,7 @@
         </p>
 -->
 
-
-
-      </main>
-
-
-
+ 
 
 
 
