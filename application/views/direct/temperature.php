@@ -24,7 +24,7 @@
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <center>
-        <h1 class="cover-heading">ผลการตรวจคัดกรองอุณหภูมิ.</h1>
+        <h1 class="cover-heading">ผลการตรวจคัดกรองอุณหภูมิ.(สนับสนุนโดย วัฒนพงษ์ ขันคำหมุด ผู้อยากมีหน้ามีตา สูงชะรูดตูดปอดยอดทหารม้า ชักปืนช้าแก้ผ้าไว รัศมีการเที่ยวไกล อำนาจการกินรุ่นแรง)</h1>
         </center>
         <div class="inner">
            <!-- <h3 class="masthead-brand">รายงานผลการตรวจคัดกรอง</h3> -->
