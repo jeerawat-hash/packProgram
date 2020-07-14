@@ -15,11 +15,11 @@ class Devices extends CI_Controller
 	}
 
 	public function index()
-	{		
- 		
+	{
 			
+ 		echo json_encode($this->Devices_model->getLastData());	
+	
 	}
-
 	public function temperature()
 	{
 
@@ -37,7 +37,7 @@ class Devices extends CI_Controller
 		$file = $_FILES["C:\\Users\\Computer\\Desktop\\testcam\\output_jpg"]["name"]."-".$_POST["Date"]."-".$_POST["Time"];
 		move_uploaded_file($_FILES["C:\\Users\\Computer\\Desktop\\testcam\\output_jpg"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/tempimg/".$file.".jpg");
 		$ImgUrl = "http://pack1.sakorncable.com/upload/tempimg/".$file.".jpg";
-		$this->Devices_model->insertDataTemp($ImgUrl,$_POST["Temp"],$_POST["Date"],$_POST["Time"]);
+		$this->Devices_model->insertDataTemp($ImgUrl,$_POST["Temp"],date("Y-m-d"),date("H:i:s"));
 		
 		echo "CaptureImage @ URL : ".$ImgUrl; 
 	
