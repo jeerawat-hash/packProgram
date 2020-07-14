@@ -35,36 +35,7 @@
 
         <h1 class="cover-heading">ผลการตรวจคัดกรองอุณหภูมิ.</h1>
 
-
-
-
-        <div class="container">
-           
-              <div class="col-md-4">
-                
-                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-
-              </div>
-
-              <div class="col-md-4">
-                
-                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-
-              </div>
-
-              <div class="col-md-4">
-                
-                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-
-              </div> 
  
-
-        </div>
-
-
-
-
-
 <!--
         <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
         <p class="lead">
@@ -75,6 +46,33 @@
 
 
       </main>
+
+
+      <div class="container">
+          
+          <div class="row">
+              <div class="col-md-4">
+                
+                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+
+              </div>
+
+              <div class="col-md-4">
+                
+                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+
+              </div>
+
+              <div class="col-md-4">
+                
+                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+
+              </div>
+          </div>
+
+
+
+        </div>
 
 
 
