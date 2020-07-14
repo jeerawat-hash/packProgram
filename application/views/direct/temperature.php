@@ -49,7 +49,17 @@
  
               <div class="col-lg-6">
                 
-                Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.
+                <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg&size=220x220&margin=0">
+                <br>
+
+                    <div class="row">
+                      <div class="col-12">
+                        <h4>
+                        <label>อุณหภูมิ :</label><label>36.7 °C</label> 
+                        </h4>
+                      </div>
+                    </div>
+ 
 
               </div>
           </div>
