@@ -23,6 +23,9 @@
 
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
+        <center>
+        <h1 class="cover-heading">ผลการตรวจคัดกรองอุณหภูมิ.</h1>
+        </center>
         <div class="inner">
            <!-- <h3 class="masthead-brand">รายงานผลการตรวจคัดกรอง</h3> -->
           <nav class="nav nav-masthead justify-content-center">
@@ -33,19 +36,8 @@
 
       <main role="main" class="inner cover">
 
-        <h1 class="cover-heading">ผลการตรวจคัดกรองอุณหภูมิ.</h1>
-
- 
-<!--
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-        </p>
--->
 
 
-
-      </main>
 
 
       <div class="container">
@@ -70,9 +62,23 @@
               </div>
           </div>
 
-
-
         </div>
+
+
+
+ 
+<!--
+        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
+-->
+
+
+
+      </main>
+
+
 
 
 
