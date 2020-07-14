@@ -45,7 +45,7 @@
           <div class="row">
               <div class="col-lg-4">
                 
-                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+                <img width="50%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg">
 
               </div>
 
