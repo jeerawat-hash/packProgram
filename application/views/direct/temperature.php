@@ -45,7 +45,7 @@
           <div class="row">
               <div class="col-lg-4">
                 
-                <img width="100%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg">
+                <img width="230px" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg">
 
               </div>
 
