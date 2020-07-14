@@ -44,7 +44,7 @@
               <div class="col-lg-6">
                 
                 <label>จัดเก็บข้อมูลภาพ</label>
-                <img width="100%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg">
+                <img id="ImageCapture" width="100%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg">
 
               </div>
 
@@ -53,13 +53,13 @@
               <div class="col-lg-6">
                 
                 <label>สแกนเพื่อบันทึกข้อมูลและเช็คอินไทยชนะ</label>
-                <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg&size=220x220&margin=0">
+                <img id="QRCodeApp" src="https://api.qrserver.com/v1/create-qr-code/?data=https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg&size=220x220&margin=0">
                 <br>
                 <br>
                     <div class="row">
                       <div class="col-12">
                         <h3 >
-                        <label>อุณหภูมิ :</label><label>36.7 °C</label> 
+                        <label>อุณหภูมิ :</label><label id="Temp">36.7 </label><label>°C</label>
                         </h3>
                       </div>
                     </div>
@@ -106,8 +106,20 @@
 
       $(function(){
 
+        
 
-        alert();
+        setInterval(function(){ 
+
+
+          $("#ImageCapture").attr("src","https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg");
+          $("#QRCodeApp").attr("src","https://api.qrserver.com/v1/create-qr-code/?data=https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg&size=220x220&margin=0");
+          $("#Temp").text("36.7");
+
+
+          console.log("update");
+
+        }, 3000);
+
 
 
       });
