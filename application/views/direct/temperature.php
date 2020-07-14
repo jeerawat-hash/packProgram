@@ -32,11 +32,51 @@
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Cover your page.</h1>
+
+        <h1 class="cover-heading">ผลการตรวจคัดกรองอุณหภูมิ.</h1>
+
+
+
+
+        <div class="container">
+          
+          <div class="row">
+              <div class="col-4">
+                
+                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+
+              </div>
+
+              <div class="col-4">
+                
+                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+
+              </div>
+
+              <div class="col-4">
+                
+                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+                
+              </div>
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+<!--
         <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
         <p class="lead">
           <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
         </p>
+-->
+
+
+
       </main>
 
 
@@ -44,7 +84,7 @@
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Temperature Report TCT ComEdu,<a href="https://twitter.com/mdo">Cover template by @mdo</a>.</p>
+          <p>Temperature Report TCT ComEdu,<a href="https://twitter.com/mdo"> Cover Template by @mdo</a>.</p>
         </div>
       </footer>
     </div>
