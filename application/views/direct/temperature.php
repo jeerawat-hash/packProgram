@@ -107,6 +107,16 @@
         setInterval(function(){ 
 
 
+          $.post("https://pack1.sakorncable.com/index.php/devices",function(data,status){
+
+            var object = JSON.parse(data);
+
+            console.log(object);
+
+
+          });
+
+
           $("#ImageCapture").attr("src","https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg");
           $("#QRCodeApp").attr("src","https://api.qrserver.com/v1/create-qr-code/?data=https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg&size=220x220&margin=0");
           $("#Temp").text("36.7");
