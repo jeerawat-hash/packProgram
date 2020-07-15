@@ -14,12 +14,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets_new/images/favicon.png">
     <title>KMUTNB  Temperature measurement </title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/xtremeadmin/" />
-    <link href="./assets_new/libs/chartist/dist/chartist.min.css" rel="stylesheet">
-    <link href="./dist/js/pages/chartist/chartist-init.css" rel="stylesheet">
-    <link href="./assets_new/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
-    <link href="./assets_new/libs/c3/c3.min.css" rel="stylesheet">
+    <link href="https://pack1.sakorncable.com/assets_new/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="https://pack1.sakorncable.com/dist/js/pages/chartist/chartist-init.css" rel="stylesheet">
+    <link href="https://pack1.sakorncable.com/assets_new/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link href="https://pack1.sakorncable.com/assets_new/libs/c3/c3.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="./dist/css/style.min.css" rel="stylesheet">
+    <link href="https://pack1.sakorncable.com/dist/css/style.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -1287,32 +1287,32 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script data-cfasync="false" src="../../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./assets_new/libs/jquery/dist/jquery.min.js"></script>
+    <script data-cfasync="false" src="../../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://pack1.sakorncable.com/assets_new/libs/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="./assets_new/libs/popper.js/dist/umd/popper.min.js"></script>
-    <script src="./assets_new/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://pack1.sakorncable.com/assets_new/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://pack1.sakorncable.com/assets_new/libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- apps -->
-    <script src="./dist/js/app.min.js"></script>
-    <script src="./dist/js/app.init.mini-sidebar.js"></script>
-    <script src="./dist/js/app-style-switcher.js"></script>
+    <script src="https://pack1.sakorncable.com/dist/js/app.min.js"></script>
+    <script src="https://pack1.sakorncable.com/dist/js/app.init.mini-sidebar.js"></script>
+    <script src="https://pack1.sakorncable.com/dist/js/app-style-switcher.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="./assets_new/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-    <script src="./assets_new/extra-libs/sparkline/sparkline.js"></script>
+    <script src="https://pack1.sakorncable.com/assets_new/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="https://pack1.sakorncable.com/assets_new/extra-libs/sparkline/sparkline.js"></script>
     <!--Wave Effects -->
-    <script src="./dist/js/waves.js"></script>
+    <script src="https://pack1.sakorncable.com/dist/js/waves.js"></script>
     <!--Menu sidebar -->
-    <script src="./dist/js/sidebarmenu.js"></script>
+    <script src="https://pack1.sakorncable.com/dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
-    <script src="./dist/js/custom.min.js"></script>
+    <script src="https://pack1.sakorncable.com/dist/js/custom.min.js"></script>
     <!--This page JavaScript -->
     <!-- chartist chart -->
-    <script src="./assets_new/libs/chartist/dist/chartist.min.js"></script>
-    <script src="./assets_new/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="https://pack1.sakorncable.com/assets_new/libs/chartist/dist/chartist.min.js"></script>
+    <script src="https://pack1.sakorncable.com/assets_new/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
     <!--c3 JavaScript -->
-    <script src="./assets_new/libs/d3/dist/d3.min.js"></script>
-    <script src="./assets_new/libs/c3/c3.min.js"></script>
+    <script src="https://pack1.sakorncable.com/assets_new/libs/d3/dist/d3.min.js"></script>
+    <script src="https://pack1.sakorncable.com/assets_new/libs/c3/c3.min.js"></script>
     <!-- Chart JS -->
-    <script src="./dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="https://pack1.sakorncable.com/dist/js/pages/dashboards/dashboard1.js"></script>
 </body>
 
 
