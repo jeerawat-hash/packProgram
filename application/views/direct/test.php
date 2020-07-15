@@ -126,7 +126,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <img id="ImageCapture" width="100%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg">
+                                        <img id="ImageCapture" width="80%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg">
                                     </div>
                                 </div>
                             </div>
@@ -135,23 +135,11 @@
                     <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <h3 class="card-title">QR Code </h3>
-                                <h6 class="card-subtitle">Different Devices Used to Visit</h6>
-                                <div id="visitor" style="height:290px; width:100%;"></div>
+                                <h3 class="card-title">สแกนเพื่อบันทึกข้อมูลและเช็คอินไทยชนะ </h3>
+                                <h6 class="card-subtitle"></h6>
+                                <div   style="height:290px; width:100%;"> <img id="QRCodeApp" src="https://api.qrserver.com/v1/create-qr-code/?data=https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg&size=220x220&margin=0"></div>
                             </div>
-                            <div class="card-body text-center border-top">
-                                <ul class="list-inline mb-0">
-                                    <li class="list-inline-item px-2">
-                                        <h6 class="text-info"><i class="fa fa-circle font-10 mr-2 "></i>Mobile</h6>
-                                    </li>
-                                    <li class="list-inline-item px-2">
-                                        <h6 class=" text-primary"><i class="fa fa-circle font-10 mr-2"></i>Desktop</h6>
-                                    </li>
-                                    <li class="list-inline-item px-2">
-                                        <h6 class=" text-success"><i class="fa fa-circle font-10 mr-2"></i>Tablet</h6>
-                                    </li>
-                                </ul>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
