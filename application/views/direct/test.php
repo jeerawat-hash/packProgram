@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets_new/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://pack1.sakorncable.com/assets_new/images/favicon.png">
     <title>KMUTNB  Temperature measurement </title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/xtremeadmin/" />
     <link href="https://pack1.sakorncable.com/assets_new/libs/chartist/dist/chartist.min.css" rel="stylesheet">
