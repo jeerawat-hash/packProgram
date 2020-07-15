@@ -126,7 +126,7 @@
                                         </div>
                                     </div>
                                      <div class="col-12">
-                                        <div  style="height: 360px;"><img id="ImageCapture" width="50%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg"></div>
+                                        <div  style="height: 360px;"><center><img id="ImageCapture" width="90%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg"></center></div>
                                     </div>
                                      
                                 </div>
@@ -138,7 +138,7 @@
                             <div class="card-body">
                                 <h3 class="card-title">สแกนเพื่อบันทึกข้อมูลและเช็คอินไทยชนะ </h3>
                                 <h6 class="card-subtitle"></h6>
-                                <div   style="height:290px; width:100%;"> <img id="QRCodeApp" src="https://api.qrserver.com/v1/create-qr-code/?data=https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg&size=220x220&margin=0"></div>
+                                <div   style="height:290px; width:100%;"><center> <img id="QRCodeApp" src="https://api.qrserver.com/v1/create-qr-code/?data=https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg&size=220x220&margin=0"></center></div>
                             </div>
                             
                         </div>
