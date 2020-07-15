@@ -128,7 +128,7 @@
                                 <h6 class="card-subtitle"></h6>
                                 <div   style="height:360px; width:100%;"><center><br> <img id="QRCodeApp" src="https://api.qrserver.com/v1/create-qr-code/?data=https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg&size=220x220&margin=0"><br>  
                                 <div class="col-12">
-                        <h3 >
+                        <h3 ><br><br>
                         <label>อุณหภูมิ :</label><label id="Temp">36.7 </label><label>°C</label>
                         </h3>
                       </div>
@@ -174,6 +174,42 @@
     <!-- Chart JS -->
     <script src="https://pack1.sakorncable.com/dist/js/pages/dashboards/dashboard1.js"></script>
 
+
+
+
+    <script type="text/javascript">
+        
+
+      $(function(){
+
+        
+
+        setInterval(function(){ 
+
+
+          $.post("https://pack1.sakorncable.com/index.php/devices",function(data,status){
+
+            var object = JSON.parse(data);
+            //console.log(object[0]);
+            var APPURL = "https://pack1.sakorncable.com/index.php/devices/app/"+object[0].ID;
+
+            $("#ImageCapture").attr("src",object[0].URLIMG);
+            $("#QRCodeApp").attr("src","https://api.qrserver.com/v1/create-qr-code/?data="+APPURL+"&size=220x220&margin=0");
+            $("#Temp").text(object[0].Temp);
+
+
+          });
+          //console.log("update");
+
+        }, 1000);
+
+
+
+      });
+
+
+
+    </script>
 
 </body>
 
