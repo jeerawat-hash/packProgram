@@ -65,10 +65,7 @@
             <div class="row page-titles">
                 <div class="col-md-5 col-12 align-self-center">
                     <h3 class="text-themecolor mb-0">วัดอุณหภูมิ</h3>
-                    <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">หน้าแรก</a></li>
-                        <li class="breadcrumb-item active">วัดอุณหภูมิ</li>
-                    </ol>
+                     
                 </div>
                 <div class="col-md-7 col-12 align-self-center d-none d-md-block">
                     <div class="d-flex mt-2 justify-content-end">
@@ -129,7 +126,7 @@
                             <div class="card-body">
                                 <h3 class="card-title">สแกนเพื่อบันทึกข้อมูลและเช็คอินไทยชนะ </h3>
                                 <h6 class="card-subtitle"></h6>
-                                <div   style="height:290px; width:100%;"><center> <img id="QRCodeApp" src="https://api.qrserver.com/v1/create-qr-code/?data=https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg&size=220x220&margin=0"></center></div>
+                                <div   style="height:360px; width:100%;"><center> <img id="QRCodeApp" src="https://api.qrserver.com/v1/create-qr-code/?data=https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg&size=220x220&margin=0"></center></div>
                             </div>
                             
                         </div>
