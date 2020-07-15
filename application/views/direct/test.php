@@ -125,9 +125,10 @@
                                             
                                         </div>
                                     </div>
-                                    <div class="col-12">
-                                        <img id="ImageCapture" width="80%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg">
+                                     <div class="col-12">
+                                        <div  style="height: 360px;"><img id="ImageCapture"   src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg"></div>
                                     </div>
+                                     
                                 </div>
                             </div>
                         </div>
