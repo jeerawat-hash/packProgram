@@ -33,13 +33,32 @@ class Devices extends CI_Controller
 		//print_r($_FILES["C:\\Users\\Computer\\Desktop\\testcam\\output_jpg"]);
 		//print_r($_POST);
 
+
+		if (isset($_FILES["C:\\Users\\Computer\\Desktop\\testcam\\output_jpg"]["name"])) {
+			
+
+			$file = $_FILES["C:\\Users\\Computer\\Desktop\\testcam\\output_jpg"]["name"]."-".$_POST["Date"]."-".$_POST["Time"];
+			move_uploaded_file($_FILES["C:\\Users\\Computer\\Desktop\\testcam\\output_jpg"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/tempimg/".$file.".jpg");
+			$ImgUrl = "http://pack1.sakorncable.com/upload/tempimg/".$file.".jpg";
+			$this->Devices_model->insertDataTemp($ImgUrl,$_POST["Temp"],date("Y-m-d"),date("H:i:s"));
+			
+			echo "CaptureImage @ URL : ".$ImgUrl; 
+
+
+		}else{
+			//// for mac
+
+			$file = $_FILES["/Users/jeerawat/Desktop/testffmpeg"]["name"]."-".$_POST["Date"]."-".$_POST["Time"];
+			move_uploaded_file($_FILES["/Users/jeerawat/Desktop/testffmpeg"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/tempimg/".$file.".jpg");
+			$ImgUrl = "http://pack1.sakorncable.com/upload/tempimg/".$file.".jpg";
+			$this->Devices_model->insertDataTemp($ImgUrl,$_POST["Temp"],date("Y-m-d"),date("H:i:s"));
+
+			echo "CaptureImage @ URL : ".$ImgUrl; 
+
+			//// for mac
+		}
 		
-		$file = $_FILES["C:\\Users\\Computer\\Desktop\\testcam\\output_jpg"]["name"]."-".$_POST["Date"]."-".$_POST["Time"];
-		move_uploaded_file($_FILES["C:\\Users\\Computer\\Desktop\\testcam\\output_jpg"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/tempimg/".$file.".jpg");
-		$ImgUrl = "http://pack1.sakorncable.com/upload/tempimg/".$file.".jpg";
-		$this->Devices_model->insertDataTemp($ImgUrl,$_POST["Temp"],date("Y-m-d"),date("H:i:s"));
 		
-		echo "CaptureImage @ URL : ".$ImgUrl; 
 	
 		//$file = $_FILES["/home/pi/Desktop/output_jpg"]["name"]."-".$_POST["Date"]."-".$_POST["Time"];
 		//move_uploaded_file($_FILES["/home/pi/Desktop/output_jpg"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/tempimg/".$file.".jpg");
