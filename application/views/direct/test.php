@@ -119,25 +119,14 @@
                                     <div class="col-12">
                                         <div class="d-flex flex-wrap">
                                             <div>
-                                                <h3 class="card-title">Picture</h3>
-                                                <h6 class="card-subtitle">Ample Admin Vs Pixel Admin</h6>
+                                                <h3 class="card-title">ผลการตรวจคัดกรองอุณหภูมิ</h3>
+                                                <h6 class="card-subtitle">จัดเก็บข้อมูลภาพ</h6>
                                             </div>
-                                            <div class="ml-auto">
-                                                <ul class="list-inline">
-                                                    <li class="list-inline-item px-2">
-                                                        <h6 class="text-success"><i
-                                                                class="fa fa-circle font-10 mr-2 "></i>Ample</h6>
-                                                    </li>
-                                                    <li class="list-inline-item px-2">
-                                                        <h6 class="text-info"><i
-                                                                class="fa fa-circle font-10 mr-2"></i>Pixel</h6>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="amp-pxl" style="height: 360px;"></div>
+                                        <img id="ImageCapture" width="100%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg">
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +191,7 @@
     <!-- Chart JS -->
     <script src="https://pack1.sakorncable.com/dist/js/pages/dashboards/dashboard1.js"></script>
 
-    
+
 </body>
 
 
