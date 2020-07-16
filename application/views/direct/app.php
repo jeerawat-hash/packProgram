@@ -108,7 +108,7 @@
                                 
                                 <div class="col-12">
                                 <div class="form-group">
-                                <input type="text" class="form-control" id="Telephone"
+                                <input type="text" autocomplete="off" class="form-control" id="Telephone"
                                 placeholder="ระบุเบอร์ติดต่อกลับ"></div>
                                 </div>
                                 </div>
