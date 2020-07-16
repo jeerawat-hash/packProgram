@@ -21,8 +21,10 @@
                 $status = "null";
             }else{
 
-                print_r($INFO[0]->ID);
-                
+                //print_r($INFO[0]->ID);
+                $image = $INFO[0]->URLIMG;
+                $temp = $INFO[0]->Temp;
+
             }
 
             
