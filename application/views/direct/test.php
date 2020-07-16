@@ -12,7 +12,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="https://pack1.sakorncable.com/assets_new/images/favicon.png">
-    <title>KMUTNB  Temperature measurement </title>
+    <title>KMUTNB Temperature measurement </title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/xtremeadmin/" />
     <link href="https://pack1.sakorncable.com/assets_new/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <link href="https://pack1.sakorncable.com/dist/js/pages/chartist/chartist-init.css" rel="stylesheet">
@@ -72,7 +72,7 @@
                         <div class="d-flex mr-3 ml-2">
                             <div class="chart-text mr-2">
                                 <h6 class="mb-0"><small>จำนวนคน</small></h6>
-                                <h4 class="mt-0 text-info">58,356</h4>
+                                <h4 class="mt-0 text-info"><label id="CountTotal"> Nan </label> คน</h4>
                             </div>
                             <div class="spark-chart">
                                 <div id="monthchart"></div>
@@ -81,7 +81,7 @@
                         <div class="d-flex ml-2">
                             <div class="chart-text mr-2">
                                 <h6 class="mb-0"><small>ค่าเฉลี่ย</small></h6>
-                                <h4 class="mt-0 text-primary">$8,356</h4>
+                                <h4 class="mt-0 text-primary"><label id="TempAVG">37</label>°C</h4>
                             </div>
                             <div class="spark-chart">
                                 <div id="lastmonthchart"></div>
@@ -180,7 +180,7 @@
     <script type="text/javascript">
         
 
-      $(function(){
+      $(function(){ 
 
         
 
@@ -196,6 +196,10 @@
             $("#ImageCapture").attr("src",object[0].URLIMG);
             $("#QRCodeApp").attr("src","https://api.qrserver.com/v1/create-qr-code/?data="+APPURL+"&size=220x220&margin=0");
             $("#Temp").text(object[0].Temp);
+            $("#CountTotal").text(object[0].Total);
+            $("#TempAVG").text(object[0].TempMean);
+
+
 
 
           });

@@ -9,7 +9,7 @@ class Devices_model extends CI_Model
        
        $this->mssql = $this->load->database("mssql",true);
 
-       return $this->mssql->query(" SELECT top 1 [ID] ,[URLIMG] ,[Temp],[Telephone] ,[DateStamp] ,[TimeStamp] FROM [WebSakorn].[dbo].[TempProject] where Telephone is null order by ID  desc ")->result();
+       return $this->mssql->query(" SELECT top 1 [ID] ,[URLIMG] ,[Temp],[Telephone] ,[DateStamp] ,[TimeStamp],(SELECT  COUNT( [Temp] )  FROM [WebSakorn].[dbo].[TempProject]) as Total,(SELECT SUBSTRING( convert(varchar(max),avg( [Temp] )) ,1,4) FROM [WebSakorn].[dbo].[TempProject]) as TempMean FROM [WebSakorn].[dbo].[TempProject] where Telephone is null order by ID desc ")->result();
       
 
     }
