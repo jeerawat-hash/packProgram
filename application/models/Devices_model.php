@@ -14,6 +14,21 @@ class Devices_model extends CI_Model
 
     }
 
+    public function getDataByID($ID)
+    {
+       
+       $this->mssql = $this->load->database("mssql",true);
+
+       return $this->mssql->query(" SELECT top 100 [ID] ,[URLIMG] ,[Temp],[Telephone] ,[DateStamp] ,[TimeStamp],(SELECT  COUNT( [Temp] )  FROM [WebSakorn].[dbo].[TempProject]) as Total,(SELECT SUBSTRING( convert(varchar(max),avg( [Temp] )) ,1,4) FROM [WebSakorn].[dbo].[TempProject]) as TempMean FROM [WebSakorn].[dbo].[TempProject] where  id = '".$ID."' order by ID desc ")->result();
+      
+    }
+
+
+
+    
+
+
+
     public function insertDataTemp($ImgUrl,$temp,$DateStamp,$TimeStamp)
     {
 

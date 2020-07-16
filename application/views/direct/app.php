@@ -1,3 +1,28 @@
+<?php 
+    
+    $image = "https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-16-02:33:54.jpg";
+    $temp = "";
+    $status = "";
+
+
+
+    if ($INFO == "null") {
+    ?>
+    <script type="text/javascript">alert("ไม่พบข้อมูล");</script>
+    <?php
+        $status = "null";
+    }else{
+
+        print_r($INFO);
+
+
+    }
+
+
+
+ ?>
+
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -84,7 +109,7 @@
                             <div class="card-body">
                                 <h3 class="card-title">ข้อมูลการตรวจวัด </h3>
                                 <h6 class="card-subtitle"></h6>
-                                <div><center><br> <img id="QRCodeApp" width="80%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-16-02:33:54.jpg"><br>  
+                                <div><center><br> <img id="Image" width="80%" src="<?php echo $image; ?>"><br>  
                                 <div class="col-12">
                             <h3>
                             <label>อุณหภูมิ :</label><label id="Temp"> Nan </label><label>°C</label>
@@ -106,7 +131,7 @@
                                 
                                 <br>
                                 
-                                <div class="col-12">
+                                <div class="col-12 SaveContent">
                                 <div class="form-group">
                                 <input type="text" autocomplete="off" class="form-control" id="Telephone"
                                 placeholder="ระบุเบอร์ติดต่อกลับ"></div>
@@ -119,7 +144,9 @@
                                 placeholder="Enter Telephone"></div>
                                 </div>
 -->
-                                <div class="col-12">
+                                <input type="text" name="status" id="status" hidden readonly value=" <?php echo $status; ?> ">
+
+                                <div class="col-12 SaveContent">
                                 <div class="form-group">
                                 <center>
                                 <button type="button" class="btn btn-lg btn-success waves-effect waves-dark">บันทึกผล</button>
@@ -189,6 +216,11 @@
 
       $(function(){ 
 
+        var status = $("#status").val();
+        if (status == "null") {
+            $(".SaveContent").hide();
+            return false;
+        }
         
         /*
         setInterval(function(){ 
