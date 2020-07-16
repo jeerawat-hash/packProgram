@@ -87,7 +87,7 @@
                                 <div><center><br> <img id="QRCodeApp" width="80%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-16-02:33:54.jpg"><br>  
                                 <div class="col-12">
                             <h3>
-                            <label>อุณหภูมิ :</label><label id="Temp">36.7 </label><label>°C</label>
+                            <label>อุณหภูมิ :</label><label id="Temp"> Nan </label><label>°C</label>
                             </h3>
                       </div>
                            </center></div>
@@ -103,10 +103,20 @@
                             <div class="card-body">
                                 <center> <h3 class="card-title">บันทึกผล</h3> </center>
                                 <h6 class="card-subtitle"></h6> 
+                                
+                                <div class="col-12">
+                                <div class="form-group">
+                                <input type="text" class="form-control" id="Telephone"
+                                placeholder="ระบุเบอร์ติดต่อกลับ"></div>
+                                </div>
+
                                 <div class="col-12">
                                 <div class="form-group">
                                 <input type="text" class="form-control" id="Telephone"
                                 placeholder="Enter Telephone"></div>
+
+                                <a href="javascript:void(0)" class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                    
                                 </div>
                            </center></div>
                             </div>
