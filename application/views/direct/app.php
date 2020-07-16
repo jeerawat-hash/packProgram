@@ -109,13 +109,21 @@
                                 <input type="text" class="form-control" id="Telephone"
                                 placeholder="ระบุเบอร์ติดต่อกลับ"></div>
                                 </div>
-
+                                </div>
+<!--
                                 <div class="col-12">
                                 <div class="form-group">
                                 <input type="text" class="form-control" id="Telephone"
                                 placeholder="Enter Telephone"></div>
+                                </div>
+-->
+                                <div class="col-12">
+                                <div class="form-group">
+                                <button type="button" class="btn btn-lg btn-success waves-effect waves-dark">บันทึกผล</button>
+                                </div>
+                                </div>
 
-                                <button type="button" class="btn btn-circle btn-lg btn-success waves-effect waves-dark">+</button>
+                                
 
                                 </div>
                            </center></div>
