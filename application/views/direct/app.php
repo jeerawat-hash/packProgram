@@ -84,12 +84,16 @@
                             <div class="card-body">
                                 <h3 class="card-title">ข้อมูลการตรวจวัด </h3>
                                 <h6 class="card-subtitle"></h6>
-                                <div><center><br> <img id="QRCodeApp" width="80%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-16-02:33:54.jpg"><br>  
+                                <div><center><br> <img id="QRCodeApp" width="80%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-16-02:33:54.jpg"><br> 
+                                 
                                 <div class="col-12">
-                            <h3>
-                            <label>อุณหภูมิ :</label><label id="Temp">36.7 </label><label>°C</label>
-                            </h3>
-                      </div>
+                                <h3>
+                                <label>Telephone :</label>
+                                </h3>
+                                <br>
+                                <input type="text" name="Telephone">
+                                </div>
+
                            </center></div>
                             </div>
                             
