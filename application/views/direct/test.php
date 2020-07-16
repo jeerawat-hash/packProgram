@@ -166,8 +166,8 @@
     <script src="https://pack1.sakorncable.com/dist/js/custom.min.js"></script>
     <!--This page JavaScript -->
     <!-- chartist chart -->
-    <script src="https://pack1.sakorncable.com/assets_new/libs/chartist/dist/chartist.min.js"></script>
-    <script src="https://pack1.sakorncable.com/assets_new/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+
+    
     <!--c3 JavaScript -->
     <script src="https://pack1.sakorncable.com/assets_new/libs/d3/dist/d3.min.js"></script>
     <script src="https://pack1.sakorncable.com/assets_new/libs/c3/c3.min.js"></script>
