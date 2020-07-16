@@ -81,9 +81,9 @@
                                 <h6 class="card-subtitle"></h6>
                                 <div><center><br> <img id="QRCodeApp" width="80%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-16-02:33:54.jpg"><br>  
                                 <div class="col-12">
-                        <h3 ><br><br>
-                        <label>อุณหภูมิ :</label><label id="Temp">36.7 </label><label>°C</label>
-                        </h3>
+                            <h3>
+                            <label>อุณหภูมิ :</label><label id="Temp">36.7 </label><label>°C</label>
+                            </h3>
                       </div>
                            </center></div>
                             </div>
@@ -96,14 +96,13 @@
                     <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <h3 class="card-title">สแกนเพื่อบันทึกข้อมูลและเช็คอินไทยชนะ </h3>
-                                <h6 class="card-subtitle"></h6>
-                                <div   style="height:360px; width:100%;"><center><br>  <br>  
+                                <center> <h3 class="card-title">บันทึกผล</h3> </center>
+                                <h6 class="card-subtitle"></h6> 
                                 <div class="col-12">
-                        <h3 ><br><br>
-                        <label>อุณหภูมิ :</label><label id="Temp">36.7 </label><label>°C</label>
-                        </h3>
-                      </div>
+                                <h3>
+                                <label>อุณหภูมิ :</label><label id="Temp">36.7 </label><label>°C</label>
+                                </h3>
+                          </div>
                            </center></div>
                             </div>
                             
