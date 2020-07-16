@@ -20,6 +20,14 @@ class Devices extends CI_Controller
  		echo json_encode($this->Devices_model->getLastData());	
 	
 	}
+	public function app($id)
+	{
+			 
+ 
+		$this->load->view("direct/app");
+
+
+	}
 	
 	public function temperature()
 	{
