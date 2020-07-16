@@ -73,47 +73,51 @@
                 <!-- Row -->
                 <div class="row">
                     <!-- Column -->
-                    <div class="col-lg-8 col-md-12">
+
+                    <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="d-flex flex-wrap">
-                                            <div>
-                                                <h3 class="card-title">ผลการตรวจคัดกรองอุณหภูมิ</h3>
-                                                <h6 class="card-subtitle">จัดเก็บข้อมูลภาพ</h6>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                     <div class="col-12">
-                                        <div  style="height: 360px;"><center><img id="ImageCapture" width="60%" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-13-06:51:27.jpg"></center></div>
-                                    </div>
-                                    <div class="col-12">
-                                        <h3 ><br><br>
-                                        <label>อุณหภูมิ :</label><label id="Temp">36.7 </label><label>°C</label>
-                                        </h3>
-                                    </div>
-                                     
-                                </div>
+                                <h3 class="card-title">ข้อมูลการตรวตวัด </h3>
+                                <h6 class="card-subtitle"></h6>
+                                <div   style="height:360px; width:100%;"><center><br> <img id="QRCodeApp" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-16-02:33:54.jpg"><br>  
+                                <div class="col-12">
+                        <h3 ><br><br>
+                        <label>อุณหภูมิ :</label><label id="Temp">36.7 </label><label>°C</label>
+                        </h3>
+                      </div>
+                           </center></div>
                             </div>
+                            
                         </div>
                     </div>
+
+
+
                     <div class="col-lg-4 col-md-12">
-                         
-
-
-
-
-
-
-
-
-
-
-
-
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">สแกนเพื่อบันทึกข้อมูลและเช็คอินไทยชนะ </h3>
+                                <h6 class="card-subtitle"></h6>
+                                <div   style="height:360px; width:100%;"><center><br> <img id="QRCodeApp" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-16-02:33:54.jpg"><br>  
+                                <div class="col-12">
+                        <h3 ><br><br>
+                        <label>อุณหภูมิ :</label><label id="Temp">36.7 </label><label>°C</label>
+                        </h3>
+                      </div>
+                           </center></div>
+                            </div>
+                            
+                        </div>
                     </div>
+
+
+
+
+
+
+
+
+
                 </div>
                 <!-- Row -->
                    
@@ -193,5 +197,7 @@
     </script>
 
 </body>
- 
+
+
+<!-- Mirrored from www.wrappixel.com/demos/admin-templates/materialpro-bootstrap-latest/material-pro/src/minisidebar/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 01:41:16 GMT -->
 </html>
