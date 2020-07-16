@@ -20,11 +20,11 @@ class Devices extends CI_Controller
  		echo json_encode($this->Devices_model->getLastData());	
 	
 	}
-	public function app($ID = "null")
+	public function app($ID = null)
 	{ 
 
 		$Data["INFO"] = "null";
-		if (isset($ID)) { 
+		if ($ID != null) { 
 			$Data["INFO"] = $this->Devices_model->getDataByID($ID);	
 		}
 
