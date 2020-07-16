@@ -64,7 +64,7 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 col-12 align-self-center">
-                    <h3 class="text-themecolor mb-0">วัดอุณหภูมิ</h3>
+                    <h3 class="text-themecolor mb-0">KMUTNB Temperature measurement</h3>
                      
                 </div>
                 <div class="col-md-7 col-12 align-self-center d-none d-md-block">
@@ -75,7 +75,7 @@
                                 <h4 class="mt-0 text-info"><label id="CountTotal"> Nan </label> คน</h4>
                             </div>
                             <div class="spark-chart">
-                                <div id="monthchart"></div>
+                                <div id="daychart"></div>
                             </div>
                         </div>
                         <div class="d-flex ml-2">
