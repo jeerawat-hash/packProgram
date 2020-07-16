@@ -79,7 +79,7 @@
                             <div class="card-body">
                                 <h3 class="card-title">ข้อมูลการตรวตวัด </h3>
                                 <h6 class="card-subtitle"></h6>
-                                <div   style="width:60%;"><center><br> <img id="QRCodeApp" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-16-02:33:54.jpg"><br>  
+                                <div   style="width:20%;"><center><br> <img id="QRCodeApp" src="https://pack1.sakorncable.com/upload/tempimg/output.jpg-2020-07-16-02:33:54.jpg"><br>  
                                 <div class="col-12">
                         <h3 ><br><br>
                         <label>อุณหภูมิ :</label><label id="Temp">36.7 </label><label>°C</label>
