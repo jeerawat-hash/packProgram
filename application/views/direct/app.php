@@ -219,9 +219,11 @@
       $(function(){ 
 
         var status = $("#status").val();
+        console.log(status);
         if (status == "null") {
+
             $(".SaveContent").hide();
-            return false;
+          
         }
         
         /*
