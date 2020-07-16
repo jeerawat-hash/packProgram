@@ -119,7 +119,9 @@
 -->
                                 <div class="col-12">
                                 <div class="form-group">
+                                <center>
                                 <button type="button" class="btn btn-lg btn-success waves-effect waves-dark">บันทึกผล</button>
+                                </center>
                                 </div>
                                 </div>
 
