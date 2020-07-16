@@ -71,7 +71,7 @@
                     <div class="d-flex mt-2 justify-content-end">
                         <div class="d-flex mr-3 ml-2">
                             <div class="chart-text mr-2">
-                                <h6 class="mb-0"><small>`จำนวนคน</small></h6>
+                                <h6 class="mb-0"><small>จำนวนคน</small></h6>
                                 <h4 class="mt-0 text-info">58,356</h4>
                             </div>
                             <div class="spark-chart">
