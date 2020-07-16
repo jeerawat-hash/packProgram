@@ -41,7 +41,7 @@
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
-    <div id="main-wrapper">
+     <!-- <div id="main-wrapper"> -->
         <!-- ============================================================== -->
         <!-- Topbar header - style you can find in pages.scss -->
        
@@ -86,7 +86,7 @@
                             <div class="spark-chart">
                                 <div id="lastmonthchart"></div>
                             </div>
-                        </div>
+                        </div>  
                     </div>
                 </div>
             </div>
