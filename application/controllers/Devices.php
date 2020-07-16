@@ -22,7 +22,8 @@ class Devices extends CI_Controller
 	}
 	public function app($ID)
 	{
-		 
+		error_reporting(0);
+		
 		$Data["INFO"] = "null";
 		if (isset($ID)) { 
 			$Data["INFO"] = $this->Devices_model->getDataByID($ID);	
