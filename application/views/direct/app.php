@@ -241,7 +241,7 @@
         }else{
 
             var Temp = $("#Temperature").val();
-            $("#Temp").val(Temp);
+            $("#Temp").text(Temp);
 
         }
         
