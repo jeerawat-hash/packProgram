@@ -147,7 +147,7 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script data-cfasync="false" src="../../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://pack1.sakorncable.com/assets_new/libs/jquery/dist/jquery.min.js"></script>
+    <script src="https://pack1.sakorncable.com/assets_new/libs/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="https://pack1.sakorncable.com/assets_new/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="https://pack1.sakorncable.com/assets_new/libs/bootstrap/dist/js/bootstrap.min.js"></script>
