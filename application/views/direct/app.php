@@ -13,8 +13,19 @@
         $status = "null";
     }else{
 
- 
-            print_r($INFO);
+            
+            if ( !isset($INFO[0]->ID) ) {
+                ?>
+                <script type="text/javascript">alert("ไม่พบข้อมูล");</script>
+                <?php
+                $status = "null";
+            }else{
+
+                print_r($INFO[0]->ID);
+                
+            }
+
+            
  
 
 
