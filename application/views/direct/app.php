@@ -115,8 +115,8 @@
                                 <input type="text" class="form-control" id="Telephone"
                                 placeholder="Enter Telephone"></div>
 
-                                <a href="javascript:void(0)" class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                                    
+                                <button type="button" class="btn btn-circle btn-lg btn-success waves-effect waves-dark">+</button>
+
                                 </div>
                            </center></div>
                             </div>
