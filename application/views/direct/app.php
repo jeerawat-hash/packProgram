@@ -160,6 +160,7 @@
                                 </div>
 -->
                                 <input type="text" name="status" id="status" hidden readonly value=" <?php echo $status; ?> ">
+                                <input type="text" name="Temperature" id="Temperature" hidden readonly value=" <?php echo $temp; ?> ">
 
                                 <div class="col-12 SaveContent">
                                 <div class="form-group">
@@ -237,6 +238,11 @@
 
             $(".SaveContent").hide();
           
+        }else{
+
+            var Temp = $("#Temperature").val();
+            $("#Temp").val(Temp);
+
         }
         
         /*
