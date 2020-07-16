@@ -104,6 +104,8 @@
                                 <center> <h3 class="card-title">บันทึกผล</h3> </center>
                                 <h6 class="card-subtitle"></h6> 
                                 
+                                <br>
+                                
                                 <div class="col-12">
                                 <div class="form-group">
                                 <input type="text" class="form-control" id="Telephone"
