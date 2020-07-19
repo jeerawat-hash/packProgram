@@ -65,6 +65,17 @@ class Devices extends CI_Controller
 			echo "CaptureImage @ URL : ".$ImgUrl; 
 
 
+		}else
+		if (isset($_FILES["/home/pi/Desktop/capture/output_jpg"]["name"])) {
+			///// for rasb
+
+
+
+			print_r($_FILES);
+			print_r($_POST);
+
+
+			///// for rasb
 		}else{
 			//// for mac
 
