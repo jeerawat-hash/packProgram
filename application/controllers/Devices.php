@@ -68,12 +68,16 @@ class Devices extends CI_Controller
 		}else
 		if (isset($_FILES["/home/pi/Desktop/capture/output_jpg"]["name"])) {
 			///// for rasb
+ 
 
+			$file = $_FILES["/home/pi/Desktop/capture/output_jpg"]["name"]."-".$_POST["Date"]."-".$_POST["Time"];
+			move_uploaded_file($_FILES["/home/pi/Desktop/capture/output_jpg"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/tempimg/".$file.".jpg");
+			$ImgUrl = "https://pack1.sakorncable.com/upload/tempimg/".$file.".jpg";
+			$this->Devices_model->insertDataTemp($ImgUrl,$_POST["Temp"],date("Y-m-d"),date("H:i:s"));
 
+			echo "CaptureImage @ URL : ".$ImgUrl; 
 
-			print_r($_FILES);
-			print_r($_POST);
-
+ 
 
 			///// for rasb
 		}else{
