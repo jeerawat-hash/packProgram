@@ -210,7 +210,7 @@
                     </div>
 
                 </div> 
-
+                <!--
                 <div id="CCTV2" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-blue">
@@ -222,6 +222,7 @@
                     </div>
 
                 </div>  
+                -->
 
                 <div id="CCTV3" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
@@ -234,7 +235,7 @@
                     </div>
 
                 </div>
-
+                <!--
                 <div id="CCTV4" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-blue">
@@ -246,7 +247,7 @@
                     </div>
 
                 </div> 
-
+                -->
                 <div id="CCTV5" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-blue">
