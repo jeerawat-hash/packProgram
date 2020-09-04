@@ -77,7 +77,8 @@ $(function(){
 	        	processData : false,
 	        	success : function(data){
 
-	        		alert("Success");
+	        		console.log(dataid);
+	        		console.log(Ch);
 
 	        	},
 	        	error : function(){
