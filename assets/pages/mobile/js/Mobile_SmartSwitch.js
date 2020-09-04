@@ -63,6 +63,12 @@ $(function(){
 	        data2.append('Status', dataid);
 	        data2.append('Channel', "/B078/MainSwitch/WayLight");
 
+	        var statusN = "";
+	        if (dataid == "OFF") {
+	        	statusN = "กำลังปิด...";
+	        }else{
+	        	statusN = "กำลังเปิด...";
+	        }
  
 
 	        $.ajax({
@@ -74,7 +80,10 @@ $(function(){
 	        	processData : false,
 	        	success : function(data){
 
-	        		var html = "";
+	        		var html = " <tr><td>ไฟทางเดินตึก 78</td><td> "+statusN+" </td>"+
+				                           "</tr>"+
+				                           "<tr><td colspan='3' > "+
+				                           "</tr> ";
 
 			        $("#table_SmartSwitch_detail").html(html);
 
@@ -126,7 +135,7 @@ $(function(){
 				        });
 
 
-			        }, 2000);
+			        }, 4000);
  
 
 	        	},
