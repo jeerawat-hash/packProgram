@@ -43,8 +43,7 @@ class Devices extends CI_Controller
 		    $this->mqtt->close();
 
 		     
- 		
-
+ 		echo $_POST["Status"];
 	       
 	}
 
