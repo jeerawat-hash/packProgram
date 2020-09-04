@@ -60,11 +60,10 @@ $(function(){
  		$("#SmartSwitchModal").on("click",".SmartSwitchBTNClick",function(){
 
  			var dataid = $(this).attr("data-id");
-
-			var Ch = "\/B078\/MainSwitch\/WayLight";
+ 
 
 	        var data2 = new FormData();  
-	        data2.append('Status', "sss");  
+	        data2.append('Status', dataid);  
 
 	        console.log(dataid);
 	        console.log(data2);
