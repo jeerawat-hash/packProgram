@@ -78,58 +78,56 @@ $(function(){
 
 			        $("#table_SmartSwitch_detail").html(html);
 
+			        setTimeout(function() { 
 
-					var Device = "78SMLight";
-			        var data = new FormData();          
-			        data.append('DeviceName', Device); 
+			        	var Device = "78SMLight";
+				        var data = new FormData();          
+				        data.append('DeviceName', Device); 
 
-			        $.ajax({
-			        	url:"https://pack1.sakorncable.com/index.php/Mobile_app/getDeviceStatus",
-			        	type:"POST",
-			        	data:data,
-			        	contentType : false,
-			        	cache : false,
-			        	processData : false,
-			        	success : function(data){
+				        $.ajax({
+				        	url:"https://pack1.sakorncable.com/index.php/Mobile_app/getDeviceStatus",
+				        	type:"POST",
+				        	data:data,
+				        	contentType : false,
+				        	cache : false,
+				        	processData : false,
+				        	success : function(data){
 
-			        		var object = JSON.parse(data);
+				        		var object = JSON.parse(data);
 
-			        		console.log(object);
-			        		var status = "ปิด";
-			        		var btn = "เปิด";
-			        		var color = "btn-success";
-			        		var dataid = "ON";
+				        		console.log(object);
+				        		var status = "ปิด";
+				        		var btn = "เปิด";
+				        		var color = "btn-success";
+				        		var dataid = "ON";
 
-			        		if (object[0].Is_Open == 1) {
-			        			 status = "เปิด";
-			        			 btn = "ปิด";
-			        			 color = "btn-danger";
-			        			 dataid = "OFF";
+				        		if (object[0].Is_Open == 1) {
+				        			 status = "เปิด";
+				        			 btn = "ปิด";
+				        			 color = "btn-danger";
+				        			 dataid = "OFF";
 
-			        		}
+				        		}
 
-			        		var html = " <tr><td>ไฟทางเดินตึก 78</td><td> "+status+" </td>"+
-			                           "</tr>"+
-			                           "<tr><td colspan='3' > "+
-			                               "<button class='btn "+color+" btn-lg btn-block waves-effect SmartSwitchBTNClick' data-id='"+dataid+"' >"+btn+"</button> </td>"+
-			                           "</tr> ";
+				        		var html = " <tr><td>ไฟทางเดินตึก 78</td><td> "+status+" </td>"+
+				                           "</tr>"+
+				                           "<tr><td colspan='3' > "+
+				                               "<button class='btn "+color+" btn-lg btn-block waves-effect SmartSwitchBTNClick' data-id='"+dataid+"' >"+btn+"</button> </td>"+
+				                           "</tr> ";
 
-			                $("#table_SmartSwitch_detail").html(html);
-			 
+				                $("#table_SmartSwitch_detail").html(html);
+				 
 
-			        	},
-			        	error : function(){
-
-
-			        	}
-			        });
+				        	},
+				        	error : function(){
 
 
+				        	}
+				        });
 
 
-
-
-
+			        }, 2000);
+ 
 
 	        	},
 	        	error : function(){
