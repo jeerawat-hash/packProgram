@@ -33,26 +33,19 @@ class Devices extends CI_Controller
 	    $username_mq = "sakorn";  #username ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
 	    $password_mq = "sakorn";  #password ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
 	    $client_id_mq = "Client-".rand();
-/*
+
 	    $this->mqtt = new PhpMQTTServer($server_mq, $port_mq, $client_id_mq);
 	    $this->mqtt->connect(true, NULL, $username_mq, $password_mq);
+		
+		$mqtt->publish($topic, $message, $qos, $retain);
 
-	      $msg = $this->mqtt->publish("/B078/MainSwitch/WayLight", $Status, 0);
+	    $msg = $this->mqtt->publish("/B078/MainSwitch/WayLight", $Status, 0,1);
 
-	      $this->mqtt->close();
+	    $this->mqtt->close();
 
-	      echo $msg;
-	      */
-
-
-	      	$clientId = 'test-subscriber';
-
-	    	$this->mqtt = new PhpMQTTServer($server_mq, $port_mq, $client_id_mq);
-			$this->mqtt->connect();
-			$this->mqtt->subscribe('php-mqtt/client/test', function ($topic, $message) {
-			    echo sprintf("Received message on topic [%s]: %s\n", $topic, $message);
-			}, 2);
-
+	    echo $msg;
+	      
+ 
 
 
 	}
