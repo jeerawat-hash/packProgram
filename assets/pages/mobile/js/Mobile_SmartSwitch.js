@@ -63,8 +63,7 @@ $(function(){
 
 			var Ch = "\/B078\/MainSwitch\/WayLight";
 
-	        var data = new FormData();          
-	        data.append('Channel', Ch); 
+	        var data = new FormData();  
 	        data.append('Status', dataid); 
 
 	        console.log(data);
