@@ -74,6 +74,11 @@ $(function(){
 	        	processData : false,
 	        	success : function(data){
 
+	        		var html = "";
+
+			        $("#table_SmartSwitch_detail").html(html);
+
+
 					var Device = "78SMLight";
 			        var data = new FormData();          
 			        data.append('DeviceName', Device); 
