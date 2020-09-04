@@ -66,10 +66,8 @@ $(function(){
 
 	        var data2 = new FormData();  
 	        data2.append('Status', dataid);  
+ 
 
-	        console.log(dataid);
-	        console.log(data2);
-/*
 	        $.ajax({
 	        	url:"https://pack1.sakorncable.com/index.php/Devices/IOTDevice",
 	        	type:"POST",
@@ -79,14 +77,15 @@ $(function(){
 	        	processData : false,
 	        	success : function(data){
 
-
+	        		alert("success");
+	        		
 	        	},
 	        	error : function(){
 
 
 	        	}
 	        });
-*/
+
 
 
 
