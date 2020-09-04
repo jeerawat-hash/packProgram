@@ -46,7 +46,7 @@ $(function(){
 			success : function(data){
 
 				alert("ส่งข้อความสำเร็จ ");
-				$("#CustomerIDAuthen").val("");
+				$("#SecurityComment").val("");
 				$("#SmartSecurityModal").find("#PreloadSendData").hide();
 				$("#SmartSecurityModal").find("#SendData").show(); 
 			
