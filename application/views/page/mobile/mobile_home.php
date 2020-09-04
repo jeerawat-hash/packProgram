@@ -481,11 +481,7 @@
                                               <tbody id="table_SmartSwitch_detail" class="scrollit">   
                                                     
                             
-                                                    <tr><td>ไฟทางเดินตึก 78</td><td> เปิด </td>
-                                                    </tr>
-                                                    <tr><td colspan='3' > 
-                                                        <button class='btn btn-danger btn-lg btn-block waves-effect click' >ปิด</button> </td>
-                                                    </tr>
+                                                    
                                                     
 
 
