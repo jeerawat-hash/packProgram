@@ -321,11 +321,109 @@
                 </div>  
  
             <!-- Menu -->
- 
+            </div>
+
+
+
+
+            <div class="block-header">
+                <h2>สวัสดิการนิติบุคคล</h2>
+            </div>
 
  
+            <div class="row clearfix">
+              <!-- Menu -->    
+ 
+                <div id="Washing" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-white">
+                            <i class="material-icons">equalizer</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">เครื่องซักผ้า</div>
+                        </div>
+                    </div>
 
+                </div> 
+
+                <div id="Water" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-red">
+                            <i class="material-icons">equalizer</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">ตู้กดน้ำ</div>
+                        </div>
+                    </div>
+
+                </div> 
+
+
+ 
+ 
+            <!-- Menu -->
         </div>
+
+
+
+         <div class="block-header">
+                <h2>รักษาความปลอดภัย</h2>
+            </div>
+
+ 
+            <div class="row clearfix">
+              <!-- Menu -->    
+ 
+                <div id="Security" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-red">
+                            <i class="material-icons">equalizer</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">แจ้งเหตุ รปภ.</div>
+                        </div>
+                    </div>
+
+                </div> 
+ 
+
+
+ 
+ 
+            <!-- Menu -->
+        </div>
+
+
+
+
+        <div class="block-header">
+                <h2>อุปกรณ์ที่พักอาศัย</h2>
+            </div>
+
+ 
+            <div class="row clearfix">
+              <!-- Menu -->    
+ 
+                <div id="Washing" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-black">
+                            <i class="material-icons">equalizer</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">อุปกรณ์ให้แสงสว่าง</div>
+                        </div>
+                    </div>
+
+                </div> 
+ 
+ 
+            <!-- Menu -->
+        </div>
+
+
+
+
+
     </section>
 
  

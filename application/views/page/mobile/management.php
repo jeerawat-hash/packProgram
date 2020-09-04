@@ -94,9 +94,7 @@
                 <h2>กล้องวงจรปิด</h2>
             </div>
 
-
-
-            
+ 
             <div class="row clearfix">
               <!-- Menu -->    
  
@@ -198,11 +196,58 @@
                 </div>  
  
             <!-- Menu -->
- 
-
- 
-
         </div>
+
+
+
+
+
+
+
+        <div class="block-header">
+                <h2>สวัสดิการนิติบุคคล</h2>
+            </div>
+
+ 
+            <div class="row clearfix">
+              <!-- Menu -->    
+ 
+                <div id="Washing" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">equalizer</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">เครื่องซักผ้า</div>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div id="Water" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">equalizer</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">ตู้กดน้ำ</div>
+                        </div>
+                    </div>
+
+                </div> 
+
+
+
+ 
+ 
+            <!-- Menu -->
+        </div>
+
+
+
+
+
+
     </section>
 
  
