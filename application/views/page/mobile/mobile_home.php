@@ -336,8 +336,8 @@
  
                 <div id="Washing" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-white">
-                            <i class="material-icons">equalizer</i>
+                        <div class="icon bg-black">
+                            <i class="material-icons">devices</i>
                         </div>
                         <div class="content">
                             <div class="text">เครื่องซักผ้า</div>
@@ -348,8 +348,8 @@
 
                 <div id="Water" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-red">
-                            <i class="material-icons">equalizer</i>
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
                         </div>
                         <div class="content">
                             <div class="text">ตู้กดน้ำ</div>
@@ -377,7 +377,7 @@
                 <div id="Security" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-red">
-                            <i class="material-icons">equalizer</i>
+                            <i class="material-icons">access_alarm</i>
                         </div>
                         <div class="content">
                             <div class="text">แจ้งเหตุ รปภ.</div>
