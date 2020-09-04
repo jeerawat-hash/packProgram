@@ -31,10 +31,10 @@ class Mobile_app extends CI_Controller
 	{
 
 
-		echo json_encode( $this->Mobile_model->CustomerAuth($_POST["CustomerID"]) );
+		$Customer = $this->Mobile_model->CustomerAuth($_POST["CustomerID"]);
 
 
-			 //notify($_POST["CustomerID"]." ".$_POST["SecurityComment"],"kBPuadapzVtAO5Lvm48BYux884IuSVEsOR1Jej1OMZJ");
+			 notify($_POST["CustomerID"]." ".$Customer[0]->CustomerINFO." ".$_POST["SecurityComment"],"kBPuadapzVtAO5Lvm48BYux884IuSVEsOR1Jej1OMZJ");
 
 	}
 	public function getDeviceStatus()

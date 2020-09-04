@@ -45,10 +45,7 @@ $(function(){
 			processData : false,
 			success : function(data){
 
-				var object = JSON.parse(data);
-
-				console.log(object);
-				alert("ส่งข้อความสำเร็จ");
+				alert("ส่งข้อความสำเร็จ ");
 				$("#CustomerIDAuthen").val("");
 				$("#SmartSecurityModal").find("#PreloadSendData").hide();
 				$("#SmartSecurityModal").find("#SendData").show(); 
