@@ -23,7 +23,8 @@ class Devices extends CI_Controller
 
 	public function device($Status)
 	{
- 	
+ 		
+ 		error_reporting(0);
  		$this->load->library("PhpMQTTServer");
 
 	    $server_mq  = "192.168.200.111"; #Server ip address
