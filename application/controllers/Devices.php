@@ -24,7 +24,6 @@ class Devices extends CI_Controller
 	public function device($Status)
 	{
  		
-
  		error_reporting(0);
  		
  		$this->load->library("PhpMQTTServer");
@@ -36,7 +35,7 @@ class Devices extends CI_Controller
 	    $client_id_mq = "Client-".rand();
 
 	    $this->mqtt = new PhpMQTTServer($server_mq, $port_mq, $client_id_mq);
-/*	    $this->mqtt->connect(true, NULL, $username_mq, $password_mq);
+	    $this->mqtt->connect(true, NULL, $username_mq, $password_mq);
 		
 		$mqtt->publish($topic, $message, $qos, $retain);
 
@@ -45,35 +44,40 @@ class Devices extends CI_Controller
 	    $this->mqtt->close();
 
 	    echo $msg;
-	     */
-   
-		$results = [];
-		$topics = "/B078/MainSwitch/WayLight";
-		if ($this->mqtt->connect()) {
-		    foreach (explode(",", $topics) as $topic) {
-		        $myTopics = [];
-		        $myTopics[$topic] = array("qos" => 0, "function" => "procmsg");
-		        $this->mqtt->subscribe($myTopics);
-		        if ($mqtt->proc() == 0) {
-		            array_push($results, array("status" => "no message", "topic" => $topic, "message" => ""));
-		        }
-		    }
-		    $this->mqtt->close();
-		} else {
-		    array_push($results, array("status" => "ok", "no connection" => $topic, "message" => ""));
-		}
-		echo json_encode($results);
-		
-
-
+	      
  
 
+
 	}
+
+
 	public function device2()
 	{
 
+		error_reporting(0);
+ 		
+ 		$this->load->library("PhpMQTTServer");
 
-		$this->load->view("page/mobile/test");
+	    $server_mq  = "192.168.200.111"; #Server ip address
+	    $port_mq  = 1883;
+	    $username_mq = "sakorn";  #username ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
+	    $password_mq = "sakorn";  #password ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
+	    $client_id_mq = "Client-".rand();
+
+	    $this->mqtt = new PhpMQTTServer($server_mq, $port_mq, $client_id_mq);
+	    $this->mqtt->connect(true, NULL, $username_mq, $password_mq);
+		  
+			$topics['/B078/MainSwitch/WayLight'] = array("qos" => 0, "function" => "procmsg");
+			$this->mqtt->subscribe($topics, 0);
+
+			while($this->mqtt->proc()){
+			 
+			}
+
+			$this->mqtt->close();
+
+
+	      
 		
 
 	}
@@ -169,10 +173,10 @@ class Devices extends CI_Controller
 }
 
 
-function procmsg($topic, $message)
-		{
-		    global $results;
-		    array_push($results, array("status" => "ok", "topic" => $topic, "message" => $message));
-		}
+			function procmsg($topic, $msg){
+			  echo "Recieved at: " . date("Y-m-d H:i:s", time()) . "\n";
+			  echo "Topic: {$topic}\n";
+			  echo "Message: $msg\n\n";
+			}
 
  ?>
