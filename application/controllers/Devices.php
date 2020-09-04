@@ -44,6 +44,14 @@ class Devices extends CI_Controller
 
 
 	}
+	public function device2()
+	{
+
+
+		$this->load->view("page/mobile/test");
+		
+
+	}
 
 	public function app($ID = null)
 	{ 
