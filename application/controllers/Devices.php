@@ -35,15 +35,13 @@ class Devices extends CI_Controller
 
 		    $this->mqtt = new PhpMQTTServer($server_mq, $port_mq, $client_id_mq);
 		    $this->mqtt->connect(true, NULL, $username_mq, $password_mq);
-			
-			$mqtt->publish($topic, $message, $qos, $retain);
-
+			 
 		    $msg = $this->mqtt->publish("/B078/MainSwitch/WayLight", $_POST["Status"], 0);
 
 		    $this->mqtt->close();
 
 		     
- 		echo $_POST["Status"];
+ 			echo $_POST["Status"];
 	       
 	}
 
