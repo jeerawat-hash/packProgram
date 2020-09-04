@@ -78,7 +78,8 @@ $(function(){
 	        	success : function(data){
 
 	        		alert("success");
-	        		
+	        		console.log(data);
+
 	        	},
 	        	error : function(){
 
