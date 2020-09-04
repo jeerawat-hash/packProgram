@@ -25,6 +25,7 @@ class Devices extends CI_Controller
 	{
  		
  		error_reporting(0);
+ 		
  		$this->load->library("PhpMQTTServer");
 
 	    $server_mq  = "192.168.200.111"; #Server ip address
@@ -32,7 +33,7 @@ class Devices extends CI_Controller
 	    $username_mq = "sakorn";  #username ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
 	    $password_mq = "sakorn";  #password ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
 	    $client_id_mq = "Client-".rand();
-
+/*
 	    $this->mqtt = new PhpMQTTServer($server_mq, $port_mq, $client_id_mq);
 	    $this->mqtt->connect(true, NULL, $username_mq, $password_mq);
 
@@ -41,6 +42,18 @@ class Devices extends CI_Controller
 	      $this->mqtt->close();
 
 	      echo $msg;
+	      */
+
+
+	      	$clientId = 'test-subscriber';
+
+	    	$this->mqtt = new PhpMQTTServer($server_mq, $port_mq, $client_id_mq);
+			$this->mqtt->connect();
+			$this->mqtt->subscribe('php-mqtt/client/test', function ($topic, $message) {
+			    echo sprintf("Received message on topic [%s]: %s\n", $topic, $message);
+			}, 0);
+			$this->mqtt->loop(true);
+
 
 
 	}
