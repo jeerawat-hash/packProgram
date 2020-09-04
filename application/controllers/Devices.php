@@ -51,7 +51,7 @@ class Devices extends CI_Controller
 			$this->mqtt->connect();
 			$this->mqtt->subscribe('php-mqtt/client/test', function ($topic, $message) {
 			    echo sprintf("Received message on topic [%s]: %s\n", $topic, $message);
-			}, 1);
+			}, 2);
 
 
 
