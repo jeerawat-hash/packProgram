@@ -1,5 +1,5 @@
 $(function(){
- 	/////มีการปรับสถานะกลับกัน ON และ OFF
+ 	
     
 	$("#SmartSwitch1").on("click",function(){
 
@@ -24,13 +24,13 @@ $(function(){
         		var status = "ปิด";
         		var btn = "เปิด";
         		var color = "btn-success";
-        		var dataid = "OFF";
+        		var dataid = "ON";
 
         		if (object[0].Is_Open == 1) {
         			 status = "เปิด";
         			 btn = "ปิด";
         			 color = "btn-danger";
-        			 dataid = "ON";
+        			 dataid = "OFF";
 
         		}
 
@@ -64,7 +64,7 @@ $(function(){
 	        data2.append('Channel', "/B078/MainSwitch/WayLight");
 
 	        var statusN = "";
-	        if (dataid == "ON") {
+	        if (dataid == "OFF") {
 	        	statusN = "กำลังปิด...";
 	        }else{
 	        	statusN = "กำลังเปิด...";
