@@ -63,15 +63,11 @@ class Devices extends CI_Controller
 		    array_push($results, array("status" => "ok", "no connection" => $topic, "message" => ""));
 		}
 		echo json_encode($results);
-		function procmsg($topic, $message)
-		{
-		    global $results;
-		    array_push($results, array("status" => "ok", "topic" => $topic, "message" => $message));
-		}
+		
 
 
  
- 
+
 	}
 	public function device2()
 	{
@@ -171,5 +167,12 @@ class Devices extends CI_Controller
 
 
 }
+
+
+function procmsg($topic, $message)
+		{
+		    global $results;
+		    array_push($results, array("status" => "ok", "topic" => $topic, "message" => $message));
+		}
 
  ?>
