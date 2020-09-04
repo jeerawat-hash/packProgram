@@ -25,23 +25,32 @@ class Devices extends CI_Controller
 	{
  		
  		error_reporting(0);
-
  		$this->load->library("PhpMQTTServer");
+ 		if (isset($_POST["Channel"])) {
+ 			
 
-	    $server_mq  = "192.168.200.111"; #Server ip address
-	    $port_mq  = 1883;
-	    $username_mq = "sakorn";  #username ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
-	    $password_mq = "sakorn";  #password ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
-	    $client_id_mq = "Client-".rand();
+		    $server_mq  = "192.168.200.111"; #Server ip address
+		    $port_mq  = 1883;
+		    $username_mq = "sakorn";  #username ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
+		    $password_mq = "sakorn";  #password ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
+		    $client_id_mq = "Client-".rand();
 
-	    $this->mqtt = new PhpMQTTServer($server_mq, $port_mq, $client_id_mq);
-	    $this->mqtt->connect(true, NULL, $username_mq, $password_mq);
-		
-		$mqtt->publish($topic, $message, $qos, $retain);
+		    $this->mqtt = new PhpMQTTServer($server_mq, $port_mq, $client_id_mq);
+		    $this->mqtt->connect(true, NULL, $username_mq, $password_mq);
+			
+			$mqtt->publish($topic, $message, $qos, $retain);
 
-	    $msg = $this->mqtt->publish($_POST["Channel"], $_POST["Status"], 0);
+		    $msg = $this->mqtt->publish($_POST["Channel"], $_POST["Status"], 0);
 
-	    $this->mqtt->close();
+		    $this->mqtt->close();
+
+		    
+ 		}else{
+
+ 			echo "ss";
+ 		}
+ 		
+
 	       
 	}
 
