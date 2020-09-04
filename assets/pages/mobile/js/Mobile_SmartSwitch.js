@@ -5,7 +5,7 @@ $(function(){
 
 		$("#SmartSwitchModal").modal("show");
 
-		var Device = $("#78SMLight").val();
+		var Device = "78SMLight";
 
 
         var data = new FormData();          
