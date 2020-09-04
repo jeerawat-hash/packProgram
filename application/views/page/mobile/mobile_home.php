@@ -406,7 +406,7 @@
  
                 <div id="Washing" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-black">
+                        <div class="icon bg-blue">
                             <i class="material-icons">equalizer</i>
                         </div>
                         <div class="content">
