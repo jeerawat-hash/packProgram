@@ -24,6 +24,7 @@ class Devices extends CI_Controller
 	public function device($Status)
 	{
  		
+
  		error_reporting(0);
  		
  		$this->load->library("PhpMQTTServer");
@@ -33,21 +34,44 @@ class Devices extends CI_Controller
 	    $username_mq = "sakorn";  #username ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
 	    $password_mq = "sakorn";  #password ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
 	    $client_id_mq = "Client-".rand();
-
+/*
 	    $this->mqtt = new PhpMQTTServer($server_mq, $port_mq, $client_id_mq);
 	    $this->mqtt->connect(true, NULL, $username_mq, $password_mq);
 		
 		$mqtt->publish($topic, $message, $qos, $retain);
 
-	    $msg = $this->mqtt->publish("/B078/MainSwitch/WayLight", $Status, 0,1);
+	    $msg = $this->mqtt->publish("/B078/MainSwitch/WayLight", $Status, 0);
 
 	    $this->mqtt->close();
 
 	    echo $msg;
-	      
+	     */
+   
+		$results = [];
+		$topics = "/B078/MainSwitch/WayLight";
+		if ($this->mqtt->connect()) {
+		    foreach (explode(",", $topics) as $topic) {
+		        $myTopics = [];
+		        $myTopics[$topic] = array("qos" => 0, "function" => "procmsg");
+		        $this->mqtt->subscribe($myTopics);
+		        if ($mqtt->proc() == 0) {
+		            array_push($results, array("status" => "no message", "topic" => $topic, "message" => ""));
+		        }
+		    }
+		    $this->mqtt->close();
+		} else {
+		    array_push($results, array("status" => "ok", "no connection" => $topic, "message" => ""));
+		}
+		echo json_encode($results);
+		function procmsg($topic, $message)
+		{
+		    global $results;
+		    array_push($results, array("status" => "ok", "topic" => $topic, "message" => $message));
+		}
+
+
  
-
-
+ 
 	}
 	public function device2()
 	{
