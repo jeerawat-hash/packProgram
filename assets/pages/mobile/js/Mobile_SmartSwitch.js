@@ -67,6 +67,7 @@ $(function(){
 	        data.append('Channel', Ch); 
 	        data.append('Status', dataid); 
 
+	        console.log(data);
 
 	        $.ajax({
 	        	url:"https://pack1.sakorncable.com/index.php/Devices/IOTDevice",
@@ -77,8 +78,6 @@ $(function(){
 	        	processData : false,
 	        	success : function(data){
 
-	        		console.log(dataid);
-	        		console.log(Ch);
 
 	        	},
 	        	error : function(){

@@ -24,7 +24,6 @@ class Devices extends CI_Controller
 	public function IOTDevice()
 	{
  		
- 		error_reporting(0);
  		$this->load->library("PhpMQTTServer");
  		if (isset($_POST["Channel"])) {
  			
