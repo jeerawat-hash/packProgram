@@ -57,7 +57,7 @@ $(function(){
 
  		
 
- 		$("SmartSwitchModal").on("click",".SmartSwitchBTNClick",function(){
+ 		$("#SmartSwitchModal").on("click",".SmartSwitchBTNClick",function(){
 
  			var dataid = $(this).attr("data-id");
 
