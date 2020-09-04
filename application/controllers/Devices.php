@@ -24,7 +24,22 @@ class Devices extends CI_Controller
 	public function device($Status)
 	{
  	
- 		echo $this->Devices_model->SWByMQTT($Status);
+ 		$this->load->library("PhpMQTTServer");
+
+	    $server_mq  = "192.168.200.111"; #Server ip address
+	    $port_mq  = 1883;
+	    $username_mq = "sakorn";  #username ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
+	    $password_mq = "sakorn";  #password ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
+	    $client_id_mq = "Client-".rand();
+
+	    $this->mqtt = new PhpMQTTServer($server_mq, $port_mq, $client_id_mq);
+	    $this->mqtt->connect(true, NULL, $username_mq, $password_mq);
+
+	      $msg = $this->mqtt->publish("/B078/MainSwitch/WayLight", $Status, 0);
+
+	      $this->mqtt->close();
+
+	      echo $msg;
 
 
 	}
