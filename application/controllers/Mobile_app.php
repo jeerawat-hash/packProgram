@@ -30,7 +30,7 @@ class Mobile_app extends CI_Controller
 	public function callSecurity()
 	{
 
-			notify($_POST["SecurityComment"],"kBPuadapzVtAO5Lvm48BYux884IuSVEsOR1Jej1OMZJ");
+			notify($_POST["CustomerID"]." ".$_POST["SecurityComment"],"kBPuadapzVtAO5Lvm48BYux884IuSVEsOR1Jej1OMZJ");
 
 	}
 	public function getDeviceStatus()
