@@ -1171,6 +1171,7 @@
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerSendSlip.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerGetDataCarModal.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSwitch.js"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSecurity.js"></script>
 
 
 
