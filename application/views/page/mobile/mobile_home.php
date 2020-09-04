@@ -514,6 +514,67 @@
             </div>
 
 
+
+    <!-- SmartSecurity -->
+            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="SmartSecurityModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="largeModalLabel">ตรวจสอบข้อมูลทะเบียนรถ</h4>
+                        </div>
+                        <div class="modal-body">
+
+
+                        <div class="row clearfix">
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          
+                                        <label>กรุณาระบุหมายเลขทะเบียนรถที่ต้องการทราบข้อมูล</label>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    
+                                    <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" value="" class="form-control" id="CarCode" name="CarCode" required>
+                                        <label class="form-label">หมายเลขทะเบียนรถ</label>
+                                    </div>
+                                    </div>
+
+
+                                </div>
+                        </div> 
+
+
+
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <button type="button" id="SendData" class="btn btn-lg btn-success waves-effect">ส่งข้อมูล</button>
+                            <div class="preloader" id="PreloadSendData">
+                                    <div class="spinner-layer pl-red">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                            </div> 
+                            <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
  
         <!-- CCTVModal -->
             <div class="modal fade" data-backdrop="static" data-keyboard="false" id="CCTVModal" tabindex="-1" role="dialog">
