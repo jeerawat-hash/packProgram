@@ -4,6 +4,31 @@ class Devices_model extends CI_Model
 {	
     
 
+
+    public function SWByMQTT($status)
+    {
+
+      $this->load->library("PhpMQTTServer");
+
+    $server_mq  = "192.168.200.111"; #Server ip address
+    $port_mq  = 1883;
+    $username_mq = "sakorn";  #username ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
+    $password_mq = "sakorn";  #password ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
+    $client_id_mq = "Client-".rand();
+
+    $this->mqtt = new PhpMQTTServer($server_mq, $port_mq, $client_id_mq);
+    $this->mqtt->connect(true, NULL, $username_mq, $password_mq);
+
+      $msg = $this->mqtt->publish("/B078/MainSwitch/WayLight", $status, 0);
+
+      $this->mqtt->close();
+
+
+      return $msg;
+
+    }
+
+
     public function getLastData()
     {
        

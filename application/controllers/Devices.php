@@ -20,6 +20,15 @@ class Devices extends CI_Controller
  		echo json_encode($this->Devices_model->getLastData());	
 	
 	}
+
+	public function device($Status)
+	{
+ 	
+ 		echo $this->Devices_model->SWByMQTT($Status);
+
+
+	}
+
 	public function app($ID = null)
 	{ 
 
