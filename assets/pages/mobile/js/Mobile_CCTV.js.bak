@@ -204,7 +204,7 @@ $(function(){
         ////////////
      
     var player = new Clappr.Player({
-        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2xpdmUvY2N0djM3LS5tM3U4'),
+        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2hscy9jY3R2MzctLm0zdTg='),
         preload: "none",
         width: '50%',
         height: '50%',
@@ -227,7 +227,7 @@ $(function(){
         ////////////
      
     var player = new Clappr.Player({
-        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2xpdmUvY2N0djM4LS5tM3U4'),
+        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2hscy9jY3R2MzgtLm0zdTg='),
         preload: "none",
         width: '50%',
         height: '50%',
