@@ -70,10 +70,11 @@ class Devices extends CI_Controller
 			$topics['/B078/MainSwitch/WayLight'] = array("qos" => 0, "function" => "procmsg");
 			$this->mqtt->subscribe($topics, 0);
 
-			while($this->mqtt->proc()){
+			while($this->mqtt->proc() == 0){
 			 
-			}
+			} 
 
+			
 			$this->mqtt->close();
 
 
