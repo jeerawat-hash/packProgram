@@ -63,15 +63,16 @@ $(function(){
 
 			var Ch = "\/B078\/MainSwitch\/WayLight";
 
-	        var data = new FormData();  
-	        data.append('Status', "sss");  
+	        var data2 = new FormData();  
+	        data2.append('Status', "sss");  
 
 	        console.log(dataid);
+	        console.log(data2);
 /*
 	        $.ajax({
 	        	url:"https://pack1.sakorncable.com/index.php/Devices/IOTDevice",
 	        	type:"POST",
-	        	data:data,
+	        	data:data2,
 	        	contentType : false,
 	        	cache : false,
 	        	processData : false,
