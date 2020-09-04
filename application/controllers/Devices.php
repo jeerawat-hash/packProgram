@@ -24,8 +24,7 @@ class Devices extends CI_Controller
 	public function IOTDevice()
 	{
  		
- 		$this->load->library("PhpMQTTServer");
- 		if (isset($_POST["Channel"])) {
+ 		$this->load->library("PhpMQTTServer"); 
  			
 
 		    $server_mq  = "192.168.200.111"; #Server ip address
@@ -39,15 +38,11 @@ class Devices extends CI_Controller
 			
 			$mqtt->publish($topic, $message, $qos, $retain);
 
-		    $msg = $this->mqtt->publish($_POST["Channel"], $_POST["Status"], 0);
+		    $msg = $this->mqtt->publish("/B078/MainSwitch/WayLight", $_POST["Status"], 0);
 
 		    $this->mqtt->close();
 
-		    
- 		}else{
-
- 			echo "ss";
- 		}
+		     
  		
 
 	       

@@ -12,7 +12,7 @@ $(function(){
         data.append('DeviceName', Device); 
 
 	        console.log(data);
-        
+
         $.ajax({
         	url:"https://pack1.sakorncable.com/index.php/Mobile_app/getDeviceStatus",
         	type:"POST",
@@ -28,13 +28,13 @@ $(function(){
         		var status = "ปิด";
         		var btn = "เปิด";
         		var color = "btn-success";
-        		var dataid = 0;
+        		var dataid = "ON";
 
         		if (object[0].Is_Open == 1) {
         			 status = "เปิด";
         			 btn = "ปิด";
         			 color = "btn-danger";
-        			 dataid = 1;
+        			 dataid = "OFF";
 
 
         		}
