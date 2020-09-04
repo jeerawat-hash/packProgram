@@ -417,13 +417,25 @@
             <div class="row clearfix">
               <!-- Menu -->    
  
-                <div id="Washing" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div id="IOT1" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-blue">
                             <i class="material-icons">equalizer</i>
                         </div>
                         <div class="content">
-                            <div class="text">อุปกรณ์ให้แสงสว่าง</div>
+                            <div class="text">อุปกรณ์ให้แสงสว่างภายในอาคาร</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="IOT2" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-green">
+                            <i class="material-icons">equalizer</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">อุปกรณ์ให้แสงสว่างภายในห้อง</div>
                         </div>
                     </div>
 
