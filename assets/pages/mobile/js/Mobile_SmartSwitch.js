@@ -61,7 +61,7 @@ $(function(){
 
  			var dataid = $(this).attr("data-id");
 
-			var Ch = "/B078/MainSwitch/WayLight";
+			var Ch = "\/B078\/MainSwitch\/WayLight";
 
 	        var data = new FormData();          
 	        data.append('Channel', Ch); 
