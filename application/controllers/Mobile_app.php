@@ -29,8 +29,8 @@ class Mobile_app extends CI_Controller
 	}
 	public function getDeviceStatus()
 	{
-		
-		echo json_encode($this->Devices_model->getDataStatusLight("78SMLight"));
+			
+		echo json_encode($this->Devices_model->getDataStatusLight($_POST["DeviceName"]));
 
 	}
 	public function login()

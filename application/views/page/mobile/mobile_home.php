@@ -417,7 +417,7 @@
             <div class="row clearfix">
               <!-- Menu -->    
  
-                <div id="IOT1" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div id="SmartSwitch1" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-blue">
                             <i class="material-icons">equalizer</i>
@@ -451,7 +451,73 @@
 
     </section>
 
+        <!-- SmartSwitch -->
+            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="SmartSwitchModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="largeModalLabel">อุปกรณ์ให้แสงสว่างภายในอาคาร 78</h4>
+                        </div>
+                        <div class="modal-body">
+
+
+                        <div class="row clearfix">
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                    
+
+                                        <table id="table_SmartSwitch" class="table table-striped table-bordered table-hover">
+                                              <thead>
+                                                <tr>
+                                                   
+                                                    <th>หมายเลขห้อง</th>
+                                                    <th>ยอด</th>
+                                                
+                                                </tr>
+
+                                              </thead>
+
+                                              <tbody id="table_SmartSwitch_detail" class="scrollit">   
+                                                    
+                            
+                                                    <tr><td>ไฟทางเดินตึก 78</td><td> เปิด </td>
+                                                    </tr>
+                                                    <tr><td colspan='3' > 
+                                                        <button class='btn btn-danger btn-lg btn-block waves-effect click' >ปิด</button> </td>
+                                                    </tr>
+                                                    
+
+
+                                              </tbody>
+                                            </table> 
+
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                           
+                                       <font color="red"><label id="midModalLabel">ทดสอบระบบ</label></font> 
  
+                                    </div>
+                                </div>
+                        </div> 
+
+ 
+                        </div>
+                        <div class="modal-footer">
+                             
+                            <button type="button"  data-dismiss="modal" class="btn btn-lg btn-danger waves-effect cctv-close">ปิด</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
  
         <!-- CCTVModal -->
             <div class="modal fade" data-backdrop="static" data-keyboard="false" id="CCTVModal" tabindex="-1" role="dialog">
@@ -1047,7 +1113,7 @@
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerCheckblanace.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerSendSlip.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerGetDataCarModal.js"></script>
-       
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSwitch.js"></script>
 
 
 
