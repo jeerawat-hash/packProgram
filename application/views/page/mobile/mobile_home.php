@@ -520,7 +520,7 @@
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="largeModalLabel">ตรวจสอบข้อมูลทะเบียนรถ</h4>
+                            <h4 class="modal-title" id="largeModalLabel">แจ้งเหตุ เจ้าหน้าที่รักษาความปลอดภัย</h4>
                         </div>
                         <div class="modal-body">
 
@@ -530,7 +530,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           
-                                        <label>กรุณาระบุหมายเลขทะเบียนรถที่ต้องการทราบข้อมูล</label>
+                                        <label>กรุณาระบุเหตุที่ต้องการแจ้ง</label>
                                         
                                     </div>
                                 </div>
@@ -539,8 +539,8 @@
                                     
                                     <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" value="" class="form-control" id="CarCode" name="CarCode" required>
-                                        <label class="form-label">หมายเลขทะเบียนรถ</label>
+                                        <input type="text" value="" class="form-control" id="SecurityComment" name="SecurityComment" required>
+                                        <label class="form-label">ข้อมูลเหตุ</label>
                                     </div>
                                     </div>
 
