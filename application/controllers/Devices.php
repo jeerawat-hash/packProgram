@@ -34,9 +34,9 @@ class Devices extends CI_Controller
 	    $username_mq = "sakorn";  #username ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
 	    $password_mq = "sakorn";  #password ที่ได้สร้างไว้ตอนตั้งค่า MQTT Broker
 	    $client_id_mq = "Client-".rand();
-/*
+
 	    $this->mqtt = new PhpMQTTServer($server_mq, $port_mq, $client_id_mq);
-	    $this->mqtt->connect(true, NULL, $username_mq, $password_mq);
+/*	    $this->mqtt->connect(true, NULL, $username_mq, $password_mq);
 		
 		$mqtt->publish($topic, $message, $qos, $retain);
 
