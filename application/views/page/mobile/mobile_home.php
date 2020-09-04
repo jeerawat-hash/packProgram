@@ -496,7 +496,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                            
-                                       <font color="red"><label id="midModalLabel">ทดสอบระบบ</label></font> 
+                                       <font color="red"><label id="midModalLabel">ตัวอย่างการให้บริการระบบ SmartSwitch ภายในตึกพักอาศัยของท่าน</label></font> 
  
                                     </div>
                                 </div>
@@ -1126,7 +1126,7 @@ function CopyFunction() {
  
 
 <script type="text/javascript">
-    /*
+    
         //new logic check timeout
         var timeOutMin = 60;
         var timeOut = (timeOutMin==null)?60:timeOutMin;
@@ -1153,6 +1153,6 @@ function CopyFunction() {
                 top.location.href = 'https://pack1.sakorncable.com/';
             }
         }
-        */
+        
 </script>
 
