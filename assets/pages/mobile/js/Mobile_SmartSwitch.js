@@ -11,6 +11,8 @@ $(function(){
         var data = new FormData();          
         data.append('DeviceName', Device); 
 
+	        console.log(data);
+        
         $.ajax({
         	url:"https://pack1.sakorncable.com/index.php/Mobile_app/getDeviceStatus",
         	type:"POST",
