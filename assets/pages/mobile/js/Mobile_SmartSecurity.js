@@ -45,6 +45,8 @@ $(function(){
 			processData : false,
 			success : function(data){
 
+				alert("ส่งข้อความสำเร็จ");
+				$("#CustomerIDAuthen").val("");
 				$("#SmartSecurityModal").find("#PreloadSendData").hide();
 				$("#SmartSecurityModal").find("#SendData").show(); 
 			
