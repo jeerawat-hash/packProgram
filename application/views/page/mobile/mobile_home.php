@@ -340,7 +340,7 @@
                             <i class="material-icons">devices</i>
                         </div>
                         <div class="content">
-                            <div class="text">เครื่องซักผ้า</div>
+                            <div class="text">เครื่องซักผ้า (อยู่ระหว่างดำเนินการ)</div>
                         </div>
                     </div>
 
@@ -352,7 +352,7 @@
                             <i class="material-icons">devices</i>
                         </div>
                         <div class="content">
-                            <div class="text">ตู้กดน้ำ</div>
+                            <div class="text">ตู้กดน้ำ (อยู่ระหว่างดำเนินการ)</div>
                         </div>
                     </div>
 
