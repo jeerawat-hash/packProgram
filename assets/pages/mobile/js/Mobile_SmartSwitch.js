@@ -22,6 +22,7 @@ $(function(){
 
         		var object = JSON.parse(data);
 
+        		console.log(object);
         		var status = "ปิด";
         		var btn = "เปิด";
         		var color = "btn-success";
