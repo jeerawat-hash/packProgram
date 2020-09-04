@@ -65,7 +65,9 @@ $(function(){
  
 
 	        var data2 = new FormData();  
-	        data2.append('Status', dataid);  
+	        data2.append('Status', dataid);
+	        data2.append('Channel', "/B078/MainSwitch/WayLight");
+
  
 
 	        $.ajax({
