@@ -10,6 +10,7 @@ class Mobile_app extends CI_Controller
 		
 		parent::__construct(); 
 		$this->load->model("Mobile_model");
+		$this->load->model("Devices_model");
  
  
 	}
@@ -25,6 +26,12 @@ class Mobile_app extends CI_Controller
 			$this->load->view("page/mobile/mobile_home");
 			$this->load->view("page/template_mobile/footer");
 			
+	}
+	public function getDeviceStatus()
+	{
+		
+		echo json_encode($this->Devices_model->getDataStatusLight("78SMLight"));
+
 	}
 	public function login()
 	{

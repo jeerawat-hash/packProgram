@@ -6,6 +6,19 @@ class Devices_model extends CI_Model
 
  
 
+    public function getDataStatusLight($DeviceName)
+    {
+       
+       $this->mssql = $this->load->database("mssql",true);
+
+       return $this->mssql->query(" SELECT  [DeviceName]
+      ,[Is_Open]
+      ,[MQTTChannel]
+      ,[Description]
+  FROM [Sakorn_Manage].[dbo].[SmartSwitch] where DeviceName = '".$DeviceName."' ")->result();
+      
+
+    }
 
     public function getLastData()
     {
@@ -26,11 +39,7 @@ class Devices_model extends CI_Model
       
     }
 
-
-
-    
-
-
+ 
 
     public function insertDataTemp($ImgUrl,$temp,$DateStamp,$TimeStamp)
     {
