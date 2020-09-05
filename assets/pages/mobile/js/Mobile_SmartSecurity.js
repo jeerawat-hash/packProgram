@@ -60,7 +60,7 @@ $(function(){
 		        	processData : false,
 		        	success : function(data){
 	 					
-		        		alert("ส่งข้อความสำเร็จ");
+		        		alert("ส่งข้อความสำเร็จ ");
 	 
 		        		$("#SecurityComment").val("");
 						$("#SmartSecurityModal").find("#PreloadSendData").hide();

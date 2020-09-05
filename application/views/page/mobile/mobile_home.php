@@ -530,7 +530,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           
-                                        <label>กรุณาระบุเหตุที่ต้องการแจ้ง</label>
+                                        <label>กรุณาระบุเบอร์โทรศัพท์</label>
                                         
                                     </div>
                                 </div>
@@ -539,8 +539,8 @@
                                     
                                     <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" value="" class="form-control" id="SecurityComment" name="SecurityComment" required>
-                                        <label class="form-label">ข้อมูลเหตุ</label>
+                <input type="text" value="" class="form-control" id="SecurityComment" name="SecurityComment" required placeholder="0810000000" >
+                                        <label class="form-label">กรุณาระบุเบอร์โทรศัพท์</label>
                                     </div>
                                     </div>
 
