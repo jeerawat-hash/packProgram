@@ -45,10 +45,35 @@ $(function(){
 			processData : false,
 			success : function(data){
 
-				alert("ส่งข้อความสำเร็จ ");
-				$("#SecurityComment").val("");
-				$("#SmartSecurityModal").find("#PreloadSendData").hide();
-				$("#SmartSecurityModal").find("#SendData").show(); 
+					 
+		        var dataA = new FormData();  
+		        dataA.append('Status', "START");
+		        dataA.append('Channel', "/00001/Security/Light");
+	 
+
+		        $.ajax({
+		        	url:"https://pack1.sakorncable.com/index.php/Devices/IOTDevice",
+		        	type:"POST",
+		        	data:dataA,
+		        	contentType : false,
+		        	cache : false,
+		        	processData : false,
+		        	success : function(data){
+	 					
+		        		alert("ส่งข้อความสำเร็จ ");
+	 
+		        		$("#SecurityComment").val("");
+						$("#SmartSecurityModal").find("#PreloadSendData").hide();
+						$("#SmartSecurityModal").find("#SendData").show(); 
+	 
+		        	},
+		        	error : function(){
+
+
+		        	}
+		        });
+	 
+
 			
 			},
 			error : function(){
@@ -59,12 +84,7 @@ $(function(){
 		}, 2000);
 		
 
-
-
-
-
-
-
+ 
 
 
  	 });
