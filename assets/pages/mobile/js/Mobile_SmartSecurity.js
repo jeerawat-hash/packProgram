@@ -18,7 +18,7 @@ $(function(){
 		var CustomerID = $("#CustomerIDAuthen").val();
 
 		if (SecurityComment == "") {
-			alert("กรุณาระบุเหตุที่ต้องการแจ้ง");
+			alert("กรุณาระบุเบอร์โทรติดต่อกลับ");
 			return false;
 		}
 
