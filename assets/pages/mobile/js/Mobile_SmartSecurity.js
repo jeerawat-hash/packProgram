@@ -60,7 +60,7 @@ $(function(){
 		        	processData : false,
 		        	success : function(data){
 	 					
-		        		alert("ส่งข้อความสำเร็จเจ้าหน้าที่จะติดต่อกลับภายใน 20 นาที ");
+		        		alert("ส่งข้อความสำเร็จ");
 	 
 		        		$("#SecurityComment").val("");
 						$("#SmartSecurityModal").find("#PreloadSendData").hide();
