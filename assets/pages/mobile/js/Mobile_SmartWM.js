@@ -9,6 +9,8 @@ $(function(){
 
  	 			$("#SmartWMModal").modal("show");
  	 			$("#PreloadSendData").hide();
+ 	 			$("#previewImgWM").attr("src", "https://ctt.trains.com/sitefiles/images/no-preview-available.png");
+ 	 			$('#WMQRCodeFile').val('');
 
  	 		});
  
