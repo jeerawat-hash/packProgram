@@ -482,7 +482,7 @@
                                   
                                         <input type="file" style="display: none;" accept="image/*" id = "WMQRCodeFile" name="WMQRCodeFile" onchange="previewFile(this);" required>
 
-                                        <button id="SelectImageWM" style="align-content: center;" class="btn btn-primary" ><h4>ถ่ายภาพ QRCode</h4></button> 
+                                        <button id="SelectImageWM" style="text-align: center;" class="btn btn-primary waves-effect" ><h4>ถ่ายภาพ QRCode</h4></button> 
                                     </div>
 
 
