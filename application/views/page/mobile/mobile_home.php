@@ -471,7 +471,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           
-                                        <img id="previewImgWM" src="https://ctt.trains.com/sitefiles/images/no-preview-available.png">
+                                        <img id="previewImgWM" style="width: 100%;height: auto;" src="https://ctt.trains.com/sitefiles/images/no-preview-available.png">
 
                                     </div>
                                 </div>
@@ -482,7 +482,7 @@
                                     <div class="form-line">
 
 
-                                        <input type="file" accept="image/*" id = "WMQRCodeFile" name="WMQRCodeFile" onchange="previewFile(this);" required>
+                                        <input type="file" style="display: none;" accept="image/*" id = "WMQRCodeFile" name="WMQRCodeFile" onchange="previewFile(this);" required>
 
                                         <button id="SelectImageWM" class="btn btn-primary" >ถ่ายภาพ QRCode</button>
                                          
