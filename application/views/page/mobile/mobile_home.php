@@ -334,7 +334,7 @@
             <div class="row clearfix">
               <!-- Menu -->    
  
-                <div id="Washing" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div id="SmartWM" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-black">
                             <i class="material-icons">devices</i>
@@ -450,6 +450,81 @@
 
 
     </section>
+
+
+
+
+
+
+    <!-- SmartWM -->
+            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="SmartWMModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="largeModalLabel">สวัสดิการเครื่องซักผ้า</h4>
+                        </div>
+                        <div class="modal-body">
+
+
+                        <div class="row clearfix">
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          
+                                        <img id="previewImgWM" src="https://ctt.trains.com/sitefiles/images/no-preview-available.png">
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    
+                                    <div class="form-group form-float">
+                                    <div class="form-line">
+
+
+                                        <input type="file" accept="image/*" id = "WMQRCodeFile" name="WMQRCodeFile" onchange="previewFile(this);" required>
+
+                                        <button id="SelectImageWM" class="btn btn-primary" >ถ่ายภาพ QRCode</button>
+                                         
+                                    </div>
+                                    </div>
+
+
+                                </div>
+                        </div> 
+
+
+
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <button type="button" id="SendData" class="btn btn-lg btn-success waves-effect">ส่งข้อมูล</button>
+                            <div class="preloader" id="PreloadSendData">
+                                    <div class="spinner-layer pl-red">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                            </div> 
+                            <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
 
         <!-- SmartSwitch -->
             <div class="modal fade" data-backdrop="static" data-keyboard="false" id="SmartSwitchModal" tabindex="-1" role="dialog">
@@ -1172,6 +1247,7 @@
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerGetDataCarModal.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSwitch.js"></script>
         <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSecurity.js"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartWM.js"></script>
 
 
 
@@ -1184,6 +1260,21 @@ function CopyFunction() {
   document.execCommand("copy");
   alert("คัดลอกหมายเลขบัญชีสำเร็จ....");
 }
+
+
+    function previewFile(input){
+        var file = $("#WMQRCodeFile").get(0).files[0];
+        if(file){
+            var reader = new FileReader();
+             
+                reader.onload = function(){
+                    $("#previewImgWM").attr("src", reader.result);
+
+                } 
+ 
+            reader.readAsDataURL(file);
+        }
+    }
 </script>
  
 
