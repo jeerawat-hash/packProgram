@@ -489,15 +489,12 @@
                                 </div>
                         </div> 
 
-
-
-
-
+ 
 
                         </div>
                         <div class="modal-footer">
                             
-                            <button type="button" id="SendData" class="btn btn-lg btn-success waves-effect">ส่งข้อมูล</button>
+                            <button type="button" id="SendData" class="btn btn-lg btn-success waves-effect">ตรวจสอบสิทธิการใข้งาน</button>
                             <div class="preloader" id="PreloadSendData">
                                     <div class="spinner-layer pl-red">
                                         <div class="circle-clipper left">
