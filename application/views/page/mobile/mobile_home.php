@@ -436,7 +436,7 @@
                             <i class="material-icons">equalizer</i>
                         </div>
                         <div class="content">
-                            <div class="text">อุปกรณ์ให้แสงสว่างภายในห้อง (อยู่ระหว่างดำเนินการ)</div>
+                            <div class="text">ระบบSmartRoomภายในห้องโดยสาครเคเบิล</div>
                         </div>
                     </div>
 
