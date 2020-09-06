@@ -38,7 +38,7 @@ $(function(){
 		
 		setTimeout(function(){ 
   		
-
+			alert("ข้อมูล QRCode ผิดพลาด กรุณาติดต่อนิติบุคคลตึก 78");
 			$("#SmartWMModal").find("#PreloadSendData").hide();
 			$("#SmartWMModal").find("#SendData").show(); 
 
