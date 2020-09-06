@@ -471,7 +471,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           
-                                        <img id="previewImgWM" style="width: 100%;height: auto;" src="https://ctt.trains.com/sitefiles/images/no-preview-available.png">
+                                        <img id="previewImgWM" style="width: 60%;height: auto;" src="https://ctt.trains.com/sitefiles/images/no-preview-available.png">
 
                                     </div>
                                 </div>
