@@ -340,12 +340,13 @@
                             <i class="material-icons">devices</i>
                         </div>
                         <div class="content">
-                            <div class="text">เครื่องซักผ้า (อยู่ระหว่างดำเนินการ)</div>
+                            <div class="text">บริการเครื่องซักผ้าฟรี</div>
                         </div>
                     </div>
 
                 </div> 
 
+                <!--
                 <div id="Water" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-blue">
@@ -357,7 +358,7 @@
                     </div>
 
                 </div> 
-
+                -->
 
                 <div id="Water" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
