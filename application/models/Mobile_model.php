@@ -35,7 +35,7 @@ class Mobile_model extends CI_Model
         return $this->mssql->query(" 
  select CustomerID,CustomerName,ISNULL( convert(varchar(20) ,sum(a.AMOUNT)) ,'0') as AmountTotal from [Sakorn_Manage].[dbo].[CustomerAmount_LOG] a
  right outer join Theparak3.dbo.Customer b on a.CUST = b.CustomerID
-   where b.CustomerID = '".$CUST."'  and b.ProjectCode = '".$ProjectCode."'
+   where b.CustomerID = '".$CUST."'  and a.ProjectCode = '".$ProjectCode."'
    group by CustomerID,CustomerName ")->result();
 
 
@@ -49,7 +49,7 @@ class Mobile_model extends CI_Model
         return $this->mssql->query("select CustomerID,CustomerName,a.AMOUNT as AmountTotal,c.Description,a.DATE from [Sakorn_Manage].[dbo].[CustomerAmount_LOG] a
  right outer join Theparak3.dbo.Customer b on a.CUST = b.CustomerID  
  join [Sakorn_Manage].[dbo].[CustomerAmount_CodeType] c on a.CODE = c.CODE
- where b.CustomerID = '".$CUST."' and b.ProjectCode = '".$ProjectCode."' order by DATE asc ")->result();
+ where b.CustomerID = '".$CUST."' and a.ProjectCode = '".$ProjectCode."' order by DATE asc ")->result();
 
 
   }
