@@ -4,30 +4,30 @@ class Mobile_model extends CI_Model
 {	
 
 
-  public function getDataCustomerByCar($CarCode)
+  public function getDataCustomerByCar($CarCode,$ProjectCode)
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
       return $this->mssql->query("SELECT b.CustomerName,'ตึก '+SUBSTRING(b.Room,2,2) + ' ' +'ห้อง '+SUBSTRING(b.Room,5,2) as AddressLocal,a.CARCODE,a.CARBRAND,a.CARCOLOR,a.CARTYPE,a.COUNTRY,a.CONTACT 
   FROM [Sakorn_Manage].[dbo].[CustomerCarInfo] a 
-  join Theparak3.dbo.Customer b on a.CUST = b.CustomerID
-  where a.CARCODE like '".$CarCode."%' ")->result();
+  join Theparak3.dbo.Customer b on a.CUST = b.CustomerID 
+  where a.CARCODE like '".$CarCode."%' and b.ProjectCode = '".$ProjectCode."' ")->result();
 
 
   }
 
-  public function CustomerAuth($CustomerID)
+  public function CustomerAuth($CustomerID,$ProjectCode)
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
 
-     return $this->mssql->query(" select CustomerID,TitleName+' '+CustomerName+' '+NoHome as CustomerINFO from Theparak3.dbo.Customer where CustomerID = '".$CustomerID."' ")->result();
+     return $this->mssql->query(" select CustomerID,TitleName+' '+CustomerName+' '+NoHome as CustomerINFO from Theparak3.dbo.Customer where CustomerID = '".$CustomerID."' and ProjectCode = '".$ProjectCode."' ")->result();
 
 
   }
-  public function getDataBlanace($CUST)
+  public function getDataBlanace($CUST,$ProjectCode)
   {
 
         $this->mssql = $this->load->database("mssql",true);
@@ -35,13 +35,13 @@ class Mobile_model extends CI_Model
         return $this->mssql->query(" 
  select CustomerID,CustomerName,ISNULL( convert(varchar(20) ,sum(a.AMOUNT)) ,'0') as AmountTotal from [Sakorn_Manage].[dbo].[CustomerAmount_LOG] a
  right outer join Theparak3.dbo.Customer b on a.CUST = b.CustomerID
-   where b.CustomerID = '".$CUST."' 
+   where b.CustomerID = '".$CUST."'  and b.ProjectCode = '".$ProjectCode."'
    group by CustomerID,CustomerName ")->result();
 
 
   }
 
-  public function getDataBlanaceDetail($CUST)
+  public function getDataBlanaceDetail($CUST,$ProjectCode)
   {
 
         $this->mssql = $this->load->database("mssql",true);
@@ -49,7 +49,7 @@ class Mobile_model extends CI_Model
         return $this->mssql->query("select CustomerID,CustomerName,a.AMOUNT as AmountTotal,c.Description,a.DATE from [Sakorn_Manage].[dbo].[CustomerAmount_LOG] a
  right outer join Theparak3.dbo.Customer b on a.CUST = b.CustomerID  
  join [Sakorn_Manage].[dbo].[CustomerAmount_CodeType] c on a.CODE = c.CODE
- where b.CustomerID = '".$CUST."' order by DATE asc ")->result();
+ where b.CustomerID = '".$CUST."' and b.ProjectCode = '".$ProjectCode."' order by DATE asc ")->result();
 
 
   }
@@ -123,7 +123,7 @@ class Mobile_model extends CI_Model
 
      $this->mssql = $this->load->database("mssql",true);
 
-     $this->mssql->query(" delete from [Sakorn_Manage].[dbo].[CustomerCarInfo] ");
+     $this->mssql->query(" delete from [Sakorn_Manage].[dbo].[CustomerCarInfo] where  ProjectCode = 'P1' ");
  
   }
 
@@ -154,7 +154,7 @@ class Mobile_model extends CI_Model
 
      $this->mssql = $this->load->database("mssql",true);
 
-     $this->mssql->query(" delete from [Sakorn_Manage].[dbo].[CustomerAmount_LOG] ");
+     $this->mssql->query(" delete from [Sakorn_Manage].[dbo].[CustomerAmount_LOG] where  ProjectCode = 'P1' ");
  
   }
 
@@ -188,7 +188,7 @@ class Mobile_model extends CI_Model
 
      $this->mssql = $this->load->database("mssql",true);
 
-     $this->mssql->query(" delete from [Sakorn_Manage].[dbo].[CustomerPay_LOG] ");
+     $this->mssql->query(" delete from [Sakorn_Manage].[dbo].[CustomerPay_LOG] where  ProjectCode = 'P1' ");
  
   }
 

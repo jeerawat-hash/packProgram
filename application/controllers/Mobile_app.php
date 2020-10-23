@@ -31,7 +31,7 @@ class Mobile_app extends CI_Controller
 	{
 
 
-			$Customer = $this->Mobile_model->CustomerAuth($_POST["CustomerID"]);
+			$Customer = $this->Mobile_model->CustomerAuth($_POST["CustomerID"],"P1");
 
 			 notify("อาคาร ".$_POST["CustomerID"]." ".$Customer[0]->CustomerINFO." ".$_POST["SecurityComment"],"oQozIXdKU8O8OEzQ6O20IEveDGqW6JwShsZKLSPgCyS");
 
@@ -47,7 +47,7 @@ class Mobile_app extends CI_Controller
 
 
 		//print_r($_POST["CustomerID"]);
-		echo json_encode( $this->Mobile_model->CustomerAuth($_POST["CustomerID"]) );
+		echo json_encode( $this->Mobile_model->CustomerAuth($_POST["CustomerID"],"P1") );
 		// ทดสอบ ไลน์ส่วนตัว
 		/*
 			 shell_exec("  
@@ -63,21 +63,21 @@ class Mobile_app extends CI_Controller
 	{
 
 		//print_r($_POST);
-		echo json_encode( $this->Mobile_model->getDataBlanace($_POST["CustomerID"]) );
+		echo json_encode( $this->Mobile_model->getDataBlanace($_POST["CustomerID"],"P1") );
 
 
 	}
 	public function getDataBlanaceDetail()
 	{
 
-		echo json_encode( $this->Mobile_model->getDataBlanaceDetail($_POST["CustomerID"]) );
+		echo json_encode( $this->Mobile_model->getDataBlanaceDetail($_POST["CustomerID"],"P1") );
 		//print_r($_POST);
 		
 	}
 	public function getDataCustomerByCar()
 	{
  
-		echo json_encode($this->Mobile_model->getDataCustomerByCar($_POST["CarCode"]));
+		echo json_encode($this->Mobile_model->getDataCustomerByCar($_POST["CarCode"],"P1"));
 		
 	}
 	public function getDataPreviewChannel()
@@ -189,7 +189,7 @@ class Mobile_app extends CI_Controller
 			move_uploaded_file($_FILES["Slipfile"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$file.".jpg");
  
 
-			$Member = $this->Mobile_model->getDataBlanace($_POST["CustomerID"]);				
+			$Member = $this->Mobile_model->getDataBlanace($_POST["CustomerID"],"P1");				
 
 	        $UserMessage = $Member[0]->CustomerName." ทำการส่งภาพ";
 
