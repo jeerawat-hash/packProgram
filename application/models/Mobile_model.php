@@ -103,7 +103,8 @@ class Mobile_model extends CI_Model
            ,[CARTYPE]
            ,[CARBRAND]
            ,[CARCOLOR]
-           ,[CONTACT])
+           ,[CONTACT]
+           ,[ProjectCode])
      VALUES
            ('".$CUST."'
            ,'".$CARCODE."'
@@ -111,7 +112,8 @@ class Mobile_model extends CI_Model
            ,'".$CARTYPE."'
            ,'".$CARBRAND."'
            ,'".$CARCOLOR."'
-           ,'".$CONTACT."') ");
+           ,'".$CONTACT."'
+           ,'P1') ");
 
 
   }
@@ -135,12 +137,14 @@ class Mobile_model extends CI_Model
            ([CUST]
            ,[DATE]
            ,[CODE]
-           ,[AMOUNT])
+           ,[AMOUNT]
+           ,[ProjectCode])
      VALUES
            ('".$CUST."'
            ,'".$DATE."'
            ,'".$CODE."'
-           ,'".$AMOUNT."') ");
+           ,'".$AMOUNT."'
+           ,'P1') ");
 
 
   }
@@ -165,14 +169,16 @@ class Mobile_model extends CI_Model
            ,[PAYTYPE_ID]
            ,[DATE]
            ,[CODE]
-           ,[AMOUNT])
+           ,[AMOUNT]
+           ,[ProjectCode])
      VALUES
            ('".$CUST."'
            ,'".$RECEIPT."'
            ,'2'
            ,'".date("Y-m-d")."'
            ,'".$CODE."'
-           ,'".$AMOUNT."') ");
+           ,'".$AMOUNT."'
+           ,'P1') ");
 
 
   }
