@@ -290,7 +290,6 @@ class Management extends CI_Controller
 				echo $RepROOM." ".$ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
 
 
-
 			}
 
 
