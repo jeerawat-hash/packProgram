@@ -199,7 +199,7 @@ class Mobile_model extends CI_Model
 
      return $this->mssql->query(" select sum(list) as AMOUNT from (
     select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Manage.dbo.CustomerAmount_LOG a
-    right outer join Sakorn_Manage.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE group by b.Description
+    right outer join Sakorn_Manage.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE  where a.ProjectCode = 'P1'  group by b.Description
     )a ")->result();
  
   }
@@ -209,7 +209,7 @@ class Mobile_model extends CI_Model
      $this->mssql = $this->load->database("mssql",true);
 
      return $this->mssql->query(" select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Manage.dbo.CustomerAmount_LOG a
-right outer join Sakorn_Manage.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE group by b.Description ")->result();
+right outer join Sakorn_Manage.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE where a.ProjectCode = 'P1' group by b.Description ")->result();
  
   }
   public function ReportCustomerReceive()
@@ -218,7 +218,7 @@ right outer join Sakorn_Manage.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE 
      $this->mssql = $this->load->database("mssql",true);
 
      return $this->mssql->query(" select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Manage.dbo.CustomerPay_LOG a
-right outer join Sakorn_Manage.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE group by b.Description ")->result();
+right outer join Sakorn_Manage.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE where a.ProjectCode = 'P1' group by b.Description ")->result();
  
   }
 
@@ -229,7 +229,7 @@ right outer join Sakorn_Manage.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE 
 
      return $this->mssql->query("  select Description,Count(RECEIPT) as Receipt,Sum(RECEIPTList) as List,sum(Amount) as Amount from (
  select RECEIPT,b.Description,count(RECEIPT) as RECEIPTList,sum(a.Amount) as Amount from Sakorn_Manage.dbo.CustomerPay_LOG a 
- join Sakorn_Manage.dbo.CustomerPay_Type b on a.PAYTYPE_ID = b.ID group by RECEIPT,b.Description
+ join Sakorn_Manage.dbo.CustomerPay_Type b on a.PAYTYPE_ID = b.ID where a.ProjectCode = 'P1' group by RECEIPT,b.Description
  )a group by Description ")->result();
  
   }
@@ -258,22 +258,35 @@ right outer join Sakorn_Manage.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE 
       
 
       }
-
-
-
-
-
-
-
-
-
-
-
  
 
   }
 
+  public function createDataFromXlsxtest($file)
+  {
 
+      $this->load->library("SimpleXLSX");
+      $this->SimpleXLSX = new SimpleXLSX(); 
+
+      if ( $xlsx = $this->SimpleXLSX->parse('./upload/temp/'.$file)) {
+ 
+        $header_values = $rows = [];
+
+        foreach ( $xlsx->rows() as $k => $r ) {
+          if ( $k === 0 ) {
+            $header_values = $r;
+            continue;
+          }
+          $rows[] = array_combine( $header_values, $r );
+        }
+
+
+        return $rows;
+      
+
+      }
+  
+  }
 
 
 

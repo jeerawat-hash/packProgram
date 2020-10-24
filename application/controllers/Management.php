@@ -263,6 +263,25 @@ class Management extends CI_Controller
 
 
 
+	public function createExcelTest()
+	{
+
+
+
+  
+			$result = $this->Mobile_model->createDataFromXlsx("/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/p1.xlsx");
+  
+ 
+
+			print_r($result);
+
+
+
+	}
+
+
+
+
 
 
 
