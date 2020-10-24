@@ -278,18 +278,18 @@ class Management extends CI_Controller
 				if (trim($Value["ROOM"]) != "") {
 
 					$ROOM = $Value["ROOM"];
-					$CUST = str_replace("/","-",$Value["CUST"]); 
+					$CUST = $Value["CUST"]; 
 					$HOMENO = $Value["HOMENO"]; 
 					$NAME = $Value["NAME"]; 
 					$BILLNO = $Value["BILLNO"]; 
 					
 				} 
 
-				//$RepROOM = str_replace("/","-",$ROOM);
+				$RepROOM = str_replace("/","-",$ROOM);
 
-				echo $ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
+				echo $RepROOM." ".$ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
 
-				//$this->Mobile_model->insertDataServicesCost($CUST,$Value["DATE"],$Value["CODE"],$Value["AMOUNT"],"P5");
+				//$this->Mobile_model->insertDataServicesCost($CUST,$Value["DATE"],$Value["CODE"],$Value["AMOUNT"],"P1");
 
 			}
 
