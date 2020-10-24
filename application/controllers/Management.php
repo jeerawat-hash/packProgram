@@ -269,7 +269,7 @@ class Management extends CI_Controller
 
 
   
-			$result = $this->Mobile_model->createDataFromXlsx("/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/p1.xlsx");
+			$result = $this->Mobile_model->createDataFromXlsx("p1.xlsx");
   
  
 
