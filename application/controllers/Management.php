@@ -262,7 +262,7 @@ class Management extends CI_Controller
 
 
   
-			$result = $this->Mobile_model->createDataFromXlsx("P5.xlsx");
+			$result = $this->Mobile_model->createDataFromXlsx("P1.xlsx");
    
 			//print_r($result);
  
@@ -278,17 +278,16 @@ class Management extends CI_Controller
 				if (trim($Value["ROOM"]) != "") {
 
 					$ROOM = $Value["ROOM"];
-					$CUST = $Value["CUST"]; 
+					$CUST = str_replace("/","-",$Value["CUST"]); 
 					$HOMENO = $Value["HOMENO"]; 
 					$NAME = $Value["NAME"]; 
 					$BILLNO = $Value["BILLNO"]; 
 					
 				} 
+ 
+				echo $ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
 
-				$RepROOM = str_replace("/","-",$ROOM);
-
-				echo $RepROOM." ".$ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
-
+				//$this->Mobile_model->insertDataServicesCost($CUST,$Value["DATE"],$Value["CODE"],$Value["AMOUNT"],"P1");
 
 			}
 
