@@ -283,7 +283,9 @@ class Management extends CI_Controller
 					$BILLNO = $Value["BILLNO"]; 
 				} 
 
-				echo $ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
+				$RepROOM = str_replace("/","-",$ROOM);
+
+				echo $RepROOM." ".$ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
 
 
 
