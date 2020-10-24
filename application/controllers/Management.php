@@ -276,11 +276,13 @@ class Management extends CI_Controller
 
 
 				if (trim($Value["ROOM"]) != "") {
+
 					$ROOM = $Value["ROOM"];
 					$CUST = $Value["CUST"]; 
 					$HOMENO = $Value["HOMENO"]; 
 					$NAME = $Value["NAME"]; 
 					$BILLNO = $Value["BILLNO"]; 
+					
 				} 
 
 				$RepROOM = str_replace("/","-",$ROOM);
