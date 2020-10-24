@@ -262,7 +262,7 @@ class Management extends CI_Controller
 
 
   
-			$result = $this->Mobile_model->createDataFromXlsx("P1.xlsx");
+			$result = $this->Mobile_model->createDataFromXlsx("p1.xlsx");
    
 			//print_r($result);
  
