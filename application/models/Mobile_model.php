@@ -11,7 +11,7 @@ class Mobile_model extends CI_Model
 
       return $this->mssql->query("SELECT b.CustomerName,'ตึก '+SUBSTRING(b.Room,2,2) + ' ' +'ห้อง '+SUBSTRING(b.Room,5,2) as AddressLocal,a.CARCODE,a.CARBRAND,a.CARCOLOR,a.CARTYPE,a.COUNTRY,a.CONTACT 
   FROM [Sakorn_Theparak3].[dbo].[CustomerCarInfo] a 
-  join Theparak3.dbo.Customer b on a.CUST = b.CustomerID 
+  join Sakorn_Theparak3.dbo.Customer b on a.CUST = b.CustomerID 
   where a.CARCODE like '".$CarCode."%' and b.ProjectCode = '".$ProjectCode."' ")->result();
 
 
@@ -23,7 +23,7 @@ class Mobile_model extends CI_Model
      $this->mssql = $this->load->database("mssql",true);
 
 
-     return $this->mssql->query(" select CustomerID,TitleName+' '+CustomerName+' '+NoHome as CustomerINFO from Theparak3.dbo.Customer where CustomerID = '".$CustomerID."'  ")->result();
+     return $this->mssql->query(" select CustomerID,TitleName+' '+CustomerName+' '+NoHome as CustomerINFO from Sakorn_Theparak3.dbo.Customer where CustomerID = '".$CustomerID."'  ")->result();
 
 
   }
@@ -34,7 +34,7 @@ class Mobile_model extends CI_Model
 
         return $this->mssql->query(" 
  select CustomerID,CustomerName,ISNULL( convert(varchar(20) ,sum(a.AMOUNT)) ,'0') as AmountTotal from [Sakorn_Theparak3].[dbo].[CustomerAmount_LOG] a
- right outer join Theparak3.dbo.Customer b on a.CUST = b.CustomerID
+ right outer join Sakorn_Theparak3.dbo.Customer b on a.CUST = b.CustomerID
    where b.CustomerID = '".$CUST."'  and a.ProjectCode = '".$ProjectCode."'
    group by CustomerID,CustomerName ")->result();
 
@@ -47,7 +47,7 @@ class Mobile_model extends CI_Model
         $this->mssql = $this->load->database("mssql",true);
 
         return $this->mssql->query("select CustomerID,CustomerName,a.AMOUNT as AmountTotal,c.Description,a.DATE from [Sakorn_Theparak3].[dbo].[CustomerAmount_LOG] a
- right outer join Theparak3.dbo.Customer b on a.CUST = b.CustomerID  
+ right outer join Sakorn_Theparak3.dbo.Customer b on a.CUST = b.CustomerID  
  join [Sakorn_Theparak3].[dbo].[CustomerAmount_CodeType] c on a.CODE = c.CODE
  where b.CustomerID = '".$CUST."' and a.ProjectCode = '".$ProjectCode."' order by DATE asc ")->result();
 
@@ -198,8 +198,8 @@ class Mobile_model extends CI_Model
      $this->mssql = $this->load->database("mssql",true);
 
      return $this->mssql->query(" select sum(list) as AMOUNT from (
-    select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Theparak3.dbo.CustomerAmount_LOG a
-    right outer join Sakorn_Theparak3.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE  where a.ProjectCode = 'P1'  group by b.Description
+    select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Sakorn_Theparak3.dbo.CustomerAmount_LOG a
+    right outer join Sakorn_Sakorn_Theparak3.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE  where a.ProjectCode = 'P1'  group by b.Description
     )a ")->result();
  
   }
@@ -208,8 +208,8 @@ class Mobile_model extends CI_Model
 
      $this->mssql = $this->load->database("mssql",true);
 
-     return $this->mssql->query(" select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Theparak3.dbo.CustomerAmount_LOG a
-right outer join Sakorn_Theparak3.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE where a.ProjectCode = 'P1' group by b.Description ")->result();
+     return $this->mssql->query(" select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Sakorn_Theparak3.dbo.CustomerAmount_LOG a
+right outer join Sakorn_Sakorn_Theparak3.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE where a.ProjectCode = 'P1' group by b.Description ")->result();
  
   }
   public function ReportCustomerReceive()
@@ -217,8 +217,8 @@ right outer join Sakorn_Theparak3.dbo.CustomerAmount_CodeType b on a.CODE = b.CO
 
      $this->mssql = $this->load->database("mssql",true);
 
-     return $this->mssql->query(" select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Theparak3.dbo.CustomerPay_LOG a
-right outer join Sakorn_Theparak3.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE where a.ProjectCode = 'P1' group by b.Description ")->result();
+     return $this->mssql->query(" select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Sakorn_Theparak3.dbo.CustomerPay_LOG a
+right outer join Sakorn_Sakorn_Theparak3.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE where a.ProjectCode = 'P1' group by b.Description ")->result();
  
   }
 
@@ -228,8 +228,8 @@ right outer join Sakorn_Theparak3.dbo.CustomerAmount_CodeType b on a.CODE = b.CO
      $this->mssql = $this->load->database("mssql",true);
 
      return $this->mssql->query("  select Description,Count(RECEIPT) as Receipt,Sum(RECEIPTList) as List,sum(Amount) as Amount from (
- select RECEIPT,b.Description,count(RECEIPT) as RECEIPTList,sum(a.Amount) as Amount from Sakorn_Theparak3.dbo.CustomerPay_LOG a 
- join Sakorn_Theparak3.dbo.CustomerPay_Type b on a.PAYTYPE_ID = b.ID where a.ProjectCode = 'P1' group by RECEIPT,b.Description
+ select RECEIPT,b.Description,count(RECEIPT) as RECEIPTList,sum(a.Amount) as Amount from Sakorn_Sakorn_Theparak3.dbo.CustomerPay_LOG a 
+ join Sakorn_Sakorn_Theparak3.dbo.CustomerPay_Type b on a.PAYTYPE_ID = b.ID where a.ProjectCode = 'P1' group by RECEIPT,b.Description
  )a group by Description ")->result();
  
   }
