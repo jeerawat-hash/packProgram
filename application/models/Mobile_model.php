@@ -261,32 +261,7 @@ right outer join Sakorn_Manage.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE 
  
 
   }
-
-  public function createDataFromXlsxtest($file)
-  {
-
-      $this->load->library("SimpleXLSX");
-      $this->SimpleXLSX = new SimpleXLSX(); 
-
-      if ( $xlsx = $this->SimpleXLSX->parse('./upload/temp/'.$file)) {
  
-        $header_values = $rows = [];
-
-        foreach ( $xlsx->rows() as $k => $r ) {
-          if ( $k === 0 ) {
-            $header_values = $r;
-            continue;
-          }
-          $rows[] = array_combine( $header_values, $r );
-        }
-
-
-        return $rows;
-      
-
-      }
-  
-  }
 
 
 

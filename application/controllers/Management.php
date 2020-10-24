@@ -241,10 +241,6 @@ class Management extends CI_Controller
 
 			}
 
-
-
-
-
 			echo "1";
 
 
@@ -260,9 +256,6 @@ class Management extends CI_Controller
 
 	}
 
-
-
-
 	public function createExcelTest()
 	{
 
@@ -270,10 +263,35 @@ class Management extends CI_Controller
 
   
 			$result = $this->Mobile_model->createDataFromXlsx("p1.xlsx");
-  
+   
+			//print_r($result);
+ 
+			$ROOM = ""; 
+			$CUST = ""; 
+			$HOMENO = ""; 
+			$NAME = ""; 
+			$BILLNO = ""; 
+
+			foreach ($result as $Value) {
+
+
+				if (trim($Value["ROOM"]) != "") {
+					$ROOM = $Value["ROOM"];
+					$CUST = $Value["CUST"]; 
+					$HOMENO = $Value["HOMENO"]; 
+					$NAME = $Value["NAME"]; 
+					$BILLNO = $Value["BILLNO"]; 
+				} 
+
+				echo $ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
+
+
+
+			}
+
+
  
 
-			print_r($result);
 
 
 
