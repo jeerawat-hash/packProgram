@@ -52,7 +52,7 @@ class Management extends CI_Controller
 
 			//print_r($result);
 
-			$this->Mobile_model->clearDataServicesCost();
+			$this->Mobile_model->clearDataServicesCost("P5");
 
 
 			$ROOM = ""; 
@@ -81,8 +81,8 @@ class Management extends CI_Controller
 
 			}
 
-			$ReportTotal = $this->Mobile_model->ReportCustomerTotal();
-			$ReportTotalDetail = $this->Mobile_model->ReportCustomerTotalDetail();
+			$ReportTotal = $this->Mobile_model->ReportCustomerTotal("P5");
+			$ReportTotalDetail = $this->Mobile_model->ReportCustomerTotalDetail("P5");
 
 			$message1 = "\nสรุปยอดคงค้างในระบบ\n".number_format($ReportTotal[0]->AMOUNT,3)." บาท\n"."รายละเอียด";
 
@@ -124,7 +124,7 @@ class Management extends CI_Controller
 
  			$result = $this->Mobile_model->createDataFromXlsx($_FILES["ReceiveCost"]["name"]);
 
-			$this->Mobile_model->clearDataReceiveCost();
+			$this->Mobile_model->clearDataReceiveCost("P5");
 
 			foreach ($result as $Value) {
 
@@ -139,8 +139,8 @@ class Management extends CI_Controller
 			echo "1";
 
 
-			$ReportReceiveTotal = $this->Mobile_model->ReportCustomerReceive();
-			$ReportReceiveTotalDetail = $this->Mobile_model->ReportCustomerReceiveDetail();
+			$ReportReceiveTotal = $this->Mobile_model->ReportCustomerReceive("P5");
+			$ReportReceiveTotalDetail = $this->Mobile_model->ReportCustomerReceiveDetail("P5");
 
 			$message1 = "\nสรุปยอดรับเข้าระบบ";
 
