@@ -95,7 +95,7 @@ class Mobile_model extends CI_Model
   }
 
 
-  public function insertDataCarInfo($CUST,$CARCODE,$COUNTRY,$CARTYPE,$CARBRAND,$CARCOLOR,$CONTACT)
+  public function insertDataCarInfo($CUST,$CARCODE,$COUNTRY,$CARTYPE,$CARBRAND,$CARCOLOR,$CONTACT,$ProjectCode)
   {
 
      $this->mssql = $this->load->database("mssql",true);
@@ -117,7 +117,7 @@ class Mobile_model extends CI_Model
            ,'".$CARBRAND."'
            ,'".$CARCOLOR."'
            ,'".$CONTACT."'
-           ,'P5') ");
+           ,'".$ProjectCode."') ");
 
 
   }
@@ -162,7 +162,7 @@ class Mobile_model extends CI_Model
  
   }
 
-    public function insertDataReceiveCost($CUST,$RECEIPT,$CODE,$AMOUNT)
+    public function insertDataReceiveCost($CUST,$RECEIPT,$CODE,$AMOUNT,$ProjectCode)
   {
 
      $this->mssql = $this->load->database("mssql",true);
@@ -182,7 +182,7 @@ class Mobile_model extends CI_Model
            ,'".date("Y-m-d")."'
            ,'".$CODE."'
            ,'".$AMOUNT."'
-           ,'P5') ");
+           ,'".$ProjectCode."') ");
 
 
   }

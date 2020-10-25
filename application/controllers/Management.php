@@ -27,28 +27,6 @@ class Management extends CI_Controller
 			
 	}
 
-	public function p1()
-	{
-
-
-
-	}
-	public function p2()
-	{
-
-
-
-	}
-	public function p5()
-	{
-
-
-
-	}
-
-
-
-
 	public function authen()
 	{		
  	 
@@ -152,7 +130,7 @@ class Management extends CI_Controller
 
 				$Customer = str_replace("/","-", $Value["CUSTOMER"] );
 
-				$this->Mobile_model->insertDataReceiveCost($Customer,$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"]);
+				$this->Mobile_model->insertDataReceiveCost($Customer,$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"],"P5");
 
 				//print_r($Value);
 
@@ -266,8 +244,7 @@ class Management extends CI_Controller
 				$CA_CUST = str_replace("/","-", $Value["CA_CUST"] );
 				$CA_CODE = str_replace("/","-", $Value["CA_CODE"] );
 
-				$this->Mobile_model->insertDataCarInfo($CA_CUST,$CA_CODE,$Value["CA_COUNTRY"],$Value["CA_TYPE"],$Value["CA_BRAND"],$Value["CA_COLOR"],$Value["CA_REMARK"]);
-
+				$this->Mobile_model->insertDataCarInfo($CA_CUST,$CA_CODE,$Value["CA_COUNTRY"],$Value["CA_TYPE"],$Value["CA_BRAND"],$Value["CA_COLOR"],$Value["CA_REMARK"],"P5");
 
 
 			}
@@ -281,54 +258,10 @@ class Management extends CI_Controller
 
 		}
 
-
  
- 
-
 	}
 
-	public function createExcelTest()
-	{
-
-
-
-  
-			$result = $this->Mobile_model->createDataFromXlsx("p1.xlsx");
-   
-			//print_r($result);
  
-			$ROOM = ""; 
-			$CUST = ""; 
-			$HOMENO = ""; 
-			$NAME = ""; 
-			$BILLNO = ""; 
-
-			foreach ($result as $Value) {
-
-
-				if (trim($Value["ROOM"]) != "") {
-
-					$ROOM = $Value["ROOM"];
-					$CUST = str_replace("/","-",$Value["CUST"]); 
-					$HOMENO = $Value["HOMENO"]; 
-					$NAME = $Value["NAME"]; 
-					$BILLNO = $Value["BILLNO"]; 
-					
-				} 
- 
-				//echo $ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
-
-				$this->Mobile_model->insertDataServicesCost($CUST,$Value["DATE"],$Value["CODE"],$Value["AMOUNT"],"P1");
-
-			}
-
-
- 
-
-
-
-
-	}
 
 
 
