@@ -234,7 +234,7 @@ class Management extends CI_Controller
 			$result = $this->Mobile_model->createDataFromXlsx($_FILES["CarInfofile"]["name"]);
 
 
-			$this->Mobile_model->clearDataCarInfo();
+			$this->Mobile_model->clearDataCarInfo("P5");
 
 
 			foreach ($result as $Value) {

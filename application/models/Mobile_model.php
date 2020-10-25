@@ -122,12 +122,12 @@ class Mobile_model extends CI_Model
 
   }
 
-  public function clearDataCarInfo()
+  public function clearDataCarInfo($ProjectCode)
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
-     $this->mssql->query(" delete from [Sakorn_Theparak3].[dbo].[CustomerCarInfo] where  ProjectCode = 'P5' ");
+     $this->mssql->query(" delete from [Sakorn_Theparak3].[dbo].[CustomerCarInfo] where  ProjectCode = '".$ProjectCode."' ");
  
   }
 
