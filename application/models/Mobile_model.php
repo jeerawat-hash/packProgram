@@ -60,7 +60,11 @@ class Mobile_model extends CI_Model
   {
      $this->mssql = $this->load->database("mssql",true);
      
-     $checkKey = $this->mssql->query(" SELECT * FROM [Sakorn_Theparak3].[dbo].[Staff] where authen = '".$Secrect."'  ")->num_rows();
+     $checkKey = 1;
+
+     if ($Secrect == "Sakorn@") {
+       $checkKey = 0;
+     }
 
      if ($checkKey != 0) {
         return 1;
@@ -76,12 +80,12 @@ class Mobile_model extends CI_Model
 
      $this->mssql = $this->load->database("mssql",true);
 
-     $checkCustomer = $this->mssql->query(" SELECT CustomerID,TitleName,CustomerName FROM [Theparak3].[dbo].[Customer] where CustomerID = '".$CUST."'  ")->num_rows();
+     $checkCustomer = $this->mssql->query(" SELECT CustomerID,TitleName,CustomerName FROM [Sakorn_Theparak3].[dbo].[Customer] where CustomerID = '".$CUST."'  ")->num_rows();
 
      if ($checkCustomer != 0) {
        
 
-        $this->mssql->query(" update [Theparak3].[dbo].[Customer] set TitleName = '".$TitleName."',CustomerName = '".$CustomerName."' where CustomerID = '".$CUST."'  ");
+        $this->mssql->query(" update [Sakorn_Theparak3].[dbo].[Customer] set TitleName = '".$TitleName."',CustomerName = '".$CustomerName."' where CustomerID = '".$CUST."'  ");
 
 
      }

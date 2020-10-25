@@ -26,6 +26,29 @@ class Management extends CI_Controller
 			$this->load->view("page/template_mobile/footer");
 			
 	}
+
+	public function p1()
+	{
+
+
+
+	}
+	public function p2()
+	{
+
+
+
+	}
+	public function p5()
+	{
+
+
+
+	}
+
+
+
+
 	public function authen()
 	{		
  	 
@@ -65,7 +88,8 @@ class Management extends CI_Controller
 
 				if (trim($Value["ROOM"]) != "") {
 					$ROOM = $Value["ROOM"];
-					$CUST = $Value["CUST"]; 
+					//$CUST = $Value["CUST"]; 
+					$CUST = str_replace("/","-",$Value["CUST"]); 
 					$HOMENO = $Value["HOMENO"]; 
 					$NAME = $Value["NAME"]; 
 					$BILLNO = $Value["BILLNO"]; 
@@ -126,7 +150,9 @@ class Management extends CI_Controller
 
 			foreach ($result as $Value) {
 
-				$this->Mobile_model->insertDataReceiveCost($Value["CUSTOMER"],$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"]);
+				$Customer = str_replace("/","-", $Value["CUSTOMER"] );
+
+				$this->Mobile_model->insertDataReceiveCost($Customer,$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"]);
 
 				//print_r($Value);
 
@@ -193,7 +219,9 @@ class Management extends CI_Controller
 
 				//print_r($Value);
 
-				$this->Mobile_model->SyncDataCustomerName($Value["PE_CODE"],$Value["PE_TITLE"],$Value["PE_NAME"]);
+				$PE_CODE = str_replace("/","-", $Value["PE_CODE"] );
+
+				$this->Mobile_model->SyncDataCustomerName($PE_CODE,$Value["PE_TITLE"],$Value["PE_NAME"]);
 
 
 			}
@@ -233,9 +261,12 @@ class Management extends CI_Controller
 
 			foreach ($result as $Value) {
 
-				//print_r($Value);
+				//print_r($Value);	
 
-				$this->Mobile_model->insertDataCarInfo($Value["CA_CUST"],$Value["CA_CODE"],$Value["CA_COUNTRY"],$Value["CA_TYPE"],$Value["CA_BRAND"],$Value["CA_COLOR"],$Value["CA_REMARK"]);
+				$CA_CUST = str_replace("/","-", $Value["CA_CUST"] );
+				$CA_CODE = str_replace("/","-", $Value["CA_CODE"] );
+
+				$this->Mobile_model->insertDataCarInfo($CA_CUST,$CA_CODE,$Value["CA_COUNTRY"],$Value["CA_TYPE"],$Value["CA_BRAND"],$Value["CA_COLOR"],$Value["CA_REMARK"]);
 
 
 
