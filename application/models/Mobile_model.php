@@ -66,7 +66,7 @@ class Mobile_model extends CI_Model
        $checkKey = 0;
      }
 
-     if ($checkKey != 0) {
+     if ($checkKey == 0) {
         return 1;
      }else{
         return 0;
