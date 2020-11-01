@@ -72,7 +72,7 @@ $(function(){
 					/////// แสดงผลเมนู ////////
  
 					
-					$("#ProjectCode").var(object.ProjectCode);
+					$("#ProjectCode").val(object.ProjectCode);
 					$("#StatusAuthen").text("Authentication Success");
 					$("#TelephoneAuthen").val("NULL");
 					$("#DataSecrectkeyModal").modal("hide");
