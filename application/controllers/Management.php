@@ -38,9 +38,11 @@ class Management extends CI_Controller
 	{
 
  
-		print_r($_POST);
-		print_r($_FILES);
-		/*
+		//print_r($_POST);
+		//print_r($_FILES);
+		
+		$ProjectCode = $_POST["ProjectCode"];
+
 		if ($_FILES["ServicesCost"]["type"] == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
 
 			shell_exec("rm /home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_FILES["ServicesCost"]["name"]);
@@ -53,7 +55,7 @@ class Management extends CI_Controller
 
 			//print_r($result);
 
-			$this->Mobile_model->clearDataServicesCost("P5");
+			$this->Mobile_model->clearDataServicesCost($ProjectCode);
 
 
 			$ROOM = ""; 
@@ -77,13 +79,13 @@ class Management extends CI_Controller
 				//echo $ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
 
 	 
-				$this->Mobile_model->insertDataServicesCost($CUST,$Value["DATE"],$Value["CODE"],$Value["AMOUNT"],"P5");
+				$this->Mobile_model->insertDataServicesCost($CUST,$Value["DATE"],$Value["CODE"],$Value["AMOUNT"],$ProjectCode);
 	 
 
 			}
 
-			$ReportTotal = $this->Mobile_model->ReportCustomerTotal("P5");
-			$ReportTotalDetail = $this->Mobile_model->ReportCustomerTotalDetail("P5");
+			$ReportTotal = $this->Mobile_model->ReportCustomerTotal($ProjectCode);
+			$ReportTotalDetail = $this->Mobile_model->ReportCustomerTotalDetail($ProjectCode);
 
 			$message1 = "\nสรุปยอดคงค้างในระบบ\n".number_format($ReportTotal[0]->AMOUNT,3)." บาท\n"."รายละเอียด";
 
@@ -107,7 +109,7 @@ class Management extends CI_Controller
 			echo "2";
 
 		}
- 			*/
+ 			 
 
 	}
 	public function createDataReceiveFromXlsx()
