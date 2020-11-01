@@ -61,7 +61,7 @@ class Mobile_model extends CI_Model
 
  
 
-  public function Authentication($Secrect)
+  public function AuthenticationBAK($Secrect)
   {
      $this->mssql = $this->load->database("mssql",true);
      
@@ -77,6 +77,36 @@ class Mobile_model extends CI_Model
         return 0;
      }
 
+
+  }
+
+  public function Authentication($Secrect)
+  {
+     $this->mssql = $this->load->database("mssql",true);
+     
+     $checkKey = 1;
+
+     $project = "";
+
+     if ($Secrect == "Sakorn@") {
+       $checkKey = 0;
+       $project = "P5";
+     }else
+     if ($Secrect == "Sakorn@2") {
+       $checkKey = 0;
+       $project = "P2";
+     }
+
+     $is_success = 0;
+     if ($checkKey == 0) {
+        $is_success = 1;
+     }else{
+        $is_success = 0;
+     }
+
+      $status = array("Status" => $is_success , "ProjectCode" => $project );
+
+      return $status;
 
   }
 

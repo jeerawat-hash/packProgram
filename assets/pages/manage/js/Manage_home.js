@@ -40,12 +40,10 @@ $(function(){
 			$.post("https://pack1.sakorncable.com/index.php/management/authen",{SecrectKEY : telephone}
 			,function(data,status){
 
-
-				//var object =  JSON.parse(data);
-
-				console.log(data);
-
 				
+				var object =  JSON.parse(data);
+				console.log(object);
+				/*
 				if (data == 1) {
   
 					$("#NameAuthen").text("System");
@@ -61,7 +59,7 @@ $(function(){
 
 					return false;
 				}
-				
+				*/
 
 
 
