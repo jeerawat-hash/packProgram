@@ -38,9 +38,9 @@ class Management extends CI_Controller
 	{
 
  
-		//print_r($_POST);
-		//print_r($_FILES);
-
+		print_r($_POST);
+		print_r($_FILES);
+		/*
 		if ($_FILES["ServicesCost"]["type"] == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
 
 			shell_exec("rm /home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$_FILES["ServicesCost"]["name"]);
@@ -107,7 +107,7 @@ class Management extends CI_Controller
 			echo "2";
 
 		}
- 
+ 			*/
 
 	}
 	public function createDataReceiveFromXlsx()

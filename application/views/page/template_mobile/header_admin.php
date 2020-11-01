@@ -119,7 +119,7 @@
                 -->
                 <a href="javascript:void(0);" class="bars"></a>
                 
-                <a class="navbar-brand" href="javascript:void(0);">นิติบุคคล Pack1 สาครเคเบิล</a>
+                <a class="navbar-brand" id="SystemName" href="javascript:void(0);">นิติบุคคล Pack1 สาครเคเบิล</a>
             </div>
             
             <!--

@@ -44,13 +44,13 @@ $(function(){
 				var object =  JSON.parse(data);
 				console.log(object);
 				
-				if (object.Status == 1) {
-
+				if (object.Status == 1) {  
 
 					/////// แสดงผลเมนู ////////
 					if (object.ProjectCode == "P2") {
 
 						$("#NameAuthen").text("บ้านเอื้ออาทรเทพารักษ์ 3/2");
+						$("#SystemName").text("บ้านเอื้ออาทรเทพารักษ์ 3/2");
 						//// menu hidden ///
 
 						//// menu hidden ///
@@ -60,11 +60,13 @@ $(function(){
 					if (object.ProjectCode == "P5") {
 
 						$("#NameAuthen").text("Pack 1");
+						$("#SystemName").text("นิติบุคคล Pack1 สาครเคเบิล");
+
 						//// menu hidden ///
 
 
 						//// menu hidden ///
-						
+
 					}
 
 					/////// แสดงผลเมนู ////////

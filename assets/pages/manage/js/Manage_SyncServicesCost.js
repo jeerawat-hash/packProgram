@@ -12,7 +12,8 @@ $(function(){
 
 
     $("#DataSyncServicesCostModal").find("#SendData").on("click",function(){
- 
+    
+            var ProjectCode = $("#ProjectCode").val();
 
             ////// ไฟล์ 
             var Slip_file = $('#ServicesCostfile').prop('files')[0]; 
@@ -20,10 +21,10 @@ $(function(){
             var data = new FormData();      
             ////// เพิ่มข้อมูลเข้า          
             data.append('ServicesCost', Slip_file); 
+            data.append('ProjectCode', ProjectCode); 
             //data.append('Telephone', Telephone );
             ////// เพิ่มข้อมูลเข้า array           
- 
- 
+  
         $("#DataSyncServicesCostModal").find("#SendData").hide();
         $("#DataSyncServicesCostModal").find("#PreloadSendData").show();
 
@@ -40,8 +41,8 @@ $(function(){
                 processData:false,
                 success: function(data){
 
-                    //console.log(data);
-                
+                    console.log(data);
+                    /*
                     if (data == 1) {
 
                     alert("บันทึกข้อมูลสำเร็จ....");
@@ -58,7 +59,8 @@ $(function(){
                         $("#DataSyncServicesCostModal").find("#SendData").show();
                         $("#DataSyncServicesCostModal").find("#PreloadSendData").hide();
 
-                    } 
+                    }
+                    */
                       
                 },
                 error : function(){
