@@ -118,6 +118,7 @@ class Management extends CI_Controller
 
 		//print_r($_FILES["ReceiveCost"]);
 
+		$ProjectCode = $_POST["ProjectCode"];
 
 		if ($_FILES["ReceiveCost"]["type"] == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
 
@@ -127,13 +128,13 @@ class Management extends CI_Controller
 
  			$result = $this->Mobile_model->createDataFromXlsx($_FILES["ReceiveCost"]["name"]);
 
-			$this->Mobile_model->clearDataReceiveCost("P5");
+			$this->Mobile_model->clearDataReceiveCost($ProjectCode);
 
 			foreach ($result as $Value) {
 
 				$Customer = str_replace("/","-", $Value["CUSTOMER"] );
 
-				$this->Mobile_model->insertDataReceiveCost($Customer,$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"],"P5");
+				$this->Mobile_model->insertDataReceiveCost($Customer,$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"],$ProjectCode);
 
 				//print_r($Value);
 
@@ -142,8 +143,8 @@ class Management extends CI_Controller
 			echo "1";
 
 
-			$ReportReceiveTotal = $this->Mobile_model->ReportCustomerReceive("P5");
-			$ReportReceiveTotalDetail = $this->Mobile_model->ReportCustomerReceiveDetail("P5");
+			$ReportReceiveTotal = $this->Mobile_model->ReportCustomerReceive($ProjectCode);
+			$ReportReceiveTotalDetail = $this->Mobile_model->ReportCustomerReceiveDetail($ProjectCode);
 
 			$message1 = "\nสรุปยอดรับเข้าระบบ";
 

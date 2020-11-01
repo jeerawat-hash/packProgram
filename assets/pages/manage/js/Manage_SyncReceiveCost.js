@@ -14,12 +14,16 @@ $(function(){
     $("#DataSyncReceiveCostModal").find("#SendData").on("click",function(){
  
 
+            var ProjectCode = $("#ProjectCode").val();
+
             ////// ไฟล์ 
             var Slip_file = $('#ReceiveCostfile').prop('files')[0]; 
             ////// ไฟล์
             var data = new FormData();      
             ////// เพิ่มข้อมูลเข้า          
             data.append('ReceiveCost', Slip_file); 
+            data.append('ProjectCode', ProjectCode); 
+
             //data.append('Telephone', Telephone );
             ////// เพิ่มข้อมูลเข้า array           
  
