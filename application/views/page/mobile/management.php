@@ -27,10 +27,7 @@
             <div class="block-header">
                 <h2>จัดการระบบ</h2>
             </div>
-
-
-
-            
+  
             <div class="row clearfix">
               <!-- Menu -->    
  
@@ -89,160 +86,14 @@
  
 
         </div>
-
-        <div class="block-header">
-                <h2>กล้องวงจรปิด</h2>
-            </div>
-
  
-            <div class="row clearfix">
-              <!-- Menu -->    
- 
-                <div id="CCTV1" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร45</div>
-                        </div>
-                    </div>
-
-                </div> 
-
-                <div id="CCTV2" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร37</div>
-                        </div>
-                    </div>
-
-                </div>  
-
-                <div id="CCTV3" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร38</div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div id="CCTV4" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร39</div>
-                        </div>
-                    </div>
-
-                </div> 
-
-                <div id="CCTV5" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร65</div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div id="CCTV6" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร66</div>
-                        </div>
-                    </div>
-
-                </div> 
-
-
-                <div id="CCTV7" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร43</div>
-                        </div>
-                    </div>
-
-                </div> 
-
-                <div id="CCTV8" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร44</div>
-                        </div>
-                    </div>
-
-                </div>  
- 
-            <!-- Menu -->
-        </div>
 
 
 
-
-
-
-
-        <div class="block-header">
-                <h2>สวัสดิการนิติบุคคล</h2>
-            </div>
-
- 
-            <div class="row clearfix">
-              <!-- Menu -->    
- 
-                <div id="Washing" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">equalizer</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">เครื่องซักผ้า</div>
-                        </div>
-                    </div>
-
-                </div> 
-
-                <div id="Water" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">equalizer</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">ตู้กดน้ำ</div>
-                        </div>
-                    </div>
-
-                </div> 
 
 
 
  
- 
-            <!-- Menu -->
-        </div>
-
 
 
 
@@ -251,50 +102,7 @@
     </section>
 
  
- 
-        <!-- CCTVModal -->
-            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="CCTVModal" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="largeModalLabel">กล้องวงจรปิด</h4>
-                        </div>
-                        <div class="modal-body">
-
-
-                        <div class="row clearfix">
-                                
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                    
-                                    <div class="embed-responsive embed-responsive-16by9">
-
-                                        <div class="player" id="CCTVplayer"></div>
-
-                                    </div>
-                                        
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                           
-                                        <label id="midModalLabel">ทดสอบระบบ</label>
- 
-                                    </div>
-                                </div>
-                        </div> 
-
- 
-                        </div>
-                        <div class="modal-footer">
-                             
-                            <button type="button"  data-dismiss="modal" class="btn btn-lg btn-danger waves-effect cctv-close">ปิด</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+  
 
 
         <!-- DataSyncServicesCostModal -->

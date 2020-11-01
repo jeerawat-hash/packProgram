@@ -43,14 +43,39 @@ $(function(){
 				
 				var object =  JSON.parse(data);
 				console.log(object);
-				/*
-				if (data == 1) {
-  
-					$("#NameAuthen").text("System");
+				
+				if (object.Status == 1) {
+
+
+					/////// แสดงผลเมนู ////////
+					if (object.ProjectCode == "P2") {
+
+						$("#NameAuthen").text("บ้านเอื้ออาทรเทพารักษ์ 3/2");
+						//// menu hidden ///
+
+						//// menu hidden ///
+
+
+					}else
+					if (object.ProjectCode == "P5") {
+
+						$("#NameAuthen").text("Pack 1");
+						//// menu hidden ///
+
+
+						//// menu hidden ///
+						
+					}
+
+					/////// แสดงผลเมนู ////////
+ 
+					
+					$("#ProjectCode").var(object.ProjectCode);
 					$("#StatusAuthen").text("Authentication Success");
 					$("#TelephoneAuthen").val("NULL");
 					$("#DataSecrectkeyModal").modal("hide");
 					$("#DataSecrectkeyModal").find("#GetData").show();
+
 
 				}else{
 					alert("รหัสผิดพลาด..");
@@ -58,8 +83,9 @@ $(function(){
 					$("#DataSecrectkeyModal").find("#PreloadGetData").hide();
 
 					return false;
+
 				}
-				*/
+			
 
 
 
