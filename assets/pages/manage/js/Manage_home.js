@@ -1,7 +1,7 @@
 $(function(){
  	
 
- 	$(".user-info").css("background", 'url("https://pack1.sakorncable.com/assets/images/user-img-background1.jpg") no-repeat no-repeat'); 
+ 	$(".user-info").css("background", 'url("https://pack1.sakorncable.com/assets/images/user-img-background2.jpg") no-repeat no-repeat'); 
 
 
 	$("#DataSecrectkeyModal").modal("show");
