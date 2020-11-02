@@ -414,7 +414,13 @@
        
 <script type="text/javascript">
         
-    
+    $(function(){
+
+
+        $(".user-info").css("background", 'url("https://pack1.sakorncable.com/assets/images/user-img-background.jpg") no-repeat no-repeat'); 
+
+
+    });
 
 </script>
  
