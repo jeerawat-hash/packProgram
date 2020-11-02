@@ -87,9 +87,27 @@ class Management extends CI_Controller
 			$ReportTotal = $this->Mobile_model->ReportCustomerTotal($ProjectCode);
 			$ReportTotalDetail = $this->Mobile_model->ReportCustomerTotalDetail($ProjectCode);
 
+
+
+			$token = ""; 
+
+			switch ($ProjectCode) {
+				case 'P2':
+					$token = "4pbrI377vtaFnNzxpXFSE9k54jJLHXX1xJH8C1dOLAe"; 
+					break;
+
+				case 'P5':
+					$token = "BTicIrWmZYHGXeLVDSVg27NuC1Xv4Q4l2TlBcRzG4vI"; 
+					break;
+				 
+			}
+
+
+
+
 			$message1 = "\nสรุปยอดคงค้างในระบบ\n".number_format($ReportTotal[0]->AMOUNT,3)." บาท\n"."รายละเอียด";
 
-			notify($message1,"BTicIrWmZYHGXeLVDSVg27NuC1Xv4Q4l2TlBcRzG4vI");
+			notify($message1,$token);
 
 			$message2 = "\nรายละเอียดคงค้างในระบบ";
 
@@ -98,8 +116,7 @@ class Management extends CI_Controller
 				$message2 .= "\n".$Detail->Description." ".number_format($Detail->List,3)." บาท";
 
 			}
-
-			notify($message2,"BTicIrWmZYHGXeLVDSVg27NuC1Xv4Q4l2TlBcRzG4vI");
+			notify($message2,$token);
 
 
 			echo "1";
@@ -141,7 +158,23 @@ class Management extends CI_Controller
 			}
 
 			echo "1";
+ 
 
+
+
+			$token = ""; 
+
+			switch ($ProjectCode) {
+				case 'P2':
+					$token = "KBQgwylqj616milgaFRU3787aNQEHS7AnYBzntxpu29"; 
+					break;
+
+				case 'P5':
+					$token = "vSDecnkXPqwRMSeLPVhHBxSTYkc36SyYwZBwMzgpeKv"; 
+					break;
+				 
+			}
+ 
 
 			$ReportReceiveTotal = $this->Mobile_model->ReportCustomerReceive($ProjectCode);
 			$ReportReceiveTotalDetail = $this->Mobile_model->ReportCustomerReceiveDetail($ProjectCode);
@@ -153,7 +186,8 @@ class Management extends CI_Controller
 				$message1 .= "\n".$Detail->Description." ".$Detail->Receipt." ใบเสร็จ ".$Detail->List." รายการ ".number_format($Detail->Amount,3)." บาท";
 
 			}
-			notify($message1,"vSDecnkXPqwRMSeLPVhHBxSTYkc36SyYwZBwMzgpeKv");
+
+			notify($message1,$token);
 
 			$message2 = "\nรายละเอียดยอดรับเข้าระบบ";
 
@@ -162,7 +196,8 @@ class Management extends CI_Controller
 				$message2 .= "\n".$DetailALL->Description." ".number_format($DetailALL->List,3)." บาท";
 				
 			}
-			notify($message2,"vSDecnkXPqwRMSeLPVhHBxSTYkc36SyYwZBwMzgpeKv");
+			notify($message2,$token);
+ 
 
 
 
