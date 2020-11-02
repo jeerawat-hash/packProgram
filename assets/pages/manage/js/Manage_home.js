@@ -1,7 +1,7 @@
 $(function(){
  	
 
- 	$(".user-info").css("background", 'url("../images/user-img-background2.jpg") no-repeat no-repeat'); 
+ 	$(".user-info").css("background", 'url("../images/user-img-background1.jpg") no-repeat no-repeat'); 
 
 
 	$("#DataSecrectkeyModal").modal("show");
