@@ -1,6 +1,8 @@
 $(function(){
  	
-    
+
+ 	$(".user-info").css("background", 'url("../images/user-img-background2.jpg") no-repeat no-repeat'); 
+
 
 	$("#DataSecrectkeyModal").modal("show");
 	$("#DataSecrectkeyModal").find("#PreloadGetData").hide();
