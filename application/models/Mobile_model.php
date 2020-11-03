@@ -278,8 +278,11 @@ class Mobile_model extends CI_Model
 
      $this->mssql = $this->load->database("mssql",true);
 
-     return $this->mssql->query(" select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Theparak3.dbo.CustomerPay_LOG a
-right outer join Sakorn_Theparak3.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE where a.ProjectCode = '".$ProjectCode."' group by b.Description ")->result();
+     return $this->mssql->query(" 
+ select isnull(sum(a.AMOUNT),0) as List,(case when a.InfoCode = '' then 'อื่นๆ' else a.InfoCode end) as  Description 
+ from Sakorn_Theparak3.dbo.CustomerPay_LOG a 
+  where a.ProjectCode = '".$ProjectCode."' 
+  group by a.Code,a.InfoCode  ")->result();
  
   }
 
