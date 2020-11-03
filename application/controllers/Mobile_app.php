@@ -47,7 +47,7 @@ class Mobile_app extends CI_Controller
 	{
 
 
-			$header['page_name'] = 'ลูกบ้านอาคารชุด Pack1';
+			$header['page_name'] = 'นิติบุคคลบ้านเอื้ออาทรเทพารักษ์ Pack1';
 			$header['page_focus'] = 'home';
 			
 			$FAQ["Project"] = "ยืนยันตัวตนด้วยหมายเลขห้องบ้านเอื้ออาทรPack1";
