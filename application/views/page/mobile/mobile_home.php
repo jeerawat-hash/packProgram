@@ -1297,7 +1297,7 @@ function CopyFunction() {
             if (idleTime > timeOut) {
                 $("#PreviewTVplayer").html("");
                 //alert("หมดเวลาการเชื่อมต่อกำลังรีโหลดโปรแกรม....");
-                top.location.href = '#';
+                top.location.href = '';
             }
         }
         
