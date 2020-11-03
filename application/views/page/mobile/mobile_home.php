@@ -1199,7 +1199,10 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="defaultModalLabel">ยืนยันตัวตนด้วยหมายเลขห้องบ้านเอื้ออาทรPack1 <font color="red">(หมายเลขตึก-หมายเลขห้อง)</font></h4>
+                            <h4 class="modal-title" id="defaultModalLabel"> <?php echo $Project; ?> <font color="red">(<?php echo $FAQ; ?>)</font></h4>
+
+
+                            <!-- <h4 class="modal-title" id="defaultModalLabel">ยืนยันตัวตนด้วยหมายเลขห้องบ้านเอื้ออาทรPack1 <font color="red">(หมายเลขตึก-หมายเลขห้อง)</font></h4> -->
                         </div>
                         <div class="modal-body">
 
