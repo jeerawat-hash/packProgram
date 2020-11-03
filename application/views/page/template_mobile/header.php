@@ -391,7 +391,7 @@
                     </li>
 
                     <li class="<?php echo $menu[1]; ?>" >
-                        <a href=""> <?php echo $back; ?>
+                        <a href="<?php echo $back; ?>"> 
                             <i class="material-icons">home</i>
                             <span>ออกจากระบบ</span>
                         </a>

@@ -54,10 +54,12 @@ class Mobile_app extends CI_Controller
  	
  			$header['page_name'] = 'ลูกบ้านอาคารชุด Pack1';
 			$header['page_focus'] = 'home';
-			
+			$header["back"] = "https://pack1.sakorncable.com/index.php/mobile_app/p5";
+
 			$FAQ["Project"] = "ยืนยันตัวตนด้วยหมายเลขห้องบ้านเอื้ออาทรPack1";
 			$FAQ["FAQ"] = "หมายเลขตึก-หมายเลขห้อง";
 			$FAQ["Policy"] = "นิติเคหะชมชนเทพารักษ์ 3 Pack 1";
+			
 
 			$this->load->view("page/template_mobile/header",$header);
 			$this->load->view("page/mobile/mobile_home",$FAQ);
