@@ -1296,7 +1296,7 @@ function CopyFunction() {
             if (idleTime > timeOut) {
                 $("#PreviewTVplayer").html("");
                 //alert("หมดเวลาการเชื่อมต่อกำลังรีโหลดโปรแกรม....");
-                top.location.href = 'https://pack1.sakorncable.com/';
+                top.location.href = '#';
             }
         }
         
@@ -1308,7 +1308,7 @@ function CopyFunction() {
     $(function(){
 
 
-        
+
 
         $(".user-info").css("background", 'url("https://pack1.sakorncable.com/assets/images/user-img-background.jpg") no-repeat no-repeat'); 
 

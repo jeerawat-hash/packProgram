@@ -81,7 +81,11 @@ $(function(){
 						//// menu hidden ///
 
 							$(".P5").hide();
-  
+  							
+  							if (window.location.href != "https://pack1.sakorncable.com/index.php/mobile_app/p2") {
+  								top.location.href = 'https://pack1.sakorncable.com/index.php/mobile_app/p2';
+  							}
+
 						//// menu hidden ///
 
 
@@ -91,6 +95,10 @@ $(function(){
 						//// menu hidden ///
 
 							$(".P5").show();
+
+							if (window.location.href != "https://pack1.sakorncable.com/index.php/mobile_app/p5") {
+  								top.location.href = 'https://pack1.sakorncable.com/index.php/mobile_app/p5';
+  							}
 							
 						//// menu hidden ///
 
