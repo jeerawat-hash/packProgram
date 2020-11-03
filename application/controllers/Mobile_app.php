@@ -247,9 +247,8 @@ class Mobile_app extends CI_Controller
 	        	$access_token = 'TXeMDn7GHBb19THq8l2YoMRLmCplqJaxc94s8UaX1HH';
 	        	
 	        }
-
-
-	        send_notify_message(" [ ".$UserMessage." รหัส ".$_POST["CustomerID"]." ]","https://pack1.sakorncable.com/upload/temp/".$file.".jpg",$access_token);
+ 
+	        send_notify_message(" [ ".$UserMessage." เลขที่ ".$_POST["CustomerID"]." ]","https://pack1.sakorncable.com/upload/temp/".$file.".jpg",$access_token);
 
 	       	 
 	        echo "1";
