@@ -6,11 +6,15 @@ $(function(){
 		$("#CustomerCheckBlanaceModal").modal("show");
 
 		var CustomerID = $("#CustomerIDAuthen").val();
+        
+        var ProjectCode = $("#ProjectCode").val();
 
 
             
         var data = new FormData();          
         data.append('CustomerID', CustomerID); 
+        data.append('ProjectCode', ProjectCode); 
+
 
         $.ajax({
         	url:"https://pack1.sakorncable.com/index.php/mobile_app/getDataBlanace",

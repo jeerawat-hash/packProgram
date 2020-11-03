@@ -75,6 +75,13 @@ $(function(){
 					$("#DataAuthenModal").modal("hide");
 					$("#DataAuthenModal").find("#GetData").show();
 
+
+
+					$("#ProjectCode").val(object[0].ProjectCode);
+					
+
+
+
 					/////// แสดงผลเมนู ////////
 					if (object[0].ProjectCode == "P2") {
  
