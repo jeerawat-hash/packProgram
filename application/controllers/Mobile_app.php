@@ -20,7 +20,7 @@ class Mobile_app extends CI_Controller
 
 			$header['page_name'] = 'ลูกบ้านอาคารชุด Pack1';
 			$header['page_focus'] = 'home';
-			$header["back"] = "a";
+			$header["back"] = "https://pack1.sakorncable.com/index.php/mobile_app/p5";
 
 			$FAQ["Project"] = "ยืนยันตัวตนด้วยหมายเลขห้องบ้านเอื้ออาทรPack1";
 			$FAQ["FAQ"] = "หมายเลขตึก-หมายเลขห้อง";
@@ -37,7 +37,7 @@ class Mobile_app extends CI_Controller
 
 			$header['page_name'] = 'บ้านเอื้ออาทรเทพารักษ์ 3/2';
 			$header['page_focus'] = 'home';
-			$header["back"] = "a";
+			$header["back"] = "https://pack1.sakorncable.com/index.php/mobile_app/p2";
 
 			$FAQ["Project"] = "ยืนยันตัวตนด้วยหมายเลขบ้านเลขที่บ้านเอื้ออาทรเทพารักษ์ 3/2";
 			$FAQ["FAQ"] = "บ้านเลขที่-หมายเลขห้อง";
