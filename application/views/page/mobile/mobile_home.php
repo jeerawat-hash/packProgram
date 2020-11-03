@@ -1205,7 +1205,7 @@
 
                             <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" value="" class="form-control" id="CustomerID" name="CustomerID" required>
+                                        <input autocomplete="off" type="text" value="" class="form-control" id="CustomerID" name="CustomerID" required>
                                         <label class="form-label">หมายเลขห้อง 000-00 </label>
                                     </div>
                             </div>

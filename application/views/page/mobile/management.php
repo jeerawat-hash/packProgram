@@ -377,7 +377,7 @@
 
                             <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" value="" class="form-control" id="SecrectKEY" name="SecrectKEY" required>
+                                        <input autocomplete="off" type="text" value="" class="form-control" id="SecrectKEY" name="SecrectKEY" required>
                                         <label class="form-label">SecrectKEY</label>
                                     </div>
                             </div>
