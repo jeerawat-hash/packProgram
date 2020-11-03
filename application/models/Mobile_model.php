@@ -184,7 +184,7 @@ class Mobile_model extends CI_Model
   }
 
  
-  public function insertDataServicesCost($CUST,$DATE,$CODE,$AMOUNT,$ProjectCode)
+  public function insertDataServicesCost($CUST,$DATE,$CODE,$AMOUNT,$ProjectCode,$DETAIL)
   {
 
      $this->mssql = $this->load->database("mssql",true);
@@ -194,13 +194,15 @@ class Mobile_model extends CI_Model
            ,[DATE]
            ,[CODE]
            ,[AMOUNT]
-           ,[ProjectCode])
+           ,[ProjectCode]
+           ,[InfoCode])
      VALUES
            ('".$CUST."'
            ,'".$DATE."'
            ,'".$CODE."'
            ,'".$AMOUNT."'
-           ,'".$ProjectCode."') ");
+           ,'".$ProjectCode."'
+           ,'".$DETAIL."') ");
 
 
   }
