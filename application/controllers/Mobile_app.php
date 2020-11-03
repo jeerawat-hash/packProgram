@@ -229,7 +229,7 @@ class Mobile_app extends CI_Controller
 			move_uploaded_file($_FILES["Slipfile"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/temp/".$file.".jpg");
  
 
-			$Member = $this->Mobile_model->getDataBlanace($_POST["CustomerID"],"P5");				
+			$Member = $this->Mobile_model->getDataBlanace($_POST["CustomerID"],$_POST["ProjectCode"]);				
 
 	        $UserMessage = $Member[0]->CustomerName." ทำการส่งภาพ";
 
