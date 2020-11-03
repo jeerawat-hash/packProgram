@@ -75,6 +75,29 @@ $(function(){
 					$("#DataAuthenModal").modal("hide");
 					$("#DataAuthenModal").find("#GetData").show();
 
+					/////// แสดงผลเมนู ////////
+					if (object.ProjectCode == "P2") {
+ 
+						//// menu hidden ///
+
+							$(".P5").hide();
+
+						//// menu hidden ///
+
+
+					}else
+					if (object.ProjectCode == "P5") {
+  
+						//// menu hidden ///
+
+							$(".P5").show();
+							
+						//// menu hidden ///
+
+					}
+
+
+
 
 				}else{
 					alert("ข้อมูลผิดพลาด..");
