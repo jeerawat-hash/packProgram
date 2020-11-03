@@ -221,6 +221,7 @@ class Management extends CI_Controller
 
 
 		print_r($_FILES);
+		print_r($_POST);
 		
 		/*
 		$ProjectCode = $_POST["ProjectCode"];
