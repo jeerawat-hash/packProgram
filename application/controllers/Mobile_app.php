@@ -220,11 +220,8 @@ class Mobile_app extends CI_Controller
 	}
 	public function SendDataSlipToNotify()
 	{
- 	
+ 
 
- 		print_r($_FILES);
- 		print_r($_POST);
-		/*
 		if ($_FILES["Slipfile"]["type"] == "image/png" or $_FILES["Slipfile"]["type"] == "image/jpeg" or $_FILES["Slipfile"]["type"] == "image/jpg") {
 				
 			$file = $_POST["CustomerID"].uniqid();
@@ -265,9 +262,7 @@ class Mobile_app extends CI_Controller
 
 		}
 
- 	*/	
-
-
+ 
 			
 
 	    
