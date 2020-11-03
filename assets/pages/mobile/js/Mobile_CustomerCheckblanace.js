@@ -25,9 +25,11 @@ $(function(){
         	processData : false,
         	success : function(data){
 
-
+        		console.log(data);
 
         		var object = JSON.parse(data);
+        		
+/*
         		console.log(object);
 
         		$(".CustomerNameLabel").text(object[0].CustomerName);
@@ -41,7 +43,7 @@ $(function(){
 
                 $("#table_blanace_detail").html(html);
  
-
+	*/
 
         	},
         	error : function(){
