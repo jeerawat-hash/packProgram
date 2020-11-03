@@ -25,12 +25,12 @@ $(function(){
         	processData : false,
         	success : function(data){
 
-        		console.log(data);
+        		//console.log(data);
 
         		var object = JSON.parse(data);
         		
-/*
-        		console.log(object);
+ 
+        		//console.log(object);
 
         		$(".CustomerNameLabel").text(object[0].CustomerName);
 
@@ -43,7 +43,7 @@ $(function(){
 
                 $("#table_blanace_detail").html(html);
  
-	*/
+ 
 
         	},
         	error : function(){
@@ -67,8 +67,10 @@ $(function(){
 		var dataid = $(this).attr("data-id");
 		//alert(data);
 
+		var ProjectCode = $("#ProjectCode").val();
 		var data = new FormData();
 		data.append("CustomerID",dataid);
+		data.append('ProjectCode', ProjectCode); 
 
 		$.ajax({
 			url : "https://pack1.sakorncable.com/index.php/mobile_app/getDataBlanaceDetail",

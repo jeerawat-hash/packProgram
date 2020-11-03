@@ -110,7 +110,7 @@ class Mobile_app extends CI_Controller
 	public function getDataBlanaceDetail()
 	{
 
-		echo json_encode( $this->Mobile_model->getDataBlanaceDetail($_POST["CustomerID"],"P5") );
+		echo json_encode( $this->Mobile_model->getDataBlanaceDetail($_POST["CustomerID"],$_POST["ProjectCode"]) );
 		//print_r($_POST);
 		
 	}
