@@ -113,7 +113,7 @@ class Mobile_model extends CI_Model
   {
 
      $this->mssql = $this->load->database("mssql",true);
-      $checkCustomer = $this->mssql->query(" delete from [Sakorn_Theparak3].[dbo].[Customer] where ProjectCode = '".$ProjectCode."' ")->num_rows();
+      $checkCustomer = $this->mssql->query(" delete from [Sakorn_Theparak3].[dbo].[Customer] where ProjectCode = '".$ProjectCode."' ");
 
 
   }
