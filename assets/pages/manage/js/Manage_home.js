@@ -1,8 +1,7 @@
 $(function(){
  	
 
- 	
-
+ 	$(".P5").hide();
 
 	$("#DataSecrectkeyModal").modal("show");
 	$("#DataSecrectkeyModal").find("#PreloadGetData").hide();
@@ -55,6 +54,8 @@ $(function(){
 						$("#SystemName").text("บ้านเอื้ออาทรเทพารักษ์ 3/2");
 						//// menu hidden ///
 
+							$(".P5").hide();
+
 						//// menu hidden ///
 
 
@@ -66,6 +67,7 @@ $(function(){
 
 						//// menu hidden ///
 
+							$(".P5").show();
 
 						//// menu hidden ///
 

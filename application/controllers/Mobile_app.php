@@ -23,6 +23,7 @@ class Mobile_app extends CI_Controller
 			
 			$FAQ["Project"] = "ยืนยันตัวตนด้วยหมายเลขห้องบ้านเอื้ออาทรPack1";
 			$FAQ["FAQ"] = "หมายเลขตึก-หมายเลขห้อง";
+			$FAQ["Policy"] = "นิติเคหะชมชนเทพารักษ์ 3 Pack 1";
 
 			$this->load->view("page/template_mobile/header",$header);
 			$this->load->view("page/mobile/mobile_home",$FAQ);
@@ -37,6 +38,7 @@ class Mobile_app extends CI_Controller
 			 
 			$FAQ["Project"] = "ยืนยันตัวตนด้วยหมายเลขบ้านเลขที่บ้านเอื้ออาทรเทพารักษ์ 3/2";
 			$FAQ["FAQ"] = "บ้านเลขที่-หมายเลขห้อง";
+			$FAQ["Policy"] = "บ้านเอื้ออาทรเทพารักษ์ 3/2";
 
 			$this->load->view("page/template_mobile/header",$header);
 			$this->load->view("page/mobile/mobile_home",$FAQ);
@@ -45,18 +47,17 @@ class Mobile_app extends CI_Controller
 	}
 	public function p5()
 	{
-
-
-			$header['page_name'] = 'นิติบุคคลบ้านเอื้ออาทรเทพารักษ์ Pack1';
+ 	
+ 			$header['page_name'] = 'ลูกบ้านอาคารชุด Pack1';
 			$header['page_focus'] = 'home';
 			
 			$FAQ["Project"] = "ยืนยันตัวตนด้วยหมายเลขห้องบ้านเอื้ออาทรPack1";
 			$FAQ["FAQ"] = "หมายเลขตึก-หมายเลขห้อง";
+			$FAQ["Policy"] = "นิติเคหะชมชนเทพารักษ์ 3 Pack 1";
 
 			$this->load->view("page/template_mobile/header",$header);
 			$this->load->view("page/mobile/mobile_home",$FAQ);
 			$this->load->view("page/template_mobile/footer");
-
 
 
 	}

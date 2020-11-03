@@ -140,7 +140,7 @@
                             <i class="material-icons">equalizer</i>
                         </div>
                         <div class="content">
-                            <div class="text">ข้อบังคับ  นิติเคหะชมชนเทพารักษ์ 3 Pack 1</div>
+                            <div class="text">ข้อบังคับ  <?php echo $Policy; ?></div>
                         </div>
                     </div>
 
@@ -152,7 +152,7 @@
                             <i class="material-icons">equalizer</i>
                         </div>
                         <div class="content">
-                            <div class="text">ระเบียบ นิติเคหะชมชนเทพารักษ์ 3 Pack 1</div>
+                            <div class="text">ระเบียบ <?php echo $Policy; ?></div>
                         </div>
                     </div>
 
@@ -190,12 +190,10 @@
 
 
         <div class="block-header">
-                <h2>กล้องวงจรปิด</h2>
+                <h2>กล้องวงจรปิด <?php echo $Policy; ?></h2>
             </div>
 
-
-
-            
+            <div class="P5">
             <div class="row clearfix">
               <!-- Menu -->    
  
@@ -322,15 +320,15 @@
  
             <!-- Menu -->
             </div>
-
+            </div>
 
 
 
             <div class="block-header">
-                <h2>สวัสดิการนิติบุคคล</h2>
+                <h2>สวัสดิการ <?php echo $Policy; ?></h2>
             </div>
 
- 
+            <div class="P5">
             <div class="row clearfix">
               <!-- Menu -->    
  
@@ -377,14 +375,14 @@
  
             <!-- Menu -->
         </div>
-
+        </div>
 
 
          <div class="block-header">
-                <h2>รักษาความปลอดภัย</h2>
+                <h2>รักษาความปลอดภัย <?php echo $Policy; ?></h2>
             </div>
 
- 
+        <div class="P5">
             <div class="row clearfix">
               <!-- Menu -->    
  
@@ -399,14 +397,10 @@
                     </div>
 
                 </div> 
- 
-
-
- 
- 
+  
             <!-- Menu -->
         </div>
-
+        </div>
 
 
 
@@ -414,7 +408,7 @@
                 <h2>อุปกรณ์ที่พักอาศัย</h2>
             </div>
 
- 
+        <div class="P5">
             <div class="row clearfix">
               <!-- Menu -->    
  
@@ -444,6 +438,7 @@
  
  
             <!-- Menu -->
+        </div>
         </div>
 
 
