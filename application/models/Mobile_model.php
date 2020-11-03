@@ -50,11 +50,15 @@ class Mobile_model extends CI_Model
   {
 
         $this->mssql = $this->load->database("mssql",true);
-
+        /*
         return $this->mssql->query("select CustomerID,CustomerName,a.AMOUNT as AmountTotal,c.Description,a.DATE from [Sakorn_Theparak3].[dbo].[CustomerAmount_LOG] a
  right outer join Sakorn_Theparak3.dbo.Customer b on a.CUST = b.CustomerID  
  join [Sakorn_Theparak3].[dbo].[CustomerAmount_CodeType] c on a.CODE = c.CODE
  where b.CustomerID = '".$CUST."' and a.ProjectCode = '".$ProjectCode."' order by DATE asc ")->result();
+  */
+    return $this->mssql->query("  select CustomerID,CustomerName,a.AMOUNT as AmountTotal, a.CODE as Description,a.DATE from [Sakorn_Theparak3].[dbo].[CustomerAmount_LOG] a
+ right outer join Sakorn_Theparak3.dbo.Customer b on a.CUST = b.CustomerID   
+ where b.CustomerID = '".$CUST."' and a.ProjectCode = '".$ProjectCode."' order by DATE asc  ")->result();
 
 
   }
