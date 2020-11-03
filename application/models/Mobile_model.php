@@ -257,10 +257,10 @@ class Mobile_model extends CI_Model
 
      $this->mssql = $this->load->database("mssql",true);
 
-     return $this->mssql->query(" select sum(list) as AMOUNT from (
-    select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Theparak3.dbo.CustomerAmount_LOG a
-    right outer join Sakorn_Theparak3.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE  where a.ProjectCode = '".$ProjectCode."'  group by b.Description
-    )a ")->result();
+     return $this->mssql->query("  select sum(list) as AMOUNT from (
+ select isnull(sum(a.AMOUNT),0) as List,a.InfoCode as Description from Sakorn_Theparak3.dbo.CustomerAmount_LOG a where a.ProjectCode = '".$ProjectCode."'
+ group by a.Code,a.InfoCode  
+  )a  ")->result();
  
   }
   public function ReportCustomerTotalDetail($ProjectCode)
@@ -268,8 +268,9 @@ class Mobile_model extends CI_Model
 
      $this->mssql = $this->load->database("mssql",true);
 
-     return $this->mssql->query(" select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Theparak3.dbo.CustomerAmount_LOG a
-right outer join Sakorn_Theparak3.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE where a.ProjectCode = '".$ProjectCode."' group by b.Description ")->result();
+     return $this->mssql->query(" 
+  select isnull(sum(a.AMOUNT),0) as List,a.InfoCode as Description from Sakorn_Theparak3.dbo.CustomerAmount_LOG a where a.ProjectCode = '".$ProjectCode."'
+ group by a.Code,a.InfoCode order by List Desc")->result();
  
   }
   public function ReportCustomerReceive($ProjectCode)
