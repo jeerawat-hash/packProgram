@@ -22,7 +22,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>นิติบุคคล Pack1 สาครเคเบิล</title>
+    <title>บ้านเอื้ออาทร เทพารักษ์ 3</title>
     <!-- Favicon-->
     <link rel="icon" href="https://pack1.sakorncable.com/assets/favicon.ico" type="image/x-icon">
 
@@ -118,7 +118,7 @@
                 -->
                 <a href="javascript:void(0);" class="bars"></a>
                 
-                <a class="navbar-brand" href="javascript:void(0);">นิติบุคคล Pack1 สาครเคเบิล </a>
+                <a class="navbar-brand" href="javascript:void(0);"><?php echo $page_name; ?></a>
             </div>
             
             <!--
@@ -386,7 +386,7 @@
                     <li class="<?php echo $menu[0]; ?>" >
                         <a href="javascript:void(0);">
                             <i class="material-icons">home</i>
-                            <span>ลูกบ้านอาคารชุด</span>
+                            <span><?php echo $page_name; ?></span>
                         </a>
                     </li>
 

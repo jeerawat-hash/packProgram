@@ -18,7 +18,7 @@ class Mobile_app extends CI_Controller
 	public function index()
 	{		
 
-			$header['page_name'] = 'ลูกบ้านอาคารชุดPack1';
+			$header['page_name'] = 'ลูกบ้านอาคารชุด Pack1';
 			$header['page_focus'] = 'home';
 			 
 
@@ -26,6 +26,26 @@ class Mobile_app extends CI_Controller
 			$this->load->view("page/mobile/mobile_home");
 			$this->load->view("page/template_mobile/footer");
 			
+	}
+	public function p2()
+	{
+
+			$header['page_name'] = 'บ้านเอื้ออาทรเทพารักษ์ 3/2';
+			$header['page_focus'] = 'home';
+			 
+
+			$this->load->view("page/template_mobile/header",$header);
+			$this->load->view("page/mobile/mobile_home");
+			$this->load->view("page/template_mobile/footer");
+
+	}
+	public function p5()
+	{
+
+
+
+
+
 	}
 	public function callSecurity()
 	{
