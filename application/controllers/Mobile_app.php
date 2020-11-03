@@ -81,7 +81,7 @@ class Mobile_app extends CI_Controller
 
 
 		//print_r($_POST["CustomerID"]);
-		echo json_encode( $this->Mobile_model->CustomerAuth($_POST["CustomerID"],"P5") );
+		echo json_encode( $this->Mobile_model->CustomerAuth($_POST["CustomerID"]) );
 		// ทดสอบ ไลน์ส่วนตัว
 		/*
 			 shell_exec("  

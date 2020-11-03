@@ -17,13 +17,13 @@ class Mobile_model extends CI_Model
 
   }
 
-  public function CustomerAuth($CustomerID,$ProjectCode)
+  public function CustomerAuth($CustomerID)
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
 
-     return $this->mssql->query(" select CustomerID,TitleName+' '+CustomerName+' '+NoHome as CustomerINFO from Sakorn_Theparak3.dbo.Customer where CustomerID = '".$CustomerID."'  ")->result();
+     return $this->mssql->query(" select CustomerID,TitleName+' '+CustomerName+' '+NoHome as CustomerINFO,ProjectCode from Sakorn_Theparak3.dbo.Customer where CustomerID = '".$CustomerID."'  ")->result();
 
 
   }
