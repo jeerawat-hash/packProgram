@@ -216,7 +216,7 @@ class Mobile_model extends CI_Model
  
   }
 
-    public function insertDataReceiveCost($CUST,$RECEIPT,$CODE,$AMOUNT,$ProjectCode)
+    public function insertDataReceiveCost($CUST,$RECEIPT,$CODE,$AMOUNT,$ProjectCode,$DETAIL)
   {
 
      $this->mssql = $this->load->database("mssql",true);
@@ -228,7 +228,8 @@ class Mobile_model extends CI_Model
            ,[DATE]
            ,[CODE]
            ,[AMOUNT]
-           ,[ProjectCode])
+           ,[ProjectCode]
+           ,[InfoCode])
      VALUES
            ('".$CUST."'
            ,'".$RECEIPT."'
@@ -236,7 +237,8 @@ class Mobile_model extends CI_Model
            ,'".date("Y-m-d")."'
            ,'".$CODE."'
            ,'".$AMOUNT."'
-           ,'".$ProjectCode."') ");
+           ,'".$ProjectCode."'
+           ,'".$DETAIL."') ");
 
 
   }

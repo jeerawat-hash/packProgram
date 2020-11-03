@@ -151,7 +151,7 @@ class Management extends CI_Controller
 
 				$Customer = str_replace("/","-", $Value["CUSTOMER"] );
 
-				$this->Mobile_model->insertDataReceiveCost($Customer,$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"],$ProjectCode);
+				$this->Mobile_model->insertDataReceiveCost($Customer,$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"],$ProjectCode,$Value["DETAIL"]);
 
 				//print_r($Value);
 
