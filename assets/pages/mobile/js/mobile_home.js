@@ -76,7 +76,7 @@ $(function(){
 					$("#DataAuthenModal").find("#GetData").show();
 
 					/////// แสดงผลเมนู ////////
-					if (object.ProjectCode == "P2") {
+					if (object[0].ProjectCode == "P2") {
  
 						//// menu hidden ///
 
@@ -90,7 +90,7 @@ $(function(){
 
 
 					}else
-					if (object.ProjectCode == "P5") {
+					if (object[0].ProjectCode == "P5") {
   
 						//// menu hidden ///
 
