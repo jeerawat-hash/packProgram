@@ -13,7 +13,7 @@ $(function(){
 
     $("#DataSyncCustomerNameModal").find("#SendData").on("click",function(){
  
-
+            var ProjectCode = $("#ProjectCode").val();
             ////// ไฟล์ 
             var Slip_file = $('#CustomerNamefile').prop('files')[0]; 
             ////// ไฟล์
@@ -21,6 +21,7 @@ $(function(){
             ////// เพิ่มข้อมูลเข้า          
             data.append('CustomerName', Slip_file); 
             data.append('Telephone', '1' );
+            data.append('ProjectCode', ProjectCode); 
             ////// เพิ่มข้อมูลเข้า array           
  
  

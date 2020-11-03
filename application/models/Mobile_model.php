@@ -109,21 +109,37 @@ class Mobile_model extends CI_Model
       return $status;
 
   }
-
-  public function SyncDataCustomerName($CUST,$TitleName,$CustomerName)
+  public function ClearDataCustomerName($ProjectCode)
   {
 
      $this->mssql = $this->load->database("mssql",true);
-
-     $checkCustomer = $this->mssql->query(" SELECT CustomerID,TitleName,CustomerName FROM [Sakorn_Theparak3].[dbo].[Customer] where CustomerID = '".$CUST."'  ")->num_rows();
-
-     if ($checkCustomer != 0) {
-       
-
-        $this->mssql->query(" update [Sakorn_Theparak3].[dbo].[Customer] set TitleName = '".$TitleName."',CustomerName = '".$CustomerName."' where CustomerID = '".$CUST."'  ");
+      $checkCustomer = $this->mssql->query(" delete from [Sakorn_Theparak3].[dbo].[Customer] where ProjectCode = '".$ProjectCode."' ")->num_rows();
 
 
-     }
+  }
+  public function SyncDataCustomerName($CUST,$TitleName,$CustomerName,$ProjectCode)
+  {
+
+     $this->mssql = $this->load->database("mssql",true);
+ 
+      $this->mssql->query(" 
+
+          INSERT INTO [Sakorn_Theparak3].[dbo].[Customer]
+           ([CustomerID]
+           ,[TitleName]
+           ,[CustomerName]
+           ,[NoHome]
+           ,[Room]
+           ,[ProjectCode])
+     VALUES
+           ('".$CUST."'
+           ,'".$TitleName."'
+           ,'".$CustomerName."'
+           ,'".$CUST."'
+           ,'".$CUST."'
+           ,'".$ProjectCode."') "); 
+
+  
 
 
 

@@ -220,8 +220,10 @@ class Management extends CI_Controller
 	{
 
 
-		//print_r($_FILES);
-
+		print_r($_FILES);
+		
+		/*
+		$ProjectCode = $_POST["ProjectCode"];
 
 		if ($_FILES["CustomerName"]["type"] == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
 
@@ -232,27 +234,24 @@ class Management extends CI_Controller
 
 			$result = $this->Mobile_model->createDataFromXlsx($_FILES["CustomerName"]["name"]);
 
+			$this->Mobile_model->ClearDataCustomerName($ProjectCode);
+
 			foreach ($result as $Value) {
-
-				//print_r($Value);
-
+ 
 				$PE_CODE = str_replace("/","-", $Value["PE_CODE"] );
 
-				$this->Mobile_model->SyncDataCustomerName($PE_CODE,$Value["PE_TITLE"],$Value["PE_NAME"]);
-
+				$this->Mobile_model->SyncDataCustomerName($PE_CODE,$Value["PE_TITLE"],$Value["PE_NAME"],$ProjectCode);
 
 			}
 
-
 			echo "1";
-
 
 		}else{
 
 			echo "2";
 
 		}
- 
+ 	*/
  
 
 	}
