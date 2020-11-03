@@ -189,11 +189,11 @@
 
 
 
+        <div class="P5">
         <div class="block-header">
                 <h2>กล้องวงจรปิด <?php echo $Policy; ?></h2>
             </div>
 
-            <div class="P5">
             <div class="row clearfix">
               <!-- Menu -->    
  
@@ -323,12 +323,12 @@
             </div>
 
 
-
+            
+            <div class="P5">
             <div class="block-header">
                 <h2>สวัสดิการ <?php echo $Policy; ?></h2>
             </div>
 
-            <div class="P5">
             <div class="row clearfix">
               <!-- Menu -->    
  
@@ -403,12 +403,12 @@
         </div>
 
 
-
+        
+        <div class="P5">
         <div class="block-header">
                 <h2>อุปกรณ์ที่พักอาศัย</h2>
             </div>
 
-        <div class="P5">
             <div class="row clearfix">
               <!-- Menu -->    
  
