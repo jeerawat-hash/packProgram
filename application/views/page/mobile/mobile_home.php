@@ -794,7 +794,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                           
-                                        <label>ธนาคารไทยพาณิชย์ (SCB)</label> <br>
+                                        <label id="BankTYPE"></label> <br>
                                        
 
                                 <label><font color="red">เลขที่ </font>: </label><input type="text" readonly style="border: none;" value="" name="BankCode" id="BankCode">
