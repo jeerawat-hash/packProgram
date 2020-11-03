@@ -1,7 +1,7 @@
 $(function(){
  	
 
- 	$(".P5").hide();
+ 	
 
 	$("#DataSecrectkeyModal").modal("show");
 	$("#DataSecrectkeyModal").find("#PreloadGetData").hide();
