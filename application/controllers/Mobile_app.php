@@ -233,7 +233,23 @@ class Mobile_app extends CI_Controller
 
 	        $UserMessage = $Member[0]->CustomerName." ทำการส่งภาพ";
 
-	        send_notify_message(" [ ".$UserMessage." รหัส ".$_POST["CustomerID"]." ]","https://pack1.sakorncable.com/upload/temp/".$file.".jpg");
+
+	        $access_token = '';
+
+
+	        if ($_POST["ProjectCode"] == "P2") {
+	        	 
+	        	$access_token = 'ec9cvNf1C54CFAiiIbBwb4VUxkn4lswFywhqbICklmm';
+
+	        }else
+	        if ($_POST["ProjectCode"] == "P5") {
+	        	
+	        	$access_token = 'TXeMDn7GHBb19THq8l2YoMRLmCplqJaxc94s8UaX1HH';
+	        	
+	        }
+
+
+	        send_notify_message(" [ ".$UserMessage." รหัส ".$_POST["CustomerID"]." ]","https://pack1.sakorncable.com/upload/temp/".$file.".jpg",$access_token);
 
 	       	 
 	        echo "1";
@@ -269,10 +285,10 @@ class Mobile_app extends CI_Controller
 }
 
 
-	function send_notify_message($message,$image_url){
+	function send_notify_message($message,$image_url,$token){
  		
  		$line_api = 'https://notify-api.line.me/api/notify';
-    	$access_token = 'TXeMDn7GHBb19THq8l2YoMRLmCplqJaxc94s8UaX1HH';//eWEGn8hijvdIqDQCdBRUffGcMUQ3UIp7yuyQjde1g3f  JOID9jUQBwuPZ17kE9BXLbnBnlsw73WKvtL16gLp8HS
+    	$access_token = $token;//eWEGn8hijvdIqDQCdBRUffGcMUQ3UIp7yuyQjde1g3f  JOID9jUQBwuPZ17kE9BXLbnBnlsw73WKvtL16gLp8HS
 
 	    $image_thumbnail_url = $image_url;  // max size 240x240px JPEG
 	    $image_fullsize_url = $image_url; //max size 1024x1024px JPEG

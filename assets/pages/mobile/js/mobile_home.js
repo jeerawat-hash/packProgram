@@ -89,6 +89,10 @@ $(function(){
 
 							$(".P5").hide();
   							
+  							$("#BankName").text("นิติบุคคลอาคารชุด บ้านเอื้ออาทรเทพารักษ์ 3/2");
+							$("#BankCode").val("1995478318");
+
+
   							if (window.location.href != "https://pack1.sakorncable.com/index.php/mobile_app/p2") {
   								top.location.href = 'https://pack1.sakorncable.com/index.php/mobile_app/p2';
   							}
@@ -102,6 +106,9 @@ $(function(){
 						//// menu hidden ///
 
 							$(".P5").show();
+							
+							$("#BankName").text("นิติบุคคลอาคารชุดเคหะชุมชนและบริการชุมชนเทพารักษ์ 3/1");
+							$("#BankCode").val("3994048883");
 
 							if (window.location.href != "https://pack1.sakorncable.com/index.php/mobile_app/p5") {
   								top.location.href = 'https://pack1.sakorncable.com/index.php/mobile_app/p5';

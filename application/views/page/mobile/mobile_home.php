@@ -797,10 +797,10 @@
                                         <label>ธนาคารไทยพาณิชย์ (SCB)</label> <br>
                                        
 
-                                <label><font color="red">เลขที่ </font>: </label><input type="text" readonly style="border: none;" value="3994048883" name="BankCode" id="BankCode">
+                                <label><font color="red">เลขที่ </font>: </label><input type="text" readonly style="border: none;" value="" name="BankCode" id="BankCode">
                                              
                                          <br>
-                                        <label>ชื่อบัญชี : นิติบุคคลอาคารชุดเคหะชุมชนและบริการชุมชนเทพารักษ์ 3/1</label>
+                                        <label>ชื่อบัญชี : <label id="BankName"></label></label>
                                         <br>
                                         <button id="CopyBankCode" onclick="CopyFunction()" class="btn btn-lg btn-info waves-effect" >กดที่นี่เพื่อคัดลอกหมายเลขบัญชี</button>
                                         
