@@ -47,6 +47,15 @@ class Mobile_app extends CI_Controller
 	{
 
 
+			$header['page_name'] = 'ลูกบ้านอาคารชุด Pack1';
+			$header['page_focus'] = 'home';
+			
+			$FAQ["Project"] = "ยืนยันตัวตนด้วยหมายเลขห้องบ้านเอื้ออาทรPack1";
+			$FAQ["FAQ"] = "หมายเลขตึก-หมายเลขห้อง";
+
+			$this->load->view("page/template_mobile/header",$header);
+			$this->load->view("page/mobile/mobile_home",$FAQ);
+			$this->load->view("page/template_mobile/footer");
 
 
 
