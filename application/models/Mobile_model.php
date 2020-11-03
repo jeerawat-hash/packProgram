@@ -138,10 +138,7 @@ class Mobile_model extends CI_Model
            ,'".$CUST."'
            ,'".$CUST."'
            ,'".$ProjectCode."') "); 
-
-  
-
-
+ 
 
   }
 

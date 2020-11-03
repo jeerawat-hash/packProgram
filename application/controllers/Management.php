@@ -220,10 +220,10 @@ class Management extends CI_Controller
 	{
 
 
-		print_r($_FILES);
-		print_r($_POST);
+		//print_r($_FILES);
+		//print_r($_POST);
 		
-		/*
+		
 		$ProjectCode = $_POST["ProjectCode"];
 
 		if ($_FILES["CustomerName"]["type"] == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
@@ -252,7 +252,7 @@ class Management extends CI_Controller
 			echo "2";
 
 		}
- 	*/
+ 	
  
 
 	}
