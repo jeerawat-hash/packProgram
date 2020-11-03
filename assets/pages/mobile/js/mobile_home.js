@@ -91,7 +91,7 @@ $(function(){
   							
   							$("#BankName").text("นิติบุคคลอาคารชุด บ้านเอื้ออาทรเทพารักษ์ 3/2");
 							$("#BankCode").val("1995478318");
-							$("#BankTYPE").text("ธนาคารไทยพาณิชย์ (SCB)");
+							$("#BankTYPE").text("ธนาคารกรุงเทพ");
 
 
   							if (window.location.href != "https://pack1.sakorncable.com/index.php/mobile_app/p2") {
@@ -110,7 +110,7 @@ $(function(){
 							
 							$("#BankName").text("นิติบุคคลอาคารชุดเคหะชุมชนและบริการชุมชนเทพารักษ์ 3/1");
 							$("#BankCode").val("3994048883");
-							$("#BankTYPE").text("ธนาคารกรุงเทพ");
+							$("#BankTYPE").text("ธนาคารไทยพาณิชย์ (SCB)");
 
 							if (window.location.href != "https://pack1.sakorncable.com/index.php/mobile_app/p5") {
   								top.location.href = 'https://pack1.sakorncable.com/index.php/mobile_app/p5';
