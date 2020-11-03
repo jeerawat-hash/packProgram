@@ -385,7 +385,7 @@
                     <li class="<?php echo $menu[0]; ?>" >
                         <a href="javascript:void(0);">
                             <i class="material-icons">home</i>
-                            <span>จัดการบริการนิติบุคคลpack1</span>
+                            <span>จัดการบริการนิติบุคคล</span>
                         </a>
                     </li>
 
