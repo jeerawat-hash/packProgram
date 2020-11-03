@@ -67,7 +67,7 @@ $(function(){
 
 						//// menu hidden ///
 
-							$(".P5").show();
+							
 
 						//// menu hidden ///
 
