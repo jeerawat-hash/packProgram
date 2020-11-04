@@ -67,7 +67,7 @@ class Management extends CI_Controller
 			foreach ($result as $Value) {
 
 
-				if (trim($Value["ROOM"]) != "") {
+				if (trim($Value["CUST"]) != "") {
 					$ROOM = $Value["ROOM"];
 					//$CUST = $Value["CUST"]; 
 					$CUST = str_replace("/","-",$Value["CUST"]); 
