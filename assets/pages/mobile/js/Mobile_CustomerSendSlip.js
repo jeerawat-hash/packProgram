@@ -89,7 +89,8 @@ $(function(){
 
         		}else{
 
-        			alert("ผิดพลาด กรุณาตรวจสอบชนิกของไฟล์แนบ");
+                    swal("ล้มเหลว","กรุณาตรวจสอบชนิกของไฟล์แนบ", "error");
+        			//alert("ผิดพลาด กรุณาตรวจสอบชนิกของไฟล์แนบ");
 	        		$("#CustomerSendSlipModal").find("#SendData").show();
 					$("#CustomerSendSlipModal").find("#PreloadSendData").hide();
 
@@ -99,7 +100,8 @@ $(function(){
         	},
         	error : function(){
 
-        		alert("ผิดพลาด กรุณาลองใหม่ในภายหลัง");
+                swal("ล้มเหลว","กรุณาลองใหม่ในภายหลัง", "error");
+        		//alert("ผิดพลาด กรุณาลองใหม่ในภายหลัง");
         		$("#CustomerSendSlipModal").find("#SendData").show();
 				$("#CustomerSendSlipModal").find("#PreloadSendData").hide();
 
