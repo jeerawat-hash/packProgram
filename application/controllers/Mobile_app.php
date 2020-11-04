@@ -239,7 +239,8 @@ class Mobile_app extends CI_Controller
 
 	        if ($_POST["ProjectCode"] == "P2") {
 	        	 
-	        	$access_token = 'ezT0XgGQsCtERqfTc8gCfCc9P37RDYs5L8vRnHb8kG0';
+	        	//$access_token = 'ezT0XgGQsCtERqfTc8gCfCc9P37RDYs5L8vRnHb8kG0';
+	        	$access_token = 'KBQgwylqj616milgaFRU3787aNQEHS7AnYBzntxpu29';
 
 	        }else
 	        if ($_POST["ProjectCode"] == "P5") {
