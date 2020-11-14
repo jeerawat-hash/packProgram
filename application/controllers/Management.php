@@ -40,7 +40,7 @@ class Management extends CI_Controller
  
 		//print_r($_POST);
 		//print_r($_FILES);
-		
+	
 		$ProjectCode = $_POST["ProjectCode"];
 
 		if ($_FILES["ServicesCost"]["type"] == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
