@@ -166,7 +166,16 @@ class Management extends CI_Controller
 
 
 
-				}
+				} else
+				if ( trim( $Value["PAY"] ) == "เช็ค" ) {
+					
+
+					$this->Mobile_model->insertDataReceiveCost($Customer,$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"],$ProjectCode,$Value["DESCRIPT"],"3");
+
+
+
+				} 
+
 
 
 				
