@@ -83,6 +83,25 @@ $(function(){
 
 
 					/////// แสดงผลเมนู ////////
+					if (object[0].ProjectCode == "P1") {
+ 
+						//// menu hidden ///
+
+							$(".P5").hide();
+  							
+  							$("#BankName").text("นิติบุคคลอาคารชุด บ้านเอื้ออาทรเทพารักษ์ 3/1");
+							$("#BankCode").val("-");
+							$("#BankTYPE").text("-");
+
+
+  							if (window.location.href != "https://pack1.sakorncable.com/index.php/mobile_app/p1") {
+  								top.location.href = 'https://pack1.sakorncable.com/index.php/mobile_app/p1';
+  							}
+
+						//// menu hidden ///
+
+
+					}else
 					if (object[0].ProjectCode == "P2") {
  
 						//// menu hidden ///

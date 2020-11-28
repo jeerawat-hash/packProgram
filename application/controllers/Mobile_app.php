@@ -32,6 +32,23 @@ class Mobile_app extends CI_Controller
 			$this->load->view("page/template_mobile/footer");
 			
 	}
+	public function p1()
+	{
+
+			$header['page_name'] = 'บ้านเอื้ออาทรเทพารักษ์ 3/1';
+			$header['page_focus'] = 'home';
+			$header["back"] = "https://pack1.sakorncable.com/index.php/mobile_app/p1";
+
+			$FAQ["Project"] = "ยืนยันตัวตนด้วยหมายเลขบ้านเลขที่บ้านเอื้ออาทรเทพารักษ์ 3/1";
+			$FAQ["FAQ"] = "บ้านเลขที่-หมายเลขห้อง";
+			$FAQ["Policy"] = "บ้านเอื้ออาทรเทพารักษ์ 3/1"; 
+
+
+			$this->load->view("page/template_mobile/header",$header);
+			$this->load->view("page/mobile/mobile_home",$FAQ);
+			$this->load->view("page/template_mobile/footer");
+
+	}
 	public function p2()
 	{
 

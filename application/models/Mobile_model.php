@@ -69,17 +69,21 @@ class Mobile_model extends CI_Model
   {
      $this->mssql = $this->load->database("mssql",true);
      
-     $checkKey = 1;
+     $checkKey = 0;
 
      if ($Secrect == "Sakorn@") {
-       $checkKey = 0;
+       $checkKey = 1;
+     }else
+     if ($Secrect == "Sakorn@P2") {
+       $checkKey = 2;
+     }else
+     if ($Secrect == "Sakorn@P1") {
+       $checkKey = 3;
      }
+ 
 
-     if ($checkKey == 0) {
-        return 1;
-     }else{
-        return 0;
-     }
+    return $checkKey;
+     
 
 
   }
@@ -99,6 +103,10 @@ class Mobile_model extends CI_Model
      if ($Secrect == "Sakorn@2") {
        $checkKey = 0;
        $project = "P2";
+     }else
+     if ($Secrect == "Sakorn@1") {
+       $checkKey = 0;
+       $project = "P1";
      }
 
      $is_success = 0;

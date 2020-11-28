@@ -92,6 +92,10 @@ class Management extends CI_Controller
 			$token = ""; 
 
 			switch ($ProjectCode) {
+				case 'P1':
+					$token = "-"; 
+					break;
+
 				case 'P2':
 					$token = "4pbrI377vtaFnNzxpXFSE9k54jJLHXX1xJH8C1dOLAe"; 
 					break;
@@ -192,6 +196,10 @@ class Management extends CI_Controller
 			$token = ""; 
 
 			switch ($ProjectCode) {
+				case 'P1':
+					$token = "-"; 
+					break;
+					
 				case 'P2':
 					$token = "KBQgwylqj616milgaFRU3787aNQEHS7AnYBzntxpu29"; 
 					break;

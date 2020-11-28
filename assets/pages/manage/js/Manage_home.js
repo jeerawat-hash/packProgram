@@ -48,6 +48,18 @@ $(function(){
 				if (object.Status == 1) {  
 
 					/////// แสดงผลเมนู ////////
+					if (object.ProjectCode == "P1") {
+
+						$("#NameAuthen").text("บ้านเอื้ออาทรเทพารักษ์ 3/1");
+						$("#SystemName").text("บ้านเอื้ออาทรเทพารักษ์ 3/1");
+						//// menu hidden ///
+
+							$(".P5").hide();
+
+						//// menu hidden ///
+
+
+					}else
 					if (object.ProjectCode == "P2") {
 
 						$("#NameAuthen").text("บ้านเอื้ออาทรเทพารักษ์ 3/2");
