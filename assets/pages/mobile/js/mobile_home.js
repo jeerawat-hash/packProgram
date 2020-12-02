@@ -89,9 +89,9 @@ $(function(){
 
 							$(".P5").hide();
   							
-  							$("#BankName").text("นิติบุคคลอาคารชุด บ้านเอื้ออาทรเทพารักษ์ 3/1");
-							$("#BankCode").val("-");
-							$("#BankTYPE").text("-");
+  							$("#BankName").text("นิติบุคคลอาคารชุดบ้านเอื้ออาทรเทพารักษ์ 3/1");
+							$("#BankCode").val("1922445182");
+							$("#BankTYPE").text("ธนาคารทหารไทย(TMB)");
 
 
   							if (window.location.href != "https://pack1.sakorncable.com/index.php/mobile_app/p1") {
