@@ -45,7 +45,9 @@ $(function(){
                     
                     if (data == 1) {
 
-                    alert("บันทึกข้อมูลสำเร็จ....");
+                    //alert("บันทึกข้อมูลสำเร็จ....");
+                    swal("สำเร็จ!", "บันทึกข้อมูลสำเร็จ!", "success");
+
 
                     $("#DataSyncServicesCostModal").modal("hide");
 
@@ -55,7 +57,9 @@ $(function(){
                     }else
                     if (data == 2){
 
-                        alert("ผิดพลาดกรุณาลองใหม่ภายหลัง...");
+                        //alert("ผิดพลาดกรุณาลองใหม่ภายหลัง...");
+                        swal("ผิดพลาด!", "กรุณาลองใหม่ภายหลัง!", "error");
+
                         $("#DataSyncServicesCostModal").find("#SendData").show();
                         $("#DataSyncServicesCostModal").find("#PreloadSendData").hide();
 

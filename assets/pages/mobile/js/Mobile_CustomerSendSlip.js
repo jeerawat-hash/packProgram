@@ -51,8 +51,10 @@ $(function(){
 
 		if( document.getElementById("Slipfile").files.length == 0 ){
     		
-    		alert("กรุณาแนบไฟล์หลักฐานการชำระค่าส่วนกลาง");
-    		return false;
+    		//alert("กรุณาแนบไฟล์หลักฐานการชำระค่าส่วนกลาง");
+            swal("ผิดพลาด!", "กรุณาแนบไฟล์หลักฐานการชำระค่าส่วนกลาง!", "error");
+    		
+            return false;
     		
 		}
 

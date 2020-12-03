@@ -405,12 +405,12 @@
 
 
      
-        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_home.js?v=1000"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncServicesCost.js?v=1000"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncReceiveCost.js?v=1000"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncCustomerName.js?v=1000"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncCarInfo.js?v=1000"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_CCTV.js?v=1000"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_home.js?v=1001"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncServicesCost.js?v=1001"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncReceiveCost.js?v=1001"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncCustomerName.js?v=1001"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_SyncCarInfo.js?v=1001"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/manage/js/Manage_CCTV.js?v=1001"></script>
        
 <script type="text/javascript">
         

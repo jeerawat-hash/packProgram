@@ -67,7 +67,8 @@
     <script src="https://pack1.sakorncable.com/assets/js/demo.js"></script>
     <script src="https://pack1.sakorncable.com/assets/clappr/dist/clappr.js"></script>
 
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
 
 
 </head>
