@@ -300,9 +300,26 @@ class Mobile_model extends CI_Model
      $this->mssql = $this->load->database("mssql",true);
 
      return $this->mssql->query("  select Description,Count(RECEIPT) as Receipt,Sum(RECEIPTList) as List,sum(Amount) as Amount from (
+
  select RECEIPT,b.Description,count(RECEIPT) as RECEIPTList,sum(a.Amount) as Amount from Sakorn_Theparak3.dbo.CustomerPay_LOG a 
  join Sakorn_Theparak3.dbo.CustomerPay_Type b on a.PAYTYPE_ID = b.ID where a.ProjectCode = '".$ProjectCode."' group by RECEIPT,b.Description
- )a group by Description ")->result();
+ 
+ 
+ )a group by Description
+
+ union
+ 
+ select 'ยอดรวม' as Description,sum(Receipt) as Receipt,Sum(List) as List,sum(Amount) as Amount from (
+  
+  select Description,Count(RECEIPT) as Receipt,Sum(RECEIPTList) as List,sum(Amount) as Amount from (
+ select RECEIPT,b.Description,count(RECEIPT) as RECEIPTList,sum(a.Amount) as Amount from Sakorn_Theparak3.dbo.CustomerPay_LOG a 
+ join Sakorn_Theparak3.dbo.CustomerPay_Type b on a.PAYTYPE_ID = b.ID where a.ProjectCode = '".$ProjectCode."' group by RECEIPT,b.Description
+  
+ )a group by Description
+
+ )ab order by Amount asc
+ 
+ ")->result();
  
   }
 
