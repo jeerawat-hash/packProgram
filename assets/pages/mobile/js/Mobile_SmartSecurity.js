@@ -18,7 +18,8 @@ $(function(){
 		var CustomerID = $("#CustomerIDAuthen").val();
 
 		if (SecurityComment == "") {
-			alert("กรุณาระบุเบอร์โทรติดต่อกลับ");
+			//alert("กรุณาระบุเบอร์โทรติดต่อกลับ");
+            swal("ผิดพลาก!", "กรุณาแจ้งเบอร์ติดต่อกลับ", "error");
 			return false;
 		}
 
@@ -60,7 +61,9 @@ $(function(){
 		        	processData : false,
 		        	success : function(data){
 	 					
-		        		alert("ส่งข้อความสำเร็จ ");
+		        		//alert("ส่งข้อความสำเร็จ ");
+            			swal("ส่งข้อความสำเร็จ!", "กรุณารอเจ้าหน้าที่ติดต่อกลับ", "success");
+
 	 
 		        		$("#SecurityComment").val("");
 						$("#SmartSecurityModal").find("#PreloadSendData").hide();
