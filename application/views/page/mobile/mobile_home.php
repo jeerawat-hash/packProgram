@@ -331,7 +331,7 @@
 
             <div class="row clearfix">
               <!-- Menu -->    
- 
+                <!--
                 <div id="SmartWM" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-black">
@@ -342,7 +342,7 @@
                         </div>
                     </div>
 
-                </div> 
+                </div> -->
 
                 <!--
                 <div id="Water" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -357,7 +357,7 @@
 
                 </div> 
                 -->
-
+              
                 <div id="Water" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-green">
@@ -368,7 +368,7 @@
                         </div>
                     </div>
 
-                </div> 
+                </div>  
 
 
  
@@ -404,14 +404,14 @@
         </div>
 
 
-
+ <!--
         <div class="P5">
         <div class="block-header">
                 <h2>อุปกรณ์ที่พักอาศัย</h2>
             </div>
 
             <div class="row clearfix">
-              <!-- Menu -->    
+              
  
                 <div id="SmartSwitch1" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
@@ -438,9 +438,10 @@
                 </div> 
  
  
-            <!-- Menu -->
+        
         </div>
         </div>
+    -->
 
 
 
