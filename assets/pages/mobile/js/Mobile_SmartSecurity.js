@@ -10,6 +10,7 @@ $(function(){
 	});
 
 
+
 	$("#SmartSecurityModal").find("#SendData").on("click",function(){
 	
 		
@@ -22,7 +23,6 @@ $(function(){
             swal("ผิดพลาก!", "กรุณาแจ้งเบอร์ติดต่อกลับ", "error");
 			return false;
 		}
-
 
 
 		var data = new FormData();
