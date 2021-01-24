@@ -91,7 +91,7 @@ class Mobile_app extends CI_Controller
 			$Customer = $this->Mobile_model->CustomerAuth($_POST["CustomerID"],"P5");
 
 			 #notify("อาคาร ".$_POST["CustomerID"]." ".$Customer[0]->CustomerINFO." ".$_POST["SecurityComment"],"oQozIXdKU8O8OEzQ6O20IEveDGqW6JwShsZKLSPgCyS");
-			 notify("อาคาร ".$_POST["CustomerID"]." ".$Customer[0]->CustomerINFO." ".$_POST["SecurityComment"],"kyqritfOYo4moIIHG8c5QJjpM0a3H8HrJLN9BqAxLR0");
+			 notify("อาคาร ".$_POST["CustomerID"]." ".$Customer[0]->CustomerINFO." ติดต่อกลับ ".$_POST["SecurityComment"],"kyqritfOYo4moIIHG8c5QJjpM0a3H8HrJLN9BqAxLR0");
 
 	}
 	public function getDeviceStatus()
