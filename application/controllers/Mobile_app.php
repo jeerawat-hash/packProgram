@@ -86,9 +86,8 @@ class Mobile_app extends CI_Controller
 	}
 	public function checkTelephone()
 	{
- 	 	
-
- 	 	print_r($_POST);
+ 	 	 
+ 	 	echo json_encode($this->Mobile_model->getDataCustomerTelephone($_POST["CustomerID"],"P5"));
 
 
 	}

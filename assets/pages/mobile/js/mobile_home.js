@@ -153,8 +153,8 @@ $(function(){
 
 
  								////// call modal
- 								//console.log(data);
- 								$("#CustomerGetDataTelephoneModal").modal("show");
+ 								console.log(data);
+ 								//$("#CustomerGetDataTelephoneModal").modal("show");
 
 
 
