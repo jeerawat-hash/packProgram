@@ -27,8 +27,9 @@
           <thead>
             <tr> 
               <th scope="col">หมายเลขใบเสร็จ</th>
-              <th scope="col">รายการ</th>
-              <th scope="col">ชำระ</th>
+              <th scope="col">จ่ายวันที่</th>
+              <th scope="col">ยอด</th>
+              <th scope="col"></th>
             </tr>
           </thead>
           <tbody>
@@ -37,6 +38,7 @@
               <td>0007000</td>
               <td>ค่าส่วนกลาง</td>
               <td> 500 บาท</td>
+              <td> <button type="button" class="btn btn-primary">รายละเอียด</button> </td>
             </tr>
             
           </tbody>

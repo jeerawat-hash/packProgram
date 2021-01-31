@@ -28,6 +28,30 @@
 
    		}
 
+
+      mssql_query("  INSERT INTO [Sakorn_Theparak3].[dbo].[CustomerReceive_LOG]
+           ([CUST]
+           ,[RECEIPT]
+           ,[PAYTYPE_ID]
+           ,[DATE]
+           ,[CODE]
+           ,[AMOUNT]
+           ,[ProjectCode]
+           ,[InfoCode])
+           SELECT  [CUST]
+          ,[RECEIPT]
+          ,[PAYTYPE_ID]
+          ,[DATE]
+          ,[CODE]
+          ,[AMOUNT]
+          ,[ProjectCode]
+          ,[InfoCode]
+      FROM [Sakorn_Theparak3].[dbo].[CustomerPay_LOG]  ");
+
+
+
+
+
  
   
 
