@@ -46,7 +46,7 @@
           ,[AMOUNT]
           ,[ProjectCode]
           ,[InfoCode]
-      FROM [Sakorn_Theparak3].[dbo].[CustomerPay_LOG]  ");
+      FROM [Sakorn_Theparak3].[dbo].[CustomerPay_LOG] where ProjectCode = 'P5'  ");
 
 
 
