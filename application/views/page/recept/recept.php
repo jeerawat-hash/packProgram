@@ -19,7 +19,7 @@
   <div class="row">
     <div class="col-sm-3">
       <h3>ข้อมูล</h3>
-      <p>ชื่อ</p> 
+      <p>ชื่อ <?php echo $Recept->Name; ?></p> 
     </div>
     <div class="col-sm-9">
       <h3>รายการ</h3>
@@ -35,19 +35,24 @@
           <tbody>
 
 <?php 
+ 
+  foreach ($CustomerRecept as $Recept) {
+  ?>
+
+            <tr> 
+              <td><?php echo $Recept->RECEIPT; ?></td>
+              <td><?php echo $Recept->DATE; ?></td>
+              <td><?php echo number_format($Recept->AMOUNT,2); ?> บาท</td>
+              <td> <button type="button" class="btn btn-primary ReceptDetail" data-recept="<?php echo $Recept->RECEIPT; ?>" data-customer="<?php echo $Recept->CUST; ?>">รายละเอียด</button> </td>
+            </tr>
 
 
-print_r($CustomerRecept);
-
+<?php
+  }
 
  ?>
 
-            <tr> 
-              <td>0007000</td>
-              <td>2021/01/01</td>
-              <td>500 บาท</td>
-              <td> <button type="button" class="btn btn-primary">รายละเอียด</button> </td>
-            </tr>
+            
             
           </tbody>
         </table>
