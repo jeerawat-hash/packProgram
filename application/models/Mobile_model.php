@@ -22,7 +22,7 @@ class Mobile_model extends CI_Model
      $this->mssql = $this->load->database("mssql",true);
 
      return $this->mssql->query(" SELECT ( select  (TitleName + ' ' + CustomerName) as Name  from Sakorn_Theparak3.dbo.Customer where CustomerID = '".$CustomerID."' ) as Name ,[CUST],[RECEIPT],DATE,Count(*) as CountTotal,Sum([AMOUNT]) as [AMOUNT]
- FROM [Sakorn_Theparak3].[dbo].[CustomerReceive_LOG] where ProjectCode = '".$ProjectCode."' and CUST = '".$CustomerID."'  group by [RECEIPT],[CUST],DATE
+ FROM [Sakorn_Theparak3].[dbo].[CustomerReceive_LOG] where ProjectCode = '".$ProjectCode."' and CUST = '".$CustomerID."'  group by [RECEIPT],[CUST],DATE order by RECEIPT Desc
  ")->result();
 
 
