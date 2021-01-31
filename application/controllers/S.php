@@ -2,7 +2,7 @@
 /**
  * 
  */
-class Sp extends CI_Controller
+class S extends CI_Controller
 {
 	
 	function __construct()
@@ -18,15 +18,13 @@ class Sp extends CI_Controller
 	{
  		
 	
-		echo "a";
- 
 
 		#ใบเสร็จค่าส่วนกลาง
-		#https://pack1.sakorncable.com/index.php/sp/101-001
+		#https://pack1.sakorncable.com/index.php/s/p/101-001
 
 
 	}
-	public function sp($cust = "")
+	public function p($cust = "")
 	{
 
 
