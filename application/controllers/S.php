@@ -9,7 +9,8 @@ class S extends CI_Controller
 	{
 		
 		parent::__construct(); 
- 		#$this->load->model("Monitor_model");
+		$this->load->model("Mobile_model");
+
 
 
 	}
@@ -33,10 +34,9 @@ class S extends CI_Controller
 			exit();
 		}
 
-		
+		$data["CustomerRecept"] = $this->Mobile_model->getDataReceptLog($cust,"P5");
 
-
-		$this->load->view("page/recept/recept");
+		$this->load->view("page/recept/recept",$data);
 
 
 	}

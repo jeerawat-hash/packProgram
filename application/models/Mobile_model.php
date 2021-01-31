@@ -4,7 +4,16 @@ class Mobile_model extends CI_Model
 {	
   
 
+  public function getDataReceptLog($CustomerID,$ProjectCode)
+  {
 
+     $this->mssql = $this->load->database("mssql",true);
+
+     return $this->mssql->query(" SELECT [CUST],[RECEIPT],DATE,Count(*) as CountTotal,Sum([AMOUNT]) as [AMOUNT]
+ FROM [Sakorn_Theparak3].[dbo].[CustomerReceive_LOG] where ProjectCode = '".$ProjectCode."' and CUST = '".$CustomerID."'  group by [RECEIPT],[CUST],DATE ")->result();
+
+
+  }
 
   public function getDataCustomerTelephone($CustomerID,$ProjectCode)
   {

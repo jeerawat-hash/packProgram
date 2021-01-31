@@ -34,6 +34,14 @@
           </thead>
           <tbody>
 
+<?php 
+
+
+print_r($CustomerRecept);
+
+
+ ?>
+
             <tr> 
               <td>0007000</td>
               <td>2021/01/01</td>
