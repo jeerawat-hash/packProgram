@@ -36,8 +36,8 @@
 
             <tr> 
               <td>0007000</td>
-              <td>ค่าส่วนกลาง</td>
-              <td> 500 บาท</td>
+              <td>2021/01/01</td>
+              <td>500 บาท</td>
               <td> <button type="button" class="btn btn-primary">รายละเอียด</button> </td>
             </tr>
             
