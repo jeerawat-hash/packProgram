@@ -56,11 +56,7 @@
             
           </tbody>
         </table>
-
-
-
-
-
+ 
 
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Launch demo modal
@@ -69,21 +65,46 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ReceptDetailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="ReceptDetailLable">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+        
+        <div class="container">
+          
+          <table class="table">
+          <thead>
+            <tr> 
+              <th scope="col">หมายเลขใบเสร็จ</th>
+              <th scope="col">รายการ</th>
+              <th scope="col">ยอด</th> 
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td>0001</td>
+              <td>ค่าขยะ</td>
+              <td> 500 บาท</td>
+            </tr>
+
+
+ 
+          </tbody>
+        </table>
+
+        </div>
+
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button> 
       </div>
     </div>
   </div>
