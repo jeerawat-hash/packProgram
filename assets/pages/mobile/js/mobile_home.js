@@ -152,9 +152,9 @@ $(function(){
  							},function(data){
 
 
-
- 								console.log(data);
-
+ 								////// call modal
+ 								//console.log(data);
+ 								$("#CustomerGetDataTelephoneModal").modal("show");
 
 
 

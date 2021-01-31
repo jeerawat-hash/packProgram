@@ -967,6 +967,72 @@
 
 
 
+
+        <!-- CustomerGetDataTelephoneModal -->
+            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="CustomerGetDataTelephoneModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="largeModalLabel">แจ้งเบอร์ติดต่อกลับ</h4>
+                        </div>
+                        <div class="modal-body">
+
+
+                        <div class="row clearfix">
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                          
+                                        <label>กรุณาระบุเบอร์ติดต่อกลับเพื่อรับข้อความใบเสร็จ(<font color="red">ตัวเลขเท่านั้น</font>)</label>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    
+                                    <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" value="" class="form-control" id="Telephone" name="Telephone" required>
+                                        <label class="form-label">0800000000</label>
+                                    </div>
+                                    </div>
+
+
+                                </div>
+                        </div> 
+
+
+
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <button type="button" id="SendData" class="btn btn-lg btn-success waves-effect">บันทึกข้อมูล</button>
+                            <div class="preloader" id="PreloadSendData">
+                                    <div class="spinner-layer pl-red">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                            </div> 
+                            <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
             <!-- CustomerGetPolicyAModal -->
             <div class="modal fade" id="CustomerGetPolicyAModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -1076,7 +1142,7 @@
           <!-- CustomerGetPolicyAModal -->
 
 
-          <!-- InfoBalanceModal -->
+          <!-- GetDataCarDetailModal -->
             <div class="modal fade" id="GetDataCarDetailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">              
@@ -1145,7 +1211,12 @@
               </div>
             </div>
           </div>
-          <!-- InfoBalanceModal -->
+          <!-- GetDataCarDetailModal -->
+
+
+
+
+
 
 
 
@@ -1235,14 +1306,15 @@
 
 
         
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/mobile_home.js?v=1005"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CCTV.js?v=1005"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerCheckblanace.js?v=1005"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerSendSlip.js?v=1005"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerGetDataCarModal.js?v=1005"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSwitch.js?v=1005"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSecurity.js?v=1005"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartWM.js?v=1005"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/mobile_home.js?v=1006"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CCTV.js?v=1006"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerCheckblanace.js?v=1006"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerSendSlip.js?v=1006"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerGetDataCarModal.js?v=1006"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSwitch.js?v=1006"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSecurity.js?v=1006"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartWM.js?v=1006"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/mobile_home_telephone.js?v=1006"></script>
 
 
 
