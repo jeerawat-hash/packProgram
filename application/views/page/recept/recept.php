@@ -72,7 +72,7 @@
         
         <div class="container">
           
-          <table class="table">
+          <table class="table" >
           <thead>
             <tr> 
               <th scope="col">หมายเลขใบเสร็จ</th>
@@ -80,13 +80,9 @@
               <th scope="col">ยอด</th> 
             </tr>
           </thead>
-          <tbody>
+          <tbody id="TableDetail">
             
-            <tr>
-              <td>0001</td>
-              <td>ค่าขยะ</td>
-              <td> 500 บาท</td>
-            </tr>
+            
 
 
  
@@ -143,8 +139,17 @@
             var obj = JSON.parse(data);
 
             console.log(obj);
+            var html = "";
+            for (var i = 0; i < obj.length; i++) {
 
+              html += "<tr>" +
+                      "<td>"+obj[i].RECEIPT+"</td>"+
+                      "<td>"+obj[i].InfoCode+"</td>"+
+                      "<td>"+obj[i].AMOUNT+"บาท</td>"+
+                      "</tr>";
 
+            }
+            $("#TableDetail").html(html);
 
 
         });
