@@ -23,7 +23,7 @@
     </div>
     <div class="col-sm-9">
       <h3>รายการ</h3>
-        <table class="table">
+        <table class="table" id="ReceptTable">
           <thead>
             <tr> 
               <th scope="col">หมายเลขใบเสร็จ</th>
@@ -57,13 +57,7 @@
           </tbody>
         </table>
  
-
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ReceptDetailModal">
-  Launch demo modal
-</button>
-
-
-
+  
 <!-- Modal -->
 <div class="modal fade" id="ReceptDetailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -123,6 +117,37 @@
     </div>
   </div>
 </div>
+
+
+
+
+  <script type="text/javascript">
+      
+    $(function(){
+
+
+      $("#ReceptTable").on("click",".ReceptDetail",function(){
+
+        var Customer = $(this).attr("data-customer");
+        var ReceptID = $(this).attr("data-recept");
+
+        alert(Customer+ " " +ReceptID);
+
+        $("#ReceptDetailModal").modal("show");
+
+
+      });
+
+
+
+
+
+    });
+
+  </script>
+
+
+
 
 </body>
 </html>
