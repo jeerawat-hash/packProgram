@@ -14,11 +14,11 @@ class Sp extends CI_Controller
 
 	}
 
-	public function index( )
+	public function index($cust = "")
 	{
  		
 	
-
+		echo "a";
  
 
 		#ใบเสร็จค่าส่วนกลาง
