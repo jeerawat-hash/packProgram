@@ -34,7 +34,14 @@ class S extends CI_Controller
 			exit();
 		}
 
+
 		$data["CustomerRecept"] = $this->Mobile_model->getDataReceptLog($cust,"P5");
+
+		
+		if (!isset( $data["CustomerRecept"][0]->Name )) {
+
+			exit();
+		}
 
 		$this->load->view("page/recept/recept",$data);
 
