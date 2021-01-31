@@ -8,9 +8,10 @@ $(function(){
 
 
 		var tele = $("#CustomerGetDataTelephoneModal").find("#Telephone").val();
+		var Customer = $("#CustomerID").val();
 
 
-		alert(tele);
+		//alert(tele);
 
 		$("#CustomerGetDataTelephoneModal").find("#PreloadSendData").show();
 		$("#CustomerGetDataTelephoneModal").find("#SendData").hide();
@@ -26,8 +27,15 @@ $(function(){
 
 		//////////// post 
 
+		$.post("https://pack1.sakorncable.com/index.php/mobile_app/updateTelephone",
+ 			{
+ 				CustomerID : Customer,
+ 				Telephone : tele
+ 			},function(data){
+ 	
+ 				console.log(data);
 
-
+ 		});
 
 
 		//////////// post 

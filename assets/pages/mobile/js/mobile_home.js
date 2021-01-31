@@ -155,8 +155,11 @@ $(function(){
  								////// call modal
  								//console.log(data);
  								var objtel = JSON.parse(data);
- 								console.log(objtel);
- 								//$("#CustomerGetDataTelephoneModal").modal("show");
+ 								//console.log(objtel);
+ 								if(objtel[0].Telephone == null){
+ 									$("#CustomerGetDataTelephoneModal").modal("show");
+ 								}
+ 								
 
 
 
