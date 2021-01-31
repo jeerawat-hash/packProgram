@@ -20,7 +20,7 @@ $(function(){
 
 			$("#CustomerGetDataTelephoneModal").find("#PreloadSendData").hide();
 			$("#CustomerGetDataTelephoneModal").find("#SendData").show();
-			swal("ผิดพลาด!", "กรุณากรอกหมายเลขห้องให้ถูกต้อง", "error");
+			swal("ผิดพลาด!", "กรุณากรอกเบอร์โทรศัพท์ให้ถูกต้อง", "error");
 			return false;
 		}
 
@@ -41,8 +41,8 @@ $(function(){
 					$("#CustomerGetDataTelephoneModal").find("#SendData").show();
 
  				}else{
-            		swal("ผิดพลาด!", "กรุณากรอกหมายเลขห้องให้ถูกต้อง", "error");
-            		
+            		swal("ผิดพลาด!", "กรุณากรอกเบอร์โทรศัพท์ให้ถูกต้อง", "error");
+
             		$("#CustomerGetDataTelephoneModal").find("#PreloadSendData").hide();
 					$("#CustomerGetDataTelephoneModal").find("#SendData").show();
             		return false;
