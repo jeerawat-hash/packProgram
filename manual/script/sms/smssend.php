@@ -17,8 +17,7 @@
    		while ( $result = mssql_fetch_array($Customer) ) {
      			
    
-        sendsms($result["Telephone"], "ใบเสร็จค่าส่วนกลาง
-          https://pack1.sakorncable.com/index.php/s/p/".$result["CustomerID"]);
+        echo  sendsms($result["Telephone"], "ใบเสร็จค่าส่วนกลางhttps://pack1.sakorncable.com/index.php/s/p/".$result["CustomerID"]);
 
 
         mssql_query("   update [Sakorn_Theparak3].[dbo].[CustomerSms] set [Is_Send] = 1 where ID = '".$result["ID"]."'  ");
@@ -52,7 +51,6 @@ function sendsms($to=null, $message=null)
       $result = curl_exec ($ch);
       curl_close ($ch);
  
-
 
     }
 
