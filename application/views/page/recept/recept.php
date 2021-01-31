@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>ใบเสร็จรับเงิน นิติบุคคลสาครเคเบิล</title>
+  <title>ใบเสร็จรับเงินแบบย่อ</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -11,15 +11,15 @@
 <body>
 
 <div class="jumbotron text-center">
-  <h1>ใบเสร็จรับเงินดิจิตอล</h1>
-  <p>นิติบุคคล Pack1 เอื้ออาทรเทพารัก 3/1</p> 
+  <h1>ใบเสร็จรับเงินแบบย่อ</h1>
+  <p>นิติบุคคลอาคารชุดเคหะชุมชนและบริการชุมชนเทพารักษ์ 3/1 PACK 1</p> 
 </div>
   
 <div class="container">
   <div class="row">
     <div class="col-sm-3">
-      <h3>ข้อมูล</h3>
-      <p>ชื่อ <?php echo $CustomerRecept[0]->Name; ?></p> 
+      <h3>รหัสสมาชิก : <?php echo $CustomerRecept[0]->CUST; ?></h3>
+      <p>ชื่อ <?php echo $CustomerRecept[0]->Name; ?><br>ฝ่ายบริหารจัดการ : บริษัท สาครเคเบิล จำกัด</p> 
     </div>
     <div class="col-sm-9">
       <h3>รายการ</h3>
@@ -27,7 +27,7 @@
           <thead>
             <tr> 
               <th scope="col">หมายเลขใบเสร็จ</th>
-              <th scope="col">จ่ายวันที่</th>
+              <th scope="col">วันที่ส่งข้อมูล</th>
               <th scope="col">ยอด</th>
               <th scope="col"></th>
             </tr>
