@@ -143,6 +143,27 @@ $(function(){
 							
 						//// menu hidden ///
 
+						//// POP up Call Telephone ////
+
+
+ 						$.post("https://pack1.sakorncable.com/index.php/mobile_app/checkTelephone",
+ 							{
+ 								CustomerID : object[0].CustomerID
+ 							},function(data){
+
+
+
+ 								console.log(data);
+
+
+
+
+ 						});
+ 
+
+						//// POP up Call Telephone ////
+						
+
 					}
 
 

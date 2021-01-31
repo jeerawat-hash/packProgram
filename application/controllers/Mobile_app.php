@@ -84,6 +84,14 @@ class Mobile_app extends CI_Controller
 
 
 	}
+	public function checkTelephone()
+	{
+ 	 	
+
+ 	 	print_r($_POST);
+
+
+	}
 	public function callSecurity()
 	{
 

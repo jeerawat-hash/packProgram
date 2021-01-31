@@ -33,9 +33,7 @@ class S extends CI_Controller
 			exit();
 		}
 
-
 		$this->load->view("page/recept/recept");
-
 
 
 	}
