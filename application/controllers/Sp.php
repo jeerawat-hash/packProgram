@@ -14,9 +14,22 @@ class Sp extends CI_Controller
 
 	}
 
-	public function index($cust = "")
+	public function index( )
 	{
  		
+	
+
+ 
+
+		#ใบเสร็จค่าส่วนกลาง
+		#https://pack1.sakorncable.com/index.php/sp/101-001
+
+
+	}
+	public function sp($cust = "")
+	{
+
+
 		if ($cust == "") {
 			
 			exit();
@@ -25,13 +38,9 @@ class Sp extends CI_Controller
 
 		$this->load->view("page/recept/recept");
 
- 
-
-		#ใบเสร็จค่าส่วนกลาง
-		#https://pack1.sakorncable.com/index.php/sp/101-001
 
 
-	}  
+	}
 
 
 
