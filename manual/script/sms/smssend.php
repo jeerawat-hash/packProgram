@@ -6,17 +6,24 @@
   $a = mssql_connect('mssqlcon', 'sa', 'Sakorn123');
 
 
-   $Customer = mssql_query("  SELECT  distinct [CUST],b.*
-  FROM [Sakorn_Theparak3].[dbo].[CustomerPay_LOG] a 
-  join Sakorn_Theparak3.dbo.Customer b on a.CUST = b.CustomerID where b.ProjectCode = 'P5' and Telephone is not null  ");
-
-
-
+   $Customer = mssql_query("   SELECT top 5 [ID]
+      ,[Telephone]
+      ,[CustomerID]
+      ,[StampDate]
+      ,[Is_Send]
+  FROM [Sakorn_Theparak3].[dbo].[CustomerSms] where [Is_Send] = '0' order by ID ASC
+  ");
+ 
    		while ( $result = mssql_fetch_array($Customer) ) {
-   			
- 
+     			
+   
+        sendsms($result["Telephone"], "ใบเสร็จค่าส่วนกลาง
+          https://pack1.sakorncable.com/index.php/s/p/".$result["CustomerID"]);
 
- 
+
+        mssql_query("   update [Sakorn_Theparak3].[dbo].[CustomerSms] set [Is_Send] = 1 where ID = '".$result["ID"]."'  ");
+
+        sleep(1);
 
    		}
 
