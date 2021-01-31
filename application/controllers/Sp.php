@@ -14,10 +14,10 @@ class Sp extends CI_Controller
 
 	}
 
-	public function index($cust)
+	public function index($cust = "")
 	{
  		
-		if (!isset($cust)) {
+		if ($cust == "") {
 			
 			exit();
 		}
