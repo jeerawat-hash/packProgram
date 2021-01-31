@@ -153,7 +153,9 @@ $(function(){
 
 
  								////// call modal
- 								console.log(data);
+ 								//console.log(data);
+ 								var objtel = JSON.parse(data);
+ 								console.log(objtel);
  								//$("#CustomerGetDataTelephoneModal").modal("show");
 
 
