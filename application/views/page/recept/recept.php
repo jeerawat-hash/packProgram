@@ -126,10 +126,10 @@
 
         var Customer = $(this).attr("data-customer");
         var ReceptID = $(this).attr("data-recept");
- 
+        
 
         $("#ReceptDetailModal").modal("show");
-
+        $("#ReceptDetailModal").find("#ReceptDetailLable").text("รายละเอียด "+ReceptID);
         $.post("https://pack1.sakorncable.com/index.php/s/detail"
           ,{
             CustomerID : Customer,
