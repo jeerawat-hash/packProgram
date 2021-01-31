@@ -4,6 +4,18 @@ class Mobile_model extends CI_Model
 {	
   
 
+  public function getDataReceptDetailLog($RECEIPTID,$CustomerID,$ProjectCode)
+  {
+
+     $this->mssql = $this->load->database("mssql",true);
+
+     return $this->mssql->query("  
+ select RECEIPT,InfoCode,AMOUNT from [Sakorn_Theparak3].[dbo].[CustomerReceive_LOG] 
+ where ProjectCode = '".$ProjectCode."' and CUST = '".$CustomerID."' and [RECEIPT] = '".$RECEIPTID."' ")->result();
+
+
+  }
+
   public function getDataReceptLog($CustomerID,$ProjectCode)
   {
 

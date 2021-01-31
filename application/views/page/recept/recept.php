@@ -130,10 +130,25 @@
 
         var Customer = $(this).attr("data-customer");
         var ReceptID = $(this).attr("data-recept");
-
-        alert(Customer+ " " +ReceptID);
+ 
 
         $("#ReceptDetailModal").modal("show");
+
+        $.post("https://pack1.sakorncable.com/index.php/s/detail"
+          ,{
+            CustomerID : Customer,
+            ReceptID : ReceptID
+          },function(data){
+
+
+
+            console.log(data);
+            
+
+
+
+        });
+
 
 
       });
