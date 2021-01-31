@@ -19,7 +19,7 @@
   <div class="row">
     <div class="col-sm-3">
       <h3>ข้อมูล</h3>
-      <p>ชื่อ <?php echo $Recept->Name; ?></p> 
+      <p>ชื่อ <?php echo $Recept[0]->Name; ?></p> 
     </div>
     <div class="col-sm-9">
       <h3>รายการ</h3>
