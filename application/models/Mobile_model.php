@@ -14,6 +14,21 @@ class Mobile_model extends CI_Model
      return $this->mssql->query(" select Telephone from Sakorn_Theparak3.dbo.Customer where  CustomerID = '".$CustomerID."' and ProjectCode = '".$ProjectCode."' ")->result();
 
   }
+  public function updateDataCustomerTelephone($Telephone,$CustomerID,$ProjectCode)
+  {
+
+     $this->mssql = $this->load->database("mssql",true);
+
+     $update =  $this->mssql->query("   update Sakorn_Theparak3.dbo.Customer set Telephone = '".$Telephone."' where CustomerID = '".$CustomerID."' and ProjectCode = '".$ProjectCode."' ");
+
+     if ($update) {
+        return 1;
+     }else{
+        return 0;
+     }
+
+
+  }
 
   public function getDataCustomerByCar($CarCode,$ProjectCode)
   {

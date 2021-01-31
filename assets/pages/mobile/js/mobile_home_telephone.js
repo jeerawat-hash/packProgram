@@ -20,7 +20,7 @@ $(function(){
 
 			$("#CustomerGetDataTelephoneModal").find("#PreloadSendData").hide();
 			$("#CustomerGetDataTelephoneModal").find("#SendData").show();
-			alert("error");
+			swal("ผิดพลาด!", "กรุณากรอกหมายเลขห้องให้ถูกต้อง", "error");
 			return false;
 		}
 
@@ -32,8 +32,22 @@ $(function(){
  				CustomerID : Customer,
  				Telephone : tele
  			},function(data){
- 	
- 				console.log(data);
+ 				
+ 				if (data == "1") {
+
+ 					$("#CustomerGetDataTelephoneModal").modal("hide");
+            		swal("สำเร็จ!", "บันทึกข้อมูลเบอร์โทรศัพท์สำเร็จ", "success");
+            		$("#CustomerGetDataTelephoneModal").find("#PreloadSendData").hide();
+					$("#CustomerGetDataTelephoneModal").find("#SendData").show();
+
+ 				}else{
+            		swal("ผิดพลาด!", "กรุณากรอกหมายเลขห้องให้ถูกต้อง", "error");
+            		
+            		$("#CustomerGetDataTelephoneModal").find("#PreloadSendData").hide();
+					$("#CustomerGetDataTelephoneModal").find("#SendData").show();
+            		return false;
+
+ 				}
 
  		});
 

@@ -93,8 +93,9 @@ class Mobile_app extends CI_Controller
 	}
 	public function updateTelephone()
 	{
- 	 	 
- 	 	 print_r($_POST);
+ 	 	   
+ 	 	 echo  $this->Mobile_model->updateDataCustomerTelephone($_POST["Telephone"],$_POST["CustomerID"],"P5");
+
 
 	}
 	public function callSecurity()

@@ -1306,15 +1306,15 @@
 
 
         
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/mobile_home.js?v=1009"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CCTV.js?v=1009"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerCheckblanace.js?v=1009"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerSendSlip.js?v=1009"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerGetDataCarModal.js?v=1009"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSwitch.js?v=1009"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSecurity.js?v=1009"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartWM.js?v=1009"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/mobile_home_telephone.js?v=1009"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/mobile_home.js?v=1011"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CCTV.js?v=1011"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerCheckblanace.js?v=1011"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerSendSlip.js?v=1011"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerGetDataCarModal.js?v=1011"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSwitch.js?v=1011"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSecurity.js?v=1011"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartWM.js?v=1011"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/mobile_home_telephone.js?v=1011"></script>
 
 
 
