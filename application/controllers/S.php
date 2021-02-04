@@ -25,6 +25,14 @@ class S extends CI_Controller
 
 
 	}
+	public function jeerawat()
+	{
+
+
+		echo "testzaza";
+
+
+	}
 	public function p($cust = "")
 	{
 
