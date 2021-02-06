@@ -375,7 +375,7 @@ class Mobile_model extends CI_Model
   
  )a group by Description
  )ab 
- )a order by Description asc
+ )a order by List asc
  
  ")->result();
  
