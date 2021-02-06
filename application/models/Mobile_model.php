@@ -347,25 +347,35 @@ class Mobile_model extends CI_Model
 
      $this->mssql = $this->load->database("mssql",true);
 
-     return $this->mssql->query("  select Description,Count(RECEIPT) as Receipt,Sum(RECEIPTList) as List,sum(Amount) as Amount from (
+     return $this->mssql->query("   select Description,Receipt,List,Amount from (
 
+ select 'โอน' as Description,isnull(sum(Receipt),0) as Receipt,isnull(Sum(List),0) as List,isnull(sum(Amount),0) as Amount from (
+  
+  select Description,Count(RECEIPT) as Receipt,Sum(RECEIPTList) as List,sum(Amount) as Amount from (
  select RECEIPT,b.Description,count(RECEIPT) as RECEIPTList,sum(a.Amount) as Amount from Sakorn_Theparak3.dbo.CustomerPay_LOG a 
- join Sakorn_Theparak3.dbo.CustomerPay_Type b on a.PAYTYPE_ID = b.ID where a.ProjectCode = '".$ProjectCode."' group by RECEIPT,b.Description
- 
- 
+ join Sakorn_Theparak3.dbo.CustomerPay_Type b on a.PAYTYPE_ID = b.ID where a.ProjectCode = '".$ProjectCode."' and Description = 'โอน'  group by RECEIPT,b.Description
+  
  )a group by Description
-
- union
- 
- select 'ยอดรวม' as Description,sum(Receipt) as Receipt,Sum(List) as List,sum(Amount) as Amount from (
+ )ac 
+ union 
+  select 'เงินสด' as Description,isnull(sum(Receipt),0) as Receipt,isnull(Sum(List),0) as List,isnull(sum(Amount),0) as Amount from (
+  
+  select Description,Count(RECEIPT) as Receipt,Sum(RECEIPTList) as List,sum(Amount) as Amount from (
+ select RECEIPT,b.Description,count(RECEIPT) as RECEIPTList,sum(a.Amount) as Amount from Sakorn_Theparak3.dbo.CustomerPay_LOG a 
+ join Sakorn_Theparak3.dbo.CustomerPay_Type b on a.PAYTYPE_ID = b.ID where a.ProjectCode = '".$ProjectCode."' and Description = 'เงินสด'  group by RECEIPT,b.Description
+  
+ )a group by Description
+ )abc
+  union
+  select 'ยอดรวม' as Description,sum(Receipt) as Receipt,Sum(List) as List,sum(Amount) as Amount from (
   
   select Description,Count(RECEIPT) as Receipt,Sum(RECEIPTList) as List,sum(Amount) as Amount from (
  select RECEIPT,b.Description,count(RECEIPT) as RECEIPTList,sum(a.Amount) as Amount from Sakorn_Theparak3.dbo.CustomerPay_LOG a 
  join Sakorn_Theparak3.dbo.CustomerPay_Type b on a.PAYTYPE_ID = b.ID where a.ProjectCode = '".$ProjectCode."' group by RECEIPT,b.Description
   
  )a group by Description
-
- )ab order by Amount asc
+ )ab 
+ )a order by Description asc
  
  ")->result();
  
