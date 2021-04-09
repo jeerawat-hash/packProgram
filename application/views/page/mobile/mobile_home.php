@@ -325,11 +325,14 @@
 
 
             <div class="P5">
+
+            <!--
             <div class="block-header">
                 <h2>สวัสดิการ <?php echo $Policy; ?></h2>
             </div>
 
             <div class="row clearfix">
+            -->
               <!-- Menu -->    
                 <!--
                 <div id="SmartWM" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -356,7 +359,7 @@
                     </div>
 
                 </div> 
-                -->
+                
               
                 <div id="Water" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
@@ -369,7 +372,7 @@
                     </div>
 
                 </div>  
-
+                -->
 
  
  
