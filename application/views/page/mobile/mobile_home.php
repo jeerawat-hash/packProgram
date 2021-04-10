@@ -188,6 +188,79 @@
         </div>
 
 
+        <div class="P3">
+        <div class="block-header">
+                <h2>กล้องวงจรปิด <?php echo $Policy; ?></h2>
+            </div>
+
+            <div class="row clearfix">
+              <!-- Menu -->    
+ 
+                <div id="CCTV3-1-1" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้องวงจรปิดบริเวณถนน 1</div>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div id="CCTV3-1-2" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้องวงจรปิดบริเวณถนน 2</div>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div id="CCTV3-1-3" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้องวงจรปิดบริเวณถนน 3</div>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div id="CCTV3-1-4" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้องวงจรปิดบริเวณถนน 4</div>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div id="CCTV3-1-5" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้องวงจรปิดบริเวณถนน 5</div>
+                        </div>
+                    </div>
+
+                </div> 
+                
+ 
+            <!-- Menu -->
+            </div>
+            </div>
+
 
         <div class="P5">
         <div class="block-header">
@@ -1309,15 +1382,15 @@
 
 
         
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/mobile_home.js?v=1013"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CCTV.js?v=1013"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerCheckblanace.js?v=1013"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerSendSlip.js?v=1013"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerGetDataCarModal.js?v=1013"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSwitch.js?v=1013"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSecurity.js?v=1013"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartWM.js?v=1013"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/mobile_home_telephone.js?v=1013"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/mobile_home.js?v=1014"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CCTV.js?v=1014"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerCheckblanace.js?v=1014"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerSendSlip.js?v=1014"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerGetDataCarModal.js?v=1014"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSwitch.js?v=1014"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSecurity.js?v=1014"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartWM.js?v=1014"></script>
+        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/mobile_home_telephone.js?v=1014"></script>
 
 
 
