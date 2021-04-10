@@ -2,7 +2,7 @@ $(function(){
 
  	
 	document.addEventListener('contextmenu', event => event.preventDefault());
-
+/*
 	setInterval(function(){
 	  var startTime = performance.now(), check, diff;
 	  for (check = 0; check < 1000; check++){
@@ -17,7 +17,7 @@ $(function(){
 	    debugger;
 
 	  }
-	}, 500);
+	}, 500);*/
  
 
 
