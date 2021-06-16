@@ -27,7 +27,7 @@ $(function(){
 
 		//////////// post 
 
-		$.post("https://pack1.sakorncable.com/index.php/mobile_app/updateTelephone",
+		$.post("https://pack1.sakorncable.com/mobile_app/updateTelephone",
  			{
  				CustomerID : Customer,
  				Telephone : tele

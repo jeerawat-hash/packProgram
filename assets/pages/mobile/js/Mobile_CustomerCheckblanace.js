@@ -17,7 +17,7 @@ $(function(){
 
 
         $.ajax({
-        	url:"https://pack1.sakorncable.com/index.php/mobile_app/getDataBlanace",
+        	url:"https://pack1.sakorncable.com/mobile_app/getDataBlanace",
         	type:"POST",
         	data:data,
         	contentType : false,
@@ -73,7 +73,7 @@ $(function(){
 		data.append('ProjectCode', ProjectCode); 
 
 		$.ajax({
-			url : "https://pack1.sakorncable.com/index.php/mobile_app/getDataBlanaceDetail",
+			url : "https://pack1.sakorncable.com/mobile_app/getDataBlanaceDetail",
 			type : "POST",
 			data : data,
 			contentType : false,

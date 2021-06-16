@@ -38,7 +38,7 @@ $(function(){
 		setTimeout(function(){ 
 
 		$.ajax({
-			url : "https://pack1.sakorncable.com/index.php/mobile_app/callSecurity",
+			url : "https://pack1.sakorncable.com/mobile_app/callSecurity",
 			type : "POST",
 			data : data,
 			contentType : false,
@@ -53,7 +53,7 @@ $(function(){
 	 
 
 		        $.ajax({
-		        	url:"https://pack1.sakorncable.com/index.php/Devices/IOTDevice",
+		        	url:"https://pack1.sakorncable.com/Devices/IOTDevice",
 		        	type:"POST",
 		        	data:dataA,
 		        	contentType : false,

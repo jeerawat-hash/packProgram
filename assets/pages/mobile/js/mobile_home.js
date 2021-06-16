@@ -13,7 +13,7 @@ $(function(){
 	  if (diff > 200){
 
 	    //alert("Debugger detected!");
-	    //window.location="https://pack1.sakorncable.com/index.php/mobile_app";
+	    //window.location="https://pack1.sakorncable.com/mobile_app";
 	    debugger;
 
 	  }
@@ -63,7 +63,7 @@ $(function(){
 		setTimeout(function(){
 
 
-			$.post("https://pack1.sakorncable.com/index.php/mobile_app/login",{CustomerID : Customer}
+			$.post("https://pack1.sakorncable.com/mobile_app/login",{CustomerID : Customer}
 			,function(data,status){
 
 
@@ -101,8 +101,8 @@ $(function(){
 							$("#BankTYPE").text("ธนาคารทหารไทย(TMB)");
 
 
-  							if (window.location.href != "https://pack1.sakorncable.com/index.php/mobile_app/p1") {
-  								top.location.href = 'https://pack1.sakorncable.com/index.php/mobile_app/p1';
+  							if (window.location.href != "https://pack1.sakorncable.com/mobile_app/p1") {
+  								top.location.href = 'https://pack1.sakorncable.com/mobile_app/p1';
   							}
 
 						//// menu hidden ///
@@ -121,8 +121,8 @@ $(function(){
 							$("#BankTYPE").text("ธนาคารกรุงเทพ");
 
 
-  							if (window.location.href != "https://pack1.sakorncable.com/index.php/mobile_app/p2") {
-  								top.location.href = 'https://pack1.sakorncable.com/index.php/mobile_app/p2';
+  							if (window.location.href != "https://pack1.sakorncable.com/mobile_app/p2") {
+  								top.location.href = 'https://pack1.sakorncable.com/mobile_app/p2';
   							}
 
 						//// menu hidden ///
@@ -140,8 +140,8 @@ $(function(){
 							$("#BankCode").val("3994048883");
 							$("#BankTYPE").text("ธนาคารไทยพาณิชย์ (SCB)");
 
-							if (window.location.href != "https://pack1.sakorncable.com/index.php/mobile_app/p5") {
-  								top.location.href = 'https://pack1.sakorncable.com/index.php/mobile_app/p5';
+							if (window.location.href != "https://pack1.sakorncable.com/mobile_app/p5") {
+  								top.location.href = 'https://pack1.sakorncable.com/mobile_app/p5';
   							}
 							
 						//// menu hidden ///
@@ -149,7 +149,7 @@ $(function(){
 						//// POP up Call Telephone ////
 
 
- 						$.post("https://pack1.sakorncable.com/index.php/mobile_app/checkTelephone",
+ 						$.post("https://pack1.sakorncable.com/mobile_app/checkTelephone",
  							{
  								CustomerID : object[0].CustomerID
  							},function(data){

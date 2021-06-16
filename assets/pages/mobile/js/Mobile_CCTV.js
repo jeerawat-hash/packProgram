@@ -382,7 +382,7 @@ $(function(){
     $("#PreviewTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
     $("#PreviewTVModal").find("#midModalLabel2").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
  
-    $.post("https://pack1.sakorncable.com/index.php/mobile_app/getDataPreviewChannel",{},function(data,status){
+    $.post("https://pack1.sakorncable.com/mobile_app/getDataPreviewChannel",{},function(data,status){
 
         var object = JSON.parse(data);
         

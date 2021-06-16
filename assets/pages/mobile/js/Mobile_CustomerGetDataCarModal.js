@@ -35,7 +35,7 @@ $(function(){
 		setTimeout(function(){ 
 
 		$.ajax({
-			url : "https://pack1.sakorncable.com/index.php/mobile_app/getDataCustomerByCar",
+			url : "https://pack1.sakorncable.com/mobile_app/getDataCustomerByCar",
 			type : "POST",
 			data : data,
 			contentType : false,
