@@ -9,8 +9,7 @@ class Mobile_app extends CI_Controller
 	{
 		
 		parent::__construct(); 
-		$this->load->model("Mobile_model");
-		$this->load->model("Devices_model");
+		$this->load->model("Mobile_model"); 
  
  
 	}
