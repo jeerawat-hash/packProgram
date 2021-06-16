@@ -587,77 +587,7 @@
                 </div>
             </div>
 
-
-
-
-
-
-
-
-        <!-- SmartSwitch -->
-            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="SmartSwitchModal" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="largeModalLabel">อุปกรณ์ให้แสงสว่างภายในอาคาร 78</h4>
-                        </div>
-                        <div class="modal-body">
-
-
-                        <div class="row clearfix">
-                                
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                    
-
-                                        <table id="table_SmartSwitch" class="table table-striped table-bordered table-hover">
-                                              <thead>
-                                                <tr>
-                                                   
-                                                    <th>อาคาร</th>
-                                                    <th>สถานะ</th>
-                                                
-                                                </tr>
-
-                                              </thead>
-
-                                              <tbody id="table_SmartSwitch_detail" class="scrollit">   
-                                                    
-                            
-                                                    
-                                                    
-
-
-                                              </tbody>
-                                            </table> 
-
-
-
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                           
-                                       <font color="red"><label id="midModalLabel">ตัวอย่างการให้บริการระบบ SmartSwitch ภายในตึกพักอาศัยของท่าน</label></font> 
  
-                                    </div>
-                                </div>
-                        </div> 
-
- 
-                        </div>
-                        <div class="modal-footer">
-                             
-                            <button type="button"  data-dismiss="modal" class="btn btn-lg btn-danger waves-effect cctv-close">ปิด</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
     <!-- SmartSecurity -->
             <div class="modal fade" data-backdrop="static" data-keyboard="false" id="SmartSecurityModal" tabindex="-1" role="dialog">
                 <div class="modal-dialog modal-lg" role="document">
@@ -691,10 +621,7 @@
                                 </div>
                         </div> 
 
-
-
-
-
+ 
 
                         </div>
                         <div class="modal-footer">
@@ -812,11 +739,7 @@
 
 
 
-
-
-
  
-
 
 
         <!-- CustomerCheckBlanaceModal -->
@@ -1015,10 +938,7 @@
                                 </div>
                         </div> 
 
-
-
-
-
+ 
 
                         </div>
                         <div class="modal-footer">
@@ -1077,10 +997,7 @@
                                 </div>
                         </div> 
 
-
-
-
-
+ 
 
                         </div>
                         <div class="modal-footer">
@@ -1120,36 +1037,15 @@
 
                         <div class="col-md-12">
                            
-
-                                <!-- embed responsive iframe --> 
-                                <!-- ======================= -->
-                                <!--
-                                <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
-                                  <div class="responsive-wrapper 
-                                     responsive-wrapper-wxh-572x612"
-                                     style="-webkit-overflow-scrolling: touch; overflow: auto;">
-
-                                    <iframe  src="https://pack1.sakorncable.com/upload/pack1file/File1.pdf"> 
-                                      <p style="font-size: 110%;"><em><strong>ERROR: </strong>  
-                                An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p>
-                                    </iframe>
-                                    
-                                  </div>
-                                </div> -->
+ 
                                 <div class="form-group">
 
                                     <a class="btn btn-lg btn-info waves-effect" href="https://pack1.sakorncable.com/upload/pack1file/File1.pdf">ดาว์โหลด/เปิดเต็มจอ</a>
 
                                 </div>
-
-
- 
+  
                         </div>
-
-
-
-
-
+ 
                     </div>
 
                 </div>
@@ -1174,35 +1070,16 @@
 
                         <div class="col-md-12">
                            
-
-                                <!-- embed responsive iframe --> 
-                                <!-- ======================= -->
-                                <!--
-                                <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
-                                  <div class="responsive-wrapper 
-                                     responsive-wrapper-wxh-572x612"
-                                     style="-webkit-overflow-scrolling: touch; overflow: auto;">
-
-                                    <iframe  src="https://pack1.sakorncable.com/upload/pack1file/File2.pdf"> 
-                                      <p style="font-size: 110%;"><em><strong>ERROR: </strong>  
-                                An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p>
-                                    </iframe>
-                                    
-                                  </div>
-                                </div> -->
+ 
                                 <div class="form-group">
 
                                     <a class="btn btn-lg btn-info waves-effect" href="https://pack1.sakorncable.com/upload/pack1file/File2.pdf">ดาว์โหลด/เปิดเต็มจอ</a>
 
                                 </div>
 
-
  
                         </div>
-
-
-
-
+ 
 
                     </div>
 
@@ -1258,17 +1135,6 @@
                         </table> 
 
 
-
-
-
-
-
-
-
-
-
-
-
  
                     </div>
                      
@@ -1289,12 +1155,7 @@
           </div>
           <!-- GetDataCarDetailModal -->
 
-
-
-
-
-
-
+ 
 
             <!-- InfoBalanceModal -->
             <div class="modal fade" id="InfoBalanceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

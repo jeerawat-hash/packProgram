@@ -10,9 +10,7 @@ class S extends CI_Controller
 		
 		parent::__construct(); 
 		$this->load->model("Mobile_model");
-
-
-
+ 
 	}
 
 	public function index($cust = "")
@@ -57,11 +55,9 @@ class S extends CI_Controller
 	}
 	public function detail()
 	{
-
-
+ 
 		echo json_encode($this->Mobile_model->getDataReceptDetailLog($_POST["ReceptID"],$_POST["CustomerID"],"P5"));
-
-
+ 
 	}
 
 
